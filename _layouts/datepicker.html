@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+
+<meta name="author" content="Donghoon">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<img style="width:250px; display: block; margin: 50px auto; "
+    src="{{'/pickadate/juvis_book.svg' | relative_url }}"></img>
+
+<link rel="stylesheet" href="{{'/pickadate/default.css' | relative_url}}">
+<link rel="stylesheet" href="{{'/pickadate/default.date.css' | relative_url}}">
+<link rel="stylesheet" href="{{'/pickadate/default.time.css' | relative_url}}">
+
+<body>
+
+    <section class="section">
+
+        <form>
+            <p style="display: block; margin: auto; text-align: center;">아래 버튼을 클릭하여 날짜를 예약하세요</p>
+            <input id="input_01" class="datepicker" name="date" type="text" autofocus value="예약하기"
+                data-value="클릭하여 날짜를 선택하세요"
+                style="display: block; margin: 40px auto; text-align: center; color: rgb(94, 94, 94); font-size: 18px; border-style:dashed;">
+        </form>
+
+        <form id="input_03" style="display: none;">
+            <p style="display: block; margin: auto; text-align: center;" type="time" name="time">시간을 선택해주세요</p>
+            <input id="input_02" class="timepicker" name="date" type="text" autofocus value="예약하기"
+                data-value="클릭하여 시간을 선택하세요"
+                style="display: block; margin: 40px auto; text-align: center; color: rgb(94, 94, 94); font-size: 18px; border-style:dashed;">
+            <button style="display: block; margin: 40px auto;" onclick="alert('예약이 완료되었습니다')">예약하기</button>
+        </form>
+
+
+    </section>
+
+
+    <script src="{{'/pickadate/jquery-3.5.1.js' | relative_url}}"></script>
+    <script src="{{'/pickadate/picker.js' | relative_url}}"></script>
+    <script src="{{'/pickadate/picker.date.js' | relative_url}}"></script>
+    <script src="{{'/pickadate/picker.time.js' | relative_url}}"></script>
+    <script src="{{'/pickadate/legacy.js' | relative_url}}"></script>
+    <script src="{{'/pickadate/ko_KR.js' | relative_url}}"></script>
+
+    <script type="text/javascript">
+
+        var availableDates = { "2021-02-03": ["10:30", "11:00", "12:00"], "2021-02-04": ["8:30", "11:00", "12:00"], "2021-02-05": ["8:30", "11:00", "12:00"] 
+        , "2021-02-06": ["8:30", "11:00", "12:00"] , "2021-02-07": ["8:30", "11:00", "12:00"] , "2021-02-08": ["8:30", "11:00", "12:00"] 
+        , "2021-02-09": ["8:30", "11:00", "12:00"] , "2021-02-10": ["8:30", "11:00", "12:00"] }
+
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        today = dd + '/' + mm + '/' + yyyy;
+
+        var dates = Object.keys(availableDates).map(str => str.split('-').map(a => parseInt(a)));
+
+        for (var i = 0; i < dates.length; i++) {
+            dates[i][1] = dates[i][1] - 1;
+        }
+
+        var selectedDate = ""
+
+        var rawJson = ""
+
+        var $input = $('.datepicker').pickadate({
+            firstDay: false,
+            closeOnSelect: false,
+            closeOnClear: false,
+            onClose: function () {
+                $('#input_03').show();
+                console.log($('.datepicker').get('select', 'yyyy-mm-dd'));
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://3.34.40.90:9090/kakao/diet/counsel/getTimeList", true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.setRequestHeader('Access-Control-Allow-Headers', "*");
+                xhr.setRequestHeader('Access-Control-Allow-Origin', "*");
+                xhr.send(JSON.stringify({
+                    brcId: "samdong",
+                    cusDate: $('.datepicker').get('select', 'yyyy-mm-dd')
+                }));
+                xhr.onreadystatechange = function () {
+                    if (this.readyState != 4) return;
+
+                    if (this.status == 200) {
+                        var data = JSON.parse(this.responseText);
+
+                        console.log(data);
+
+                        // we get the returned data
+                    }
+
+                    // end of state change: it can be after some time (async)
+                };
+            },
+            disable:
+                [true].concat(dates)
+        })
+
+        var picker = $input.pickadate('picker');
+
+        $input.on('click', function (event) {
+            if (picker.get('open')) {
+                picker.close();
+            } else {
+                picker.open();
+            }
+            event.stopPropagation();
+        });
+
+        var $input = $('.timepicker').pickatime({
+            min: new Date(2015, 3, 20, 10),
+            max: new Date(2015, 7, 14, 18),
+            clear: false,
+            disable: [
+                false,
+                [11, 0],
+                [12, 30],
+                [13, 30],
+                [14, 0],
+                [14, 30],
+                [15, 30],
+                [17, 0]
+            ]
+        })
+    </script>
+
+
+</body>
+
+</html>

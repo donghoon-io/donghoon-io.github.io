@@ -1,0 +1,29 @@
+trips:
+  - name: Soyang river
+    image: soyang.jpg
+    date: September, 2020
+    location: Chuncheon, Korea
+  - name: Gangneung
+    image: gangneung.jpg
+    date: February, 2020
+    location: Gangneung, Korea
+  - name: Tokyo
+    image: tokyo.jpg
+    date: June, 2019
+    location: Tokyo, Japan
+  - name: Fukuoka
+    image: fukuoka.jpg
+    date: December, 2018
+    location: Fukuoka, Japan
+  - name: Taipei
+    image: taipei.jpg
+    date: December, 2018
+    location: Taipei, Taiwan
+  - name: Sahara desert
+    image: sahara.jpg
+    date: August, 2017
+    location: Somewhere, Morocco
+  - name: Great ocean road
+    image: greatoceanroad.jpg
+    date: January, 2016
+    location: Melbourne, Australia

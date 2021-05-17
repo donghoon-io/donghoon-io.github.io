@@ -1,0 +1,63 @@
+{
+  "name": "donghoon",
+  "version": "4.0.0",
+  "description": "Jekyll theme - Donghoon Shin",
+  "main": "_site/index.html",
+  "scripts": {
+    "start": "gulp default",
+    "setup": "gulp setup",
+    "build": "gulp build",
+    "lint": "foundry run eslint --fix \"_js/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donghoon-io/donghoon-io.github.io.git"
+  },
+  "keywords": [
+    "donghoon",
+    "donghoon shin",
+    "hci",
+    "ece",
+    "snu"
+  ],
+  "author": "Donghoon Shin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/donghoon-io/donghoon-io.github.io/issues"
+  },
+  "homepage": "https://donghoon.io",
+  "dependencies": {
+    "mappy-breakpoints": "^0.2.3",
+    "modularscale-sass": "^3.0.8",
+    "normalize.css": "^6.0.0",
+    "open-color": "^1.4.0",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll",
+    "typi": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@sumup/foundry": "^1.0.3",
+    "browser-sync": "^2.17.6",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^2.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-favicons": "^2.2.7",
+    "gulp-filter": "^5.0.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-responsive": "^2.6.0",
+    "gulp-ruby-sass": "^2.1.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "merge-stream": "^1.0.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.2"
+  }
+}

@@ -1,0 +1,57 @@
+---
+layout: default
+lang: en
+ref: blog
+title: 'Blog'
+image: false
+order: 1
+---
+
+{% include core/metabar.html %}
+
+<article class="content">
+
+  <section id="posts" class="section">
+    <h2 class="section-title">Posts</h2>
+    {% assign posts = paginator.posts %}
+    {% for page in posts %}
+    <article>
+      <h3 class="section-header"><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+          title="{{ page.title }}">{{ page.title }}</a></h3>
+      {% include core/date.html %}
+      <p class="section-body">{{ page.excerpt | strip_html | truncatewords: 32 }}</p>
+      <br>
+    </article>
+    {% endfor %}
+  </section>
+  <section class="section">
+    {% if paginator.total_pages > 1 %}  
+  	<div class="pagination">
+  {% if paginator.previous_page %}  
+    <a class="cusInnerPage" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>  
+  {% else %}  
+    <span class="cusInnerPage">&laquo; Prev</span>  
+  {% endif %}  
+  
+  {% for page in (1..paginator.total_pages) %}  
+    {% if page == paginator.page %}  
+      <a class="cusCurrentPage">{{ page }}</a>  
+    {% elsif page == 1 %}  
+      <a class="cusInnerPage" href="{{ 'blog' | relative_url}}">{{ page }}</a>  
+    {% else %}  
+      <a class="cusInnerPage" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>  
+    {% endif %}  
+  {% endfor %}  
+  
+  {% if paginator.next_page %}  
+    <a class="cusInnerPage" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>  
+  {% else %}  
+    <span class="cusInnerPage" >Next &raquo;</span>  
+  {% endif %}  
+</div> 
+{% endif %}
+  </section>
+
+</article>
+
+{% include core/footer.html %}

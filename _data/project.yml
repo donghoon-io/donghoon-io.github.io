@@ -1,0 +1,396 @@
+projects:
+  - title: "Explainability for Satellite Imageries"
+    id: satellite-imagery
+    tags:
+        - '# Research'
+        - '# Ongoing'
+        - '# Explainability'
+    image: satellite-imagery.jpg
+    detail: "Guiding the design of explaination for assessing damages from satellite imageries"
+    description: |
+        <p>To guide the design of explanation for assessing damages from satellite imageries, we are working on understanding how humans generate explainability.
+        I'm excited to learn about generating model explainability from my wonderful colleagues.<br><br></p>
+        <p>Led by <a href="http://groversachin.com/">Sachin Grover</a>, this project is being co-advised by <a href="https://kenholstein.myportfolio.com/">Ken Holstein</a>, <a href="https://perer.org/">Adam Perer</a>, and <a href="http://zacklipton.com/">Zack Lipton</a>.</p>
+        <img src="site.baseurl/assets/images/projects_detail/satellite-imagery.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>An example of imagery that depicts a damaged area</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>User study, open-coding responses</p>
+  - title: "MOOC analysis"
+    id: kmooc
+    tags:
+        - "# Research"
+        - "# Data-analysis"
+        - "# Ongoing"
+    image: kmooc.jpg
+    detail: "Understanding how older adults use online videos for learning"
+    description: |
+        <p>In this project, we aim to understand how older adults use online videos for learning. To better understand the online learning of older adults, we adopted a mixed-method approach: (1) analyzing 41.8M logs extracted from K-MOOC, a Korean MOOC (Massive Open Online Course) platform and (2) running in-depth interview sessions with older adults.<br><br></p>
+        <p>Led by <a href="https://sites.google.com/view/seoyoung/">Seoyoung Kim</a>, this project is being advised by <a href="https://juhokim.com/">Juho Kim</a>.</p>
+        <img src="site.baseurl/assets/images/projects_detail/kmooc.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Distribution of K-MOOC users by age</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Running interview sessions, open-coding responses, analyzing log data, writing</p>
+  - title: "PoliNewsBot"
+    id: polinewsbot
+    tags:
+        - '# Coursework'
+        - '# CMC'
+        - '# iOS'
+    image: polinewsbot.jpg
+    detail: "Chat moderator for facilitating discussion on political issues"
+    description: |
+        <p>We aimed to develop a system that facilitates users' conversation on political issues and developed a high-fidelity prototype: PoliNewsBot.</p>
+        <p>This work was submitted as a team project assignment to the Spring 2020 HCI Theory and Practice course.</p>
+        <img src="site.baseurl/assets/images/projects_detail/polinewsbot.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of PoliNewsBot</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development, ideation, setting up dialogues</p>
+  - title: "Trkic G00gle"
+    id: trkic-g00gle
+    tags:
+        - '# Research'
+        - '# <i class="fas fa-book"></i>&nbsp; Published'
+        - '# Algorithm'
+    image: trkic-g00gle.jpg
+    #paper: "cscw2021_trkic-g00gle_paper.pdf"
+    detail: "Why and how users game translation algorithms"
+    description: |
+        <p>We explored the role and behavior of entities surrounding translation algorithms, in a situation where users trick and game them.</p>
+        <p>This work was accepted to <b>CSCW 2021</b>.</p>
+        <img src="site.baseurl/assets/images/projects_detail/trkic-g00gle.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Entities of reviewing communities where translation algorithm is applied</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Writing, designing figures</p>
+  - title: "AmslerTouch"
+    id: amslertouch
+    tags:
+        - '# <i class="fas fa-book"></i>&nbsp; Thesis'
+        - '# Web'
+        - "# Svelte"
+    image: amslertouch.jpg
+    paper: "snuece_amslertouch_thesis.pdf"
+    #code: "https://github.com/donghoon-io/AmslerTouch"
+    detail: "Interactive Amsler grid web app for diagnosing Age-related Macular Degeneration (B.S. Thesis)"
+    description: |
+        <p>Due to the irreversible characteristics and disastrous effects of Age-related Macular Degeneration (AMD), a precise diagnosis of the symptoms is extremely important. Yet, paper-based Amsler Grid, the most prevalent testing method, is highly limited in that it requires the indirect report of patients and quantitative reporting is difficult.<br><br></p>
+        <p>Working with prof. Jongmo Seo (SNU Hospital, SNU ECE), I designed and developed a touch-based Amsler grid web app. As such, I aimed to support patients' exact report of their regions of symptoms.<br><br></p>
+        <p>What made this project special to me is that, I made a LaTeX template for writing this paper! I found that my friends prparing for their thesis always felt it difficult to produce a thesis format, since our department only gave us a 'scanned' version of template, not a real document. Thus, I generated a template which can be found <a href="https://github.com/donghoon-io/SNUECE-BS-thesis">here</a> (this template was built upon previous Ph.D. dissertation template under license)<br><br></p>
+        <p>This study was conducted for my B.S. thesis.</p>
+        <img src="site.baseurl/assets/images/projects_detail/amslertouch.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreen of AmslerTouch</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Independent project</p>
+  - title: "LiquidEye"
+    id: liquideye
+    tags:
+        - "# Research"
+        - '# <i class="fas fa-book"></i>&nbsp; Published'
+        - "# MacOS"
+    image: liquideye.jpg
+    paper: "jmir_liquideye_paper.pdf"
+    code: "https://github.com/donghoon-io/LiquidEye"
+    detail: "Exploring design space of Computer Vision Symdrome (CVS) intervention application"
+    description: |
+        <p>Prolonged time of computer use increased the prevalence of ocular problems including eyestrain, tired eyes, irritation, redness, blurred vision, and double vision, collectively referred to as computer vision syndrome. In this study, we aim to explore the interface elements of computer-based intervention for computer vision syndrome to set design guidelines based on pros/cons of each interface element.<br><br></p>
+        <p>In this project, I developed LiquidEye: an intervention application targeted to MacOS. In order to understand which design elements of intervention app do users prefer, we made the system to collect each user's time-series system preferences. We later jointly analyzed them with the self-reported satisfaction in order to identify the significance of each element statistically.<br><br></p>
+        <p>This work was later published to <b>Journal of Medical Internet Research</b> (IF = 5.03).</p>
+        <img src="site.baseurl/assets/images/projects_detail/liquideye.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreen of LiquidEye</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development, running interview sessions, writing</p>
+  - title: "BlahBlahBot"
+    id: blahblahbot
+    image: blahblahbot.jpg
+    paper: "chi2021_blahblahbot_poster.pdf"
+    video: https://youtu.be/6UQi9gCgMjU
+    code: "https://github.com/donghoon-io/BlahBlahBot"
+    detail: "Facilitating conversation between strangers using a chatbot with ML-infused personalized topic suggestion"
+    tags:
+        - "# Research"
+        - '# <i class="fas fa-book"></i>&nbsp; Published'
+        - "# AI-MC"
+        - "# iOS"
+    description: |
+        <p>It is a prevalent behavior of having a chat with strangers in online settings where people can easily gather. Yet, people often find it difficult to initiate and maintain conversation due to the lack of information about strangers.<br><br></p>
+        <p>Hence, we aimed to facilitate conversation between the strangers with the use of machine learning (ML) algorithms and present BlahBlahBot, an ML-infused chatbot that moderates conversation between strangers with personalized topics. Based on social media posts, BlahBlahBot supports the conversation by suggesting topics that are likely to be of mutual interest between users.<br><br></p>
+        <p>A user study with three groups (control, random topic chatbot, and BlahBlahBot; N=18) found the feasibility of BlahBlahBot in increasing both conversation quality and closeness to the partner, along with the factors that led to such increases from the user interview. Overall, our preliminary results imply that an ML-infused conversational agent can be effective for augmenting a dyadic conversation.<br><br></p>
+        <p>This work was accepted to <b>CHI 2021</b> (Late-Breaking Work).<br><br></p>
+        <img src="site.baseurl/assets/images/projects_detail/blahblahbot.jpg" class="img-responsive" style="max-width: none !important;">
+        <p style="text-align: center; font-size: 14px;"><b>Framework of BlahBlahBot</b><br><br></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development, running interview sessions, writing</p>
+  - title: "Easier Said than Done"
+    id: fall2020instell
+    image: fall2020instell.jpg
+    detail: "iOS-based serious game app submitted to Fall 2020 Interactive Storytelling course"
+    appstore: "https://apps.apple.com/app/id1542957206"
+    code: "https://github.com/donghoon-io/Easier-said-than-done"
+    tags:
+        - "# Schoolwork"
+        - "# Serious game"
+        - "# iOS"
+    description: |
+        <p>According to a recent survey conducted by American Psychological Association [1], academic stress is cited as the number one stressor in students' daily life. This issue is specifically considered serious in South Korea, where half of Korean teenagers experienced a thought of suicidal and academic stress is reported as a top-ranked attribute to such phenomenon [2].<br><br></p>
+        <p>This, however, cannot be solely dealt with reducing academic affair. Since such academic phenomenon is multi-faceted with lots of stakeholders involved (e.g., homeroom teacher, parents, and friends), we should not naïvely understand the issue. For example, high schools often focus on increasing the number of students entering so-called 'prestigious universities.' However, by solely focusing on the name of university rather than a major, this often undermines the agency of students' decision on their future career, and leading students to suffer from subsidious academic stresses as well as a stress on the study itself.<br><br></p>
+        <p>Since the academic curriculum drastically changes over time and policy-makers and relatively older people cannot easily understand such a situation, we aimed to show how difficult it is for high school students to 'survive' under such factors that often lead to academic stresses. By having users choose a choice in each crossroad of choices and differentiating the following storieline, we, though indirectly, let them feel how stressed high school students would be in the midst of a choice.<br><br></p>
+        <img src="site.baseurl/assets/images/projects_detail/fall2020instell.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of Easier said than done</b><br><br></p>
+        <p><b>REFERENCE</b><br>[1] American Psychological Association. (2014). Stress in America: Are teens adopting adults’ stress habits. Washington, DC: Author.<br>[2] Kang, Y. (2014). Poll shows half of Korean teenagers have suicidal thoughts. The Wall Street Journal.</p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development</p>
+  - title: "夜-planet"
+    id: fall2020ucd
+    image: fall2020ucd.jpg
+    detail: "Design homework submitted to Fall 2020 User-Centered Design course"
+    link: "https://www.notion.so/6e350a9141b44a3ab9886b6e443547d1"
+    tags:
+        - "# Schoolwork"
+        - "# Design"
+        - "# Prototype"
+    description: |
+        <p>In this project, we designed an application for supporting those who study abroad, but came back due to COVID-19. Since they often suffer from lack of sleep due to the time difference, we aimed to support them with managing their health, at the same time not undermining their classworks. In order to precisely understand their needs, we conducted extensive user interview sessions, YouTube v-logger observation study, diary study, and web survey.<br><br></p>
+        <p>As a result, we designed '夜-planet', an application that supports students under such circumstances. '夜' is a Chinese character for 'night', and '夜-planet' stands for 'nocturnal.'<br><br></p>
+        <p>If you are interested in taking a look at our prototype, please check out the link above:) (Korean)</p>
+        <img src="site.baseurl/assets/images/projects_detail/fall2020ucd.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Prototype of 夜-planet</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>User study, ideating design elements</p>
+  - title: "TalkingBoogie"
+    id: talkingboogie
+    paper: "chi2020_talkingboogie_paper.pdf"
+    slide: "chi2020_talkingboogie_slide.pdf"
+    appstore: "https://apps.apple.com/app/id1435744898"
+    code: "https://github.com/donghoon-io/TalkingBoogie"
+    tags:
+        - "# Research"
+        - '# <i class="fas fa-book"></i>&nbsp; Published'
+        - '# <i class="fas fa-medal"></i>&nbsp; Awarded'
+        - "# iOS"
+    image: talkingboogie.jpg
+    detail: "Collaborative mobile AAC system for non-verbal children with developmental disabilities and their caregivers"
+    description: |
+        <p>At the end of my sophomore year, I read one CHI paper by chance: <b>"Blocks4All: overcoming accessibility barriers to
+            blocks programming for children with visual impairments."</b> Written by Milne and her colleagues, this paper
+            explores the methods of overcoming accessibility issues in existing block-based programming tools. I was super
+            intrigued by how HCI researchers try to understand user groups and reflect design implications into an artifact.<br><br></p>
+        <p>Surprisingly, at that moment my supervisor asked if I'm willing to lead a project for developing an AAC (Augmentative and Alternative Communication) application.
+            Definitely I said yes, because I found it really difficult to take part in any research project as an undergrad without any
+            previous research experience then. From then, I spent almost every night developing an iOS app, while simultaneously conducting
+            user studies, reading relevant papers, and even designing! Literally everything was new: from being funded for a research to getting an
+            approval from IRB for the evaluation! Fortunately, at the moment when I finished my research, we were almost at the deadline
+            of <b>CHI 2020</b> and submitted our work there, and got accepted with an <b>Honorable Mention Award</b>.<br><br></p>
+        <p>To summarize our paper briefly, we tried not to restrict a stakeholder of AAC to only a child, but also viewed their caregivers
+            very important in the process of child's communication. Based on this research context, we aimed to develop a system that helps them collaborate to
+            drive the best strategies on child's communication. As a result, we developed <b>Talkingboogie, a mobile AAC system for children
+            with developmental disabilities</b>.</p>
+        <img src="site.baseurl/assets/images/projects_detail/talkingboogie-1.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Usage flow of TalkingBoogie system</b><br><br></p>
+        <p>TalkingBoogie system consists of two mobile apps: <b>TalkingBoogie-AAC</b> for caregiver-child communication, and
+            <b>TalkingBoogie-Coach</b> supporting caregiver collaboration.</p>
+        <img src="site.baseurl/assets/images/projects_detail/talkingboogie-2.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of TalkingBoogie-AAC</b></p>
+        <img src="site.baseurl/assets/images/projects_detail/talkingboogie-3.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of TalkingBoogie-Coach</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development, writing, user study, running interview sessions, data analysis</p>
+  - title: "Music Knows."
+    id: dt4c_p3
+    image: dt4c_p3.jpg
+    detail: "What my favorite sets of music tell about my emotion"
+    tags:
+        - "# Schoolwork"
+        - "# InfoVis"
+        - "# D3.js"
+    description: |
+        <p>I believe that one's favourite set of music in a specific period represents own emotion at that period. To prove this, I listed all my favourite songs by each semester. Then, I analyzed the emotion of each song using <a href="https://cyanite.ai">Cyanite</a>, and I visualized the results with <a href="https://d3js.org">D3.js</a>.<br><br></p>
+        <p>Well, I was super shocked by the result. For my depressing time, I used to listen to melancholic songs. For my highest period, my playlist was full of happy and energetic songs. Why don't you try with your own playlist?<br><br></p>
+        <p>This design work was submitted as an assignment to Spring 2020 Design Thinking for Communication course.</p>
+        <img src="site.baseurl/assets/images/projects_detail/P3.jpg" class="img-responsive">
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Independent project</p>
+  - title: 'COVID-19, the Infodemics'
+    id: dt4c_p2
+    image: dt4c_p2.jpg
+    detail: "How misinformation and disinformation are spread and exacerbate COVID-19"
+    tags:
+        - "# Schoolwork"
+        - "# Infographics"
+        - "# Illustrator"
+    description: |
+        <p>I personally don't prefer to believe things that haven't been proved yet. But some posts in social networking services make people believe fake or unproven news to be correct, and some even try to convey these for their adversarial purposes!<br><br></p>
+        <p>In this project, I aimed to provide examples of some 'controversial' information that emerged during the COVID-19 situation. Then, I tried to let readers decide. Well, this was a tough project because COVID-19 was a 'relatively new' phenomenon then and it lacked relevant information. However, I'm pretty fascinated with how 'seemingly ridiculous' information is spread throughout people and later considered to be true.<br><br></p>
+        <p>This design work was submitted as an assignment to Spring 2020 Design Thinking for Communication course.</p>
+        <img src="site.baseurl/assets/images/projects_detail/P2.jpg" class="img-responsive">
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Independent project</p>
+  - title: "Tech Champion's League"
+    id: dt4c_p1
+    image: dt4c_p1.jpg
+    tags:
+        - "# Schoolwork"
+        - "# Small multiple"
+        - "# Illustrator"
+    detail: "What if well-known tech companies run their football team?"
+    description: |
+        <p>It's always fun to imagine things that won't happen XD<br><br></p>
+        <p>In this project, I assumed that well-known tech companies run their own football team in a 'Tech Champions League.' In this tournament, each team competes using own market cap. For this project, I mainly focused on designing small multiples with the following question: What comes to mind immediately when I think of the company?<br><br></p>
+        <p>This design work was submitted as an assignment to Spring 2020 Design Thinking for Communication course.</p>
+        <img src="site.baseurl/assets/images/projects_detail/P1.jpg" class="img-responsive">
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Independent project</p>
+  - title: "Bixby: Intelligent Visual"
+    id: bixby
+    tags:
+        - "# Industry"
+        - "# Experiment"
+    image: bixby.jpg
+    detail: "Setting up coherent visual identities for Samsung Bixby system"
+    description: |
+        <p>In this collaborative project among Samsung Research, SNU HCI+d Lab, and Yonsei university, we aimed to
+            design a coherent visual identity for Bixby: a smart agent deployed to Samsung appliances.<br><br></p>
+        <p>During the study, I took part in developing prototypes and conducting user experiment.</p>
+        <img src="site.baseurl/assets/images/projects_detail/bixby.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Example screen we used during the user study</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Prototype development, running experiment, writing</p>
+  - title: "Digital Ethnography"
+    id: digitalethnography
+    paper: "spring2020_digital-ethnography_report.pdf"
+    tags:
+        - "# Schoolwork"
+        - '# Research'
+        - "# Micro-mobility"
+    image: mobility.jpg
+    detail: "Term paper on needfinding of Korean micro-mobility users submitted to Spring 2020 Digital Ethnography course (written in Korean)"
+    description: |
+        <p>I've been working as an iOS developer in a local micro-mobility sharing startup for about 2 years. As working in a tech company, I got to know
+        that understanding possible users is extremely important for the success of service and business.<br><br></p>
+        <p>Thus, I decided to take 'Digital Ethnography' class, where students choose one topic they want to deal with and explore user groups to better
+        understand the topic. With the topic of <b>understanding why users hesitate riding a sharing mobility device and discuss solutions using ethnography</b>,
+        I ran a couple of observation and interview studies with college students (N=6).<br><br></p>
+        <p>Even though I could run the user observation study neither for a long term nor with a large number (COVID-19),
+        it was really interesting to understand how HCI researchers explore users with qualitative methodologies in the real-world context.<br><br></p>
+        <p>Please kindly understand that the paper was written in Korean language.</p>
+        <img src="site.baseurl/assets/images/projects_detail/mobility.jpg" class="img-responsive">
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Independent project</p>
+  - title: "PRP"
+    id: prp
+    paper: "mobilehci2020_prp_poster.pdf"
+    tags:
+        - "# Research"
+        - '# <i class="fas fa-book"></i>&nbsp; Published'
+        - "# KakaoTalk"
+    image: prp.jpg
+    detail: "Applying the persona of user's caregivers to health-managing chatbots"
+    description: |
+        <p>Although text-based conversational agents (chatbots) have a great potential of journaling diets and managing one's
+        health, it is suffering from the low acceptance of users. To overcome this, we proposed an idea of <b>applying the persona of real world caregivers into the chatbot</b>.<br><br></p>
+        <p>Led by <a href="https://youjin-h.github.io">Youjin Hwang</a>, we conducted a series of studies regarding this topic. Specifically, in this study, we
+        aimed to <b>identify several important linguistic features that make users perceive a chatbot as a real person</b>.<br><br></p>
+        <p>This study was later polished and published to <b>MobileHCI 2020</b> (Late-Breaking Result).</p>
+        <img src="site.baseurl/assets/images/projects_detail/prp.jpg" class="img-responsive">
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Writing</p>
+  - title: "PersonaBot"
+    id: personabot
+    paper: "chi2020_personabot_workshop.pdf"
+    tags:
+        - "# Research"
+        - '# <i class="fas fa-book"></i>&nbsp; Published'
+        - "# KakaoTalk"
+    image: personabot.jpg
+    detail: "Applying the persona of user's caregivers to health-managing chatbots"
+    description: |
+        <p>Although text-based conversational agents (chatbots) have a great potential of journaling diets and managing one's
+        health, it is suffering from the low acceptance of users. To overcome this, we proposed an idea of <b>applying the persona of real world caregivers into the chatbot</b>.<br><br></p>
+        <p>Led by <a href="https://youjin-h.github.io">Youjin Hwang</a>, we conducted a series of studies regarding this topic. Specifically, in this study, we
+        aimed to <b>compare user perception on personas (doctor, family member, and w/o persona) applied to a chatbot</b>. Although this work is done with
+        Wizard-of-Oz methodology, we expect that the findings would be extensible to automated cases with ML.<br><br></p>
+        <p>This study was later polished and published to <b>CHI 2020 Workshop on Conversational Agents for Health and Wellbeing</b>.</p>
+        <img src="site.baseurl/assets/images/projects_detail/personabot.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Three personas applied to a chatbot</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development, running experiment, writing</p>
+  - title: "Juvis J Bot"
+    id: juvis
+    link: "http://www.juvis.co.kr"
+    tags:
+        - "# Commercial"
+        - "# KakaoTalk"
+    image: juvis.jpg
+    detail: "A chatbot agent for offering a health information & inducing an enrollment of Juvis, a Korean diet managing company"
+    description: |
+        <p>Juvis is a Korean diet-managing company. In order to give enough information and lead users to successfully book a reservation,
+        we designed a chatbot. This experience led me to learn how we might design a chatbot, and this helped me to design a chatbot in my
+        another project about <b>applying the persona on a chatbot</b>.</p>
+        <img src="site.baseurl/assets/images/projects_detail/juvis.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of Juvis chatbot</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development</p>
+  - title: "elecle"
+    id: elecle
+    link: "https://elecle.bike"
+    appstore: "https://apps.apple.com/app/id1456461872"
+    tags:
+        - "# Startup"
+        - "# iOS"
+    image: elecle.jpg
+    detail: "Elecle: Electric mobility-sharing startup (worked as an iOS developer / UX designer)"
+    description: |
+        <p>For more than 2 years, I've been working as an iOS developer in Elecle, an electric mobility-sharing startup.<br><br></p>
+        <p>Since every single step of renting a mobility device and returing it is done in a mobile app, mobile app development
+            is considered extremely crucial in mobility sharing services. Thus, we have put much emphasis on increasing
+            usability and usefulness of the mobile app for end-users and devised various interaction methods within
+            our app.<br><br></p>
+        <p>Elecle is currently available in more than 5 cities in Korea, including Seoul, Suwon, Bucheon, Gimpo, and Sejong.</p>
+        <img src="site.baseurl/assets/images/projects_detail/elecle-riding.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Me riding an Elecle bike XD</b></p>
+        <img src="site.baseurl/assets/images/projects_detail/elecle.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of Elecle iOS app</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development, design ideation</p>
+  - title: "BADA"
+    id: bada
+    link: "https://www.hankookilbo.com/News/Read/201808021348769510"
+    tags:
+        - "# Research"
+        - "# Web"
+    image: bada.jpg
+    detail: "Supporting sexual crime victims with chatbot agent"
+    description: |
+        <p>BADA is a chatbot agent for supporting sexual crime victims.</p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>System development</p>
+  - title: "ECE Grad"
+    id: ecegrad
+    appstore: "https://apps.apple.com/app/id1450808330"
+    tags:
+        - "# Personal"
+        - "# iOS"
+    image: ecegrad.jpg
+    detail: "Graduation managing app for SNU ECE undergrads"
+    description: |
+        <p>It was extremely difficult for me to keep track of the courses I've taken during the undergraduate study. I'm surprised that many other friends also fased similar problem.<br><br></p>
+        <p>To make this process hassle-free, I made an iOS app called <b>ECE grad</b>. Using this application, undergrads in ECE department may easily track their previously taken courses. Plus, this also shows how many credits they should additionally take. Plus, this system automatically visualizes the history and show some cheer-up messages for inducing students to take courses and keep track of their course history.<br><br></p>
+        <p>However, some of my friends suggested that it was a bit time-consuming to manually add courses into the system. Based on this feedback, in order to facilitate the process of entering their previous courses, I added a <b>crawling function</b> that automatically crawls the relevant data within SNU mypage, by simply entering their ID and password.</p>
+        <img src="site.baseurl/assets/images/projects_detail/ecegrad.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of ECE grad</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Independent project</p>
+  - title: "HCI+d Website"
+    id: hcidweb
+    link: "http://hcid.snu.ac.kr"
+    tags:
+        - "# Design"
+        - "# Web"
+    image: lab_website.jpg
+    detail: "Designing & developing a website for HCI+d Lab."
+    description: |
+        <p>As I started my internship at HCI+d lab, I found that the website was a bit outdated. Thus, I worked with my colleagues to
+        design the website (based upon the previously designed template) and added up the lab members' profile.<br><br></p>
+        <p>It was a great experience to contribute to the lab with my skillsets!</p>
+        <img src="site.baseurl/assets/images/projects_detail/lab_website.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>My profiile here :)</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Development, design</p>

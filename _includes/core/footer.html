@@ -1,0 +1,27 @@
+<footer class="footer">
+	<div class="footer-container">
+		<div class="footer-logo" style="color: #212529;">
+			<a class="section-header-main" href="{{ site.url }}{{ site.baseurl }}{% if page.url == '/' %}#" data-scroll{% else %}"{% endif %} aria-label="Visit the homepage." title="Visit the homepage.">{{ site.title }}</a>		</div>
+		<div class="footer-navigation">
+			<div class="footer-links">
+				<h4 class="footer-title"></h4><nav>
+					<ul class="nav">
+						<li class="nav-link">
+							<a href="https://facebook.com/donghoon.io" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square">&nbsp;&nbsp; </i>Facebook</a>
+						</li>
+						<li class="nav-link">
+							<a href="https://twitter.com/donghoon_io" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter">&nbsp;&nbsp; </i>Twitter</a>
+						</li>
+						<li class="nav-link">
+							<a href="https://github.com/donghoon-io" target="_blank" rel="noopener noreferrer"><i class="fab fa-github">&nbsp;&nbsp; </i>Github</a>
+						</li>
+						<li class="nav-link">
+							<a href="https://scholar.google.com/citations?user=753zIgUAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fab fa-google">&nbsp;&nbsp; </i>Google Scholar</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<h6 class="footer-text">© {{ site.time | date: '%Y' }} {{ site.author.name }}.</h6>
+	</div>
+</footer>

@@ -1,0 +1,81 @@
+projects:
+  - title: "TalkingBoogie"
+    id: talkingboogie
+    paper: "chi2020_talkingboogie_paper.pdf"
+    slide: "chi2020_talkingboogie_slide.pdf"
+    appstore: "https://apps.apple.com/app/id1435744898"
+    code: "https://github.com/donghoon-io/TalkingBoogie"
+    tags:
+        - "# CHI '20 Paper"
+        - "# Accessibility"
+    image: talkingboogie.jpg
+    detail: "Collaborative mobile AAC system for non-verbal children with developmental disabilities"
+    description: |
+        <p>At the end of my sophomore year, I read one CHI paper by chance: <b>"Blocks4All: overcoming accessibility barriers to
+            blocks programming for children with visual impairments."</b> Written by Milne and her colleagues, this paper
+            explores the methods of overcoming accessibility issues in existing block-based programming tools. I was super
+            intrigued by how HCI researchers try to understand user groups and reflect design implications into an artifact.<br><br></p>
+        <p>Surprisingly, at that moment my supervisor asked if I'm willing to lead a project for developing an AAC (Augmentative and Alternative Communication) application.
+            Definitely I said yes, because I found it really difficult to take part in any research project as an undergrad without any
+            previous research experience then. From then, I spent almost every night developing an iOS app, while simultaneously conducting
+            user studies, reading relevant papers, and even designing! Literally everything was new: from being funded for a research to getting an
+            approval from IRB for the evaluation! Fortunately, at the moment when I finished my research, we were almost at the deadline
+            of <b>CHI 2020</b> and submitted our work there, and got accepted with an <b>Honorable Mention Award</b>.<br><br></p>
+        <p>To summarize our paper briefly, we tried not to restrict a stakeholder of AAC to only a child, but also viewed their caregivers
+            very important in the process of child's communication. Based on this research context, we aimed to develop a system that helps them collaborate to
+            drive the best strategies on child's communication. As a result, we developed <b>Talkingboogie, a mobile AAC system for children
+            with developmental disabilities</b>.</p>
+        <img src="site.baseurl/assets/images/projects_detail/talkingboogie-1.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Usage flow of TalkingBoogie system</b><br><br></p>
+        <p>TalkingBoogie system consists of two mobile apps: <b>TalkingBoogie-AAC</b> for caregiver-child communication, and
+            <b>TalkingBoogie-Coach</b> supporting caregiver collaboration.</p>
+        <img src="site.baseurl/assets/images/projects_detail/talkingboogie-2.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of TalkingBoogie-AAC</b></p>
+        <img src="site.baseurl/assets/images/projects_detail/talkingboogie-3.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreens of TalkingBoogie-Coach</b></p>
+  - title: "BlahBlahBot"
+    id: blahblahbot
+    image: blahblahbot.jpg
+    paper: "chi2021_blahblahbot_poster.pdf"
+    video: https://youtu.be/6UQi9gCgMjU
+    code: "https://github.com/donghoon-io/BlahBlahBot"
+    detail: "Facilitating conversation between strangers using a chatbot with ML-infused personalized topic suggestion"
+    tags:
+        - "# CHI '21 LBW"
+        - "# AI-MC"
+    description: |
+        <p>It is a prevalent behavior of having a chat with strangers in online settings where people can easily gather. Yet, people often find it difficult to initiate and maintain conversation due to the lack of information about strangers.<br><br></p>
+        <p>Hence, we aimed to facilitate conversation between the strangers with the use of machine learning (ML) algorithms and present BlahBlahBot, an ML-infused chatbot that moderates conversation between strangers with personalized topics. Based on social media posts, BlahBlahBot supports the conversation by suggesting topics that are likely to be of mutual interest between users.<br><br></p>
+        <p>A user study with three groups (control, random topic chatbot, and BlahBlahBot; N=18) found the feasibility of BlahBlahBot in increasing both conversation quality and closeness to the partner, along with the factors that led to such increases from the user interview. Overall, our preliminary results imply that an ML-infused conversational agent can be effective for augmenting a dyadic conversation.<br><br></p>
+        <p>This work was accepted to <b>CHI 2021</b> (Late-Breaking Work).<br><br></p>
+        <img src="site.baseurl/assets/images/projects_detail/blahblahbot.jpg" class="img-responsive" style="max-width: none !important;">
+        <p style="text-align: center; font-size: 14px;"><b>Framework of BlahBlahBot</b><br><br></p>
+  - title: "LiquidEye"
+    id: liquideye
+    tags:
+        - "# JMIR Paper"
+        - "# Healthcare"
+    image: liquideye.jpg
+    paper: "jmir_liquideye_paper.pdf"
+    code: "https://github.com/donghoon-io/LiquidEye"
+    detail: "Exploring design space of Computer Vision Symdrome (CVS) intervention application"
+    description: |
+        <p>Prolonged time of computer use increased the prevalence of ocular problems including eyestrain, tired eyes, irritation, redness, blurred vision, and double vision, collectively referred to as computer vision syndrome. In this study, we aim to explore the interface elements of computer-based intervention for computer vision syndrome to set design guidelines based on pros/cons of each interface element.<br><br></p>
+        <p>In this project, I developed LiquidEye: an intervention application targeted to MacOS. In order to understand which design elements of intervention app do users prefer, we made the system to collect each user's time-series system preferences. We later jointly analyzed them with the self-reported satisfaction in order to identify the significance of each element statistically.<br><br></p>
+        <p>This work was later published to <b>Journal of Medical Internet Research</b> (IF = 5.03).</p>
+        <img src="site.baseurl/assets/images/projects_detail/liquideye.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreen of LiquidEye</b></p>
+  - title: "Trkic G00gle"
+    id: trkic-g00gle
+    tags:
+        - "# CSCW '21 Paper"
+        - '# Algorithm'
+    image: trkic-g00gle.jpg
+    #paper: "cscw2021_trkic-g00gle_paper.pdf"
+    #code: "https://github.com/donghoon-io/AmslerTouch"
+    detail: "Why and how users game translation algorithms"
+    description: |
+        <p>We explored the role and behavior of entities surrounding translation algorithms, in a situation where users trick and game them.</p>
+        <p>This work was accepted to <b>CSCW 2021</b>.</p>
+        <img src="site.baseurl/assets/images/projects_detail/trkic-g00gle.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Entities of translation algorithm in reviewing communities</b></p>

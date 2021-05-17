@@ -1,0 +1,57 @@
+<ul class="nav">
+
+<li class="nav-link">
+  <a class="{% if page.url == '/' %} nav-active {% endif %}" href="{{ '/' | relative_url }}" aria-label="Home">Home</a>
+</li>
+<li class="nav-link">
+  <a class="{% if page.url contains 'publication' %} nav-active {% endif %}" href="{{ 'publication' | relative_url }}" aria-label="Publication">Publication</a>
+</li>
+<li class="nav-link">
+  <a class="{% if page.url contains 'project' %} nav-active {% endif %}" href="{{ 'project' | relative_url }}" aria-label="Project">Project</a>
+</li>
+<li class="nav-link">
+  <a class="{% if page.url contains 'blog' %} nav-active {% endif %}" href="{{ 'blog' | relative_url }}" aria-label="Blog">Blog</a>
+</li>
+<li class="nav-link">
+  <a class="{% if page.url contains 'music' %} nav-active {% endif %}" href="{{ 'music' | relative_url }}" aria-label="Music">Music</a>
+</li>
+<li class="nav-link">
+  <a class="{% if page.url contains 'cv' %} nav-active {% endif %}" href="{{ 'cv.pdf' | relative_url }}" aria-label="{{ entry.title }}">CV</a>
+</li>
+<!--
+{% assign entries = site.pages | where: "lang", page.lang | sort: "order" %}
+{% for entry in entries %}
+  {% unless entry.exclude == true %}
+    {% if entry.title != 'Blog' %}
+    <li class="nav-link">
+      <a class="{% if page.url == entry.url %} nav-active{% endif %}" href="{{ site.baseurl }}{{ entry.url }}" aria-label="{{ entry.title }}">{{ entry.title }}</a>
+    </li>
+    {% else %}
+    <li class="nav-link">
+      <a class="{% if page.url == entry.url %} nav-active{% endif %}" href="javascript:localizeBlog();" aria-label="{{ entry.title }}">{{ entry.title }}</a>
+    </li>
+    {% endif%}
+	{% endunless %}
+{% endfor %}
+{% for entry in site.navigation %}
+  <li class="nav-link">
+    <a href="{{ entry[1] }}" aria-label="{{ entry[0] }}">{{ entry[0] }}</a>
+  </li>
+{% endfor %}
+<li class="nav-link">
+  <a class="{% if page.url == entry.url %} nav-active{% endif %}" href="{{ 'cv.pdf' | relative_url }}" aria-label="{{ entry.title }}">CV</a>
+</li>
+-->
+
+</ul>
+
+<script type="text/javascript">
+  function localizeBlog() {
+    var userLang = navigator.language || navigator.userLanguage;
+    if (userLang == "ko") {
+      document.location = "{{ 'blog_ko' | relative_url }}"
+    } else {
+      document.location = "{{ 'blog' | relative_url }}"
+    }
+  }
+</script>

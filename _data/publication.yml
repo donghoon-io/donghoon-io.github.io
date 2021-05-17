@@ -1,0 +1,184 @@
+publications:
+  - type: Publications
+    list:
+      - title: "Trkic G00gle: Why and How Users Game Translation Algorithms"
+        author: Soomin Kim, Changhoon Oh, Won Ik Cho, <intext-highlight>Donghoon Shin</intext-highlight>, Bongwon Suh, Joonhwan Lee
+        venue: <intext-highlight>CSCW 2021</intext-highlight>. (Accepted, to appear)
+        pdf: cscw2021_trkic-g00gle_paper.pdf
+        disabled: true
+      - title: "BlahBlahBot: Facilitating Conversation between Strangers using a Chatbot with ML-infused Personalized Topic Suggestion"
+        author: <intext-highlight>Donghoon Shin</intext-highlight>, Sangwon Yoon, Soomin Kim, Joonhwan Lee
+        venue: <intext-highlight>CHI 2021 Extended Abstracts.</intext-highlight> (Late-Breaking Work)
+        pdf: chi2021_blahblahbot_poster.pdf
+        #poster: chi2021_blahblahbot_poster_conference.pdf
+        video: https://youtu.be/0blBM7xkELw
+        id: prp
+        abstract: It is a prevalent behavior of having a chat with strangers in online settings where people can easily gather. Yet, people often find it difficult to initiate and maintain conversation due to the lack of information about strangers. Hence, we aimed to facilitate conversation between the strangers with the use of machine learning (ML) algorithms and present BlahBlahBot, an ML-infused chatbot that moderates conversation between strangers with personalized topics. Based on social media posts, BlahBlahBot supports the conversation by suggesting topics that are likely to be of mutual interest between users. A user study with three groups (control, random topic chatbot, and BlahBlahBot; N=18) found the feasibility of BlahBlahBot in increasing both conversation quality and closeness to the partner, along with the factors that led to such increases from the user interview. Overall, our preliminary results imply that an ML-infused conversational agent can be effective for augmenting a dyadic conversation.
+        bibtex: |
+          @inproceedings{blahblahbot,</br>
+                                              <span class="tab">&#9;</span>author = {Shin, Donghoon and Yoon, Sangwon and Kim, Soomin
+                                                and Lee, Joonhwan},</br>
+                                              <span class="tab">&#9;</span>title = {BlahBlahBot: Facilitating Conversation between Strangers using a Chatbot with ML-infused Personalized Topic Suggestion based on Social Media Posts},</br>
+                                              <span class="tab">&#9;</span>booktitle = {Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems},</br>
+                                              <span class="tab">&#9;</span>series = {CHI EA '21},</br>
+                                              <span class="tab">&#9;</span>year = {2021},</br>
+                                              <span class="tab">&#9;</span>isbn = {978-1-4503-8095-9/21/05},</br>
+                                              <span class="tab">&#9;</span>location = {Yokohama, Japan},</br>
+                                              <span class="tab">&#9;</span>url =
+                                              {http://doi.acm.org/10.1145/3411763.3451771},</br>
+                                              <span class="tab">&#9;</span>doi = {10.1145/3411763.3451771},</br>
+                                              <span class="tab">&#9;</span>publisher = {ACM},</br>
+                                              <span class="tab">&#9;</span>address = {New York, NY, USA},</br>
+                                              <span class="tab">&#9;</span>keywords = {chatbot, topic suggestion, computer mediated communication, chat moderation}</br>
+                                              }
+      - title: "Design Guidelines of Computer-based Intervention for Computer Vision Syndrome: Focus Group Study and In-the-wild Deployment"
+        author: Youjin Hwang, <intext-highlight>Donghoon Shin</intext-highlight>, Jinsu Eun, Bongwon Suh, Joonhwan Lee
+        venue: <intext-highlight>Journal of Medical Internet Research</intext-highlight> 23(3), 2021.
+        pdf: jmir_liquideye_paper.pdf
+        abstract: |
+          <b>Background:</b><br>
+          Prolonged time of computer use increased the prevalence of ocular problems including eyestrain, tired eyes, irritation, redness, blurred vision, and double vision, collectively referred to as computer vision syndrome. Approximately 70 percent of computer users have vision-related problems. To design the effective screen intervention for preventing or improving computer vision syndrome, we must understand the effective interfaces of computer-based intervention (CBI).
+          <br><br><b>Objective:</b><br>
+          In this study, we aim to explore the interface elements of computer-based intervention for computer vision syndrome to set design guidelines based on pros/cons of each interface element.
+          <br><br><b>Methods:</b><br>
+          We conducted iterative user study to achieve our research goal. First, we conducted workshop to evaluate overall interface elements that are included in the previous systems for computer vision syndrome (N=7). Second, we designed and deployed our prototype LiquidEye with the multiple interface options to the users in the wild (N=11). Participants used LiquidEye for 14 days and during these period, we collected participants’ daily log (N=680). Also, we conducted pre and post survey and post-hoc interviews to explore how each interface element affects system acceptability.
+          <br><br><b>Results:</b><br>
+          We have collected 19 interface elements for designing intervention system for CVS from the workshop, then, deployed our first prototype LiquidEye. After deployment of LiquidEye, we conducted multiple regression analysis with the user data log to analyze significant elements affecting user participation of the LiquidEye. The significant elements include instruction page of eye rest strategy (P<.05), goal setting of resting period (P<.01), compliment page after user complete the resting (P<.0.001), middle-size popup window(P<.05), and symptom-like visual affect that alarms eye resting time (P<.0.005).
+          <br><br><b>Conclusions:</b><br>
+          We suggest design implications to consider when designing CBI for computer vision syndrome. The sophisticated design of the customizing interface can make it possible for users to use the system more interactively which results in higher engagement and management of eye condition. There are important technical challenges still to address, but given the fact that this study has been able to sort out various factors related to computer-based intervention, it is expected to contribute greatly to the research of various CBI designs in the future.
+        bibtex: |
+          @article{liquideye,</br>
+                                              <span class="tab">&#9;</span>author = {Hwang, Youjin and Shin, Donghoon and Eun, Jinsu
+                                              and Suh, Bongwon and Lee, Joonhwan},</br>
+                                              <span class="tab">&#9;</span>title = {Design Guidelines of Computer-based Intervention for Computer Vision Syndrome: Focus Group Study and In-the-wild Deployment},</br>
+                                              <span class="tab">&#9;</span>journal = {J Med Internet Res},</br>
+                                              <span class="tab">&#9;</span>year = {2021},</br>
+                                              <span class="tab">&#9;</span>month = {Feb},</br>
+                                              <span class="tab">&#9;</span>day = {25},</br>
+                                              <span class="tab">&#9;</span>url = {https://doi.org/10.2196/22099},</br>
+                                              <span class="tab">&#9;</span>doi = {10.2196/22099}</br>
+                                              }
+      - title: "TalkingBoogie: Collaborative Mobile AAC System for Non-verbal Children with Developmental Disabilities and Their Caregivers"
+        author: <intext-highlight>Donghoon Shin</intext-highlight>, Jaeyoon Song, Seokwoo Song, Jisoo Park, Joonhwan Lee, Soojin Jun
+        venue: <intext-highlight>CHI 2020.</intext-highlight>
+        misc: <intext-highlight><i class="fas fa-medal"></i>&nbsp; Honorable Mention Award</intext-highlight> (top 5% among all submissions)
+        pdf: chi2020_talkingboogie_paper.pdf
+        slide: chi2020_talkingboogie_slide.pdf
+        id: talkingboogie
+        abstract: "Augmentative and
+          alternative communication (AAC) technologies are widely used to help
+          non-verbal children enable communication. For AAC-aided communication to
+          be successful, caregivers should support children with consistent
+          intervention strategies in various settings. As such, caregivers need to continuously
+          observe and discuss children's AAC usage to create a shared understanding of
+          these strategies. However, caregivers often find it challenging to effectively
+          collaborate with one another due to a lack of family involvement
+          and the unstructured process of collaboration. To address these issues, we
+          present TalkingBoogie, which consists of two mobile apps: TalkingBoogie-AAC
+          for caregiver-child communication, and TalkingBoogie-coach supporting
+          caregiver collaboration. Working together, these applications provide
+          contextualized layouts for symbol arrangement, scaffold the process of
+          sharing and discussing observations, and induce caregivers' balanced
+          participation. A two-week deployment study with four groups (N=11) found
+          that TalkingBoogie helped increase mutual understanding of strategies
+          and encourage balanced participation between caregivers with reduced
+          cognitive loads."
+        bibtex: |
+          @inproceedings{talkingboogie,</br>
+                                              <span class="tab">&#9;</span>author = {Shin, Donghoon and Song, Jaeyoon
+                                              and Song, Seokwoo and Park, Jisoo and Lee, Joonhwan and Jun,
+                                              Soojin},</br>
+                                              <span class="tab">&#9;</span>title = {TalkingBoogie: Collaborative
+                                              Mobile AAC System for Non-verbal Children with Developmental
+                                              Disabilities and Their Caregivers},</br>
+                                              <span class="tab">&#9;</span>booktitle = {Proceedings of the 2020 CHI
+                                              Conference on Human Factors in Computing Systems},</br>
+                                              <span class="tab">&#9;</span>series = {CHI '20},</br>
+                                              <span class="tab">&#9;</span>year = {2020},</br>
+                                              <span class="tab">&#9;</span>isbn = {978-1-4503-6708-0/20/04},</br>
+                                              <span class="tab">&#9;</span>location = {Honolulu, HI, USA},</br>
+                                              <span class="tab">&#9;</span>url =
+                                              {http://doi.acm.org/10.1145/3313831.3376154},</br>
+                                              <span class="tab">&#9;</span>doi = {10.1145/3313831.3376154},</br>
+                                              <span class="tab">&#9;</span>publisher = {ACM},</br>
+                                              <span class="tab">&#9;</span>address = {New York, NY, USA},</br>
+                                              <span class="tab">&#9;</span>keywords = {AAC, developmental disability,
+                                              assistive technology, caregiver collaboration, accessibility}</br>
+                                              }
+      - title: "Linguistic Features to Consider When Applying Persona of the Real Persona to the Text-based Agent"
+        author: Youjin Hwang, Seokwoo Song, <intext-highlight>Donghoon Shin</intext-highlight>, Joonhwan Lee
+        venue: <intext-highlight>MobileHCI 2020 Extended Abstracts.</intext-highlight> (Late-Breaking Result)
+        pdf: mobilehci2020_prp_poster.pdf
+        id: prp
+        abstract: As artificial intelligence (AI) technologies advance, the possibility of developing virtual agents capable of mimicking human beings is increasing. Furthermore, AI techniques applicable to mimicking certain features of a specific person (e.g., facial expression, voice, motion) are becoming more sophisticated. Although the HCI community has explored how to design or develop AI agents mimicking a real person, limited studies on mimicking someone's text-based behavior shown in the instant messaging exist. This study investigates the features that make users perceive text-based agents as people they know in reality. On top of the previous efforts of designing human-like virtual agents, our work suggests design guidelines for applying the persona of the real person (PRP) to text-based agents.
+        bibtex: |
+          @inproceedings{linguisticfeatures,</br>
+                                              <span class="tab">&#9;</span>author = {Hwang, Youjin and Song, Seokwoo and Shin, Donghoon
+                                                and Lee, Joonhwan},</br>
+                                              <span class="tab">&#9;</span>title = {Linguistic Features to Consider When Applying Persona of the Real Persona to the Text-based Agent},</br>
+                                              <span class="tab">&#9;</span>booktitle = {22th International Conference on Human-Computer Interaction with Mobile Devices and Services},</br>
+                                              <span class="tab">&#9;</span>series = {MobileHCI '20},</br>
+                                              <span class="tab">&#9;</span>year = {2020},</br>
+                                              <span class="tab">&#9;</span>isbn = {978-1-4503-8052-2/20/10},</br>
+                                              <span class="tab">&#9;</span>location = {Oldenburg, Germany},</br>
+                                              <span class="tab">&#9;</span>url =
+                                              {http://doi.acm.org/10.1145/3406324.3410723},</br>
+                                              <span class="tab">&#9;</span>doi = {10.1145/3406324.3410723},</br>
+                                              <span class="tab">&#9;</span>publisher = {ACM},</br>
+                                              <span class="tab">&#9;</span>address = {New York, NY, USA},</br>
+                                              <span class="tab">&#9;</span>keywords = {chatbot, chat analysis, personality, authorship attribution}</br>
+                                              }
+      - title: "Applying the Persona of User's Family Member and the Doctor to the Conversational Agents for Healthcare"
+        author: Youjin Hwang, <intext-highlight>Donghoon Shin</intext-highlight>, Sion Baek, Bongwon Suh, Joonhwan Lee
+        venue: <intext-highlight>CHI 2020 Workshop.</intext-highlight> (Conversational Agents for Health and Wellbeing)
+        pdf: chi2020_personabot_workshop.pdf
+        id: personabot
+        abstract:
+          Conversational agents have been showing lots of opportunities in
+          healthcare by taking over a lot of tasks that used to be done by a
+          human. One of the major functions of conversational healthcare agent is
+          intervening users' daily behaviors. In this case, forming an intonate
+          and trustful relationship with users is one of the major issues. Factors
+          affecting human-agent relationship should be deeply explored to improve
+          long-term acceptance of healthcare agent. Even though a bunch of ideas
+          and researches have been suggested to increase the acceptance of
+          conversational agents in healthcare, challenges still remain. From the
+          preliminary work we conducted, we suggest an idea of applying the
+          personas of users' family members and the doctor who are in the
+          relationship with users in the real world as a solution for forming the
+          relict relationship between humans and the chatbot.
+        bibtex: |
+          @inproceedings{chatbotpersona,</br>
+                                                <span class="tab">&#9;</span>author = {Hwang, Youjin and Shin, Donghoon
+                                                and Baek, Sion and Suh, Bongwon and Lee, Joonhwan},</br>
+                                                <span class="tab">&#9;</span>title = {Applying the Persona of User’s
+                                                Family Member and the Doctor to the Conversational Agents for
+                                                Healthcare},</br>
+                                                <span class="tab">&#9;</span>booktitle = {CHI 2020 Workshop on
+                                                Conversational Agents for Health and Wellbeing},</br>
+                                                <span class="tab">&#9;</span>year = {2020},</br>
+                                                <span class="tab">&#9;</span>location = {Honolulu, HI, USA},</br>
+                                                <span class="tab">&#9;</span>keywords = {chatbot, persona,
+                                                healthcare}</br>
+                                                }
+  - type: Technical Report
+    list:
+      - title: "An Analysis of K-MOOC Learners’ Data and an Investigation of its Future Applications"
+        author: Seoyoung Kim, Sunwoo Kwon, <intext-highlight>Donghoon Shin</intext-highlight>, Juho Kim
+        venue: <intext-highlight> Issue Paper of Korean National Institute for Lifelong Education.</intext-highlight> (2019-2)
+        pdf: nile2019_kmooc_issuepaper.pdf
+        id: kmooc
+  - type: Patent
+    list:
+      - title: "Method and Apparatus for Mimicking Conversational Style"
+        author: "Youjin Hwang, Joonhwan Lee, <intext-highlight>Donghoon Shin</intext-highlight>"
+        venue: <intext-highlight>Republic of Korea Patent</intext-highlight> 10-2021-0032858, 2021.
+        id: patent1
+  - type: Theses
+    list:
+      - title: "AmslerTouch: Self-testing Amsler Grid Application for Supporting a Quantitative Report of Age-related Macular Degeneration Symptoms"
+        author: "<intext-highlight>Donghoon Shin</intext-highlight>"
+        venue: <intext-highlight>B.S. Thesis.</intext-highlight>
+        misc: "Advisor: Jongmo Seo (SNU Hospital, SNU ECE)"
+        pdf: snuece_amslertouch_thesis.pdf
+        id: amslertouch

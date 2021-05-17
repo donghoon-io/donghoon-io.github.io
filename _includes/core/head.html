@@ -1,0 +1,102 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+
+  <!-- Theme -->
+  <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ 'assets/css/bootstrap.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ 'assets/css/masonry.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ 'assets/css/dropdown.css' | relative_url }}">
+
+  <!--
+  <script>
+    var head = document.getElementsByTagName('HEAD')[0];
+    var link1 = document.createElement('link');
+    var link2 = document.createElement('link');
+    link1.rel = 'stylesheet';
+    link1.type = 'text/css';
+    link2.rel = 'stylesheet';
+    link2.type = 'text/css';
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      link1.href = "{{ site.baseurl }}{{ site.assets }}/css/styles-dark.css";
+      link2.href = "{{ site.baseurl }}{{ site.assets }}/css/masonry-dark.css";
+    } else {
+      link1.href = "{{ site.baseurl }}{{ site.assets }}/css/styles.css";
+      link2.href = "{{ site.baseurl }}{{ site.assets }}/css/masonry.css";
+    }
+    head.appendChild(link1);
+    head.appendChild(link2);
+  </script>
+  -->
+
+  <link rel="stylesheet" href="{{ '/assets/css/responsive.css' | relative_url }}">
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable wow.js -->
+  <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
+  <script src="https://wowjs.uk/dist/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/fontawesome.css' | relative_url }}">
+
+  <!--
+    <link rel="stylesheet" type="text/css" href="{{'/assets/chatbot/jquery.convform.css' | relative_url}}">
+    <link rel="stylesheet" type="text/css" href="{{'/assets/chatbot/chatbot.css' | relative_url}}">
+    -->
+  <link rel="stylesheet" type="text/css" href="{{'/assets/css/modal.css' | relative_url}}">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- Link to page translations -->
+  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %} {% for post in posts %}
+  <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" /> {% endfor %}
+  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} {% for page in pages %}
+  <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
+  {% endfor %}
+
+  <!-- Prefetch the pages in the navigation menu -->
+  {% assign entries = site.pages | where: "lang", page.lang | sort: "order" %}
+  {% for entry in entries %}
+  {% unless entry.exclude == true %}
+  <link rel="prefetch" href="{{ entry.url | relative_url }}">
+  {% endunless %}
+  {% endfor %}
+
+  <title>
+    {% if page.title %} {{ page.title }} | Donghoon Shin {% else %} Donghoon Shin {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+  {% if site.google_fonts %}
+  <link
+    href="https://fonts.googleapis.com/css?family={% for font in site.google_fonts %}{{ font[0] | replace: ' ', '+' }}{% if font[1] %}:{% endif %}{{ font[1] | remove: ' ' }}{% if forloop.last != true %}|{% endif %}{% endfor %}"
+    rel="stylesheet">
+  {% endif %}
+
+  {% if site.typekit %}
+  <!-- Typekit -->
+  <script src="https://use.typekit.net/{{ site.typekit }}.js"></script>
+  <script>
+    try {
+      Typekit.load({
+        async: true
+      });
+    } catch (e) { }
+  </script>
+  {% endif %}
+
+  <!-- Icons -->
+  {% include core/icons.html %}
+
+  <!-- RSS -->
+  {% feed_meta %} {% seo title=false %}
+</head>

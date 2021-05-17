@@ -1,0 +1,29 @@
+---
+layout: default
+lang: en
+ref: fun
+title: 'Fun'
+image: false
+order: 5
+---
+
+{% include core/metabar.html %}
+
+<article class="content">
+  <section id="posts" class="section">
+    <h2 class="section-title">Where I've been?</h2>
+    <article class="wow fadeIn">
+      {% include donghoon_flight.html %}
+    </article>
+  </section>
+  <section id="posts" class="section">
+    <h2 class="section-title">SNU e-mail signature</h2>
+    <article class="wow fadeIn">
+      <iframe id="snu_signature" title="Inline Frame Example" width="100%" onload="this.style.height=(this.contentDocument.body.scrollHeight+20) +'px';" style="border-color: #666666; border-width: 1px; border-style : solid; background: white;"
+        src="{{ '/assets/misc/snu_signature.htm' | relative_url }}">
+      </iframe>
+    </article>
+  </section>
+</article>
+
+{% include core/footer.html %}2

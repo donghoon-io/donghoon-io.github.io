@@ -1,0 +1,271 @@
+---
+layout: default
+lang: en
+ref: home
+image: true
+---
+
+{% include core/metabar.html %}
+
+
+{% assign projects = site.data.featured %}
+{% assign news = site.data.news %}
+
+<link rel="stylesheet" href="{{ 'assets/css/modal.css' | relative_url }}">
+<link rel="stylesheet" href="{{ 'assets/css/masonry-main.css' | relative_url }}">
+<style>
+  {% for project in projects.projects %}
+    #{{ project.id }}-checkbox {
+      display:none;
+    }
+    #{{ project.id }}-checkbox:checked ~ .modal#{{ project.id }}-modal,
+    #{{ project.id }}-checkbox:checked ~ .modal-background#{{ project.id }}-background {
+      display: block;
+    }
+    #{{ project.id }}-checkbox:checked ~ body {
+      overflow: hidden;
+    }
+  {% endfor %}
+</style>
+
+{% for project in projects.projects %}
+<input type="checkbox" id="{{ project.id }}-checkbox">
+<label for="{{ project.id }}-checkbox" class="modal-background" id="{{ project.id }}-background"></label>
+<div class="modal" id="{{ project.id }}-modal">
+  <div class="modal-header">
+    <h3>{{ project.title }}</h3>
+    <label for="{{ project.id }}-checkbox">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0N3NIOAAAAJnRSTlMAAQIDBAUGBwgRFRYZGiEjQ3l7hYaqtLm8vsDFx87a4uvv8fP1+bbY9ZEAAAB8SURBVBhXXY5LFoJAAMOCIP4VBRXEv5j7H9HFDOizu2TRFljedgCQHeocWHVaAWStXnKyl2oVWI+kd1XLvFV1D7Ng3qrWKYMZ+MdEhk3gbhw59KvlH0eTnf2mgiRwvQ7NW6aqNmncukKhnvo/zzlQ2PR/HgsAJkncH6XwAcr0FUY5BVeFAAAAAElFTkSuQmCC"
+        width="16" height="16" alt="close">
+    </label>
+    <p>{{ project.detail }}</p>
+    <p>{% if project.paper %}<a href="{% if project.paper contains 'http' %} {{ project.paper }} {% else %} /assets/pdf/{{ project.paper }} {% endif %}"><i class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.video %}<a href="{{ project.video }}"><i class="fas fa-play"></i>&nbsp; Video</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.slide %}<a href="/assets/pdf/{{ project.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.appstore %}<a href="{{ project.appstore }}"><i class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.code %}<a href="{{ project.code }}"><i class="fab fa-github"></i>&nbsp; Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.link %}<a href="{{ project.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif %}</p>
+  </div>
+  <div class="modal-content">
+    {{ project.description | replace: 'site.baseurl', site.baseurl }}
+  </div>
+</div>
+{% endfor %}
+
+<article class="content" style="margin-top: 120px">
+  <header class="hero" style="padding-top: 0 !important;">
+    <article>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4" style="display: flex; justify-content: center; align-items: center;">
+          <img src="{{ '/assets/images/authors/profile.svg' | relative_url }}" onerror="this.onerror=null; this.src='https://donghoon.io/assets/images/authors/profile.jpg'" class="profile-image">
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <p class="section-body" style="margin-bottom: 1.5rem !important;">
+            Hi, I'm a final year undergraduate student at Seoul National University, studying <a href="http://ee.snu.ac.kr/en"> Electrical & Computer Engineering</a> and
+            <a href="http://isc.snu.ac.kr/">Information Science & Culture</a>. My undergraduate studies are supported by the <a href="https://www.kosaf.go.kr/eng/jsp/aid/aid02_01_01.jsp">Presidential Science Scholarship</a>.<br><br>
+            My primary research area is <intext-highlight>Human-computer interaction (HCI)</intext-highlight>, where I
+            have developed various systems in the intersection of <intext-highlight>CSCW</intext-highlight>, <intext-highlight>Accessibility</intext-highlight>, <intext-highlight>Healthcare</intext-highlight>, and <intext-highlight>Human-AI Interaction</intext-highlight>.
+            I am currently working as a research intern at <a href="https://www.thecoalalab.com/">CMU CoALA Lab</a> advised by <a
+              href="https://kenholstein.com/">Kenneth Holstein</a>, focusing on understanding human visual explanations to guide the design of AI explanations.</p>
+        </div>
+      </div>
+      <div class="phd-box">
+        <p>I am a Ph.D applicant for the Fall 2022 cycle!</p>
+        <button class="main-button" style="margin-right: .5rem;" onclick="location.href='https://donghoon.io/cv.pdf'">Curriculum Vitae</button>
+        <button class="main-button" style="margin-right: .5rem;" onclick="location.href='https://donghoon.io/publication'">Publications</button>
+        <button class="main-button" onclick="location.href='https://donghoon.io/project'">Projects</button><br>
+      </div>
+    </article>
+  </header>
+  
+  <section class="section" style="margin-bottom: 1rem; border-bottom: 1px solid #e9e9e9; border-top: 1px solid #e9e9e9;">
+    <h2 class="section-title-style">Featured Projects</h2>
+    <div class="grid">
+    {% for project in projects.projects %}
+    <div style="cursor: pointer;" class="item {{ project.id }}">
+      <div class="content-masonry-main blog wow fadeIn" data-wow-delay="0.1s">
+        <img class="photothumb" src="{{site.baseurl}}/assets/images/projects/{{ project.image }}">
+        <div class="title">
+          <h3 style="font-size: 15px; font-weight: 500;">{{ project.title }}</h3>
+        </div>
+        <div class="desc">
+          <p style="font-size: 12px">{{ project.detail }}</p>
+          <div class="tags">
+            <p>
+              {% for tag in project.tags %}
+              <a title="" href="" style="font-size: 11px">{{ tag }}</a>
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".{{ project.id }}").click(function () {
+        document.getElementById("{{ project.id }}-checkbox").checked = true;
+        document.body.style.overflow = "hidden";
+        return false;
+      });
+
+      document.getElementById('{{ project.id }}-checkbox').addEventListener('change', (event) => {
+        document.body.style.overflow = "auto";
+      })
+    </script>
+    {% endfor %}
+    </div>
+    <button class="main-button" style="margin-top: 2rem; float: right;" onclick="location.href='https://donghoon.io/project'">View more</button><br>
+  </section>
+
+  <section id="news" class="section" style="margin-top: 1rem; border-bottom: 1px solid #e9e9e9;">
+    <h2 class="section-title">Recent News</h2>
+    {% for new in news.news %}
+    <article class="section-writing" style="margin-bottom: 1rem">
+      <h3 class="section-header">{{ new.title }}</h3>
+      <h4>{{ new.date }}</h4>
+      <p class="section-body">{{ new.description }}</p>
+    </article>
+    {% endfor %}
+  </section>
+
+  <section id="education" class="section" style="border-bottom: 1px solid #e9e9e9;">
+    <h2 class="section-title">Education</h2>
+    <article>
+      <h3 class="section-header">Seoul National University <light>Seoul, Korea</light>
+      </h3>
+      <h4>March 2016 ~ Present</h4>
+      <p class="section-body">B.S., Electrical and Computer Engineering<br>B.A., Information Science and Culture Studies</p>
+    </article>
+  </section>
+
+  <section id="research_interests" class="section" style="border-bottom: 1px solid #e9e9e9;">
+    <h2 class="section-title">Research Interests</h2>
+    <article>
+      <h3 class="section-header">Human-Computer Interaction</h3>
+      <p class="section-body">Accessible computing<br>Computer-supported cooperative work<br>Healthcare<br>Human-AI interaction
+      </p>
+    </article>
+  </section>
+
+  <section id="research_experience" class="section" style="border-bottom: 1px solid #e9e9e9;">
+    <h2 class="section-title">Research Experience</h2>
+    <article style="margin-bottom: 1rem">
+      <h3 class="section-header"><a href="https://thecoalalab.com">CMU CoALA Lab.</a>
+        <light>Carnegie Mellon University</light>
+      </h3>
+      <h4>November 2020 ~ Present</h4>
+      <p class="section-body">Undergraduate research intern<br>Advised by <a href="http://kenholstein.com">Kenneth
+          Holstein</a></p>
+    </article>
+
+    <article>
+      <h3 class="section-header"><a href="http://hcid.snu.ac.kr">SNU HCI+d Lab.</a>
+        <light>Seoul National University</light>
+      </h3>
+      <h4>June 2018 ~ October 2020</h4>
+      <p class="section-body">Undergraduate research intern<br>Advised by <a
+          href="http://hcid.snu.ac.kr/people/joonhwan">Joonhwan Lee</a></p>
+    </article>
+  </section>
+
+  <section id="academic_service" class="section" style="border-bottom: 1px solid #e9e9e9;">
+    <h2 class="section-title">Academic Services</h2>
+    <article style="margin-bottom: 1rem">
+      <h3 class="section-header">Reviewer of Conference Publications</h3>
+      <p class="section-body">CHI 2021, CHI 2020</p>
+    </article>
+    <article>
+      <h3 class="section-header">Student Volunteer</h3>
+      <p class="section-body">ISS 2020</p>
+    </article>
+  </section>
+
+  <section id="awards" class="section" style="border-bottom: 1px solid #e9e9e9;">
+    <h2 class="section-title">Grants & Awards</h2>
+    <article style="margin-bottom: 1rem">
+      <h3 class="section-header"><i class="fas fa-file-certificate"></i>&nbsp; Presidential Science Scholarship</h3>
+      <p class="section-body">Merit-based full scholarship + stipend granted by the President of Republic of Korea<br>Granted to ~150 students nationwide each year</p>
+    </article>
+    <article style="margin-bottom: 1rem">
+      <h3 class="section-header"><i class="fas fa-medal"></i>&nbsp; CHI '20 Honorable Mention Award</h3>
+      <p class="section-body">Selected among the top 5% of all CHI '20 paper submissions</p>
+    </article>
+    <article style="margin-bottom: 1rem">
+      <h3 class="section-header"><i class="fas fa-file-certificate"></i>&nbsp; Google Conference Travel Scholarship</h3>
+      <p class="section-body">Granted by Google (Travel cancelled due to COVID-19)</p>
+    </article>
+    <article style="margin-bottom: 1rem">
+      <h3 class="section-header"><i class="fas fa-medal"></i>&nbsp; SNU Undergraduate Research Award</h3>
+      <p class="section-body">1st place award<br>Awarded by the Faculty of Liberal Education, Seoul
+        National University</p>
+    </article>
+    <article>
+      <h3 class="section-header"><i class="fas fa-file-certificate"></i>&nbsp; SNU Undergraduate Research Grant</h3>
+      <p class="section-body">Granted by the Faculty of Liberal Education, Seoul National University</p>
+    </article>
+  </section>
+
+  <section id="work_experience" class="section" style="border-bottom: 1px solid #e9e9e9;">
+    <h2 class="section-title">Work Experience</h2>
+    <article>
+      <h3 class="section-header"><a href="https://elecle.bike">elecle</a>
+        <light>Electric mobility start-up</light>
+      </h3>
+      <h4>April 2020 ~ Present</h4>
+      <p class="section-body">iOS developer of elecle: electric bike-sharing service</p>
+    </article>
+  </section>
+
+  <section id="skills" class="section" style="border-bottom: 1px solid #e9e9e9;">
+    <h2 class="section-title">Skills</h2>
+    <article style="margin-bottom: 1rem">
+      <h3 class="section-header">Programming</h3>
+      <p class="section-body">Swift (iOS/MacOS development)<br>Python<br>HTML+CSS<br>and many others...</p>
+    </article>
+
+    <article>
+      <h3 class="section-header">Design</h3>
+      <p class="section-body">Adobe Photoshop<br>Adobe Illustrator<br>Adobe XD</p>
+    </article>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <article>
+      <h3 class="section-header">E-mail</h3>
+      <p class="section-body"><a style="font-weight: 400;" href="mailto:shin@donghoon.io">shin@donghoon.io</a>
+        <light>(Personal, preferred)</light><br><a style="font-weight: 400;" href="mailto:ssshyhy@snu.ac.kr">ssshyhy@snu.ac.kr</a>
+        <light>(Academic)</light><br><a style="font-weight: 400;" href="mailto:donghoon@nine2one.io">donghoon@nine2one.io</a>
+        <light>(Work)</light>
+      </p>
+    </article>
+  </section>
+</article>
+
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script>
+  function resizeGridItem(item) {
+    grid = document.getElementsByClassName("grid")[0];
+    rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+    rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+    rowSpan = Math.ceil((item.querySelector('.content-masonry-main').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
+    item.style.gridRowEnd = "span " + rowSpan;
+  }
+
+  function resizeAllGridItems() {
+    allItems = document.getElementsByClassName("item");
+    for (x = 0; x < allItems.length; x++) {
+      resizeGridItem(allItems[x]);
+    }
+  }
+
+  function resizeInstance(instance) {
+    item = instance.elements[0];
+    resizeGridItem(item);
+  }
+
+  window.onload = resizeAllGridItems();
+  window.addEventListener("resize", resizeAllGridItems);
+
+  allItems = document.getElementsByClassName("item");
+  for (x = 0; x < allItems.length; x++) {
+    imagesLoaded(allItems[x], resizeInstance);
+  }
+</script>
+
+{% include core/footer.html %}

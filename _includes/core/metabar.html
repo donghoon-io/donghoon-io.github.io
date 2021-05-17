@@ -1,0 +1,27 @@
+<aside id="metabar" class="metabar{% if include.color %} {{ include.color }}{% endif %}">
+	<div class="metabar-wrapper">
+		<div class="metabar-left">
+			<a href="{{ '/' | relative_url }}" class="section-header-main">Donghoon Shin</a>
+		</div>
+		<div class="metabar-right">
+			<button id="js-navOpen" class="nav-open">Menu</button>
+			<nav id="js-metabarNav" class="metabar-nav">
+				<button id="js-navClose" class="nav-close">Close</button>
+				{% include core/navigation.html %}
+			</nav>
+		</div>
+	</div>
+</aside>
+
+<script type="text/javascript">
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		if (prevScrollpos > currentScrollPos || currentScrollPos < 50) {
+			document.getElementById("metabar").style.top = "0";
+		} else {
+			document.getElementById("metabar").style.top = "-71px";
+		}
+		prevScrollpos = currentScrollPos;
+	}
+</script>

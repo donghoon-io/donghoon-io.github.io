@@ -1,0 +1,83 @@
+# Dependencies
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Settings
+exclude:
+  [
+    CNAME,
+    README.md,
+    LICENSE.md,
+    .gitignore,
+    package.json,
+    yarn.lock,
+    _js,
+    _scss,
+    _images,
+    gulpfile.js,
+    gulpconfig.js,
+    node_modules,
+    gemfile,
+    Gemfile.lock,
+    lint-staged.config.js,
+    prettier.config.js,
+  ]
+permalink: /blog/:title/
+compress_html:
+  clippings: all
+  comments: all
+
+# Site meta
+title: 'Donghoon Shin'
+tagline: SNU ECE/ISC undergrad.
+description: 'Undergrad. HCI researcher'
+keywords: donghoon, hci, chi, snu, talkingboogie, accessibility'
+url: https://donghoon.io
+baseurl: 
+assets: /assets
+images: /images
+image: index-large.jpg
+logo: /assets/icons/apple-icon-144x144.png
+dark_theme: true
+
+author:
+  name: Donghoon Shin
+  bio: SNU ECE/ISC undergrad. HCI researcher
+  image: author
+  url: https://donghoon.io
+  email: ssshyhy@snu.ac.kr
+  twitter: donghoon.io
+
+social:
+  twitter: https://twitter.com/donghoon_io
+  instagram: https://instagram.com/donghoon.io
+  github: https://github.com/donghoon-io
+
+version: 4.0.0
+
+github:
+  repo: https://github.com/donghoon_io
+
+# Integrations
+# typekit:              fcv7rfe
+
+google_fonts:
+  Poppins: 300, 400, 500, 600, 700
+  Noto Sans KR: 300, 400, 500, 600, 700, 800, 900
+  Noto Sans TC: 300, 500, 700
+
+google_analytics_key: UA-124170475-1
+excerpt_separator: <!-- Read more -->
+
+paginate: 7
+paginate_path: "/blog/page:num/"
+
+navigation:

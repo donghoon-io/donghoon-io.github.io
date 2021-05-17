@@ -1,0 +1,127 @@
+---
+layout: default
+lang: en
+ref: blog
+title: 'Project'
+image: false
+order: 2
+---
+
+{% include core/metabar.html %}
+
+{% assign projects = site.data.project %}
+
+<link rel="stylesheet" href="{{ 'assets/css/modal.css' | relative_url }}">
+<style>
+  {% for project in projects.projects %}
+    #{{ project.id }}-checkbox {
+      display:none;
+    }
+    #{{ project.id }}-checkbox:checked ~ .modal#{{ project.id }}-modal,
+    #{{ project.id }}-checkbox:checked ~ .modal-background#{{ project.id }}-background {
+      display: block;
+    }
+    #{{ project.id }}-checkbox:checked ~ body {
+      overflow: hidden;
+    }
+  {% endfor %}
+</style>
+
+{% for project in projects.projects %}
+<input type="checkbox" id="{{ project.id }}-checkbox">
+<label for="{{ project.id }}-checkbox" class="modal-background" id="{{ project.id }}-background"></label>
+<div class="modal" id="{{ project.id }}-modal">
+  <div class="modal-header">
+    <h3>{{ project.title }}</h3>
+    <label for="{{ project.id }}-checkbox">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0N3NIOAAAAJnRSTlMAAQIDBAUGBwgRFRYZGiEjQ3l7hYaqtLm8vsDFx87a4uvv8fP1+bbY9ZEAAAB8SURBVBhXXY5LFoJAAMOCIP4VBRXEv5j7H9HFDOizu2TRFljedgCQHeocWHVaAWStXnKyl2oVWI+kd1XLvFV1D7Ng3qrWKYMZ+MdEhk3gbhw59KvlH0eTnf2mgiRwvQ7NW6aqNmncukKhnvo/zzlQ2PR/HgsAJkncH6XwAcr0FUY5BVeFAAAAAElFTkSuQmCC"
+        width="16" height="16" alt="close">
+    </label>
+    <p>{{ project.detail }}</p>
+    <p>{% if project.paper %}<a href="{% if project.paper contains 'http' %} {{ project.paper }} {% else %} /assets/pdf/{{ project.paper }} {% endif %}"><i class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.video %}<a href="{{ project.video }}"><i class="fas fa-play"></i>&nbsp; Video</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.slide %}<a href="/assets/pdf/{{ project.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.appstore %}<a href="{{ project.appstore }}"><i class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.code %}<a href="{{ project.code }}"><i class="fab fa-github"></i>&nbsp; Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if project.link %}<a href="{{ project.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif %}</p>
+  </div>
+  <div class="modal-content">
+    {{ project.description | replace: 'site.baseurl', site.baseurl }}
+  </div>
+</div>
+{% endfor %}
+
+<article class="content">
+  <section class="grid section">
+    {% for project in projects.projects %}
+    <div style="cursor: pointer;" class="item {{ project.id }}">
+      <div class="content-masonry blog wow fadeIn" data-wow-delay="0.1s">
+        <img class="photothumb" src="{{site.baseurl}}/assets/images/projects/{{ project.image }}">
+        <div class="title">
+          <h3 style="font-size: 15px; font-weight: 500;">{{ project.title }}</h3>
+        </div>
+        <div class="desc">
+          <p style="font-size: 13px">{{ project.detail }}</p>
+          <div class="tags">
+            <p>
+              {% for tag in project.tags %}
+              <a title="" href="">{{ tag }}</a>
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".{{ project.id }}").click(function () {
+        {% if project.id == "spring2020dt4c" %}
+        window.onload = resizeAllDt4cGridItems();
+        window.addEventListener("resize", resizeAllDt4cGridItems);
+
+        allItems = document.getElementsByClassName("item-dt4c");
+        for (x = 0; x < allItems.length; x++) {
+            imagesLoaded(allItems[x], resizeDt4cInstance);
+        }
+        {% endif %}
+        document.getElementById("{{ project.id }}-checkbox").checked = true;
+        document.body.style.overflow = "hidden";
+
+        return false;
+      });
+
+      document.getElementById('{{ project.id }}-checkbox').addEventListener('change', (event) => {
+        document.body.style.overflow = "auto";
+      })
+    </script>
+    {% endfor %}
+  </section>
+</article>
+
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script>
+  function resizeGridItem(item) {
+    grid = document.getElementsByClassName("grid")[0];
+    rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+    rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+    rowSpan = Math.ceil((item.querySelector('.content-masonry').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
+    item.style.gridRowEnd = "span " + rowSpan;
+  }
+
+  function resizeAllGridItems() {
+    allItems = document.getElementsByClassName("item");
+    for (x = 0; x < allItems.length; x++) {
+      resizeGridItem(allItems[x]);
+    }
+  }
+
+  function resizeInstance(instance) {
+    item = instance.elements[0];
+    resizeGridItem(item);
+  }
+
+  window.onload = resizeAllGridItems();
+  window.addEventListener("resize", resizeAllGridItems);
+
+  allItems = document.getElementsByClassName("item");
+  for (x = 0; x < allItems.length; x++) {
+    imagesLoaded(allItems[x], resizeInstance);
+  }
+</script>
+
+{% include core/footer.html %}

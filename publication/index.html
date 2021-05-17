@@ -1,0 +1,111 @@
+---
+layout: default
+lang: en
+ref: publication
+title: 'Publication'
+image: false
+order: 3
+---
+
+{% include core/metabar.html %}
+
+{% assign publications = site.data.publication %}
+
+<article class="content">
+  {% for pubtype in publications.publications %}
+  <section id="{{ pubtype.type }}" class="section" {% unless forloop.last %} style="border-bottom: 1px solid #e9e9e9;" {% endunless %}>
+    <h2 class="section-title">{{ pubtype.type }}</h2>
+    {% for pub in pubtype.list %}
+    {% unless forloop.last %}
+    <article style="margin-bottom: 35px;">
+      {% else %}
+      <article>
+        {% endunless %}
+        <h3 class="section-header pub-title">{{ pub.title }}</h3>
+        <p class="section-body pub-detail no-margin-bottom">
+          {{ pub.author }}<br><i>{{ pub.venue }}</i><br>{% if pub.misc %}{{ pub.misc }}{% endif %}</p>
+        {% if pub.pdf %}<a {% if pub.disabled %} style="pointer-events: none; color:#d6d6d6; border-color: #d6d6d6" {% endif %} class="accordion section-link no-cursor"
+          href="{% if pub.pdf contains 'http' %} {{ pub.pdf }} {% else %} /assets/pdf/{{ pub.pdf }} {% endif %}">PDF</a>
+        {% endif %}
+        {% if pub.slide %}
+        <a class="accordion section-link no-cursor"
+          href="/assets/pdf/{{ pub.slide }}">Slides</a>
+        {% endif %}
+        {% if pub.poster %}
+        <a class="accordion section-link no-cursor"
+          href="/assets/pdf/{{ pub.poster }}">Poster</a>
+        {% endif %}
+        {% if pub.video %}
+        <a class="accordion section-link no-cursor"
+          href="{{ pub.video }}">Video</a>
+        {% endif %}
+        {% if pub.abstract %}<a class="accordion section-link no-cursor">Abstract ▼</a>{% endif %}
+        {% if pub.bibtex %}<a class="accordion_bibtex section-link no-cursor">BibTeX ▼</a>{% endif %}
+        {% if pub.abstract %}<div class="panel" id="description">
+          <div class="margin-20px-top">
+            <p class="text-panel">
+              {{ pub.abstract }}
+            </p>
+          </div>
+        </div>{% endif %}
+        {% if pub.bibtex %}<div class="panel" id="bibtex">
+          <div class="margin-20px-top">
+            <p class="text-panel">
+              <button class="bibtex-button" id="{{pub.title}}" onclick="copy(`{{pub.bibtex | strip_html }}`, `{{pub.title}}`)">Copy to clipboard</button><br>
+              {{ pub.bibtex }}
+            </p>
+          </div>
+        </div>{% endif %}
+      </article>
+      {% endfor %}
+  </section>
+  {% endfor %}
+</article>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+      if (this.innerHTML == "Abstract ▼") this.innerHTML = "Abstract ▲";
+      else if (this.innerHTML == "Abstract ▲") this.innerHTML = "Abstract ▼";
+    });
+  }
+  var acc_bibtex = document.getElementsByClassName("accordion_bibtex");
+  for (var i = 0; i < acc_bibtex.length; i++) {
+    acc_bibtex[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+      if (this.innerHTML == "BibTeX ▼") this.innerHTML = "BibTeX ▲";
+      else if (this.innerHTML == "BibTeX ▲") this.innerHTML = "BibTeX ▼";
+    });
+  }
+
+  function copy(str, button) {
+    const el = document.createElement('textarea');
+    el.value = str;
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    console.log(button);
+    document.getElementById(button).innerHTML = "Copied ✓";
+  };
+</script>
+
+
+{% include core/footer.html %}

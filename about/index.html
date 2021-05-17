@@ -1,0 +1,117 @@
+---
+layout: default
+title: About me
+image: true
+lang: en
+ref: about
+order: 0
+exclude: true
+---
+
+{% include core/metabar.html %}
+
+
+
+<article class="content">
+  <header class="hero wow fadeIn" data-wow-delay="0.2s">
+    {% if page.image %}
+    <div class="hero-image"
+      style="background-image: url('{{ site.baseurl }}{{ site.assets }}{{ site.images }}/posts/{{ page.ref }}.jpg'); background-image: -webkit-image-set( url('{{ site.baseurl }}{{ site.assets }}{{ site.images }}/posts/{{ page.ref }}.jpg') 1x, url('{{ site.baseurl }}{{ site.assets }}{{ site.images }}/posts/{{ page.ref }}-large.jpg') 2x )">
+    </div>
+    <p class="location" style="text-align:right;"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Seoul, Korea</p>
+    {% endif %}
+    <br>
+    <p>Nice to meet you 😎<br>My name is Donghoon Shin, and I'm an undergraduate student majoring in <a href="http://ee.snu.ac.kr">ECE</a> and <a href="http://isc.snu.ac.kr">HCI</a> at <a href="https://www.snu.ac.kr">Seoul
+      National Universtiy</a>, Seoul, Korea. <br>Feel free to <a href="mailto:ssshyhy@snu.ac.kr">contact me</a> if you want to collaborate with me or ask questions!</p>
+  </header>
+
+  <section id="education" class="section wow fadeIn" data-wow-delay="0.2s">
+    <h2 class="section-title">Education</h2>
+    <article>
+      <h3 class="section-header">Seoul National University, Seoul</h3>
+      <h4>March 2016 ~</h4>
+      <p class="section-body">B.S. in Electrical and Computer Engineering<br>Information Science and Culture Studies
+        (Interdisciplinary major)</p>
+    </article>
+  </section>
+
+  <section id="research_experience" class="section wow fadeIn" data-wow-delay="0.2s">
+    <h2 class="section-title">Research Experience</h2>
+    <article>
+      <h3 class="section-header">HCI+d Lab. </h3>
+      <h4>March 2018 ~</h4>
+      <p class="section-body">Undergraduate research intern<br>Advised by prof. <a
+          href="http://hcid.snu.ac.kr/people">Joonhwan Lee</a></p>
+    </article>
+
+    <article>
+      <h3 class="section-header">Reviewer of Conference Publications</h3>
+      <p class="section-body">ACM CHI Conference on Human Factors in Computing Systems (2020)</p>
+    </article>
+  </section>
+
+  <section id="work_experience" class="section wow fadeIn" data-wow-delay="0.2s">
+    <h2 class="section-title">Work Experience</h2>
+    <article>
+      <h3 class="section-header">Elecle: Electric mobility start-up</h3>
+      <h4>April 2020 ~</h4>
+      <p class="section-body">iOS developer & UX designer<br>Founding member</p>
+    </article>
+  </section>
+
+  <section id="research_interests" class="section wow fadeIn" data-wow-delay="0.2s">
+    <h2 class="section-title">Research Interests</h2>
+    <article>
+      <h3 class="section-header">Human-Computer Interaction</h3>
+      <p class="section-body">Accessible computing<br>Computer-supported cooperative work<br>Crowdsourcing<br>Healthcare
+      </p>
+    </article>
+  </section>
+
+  <section id="awards" class="section wow fadeIn" data-wow-delay="0.2s">
+    <h2 class="section-title">Grants & Awards</h2>
+    <article>
+      <h3 class="section-header"><i class="fas fa-coins"></i>&nbsp; Presidential Science Scholarship</h3>
+      <p class="section-body">Full scholarship + stipend granted by the President of Republic of Korea</p>
+    </article>
+    <article>
+      <h3 class="section-header"><i class="fas fa-medal"></i>&nbsp; CHI '20 Honourable Mention Award</h3>
+      <p class="section-body">Selected among the top 5% of all CHI '20 paper submissions</p>
+    </article>
+    <article>
+      <h3 class="section-header"><i class="fas fa-coins"></i>&nbsp; Google Conference Scholarship</h3>
+      <p class="section-body">Granted by Google</p>
+    </article>
+    <article>
+      <h3 class="section-header"><i class="fas fa-medal"></i>&nbsp; SNU Undergraduate Research Award</h3>
+      <p class="section-body">President’s award (1st place)<br>Awarded by the Faculty of Liberal Education, Seoul National University</p>
+    </article>
+    <article>
+      <h3 class="section-header"><i class="fas fa-coins"></i>&nbsp; SNU Undergraduate Research Grant</h3>
+      <p class="section-body">Granted by the Faculty of Liberal Education, Seoul National University</p>
+    </article>
+  </section>
+
+  <section id="skills" class="section wow fadeIn" data-wow-delay="0.2s">
+    <h2 class="section-title">Skills</h2>
+    <article>
+      <h3 class="section-header">Programming</h3>
+      <p class="section-body">Swift (iOS/MacOS development)<br>Python<br>HTML+CSS<br>and many other tools...</p>
+    </article>
+
+    <article>
+      <h3 class="section-header">Design</h3>
+      <p class="section-body">Adobe Photoshop<br>Adobe Illustrator</p>
+    </article>
+  </section>
+
+  <section id="skills" class="section wow fadeIn" data-wow-delay="0.2s">
+    <h2 class="section-title">Contact</h2>
+    <article>
+      <h3 class="section-header">E-mail</h3>
+      <p class="section-body"><a href="mailto:ssshyhy@snu.ac.kr">ssshyhy@snu.ac.kr</a></p>
+    </article>
+  </section>
+</article>
+
+{% include core/footer.html %}
