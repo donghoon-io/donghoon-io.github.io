@@ -93,7 +93,7 @@ projects:
     description: |
         <p>Prolonged time of computer use increased the prevalence of ocular problems including eyestrain, tired eyes, irritation, redness, blurred vision, and double vision, collectively referred to as computer vision syndrome. In this study, we aim to explore the interface elements of computer-based intervention for computer vision syndrome to set design guidelines based on pros/cons of each interface element.<br><br></p>
         <p>In this project, I developed LiquidEye: an intervention application targeted to MacOS. In order to understand which design elements of intervention app do users prefer, we made the system to collect each user's time-series system preferences. We later jointly analyzed them with the self-reported satisfaction in order to identify the significance of each element statistically.<br><br></p>
-        <p>This work was later published to <b>Journal of Medical Internet Research</b> (IF = 5.03).</p>
+        <p>This work was later published in <b>Journal of Medical Internet Research</b> (IF = 5.03).</p>
         <img src="site.baseurl/assets/images/projects_detail/liquideye.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreen of LiquidEye</b></p>
         <hr>
@@ -114,7 +114,7 @@ projects:
         <p>It is a prevalent behavior of having a chat with strangers in online settings where people can easily gather. Yet, people often find it difficult to initiate and maintain conversation due to the lack of information about strangers.<br><br></p>
         <p>Hence, we aimed to facilitate conversation between the strangers with the use of machine learning (ML) algorithms and present BlahBlahBot, an ML-infused chatbot that moderates conversation between strangers with personalized topics. Based on social media posts, BlahBlahBot supports the conversation by suggesting topics that are likely to be of mutual interest between users.<br><br></p>
         <p>A user study with three groups (control, random topic chatbot, and BlahBlahBot; N=18) found the feasibility of BlahBlahBot in increasing both conversation quality and closeness to the partner, along with the factors that led to such increases from the user interview. Overall, our preliminary results imply that an ML-infused conversational agent can be effective for augmenting a dyadic conversation.<br><br></p>
-        <p>This work was accepted to <b>CHI 2021</b> (Late-Breaking Work).<br><br></p>
+        <p>This work was published in <b>CHI 2021</b> (Late-Breaking Work).<br><br></p>
         <img src="site.baseurl/assets/images/projects_detail/blahblahbot.jpg" class="img-responsive" style="max-width: none !important;">
         <p style="text-align: center; font-size: 14px;"><b>Framework of BlahBlahBot</b><br><br></p>
         <hr>
@@ -288,7 +288,7 @@ projects:
         health, it is suffering from the low acceptance of users. To overcome this, we proposed an idea of <b>applying the persona of real world caregivers into the chatbot</b>.<br><br></p>
         <p>Led by <a href="https://youjin-h.github.io">Youjin Hwang</a>, we conducted a series of studies regarding this topic. Specifically, in this study, we
         aimed to <b>identify several important linguistic features that make users perceive a chatbot as a real person</b>.<br><br></p>
-        <p>This study was later polished and published to <b>MobileHCI 2020</b> (Late-Breaking Result).</p>
+        <p>This study was later polished and published in <b>MobileHCI 2020</b> (Late-Breaking Result).</p>
         <img src="site.baseurl/assets/images/projects_detail/prp.jpg" class="img-responsive">
         <hr>
         <p><b>[What I've done in this project]</b><br>Writing</p>
@@ -307,7 +307,7 @@ projects:
         <p>Led by <a href="https://youjin-h.github.io">Youjin Hwang</a>, we conducted a series of studies regarding this topic. Specifically, in this study, we
         aimed to <b>compare user perception on personas (doctor, family member, and w/o persona) applied to a chatbot</b>. Although this work is done with
         Wizard-of-Oz methodology, we expect that the findings would be extensible to automated cases with ML.<br><br></p>
-        <p>This study was later polished and published to <b>CHI 2020 Workshop on Conversational Agents for Health and Wellbeing</b>.</p>
+        <p>This study was later polished and published in <b>CHI 2020 Workshop on Conversational Agents for Health and Wellbeing</b>.</p>
         <img src="site.baseurl/assets/images/projects_detail/personabot.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Three personas applied to a chatbot</b></p>
         <hr>
