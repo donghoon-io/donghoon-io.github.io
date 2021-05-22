@@ -1,4 +1,12 @@
 musics:
+  - title: Ellie Goulding - Love Me Like You Do
+    link: "https://www.youtube.com/embed/K1zSgJTnfYY"
+    applemusic: "https://embed.music.apple.com/us/album/love-me-like-you-do/1440845197?i=1440845808"
+    type: Piano cover
+  - title: Billie Eilish - Wish You Were Gay
+    link: "https://www.youtube.com/embed/J4FBj071HZs"
+    applemusic: "https://embed.music.apple.com/us/album/wish-you-were-gay/1450695723?i=1450695871"
+    type: Piano cover
   - title: GFriend - Me Gustas Tu
     link: "https://www.youtube.com/embed/a5EjdVQt3Kg"
     applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1305043068?i=1305043078"
