@@ -74,7 +74,7 @@ projects:
     description: |
         <p>Due to the irreversible characteristics and disastrous effects of Age-related Macular Degeneration (AMD), a precise diagnosis of the symptoms is extremely important. Yet, paper-based Amsler Grid, the most prevalent testing method, is highly limited in that it requires the indirect report of patients and quantitative reporting is difficult.<br><br></p>
         <p>Working with prof. Jongmo Seo (SNU Hospital, SNU ECE), I designed and developed a touch-based Amsler grid web app. As such, I aimed to support patients' exact report of their regions of symptoms.<br><br></p>
-        <p>What made this project special to me is that, I made a LaTeX template for writing this paper! I found that my friends prparing for their thesis always felt it difficult to produce a thesis format, since our department only gave us a 'scanned' version of template, not a real document. Thus, I generated a template which can be found <a href="https://github.com/donghoon-io/SNUECE-BS-thesis">here</a> (this template was built upon previous Ph.D. dissertation template under license)<br><br></p>
+        <p>What made this project special to me is that, I made a LaTeX template for writing this paper! I found that my friends preparing for their thesis always felt it difficult to produce a thesis format, since our department only gave us a 'scanned' version of template, not a real document. Thus, I generated a template which can be found <a href="https://github.com/donghoon-io/SNUECE-BS-thesis">here</a> (this template was built upon previous Ph.D. dissertation template under license)<br><br></p>
         <p>This study was conducted for my B.S. thesis.</p>
         <img src="site.baseurl/assets/images/projects_detail/amslertouch.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreen of AmslerTouch</b></p>
@@ -282,7 +282,7 @@ projects:
         - '# <i class="fas fa-book"></i>&nbsp; Published'
         - "# KakaoTalk"
     image: prp.jpg
-    detail: "Applying the persona of user's caregivers to health-managing chatbots"
+    detail: "Understanding which linguistic features contribute to forming a persona of a chatbot"
     description: |
         <p>Although text-based conversational agents (chatbots) have a great potential of journaling diets and managing one's
         health, it is suffering from the low acceptance of users. To overcome this, we proposed an idea of <b>applying the persona of real world caregivers into the chatbot</b>.<br><br></p>
