@@ -3737,7 +3737,7 @@ intext-highlight {
 	margin-right: auto;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
-	width: 70%
+	width: 75%
 }
 .phd-box {
 	text-align: center;
@@ -3747,12 +3747,13 @@ intext-highlight {
 @media (min-width:36em) {
 	.profile-image {
 		width: 40%;
+		margin-top: 1rem;
 	}
 }
 
 @media (min-width:48.0625em) {
 	.profile-image {
-		width: 90%;
+		width: 95%;
 	}
 	.phd-box {
 		text-align: right;
