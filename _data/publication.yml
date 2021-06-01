@@ -3,7 +3,7 @@ publications:
     list:
       - title: "Trkic G00gle: Why and How Users Game Translation Algorithms"
         author: Soomin Kim, Changhoon Oh, Won Ik Cho, <intext-highlight>Donghoon Shin</intext-highlight>, Bongwon Suh, Joonhwan Lee
-        venue: <intext-highlight>CSCW 2021</intext-highlight>. (Accepted, to appear)
+        venue: <intext-highlight>CSCW 2021</intext-highlight>. (to appear)
         pdf: cscw2021_trkic-g00gle_paper.pdf
         disabled: true
       - title: "BlahBlahBot: Facilitating Conversation between Strangers using a Chatbot with ML-infused Personalized Topic Suggestion"
@@ -179,6 +179,6 @@ publications:
       - title: "AmslerTouch: Self-testing Amsler Grid Application for Supporting a Quantitative Report of Age-related Macular Degeneration Symptoms"
         author: "<intext-highlight>Donghoon Shin</intext-highlight>"
         venue: <intext-highlight>B.S. Thesis.</intext-highlight>
-        misc: "Advisor: Jongmo Seo (SNU Hospital, SNU ECE)"
+        misc: "Advisor: Jongmo Seo"
         pdf: snuece_amslertouch_thesis.pdf
         id: amslertouch
