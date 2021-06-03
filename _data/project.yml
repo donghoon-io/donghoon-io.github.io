@@ -30,6 +30,23 @@ projects:
         <p style="text-align: center; font-size: 14px;"><b>Distribution of K-MOOC users by age</b></p>
         <hr>
         <p><b>[What I've done in this project]</b><br>Running interview sessions, open-coding responses, analyzing log data, writing</p>
+  - title: "AI SEE YOU"
+    id: aiseeyou
+    tags:
+        - '# Coursework'
+        - '# Web'
+        - '# Speculative design'
+    image: aiseeyou.jpg
+    detail: "What if a chatbot hides behind a person and fully controls dialogues in romantic relationship?"
+    link: "https://donghoon.io/spring2021crp/"
+    description: |
+        <p>Have you ever wished a robot to send romantic messages to the other on behalf of yourself? Having a conversation in a romantic relationship is often difficult. Sometimes we ask our friends for help, but such help is limited.<br><br></p>
+        <p>In this project, we assumed that an AI agent in chat settings became so smart that it perfectly analyzes the counterpart's emotion and suggests responses in a chat setting. Along with a prototype app AI SEE YOU (yes, it's from Avatar!) that helps such a romantic relationship, we designed and developed an AI SEE YOU online user community that illustrates possible feedback and behaviors of users. Check out the link above!<br><br></p>
+        <p>This work was submitted as a team project assignment to the Spring 2021 Creative Research Practice course.</p>
+        <img src="site.baseurl/assets/images/projects_detail/aiseeyou.jpg" class="img-responsive">
+        <p style="text-align: center; font-size: 14px;"><b>Keyscreen of AI SEE YOU online user community</b></p>
+        <hr>
+        <p><b>[What I've done in this project]</b><br>Web development, prototype design, setting up dialogues, ideation</p>
   - title: "PoliNewsBot"
     id: polinewsbot
     tags:
@@ -40,7 +57,7 @@ projects:
     detail: "Chat moderator for facilitating discussion on political issues"
     description: |
         <p>We aimed to develop a system that facilitates users' conversation on political issues and developed a high-fidelity prototype: PoliNewsBot.</p>
-        <p>This work was submitted as a team project assignment to the Spring 2020 HCI Theory and Practice course.</p>
+        <p>This work was submitted as a team project assignment to the Spring 2021 HCI Theory and Practice course.</p>
         <img src="site.baseurl/assets/images/projects_detail/polinewsbot.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreens of PoliNewsBot</b></p>
         <hr>
