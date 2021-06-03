@@ -182,3 +182,11 @@ publications:
         misc: "Advisor: Jongmo Seo"
         pdf: snuece_amslertouch_thesis.pdf
         id: amslertouch
+  - type: Work In Progress
+    list:
+      - title: "Learning from Human Visual Explanations to Guide the Design of AI Explanations"
+        author: 'Advised by <a href="https://kenholstein.com">Kenneth Holstein</a> & <a href="https://perer.org">Adam Perer</a>'
+        id: satellite-imagery
+      - title: "Understanding How Older Adults Use Online Videos For Learning"
+        author: 'Advised by <a href="https://juhokim.com">Juho Kim</a>'
+        id: older-adults
