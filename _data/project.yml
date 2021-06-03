@@ -41,7 +41,7 @@ projects:
     link: "https://donghoon.io/spring2021crp/"
     description: |
         <p>Have you ever wished a robot to send romantic messages to the other on behalf of yourself? Having a conversation in a romantic relationship is often difficult. Sometimes we ask our friends for help, but such help is limited.<br><br></p>
-        <p>In this project, we assumed that an AI agent in chat settings became so smart that it perfectly analyzes the counterpart's emotion and suggests responses in a chat setting. Along with a prototype app AI SEE YOU (yes, it's from Avatar!) that helps such a romantic relationship, we designed and developed an AI SEE YOU online user community that illustrates possible feedback and behaviors of users. Check out the link above!<br><br></p>
+        <p>In this project, we assumed that an AI agent in chat settings became so smart that it perfectly analyzes the counterpart's emotion and suggests responses in a chat setting. Along with a prototype app AI SEE YOU (pronounced 'I see you'; yes, it's from Avatar!) that helps such a romantic relationship, we designed and developed an AI SEE YOU online user community that illustrates possible feedback and behaviors of users. Check out the link above!<br><br></p>
         <p>This work was submitted as a team project assignment to the Spring 2021 Creative Research Practice course.</p>
         <img src="site.baseurl/assets/images/projects_detail/aiseeyou-1.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreens of AI SEE YOU</b></p>
