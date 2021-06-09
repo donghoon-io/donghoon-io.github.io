@@ -3658,6 +3658,30 @@ p a {
 	-ms-user-select: none;
 }
 
+.tags-pub {
+	margin-bottom: 10px;
+}
+.tags-pub a {
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	position: relative;
+	margin: 0 3px 3px 0;
+	padding: 0 8px 0 8px;
+	border-radius: 10px;
+	font-family: Poppins, 'Noto Sans KR', Arial, sans-serif;
+	color: #666666 !important;
+	background-color: #ececec;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: 400;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
 .no-drag {
 	-ms-user-select: none;
 	-moz-user-select: -moz-none;

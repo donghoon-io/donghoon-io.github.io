@@ -6,6 +6,10 @@ publications:
         venue: <intext-highlight>CSCW 2021</intext-highlight>. (to appear)
         pdf: cscw2021_trkic-g00gle_paper.pdf
         disabled: true
+        tags:
+          - 'Algorithm'
+          - 'HAI'
+          - 'Content moderation'
       - title: "BlahBlahBot: Facilitating Conversation between Strangers using a Chatbot with ML-infused Personalized Topic Suggestion"
         author: <intext-highlight>Donghoon Shin</intext-highlight>, Sangwon Yoon, Soomin Kim, Joonhwan Lee
         venue: <intext-highlight>CHI 2021 Extended Abstracts.</intext-highlight> (Late-Breaking Work)
@@ -13,6 +17,10 @@ publications:
         #poster: chi2021_blahblahbot_poster_conference.pdf
         video: https://youtu.be/0blBM7xkELw
         id: prp
+        tags:
+          - 'AI-MC'
+          - 'Chatbot'
+          - 'Recommendation'
         abstract: It is a prevalent behavior of having a chat with strangers in online settings where people can easily gather. Yet, people often find it difficult to initiate and maintain conversation due to the lack of information about strangers. Hence, we aimed to facilitate conversation between the strangers with the use of machine learning (ML) algorithms and present BlahBlahBot, an ML-infused chatbot that moderates conversation between strangers with personalized topics. Based on social media posts, BlahBlahBot supports the conversation by suggesting topics that are likely to be of mutual interest between users. A user study with three groups (control, random topic chatbot, and BlahBlahBot; N=18) found the feasibility of BlahBlahBot in increasing both conversation quality and closeness to the partner, along with the factors that led to such increases from the user interview. Overall, our preliminary results imply that an ML-infused conversational agent can be effective for augmenting a dyadic conversation.
         bibtex: |
           @inproceedings{blahblahbot,</br>
@@ -34,6 +42,9 @@ publications:
       - title: "Design Guidelines of Computer-based Intervention for Computer Vision Syndrome: Focus Group Study and In-the-wild Deployment"
         author: Youjin Hwang, <intext-highlight>Donghoon Shin</intext-highlight>, Jinsu Eun, Bongwon Suh, Joonhwan Lee
         venue: <intext-highlight>Journal of Medical Internet Research</intext-highlight> 23(3), 2021.
+        tags:
+          - 'Healthcare'
+          - 'Intervention'
         pdf: jmir_liquideye_paper.pdf
         abstract: |
           <b>Background:</b><br>
@@ -65,6 +76,10 @@ publications:
         pdf: chi2020_talkingboogie_paper.pdf
         slide: chi2020_talkingboogie_slide.pdf
         id: talkingboogie
+        tags:
+          - 'Accessibility'
+          - 'CMC'
+          - 'CSCW'
         abstract: "Augmentative and
           alternative communication (AAC) technologies are widely used to help
           non-verbal children enable communication. For AAC-aided communication to
@@ -110,6 +125,10 @@ publications:
         venue: <intext-highlight>MobileHCI 2020 Extended Abstracts.</intext-highlight> (Late-Breaking Result)
         pdf: mobilehci2020_prp_poster.pdf
         id: prp
+        tags:
+          - 'Healthcare'
+          - 'Chatbot'
+          - 'Personality attribution'
         abstract: As artificial intelligence (AI) technologies advance, the possibility of developing virtual agents capable of mimicking human beings is increasing. Furthermore, AI techniques applicable to mimicking certain features of a specific person (e.g., facial expression, voice, motion) are becoming more sophisticated. Although the HCI community has explored how to design or develop AI agents mimicking a real person, limited studies on mimicking someone's text-based behavior shown in the instant messaging exist. This study investigates the features that make users perceive text-based agents as people they know in reality. On top of the previous efforts of designing human-like virtual agents, our work suggests design guidelines for applying the persona of the real person (PRP) to text-based agents.
         bibtex: |
           @inproceedings{linguisticfeatures,</br>
@@ -133,6 +152,10 @@ publications:
         venue: <intext-highlight>CHI 2020 Workshop.</intext-highlight> (Conversational Agents for Health and Wellbeing)
         pdf: chi2020_personabot_workshop.pdf
         id: personabot
+        tags:
+          - 'Healthcare'
+          - 'Chatbot'
+          - 'Personality attribution'
         abstract:
           Conversational agents have been showing lots of opportunities in
           healthcare by taking over a lot of tasks that used to be done by a
@@ -167,6 +190,9 @@ publications:
         author: Seoyoung Kim, Sunwoo Kwon, <intext-highlight>Donghoon Shin</intext-highlight>, Juho Kim
         venue: <intext-highlight> Issue Paper of Korean National Institute for Lifelong Education.</intext-highlight> (2019-2)
         pdf: nile2019_kmooc_issuepaper.pdf
+        tags:
+          - 'MOOCs'
+          - 'Online learning'
         id: kmooc
   - type: Patent
     list:
@@ -181,12 +207,20 @@ publications:
         venue: <intext-highlight>B.S. Thesis.</intext-highlight>
         misc: "Advisor: Jongmo Seo"
         pdf: snuece_amslertouch_thesis.pdf
+        tags:
+          - 'Healthcare'
+          - 'Medical informatics'
         id: amslertouch
   - type: Work In Progress
     list:
       - title: "Learning from Human Visual Explanations to Guide the Design of AI Explanations"
         author: 'Advised by <a href="https://kenholstein.com">Kenneth Holstein</a> & <a href="https://perer.org">Adam Perer</a>'
         id: satellite-imagery
+        tags:
+          - 'Explainability'
       - title: "Understanding How Older Adults Use Online Videos For Learning"
         author: 'Advised by <a href="https://juhokim.com">Juho Kim</a>'
         id: older-adults
+        tags:
+          - 'MOOCs'
+          - 'Older adults'

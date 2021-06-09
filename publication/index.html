@@ -22,8 +22,15 @@ order: 3
       <article>
         {% endunless %}
         <h3 class="section-header pub-title">{{ pub.title }}</h3>
-        <p class="section-body pub-detail no-margin-bottom">
-          {{ pub.author }}<br><i>{% if pub.venue %}{{ pub.venue }}<br>{% endif %}</i>{% if pub.misc %}{{ pub.misc }}{% endif %}</p>
+        <p class="section-body pub-detail no-margin-bottom no-padding-bottom">
+          {{ pub.author }}<br><i>{% if pub.venue %}{{ pub.venue }}{% endif %}</i>{% if pub.misc %}<br>{{ pub.misc }}{% endif %}</p>
+          <div class="tags-pub">
+            <p>
+              {% for tag in pub.tags%}
+              <a title="" href="" style="text-transform: capitalize; pointer-events: none;"># {{ tag }}</a>
+              {% endfor %}
+            </p>
+          </div>
         {% if pub.pdf %}<a {% if pub.disabled %} style="pointer-events: none; color:#d6d6d6; border-color: #d6d6d6" {% endif %} class="accordion section-link no-cursor"
           href="{% if pub.pdf contains 'http' %} {{ pub.pdf }} {% else %} /assets/pdf/{{ pub.pdf }} {% endif %}">PDF</a>
         {% endif %}
