@@ -1,35 +1,63 @@
 musics:
-  - title: Adele - Make You Feel My Love
-    link: "https://www.youtube.com/embed/CV3CgVXjSnU"
-    applemusic: "https://embed.music.apple.com/us/album/make-you-feel-my-love/1545382283?i=1545382976"
+  - title: GFriend - Rough
+    link: "https://www.youtube.com/embed/U4Hu8g3LxoQ"
+    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
+    type: Garageband cover
+  - title: GFriend - Rough
+    link: "https://www.youtube.com/embed/jYONyo1PPU0"
+    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
     type: Piano cover
+  - title: Ellie Goulding - Love Me Like You Do
+    link: "https://www.youtube.com/embed/edzT2jVAGig"
+    applemusic: "https://embed.music.apple.com/us/album/love-me-like-you-do/1440845197?i=1440845808"
+    type: Garageband cover
   - title: Ellie Goulding - Love Me Like You Do
     link: "https://www.youtube.com/embed/K1zSgJTnfYY"
     applemusic: "https://embed.music.apple.com/us/album/love-me-like-you-do/1440845197?i=1440845808"
     type: Piano cover
-  - title: Billie Eilish - Wish You Were Gay
-    link: "https://www.youtube.com/embed/J4FBj071HZs"
-    applemusic: "https://embed.music.apple.com/us/album/wish-you-were-gay/1450695723?i=1450695871"
-    type: Piano cover
+  - title: GFriend - Me Gustas Tu
+    link: "https://www.youtube.com/embed/Tl9EFafG40w"
+    applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1305043068?i=1305043078"
+    type: Garageband cover
   - title: GFriend - Me Gustas Tu
     link: "https://www.youtube.com/embed/a5EjdVQt3Kg"
     applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1305043068?i=1305043078"
     type: Piano cover
-  - title: GFriend - Rough
-    link: "https://www.youtube.com/embed/jYONyo1PPU0"
-    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
+  - title: Adele - Make You Feel My Love
+    link: "https://www.youtube.com/embed/CV3CgVXjSnU"
+    applemusic: "https://embed.music.apple.com/us/album/make-you-feel-my-love/1545382283?i=1545382976"
     type: Piano cover
   - title: Yves (LOONA) - New
     link: "https://www.youtube.com/embed/aVaXe810xLQ"
     applemusic: "https://embed.music.apple.com/us/album/new/1317708847?i=1317708941"
     type: Piano cover
-  - title: NAUL - One's Way Back
-    link: "https://www.youtube.com/embed/Cz3IctD6rig"
-    applemusic: "https://embed.music.apple.com/us/album/귀로/1266619284?i=1266619292"
+  - title: (G)I-DLE - LION
+    link: "https://www.youtube.com/embed/NXF1S9DAkVk"
+    applemusic: "https://embed.music.apple.com/us/album/lion/1504618353?i=1504618600"
+    type: Garageband cover
+  - title: Taylor Swift - Style
+    link: "https://www.youtube.com/embed/VSgoMEGp55o"
+    applemusic: "https://embed.music.apple.com/us/album/style/1440935467?i=1440935812"
+    type: Garageband cover
+  - title: (G)I-DLE - Señorita
+    link: "https://www.youtube.com/embed/ValKpeRchFo"
+    applemusic: "https://embed.music.apple.com/us/album/se%C3%B1orita/1454363872?i=1454363873"
+    type: Garageband cover
+  - title: Billie Eilish - Wish You Were Gay
+    link: "https://www.youtube.com/embed/J4FBj071HZs"
+    applemusic: "https://embed.music.apple.com/us/album/wish-you-were-gay/1450695723?i=1450695871"
     type: Piano cover
   - title: Ulala Session - Western Sky
     link: "https://www.youtube.com/embed/pPp1nfJMa0g"
     applemusic: "https://embed.music.apple.com/us/album/서쪽-하늘/477072518?i=477072528"
+    type: Piano cover
+  - title: Adele - When We Were Young
+    link: "https://www.youtube.com/embed/ESZBkmPgcvo"
+    applemusic: "https://embed.music.apple.com/us/album/when-we-were-young/1544494115?i=1544494407"
+    type: Garageband cover
+  - title: NAUL - One's Way Back
+    link: "https://www.youtube.com/embed/Cz3IctD6rig"
+    applemusic: "https://embed.music.apple.com/us/album/귀로/1266619284?i=1266619292"
     type: Piano cover
   - title: TWICE - Cheer Up
     link: "https://www.youtube.com/embed/1CfaRMrpYHE"
@@ -43,33 +71,9 @@ musics:
     link: "https://www.youtube.com/embed/TgK95chxQuc"
     applemusic: "https://embed.music.apple.com/us/album/eyes-nose-lips/1317322300?i=1317322831"
     type: Piano cover
-  - title: GFriend - Me Gustas Tu
-    link: "https://www.youtube.com/embed/Tl9EFafG40w"
-    applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1305043068?i=1305043078"
-    type: Garageband cover
-  - title: (G)I-DLE - LION
-    link: "https://www.youtube.com/embed/NXF1S9DAkVk"
-    applemusic: "https://embed.music.apple.com/us/album/lion/1504618353?i=1504618600"
-    type: Garageband cover
-  - title: Taylor Swift - Style
-    link: "https://www.youtube.com/embed/VSgoMEGp55o"
-    applemusic: "https://embed.music.apple.com/us/album/style/1440935467?i=1440935812"
-    type: Garageband cover
   - title: Sam Smith - I’m Not The Only One
     link: "https://www.youtube.com/embed/X8bV_tSvJak"
     applemusic: "https://embed.music.apple.com/us/album/im-not-the-only-one/1440824561?i=1440824586"
-    type: Garageband cover
-  - title: Adele - When We Were Young
-    link: "https://www.youtube.com/embed/ESZBkmPgcvo"
-    applemusic: "https://embed.music.apple.com/us/album/when-we-were-young/1544494115?i=1544494407"
-    type: Garageband cover
-  - title: (G)I-DLE - Señorita
-    link: "https://www.youtube.com/embed/ValKpeRchFo"
-    applemusic: "https://embed.music.apple.com/us/album/se%C3%B1orita/1454363872?i=1454363873"
-    type: Garageband cover
-  - title: Ellie Goulding - Love Me Like You Do
-    link: "https://www.youtube.com/embed/edzT2jVAGig"
-    applemusic: "https://embed.music.apple.com/us/album/love-me-like-you-do/1440845197?i=1440845808"
     type: Garageband cover
   - title: Sam Smith - Stay With Me
     link: "https://www.youtube.com/embed/IONQVm5q5BU"
@@ -79,10 +83,6 @@ musics:
     link: "https://www.youtube.com/embed/BRgLHwsFovI"
     applemusic: "https://embed.music.apple.com/us/album/when-night-is-falling/1291178961?i=1291178961"
     type: Band cover (Keyboard)
-  - title: GFriend - Rough
-    link: "https://www.youtube.com/embed/U4Hu8g3LxoQ"
-    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
-    type: Garageband cover
   - title: Roy Kim - The Moon of Seoul
     link: "https://www.youtube.com/embed/AGfyG7E44D8"
     applemusic: "https://embed.music.apple.com/us/album/the-moon-of-seoul/576262051?i=576262053"
