@@ -1,12 +1,4 @@
 musics:
-  - title: GFriend - Rough
-    link: "https://www.youtube.com/embed/U4Hu8g3LxoQ"
-    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
-    type: Garageband cover
-  - title: GFriend - Rough
-    link: "https://www.youtube.com/embed/jYONyo1PPU0"
-    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
-    type: Piano cover
   - title: Ellie Goulding - Love Me Like You Do
     link: "https://www.youtube.com/embed/edzT2jVAGig"
     applemusic: "https://embed.music.apple.com/us/album/love-me-like-you-do/1440845197?i=1440845808"
@@ -23,6 +15,22 @@ musics:
     link: "https://www.youtube.com/embed/a5EjdVQt3Kg"
     applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1305043068?i=1305043078"
     type: Piano cover
+  - title: Taylor Swift - Style
+    link: "https://www.youtube.com/embed/VSgoMEGp55o"
+    applemusic: "https://embed.music.apple.com/us/album/style/1440935467?i=1440935812"
+    type: Garageband cover
+  - title: (G)I-DLE - Señorita
+    link: "https://www.youtube.com/embed/ValKpeRchFo"
+    applemusic: "https://embed.music.apple.com/us/album/se%C3%B1orita/1454363872?i=1454363873"
+    type: Garageband cover
+  - title: GFriend - Rough
+    link: "https://www.youtube.com/embed/U4Hu8g3LxoQ"
+    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
+    type: Garageband cover
+  - title: GFriend - Rough
+    link: "https://www.youtube.com/embed/jYONyo1PPU0"
+    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
+    type: Piano cover
   - title: Adele - Make You Feel My Love
     link: "https://www.youtube.com/embed/CV3CgVXjSnU"
     applemusic: "https://embed.music.apple.com/us/album/make-you-feel-my-love/1545382283?i=1545382976"
@@ -34,14 +42,6 @@ musics:
   - title: (G)I-DLE - LION
     link: "https://www.youtube.com/embed/NXF1S9DAkVk"
     applemusic: "https://embed.music.apple.com/us/album/lion/1504618353?i=1504618600"
-    type: Garageband cover
-  - title: Taylor Swift - Style
-    link: "https://www.youtube.com/embed/VSgoMEGp55o"
-    applemusic: "https://embed.music.apple.com/us/album/style/1440935467?i=1440935812"
-    type: Garageband cover
-  - title: (G)I-DLE - Señorita
-    link: "https://www.youtube.com/embed/ValKpeRchFo"
-    applemusic: "https://embed.music.apple.com/us/album/se%C3%B1orita/1454363872?i=1454363873"
     type: Garageband cover
   - title: Billie Eilish - Wish You Were Gay
     link: "https://www.youtube.com/embed/J4FBj071HZs"
