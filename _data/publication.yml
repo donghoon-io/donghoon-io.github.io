@@ -5,7 +5,6 @@ publications:
         author: Soomin Kim, Changhoon Oh, Won Ik Cho, <intext-highlight>Donghoon Shin</intext-highlight>, Bongwon Suh, Joonhwan Lee
         venue: <intext-highlight>CSCW 2021</intext-highlight>. (to appear)
         pdf: cscw2021_trkic-g00gle_paper.pdf
-        disabled: true
         tags:
           - 'Algorithm'
           - 'HAI'

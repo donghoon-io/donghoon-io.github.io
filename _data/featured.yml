@@ -71,8 +71,7 @@ projects:
         - "# CSCW '21 Paper"
         - '# Algorithm'
     image: trkic-g00gle.jpg
-    #paper: "cscw2021_trkic-g00gle_paper.pdf"
-    #code: "https://github.com/donghoon-io/AmslerTouch"
+    paper: "cscw2021_trkic-g00gle_paper.pdf"
     detail: "Why and how users game translation algorithms"
     description: |
         <p>We explored the role and behavior of entities surrounding translation algorithms, in a situation where users trick and game them.</p>

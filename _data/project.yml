@@ -45,7 +45,7 @@ projects:
         <p>This work was submitted as a team project assignment to the Spring 2021 Creative Research Practice course.</p>
         <img src="site.baseurl/assets/images/projects_detail/lovegorithm-1.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreens of LOVEGORITHM</b></p>
-        <img src="site.baseurl/assets/images/projects_detail/lovegorithm-2.jpg" class="img-responsive">
+        <img src="site.baseurl/assets/images/projects_detail/lovegorithm-2.png" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreen of LOVEGORITHM online user community</b></p>
         <hr>
         <p><b>[What I've done in this project]</b><br>Web development, prototype design, setting up dialogues, ideation</p>
@@ -71,7 +71,7 @@ projects:
         - '# <i class="fas fa-book"></i>&nbsp; Published'
         - '# Algorithm'
     image: trkic-g00gle.jpg
-    #paper: "cscw2021_trkic-g00gle_paper.pdf"
+    paper: "cscw2021_trkic-g00gle_paper.pdf"
     detail: "Why and how users game translation algorithms"
     description: |
         <p>We explored the role and behavior of entities surrounding translation algorithms, in a situation where users trick and game them.</p>
