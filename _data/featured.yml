@@ -7,6 +7,7 @@ projects:
     code: "https://github.com/donghoon-io/TalkingBoogie"
     tags:
         - "# CHI '20 Paper"
+        - "# CMC"
         - "# Accessibility"
     image: talkingboogie.jpg
     detail: "Collaborative mobile AAC system for non-verbal children with developmental disabilities"
@@ -69,6 +70,7 @@ projects:
     id: trkic-g00gle
     tags:
         - "# CSCW '21 Paper"
+        - '# HAI'
         - '# Algorithm'
     image: trkic-g00gle.jpg
     paper: "cscw2021_trkic-g00gle_paper.pdf"
