@@ -10,7 +10,7 @@ projects:
     description: |
         <p>To guide the design of explanation for assessing damages from satellite imageries, we are working on understanding how humans generate explainability.
         I'm excited to learn about generating model explainability from my wonderful colleagues.<br><br></p>
-        <p>Led by <a href="http://groversachin.com/">Sachin Grover</a>, this project is being co-advised by <a href="https://kenholstein.myportfolio.com/">Ken Holstein</a>, <a href="https://perer.org/">Adam Perer</a>, and <a href="http://zacklipton.com/">Zack Lipton</a>.</p>
+        <p>Led by <a href="http://groversachin.com/">Sachin Grover</a>, this project is being co-advised by <a href="https://kenholstein.myportfolio.com/">Ken Holstein</a> and <a href="https://perer.org/">Adam Perer</a>.</p>
         <img src="site.baseurl/assets/images/projects_detail/satellite-imagery.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>An example of imagery that depicts a damaged area</b></p>
         <hr>
