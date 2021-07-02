@@ -45,36 +45,36 @@ projects:
         <hr>
         <p><b>[What I've done in this project]</b><br>Running interview sessions, open-coding responses, analyzing log data, writing</p>
   - title: "LOVEGORITHM"
-    id: lovegorithm
+    id: spring2021crp
     tags:
-        - '# Coursework'
+        - '# Schoolwork'
         - '# Web'
         - '# Speculative design'
-    image: lovegorithm.jpg
+    image: spring2021crp.jpg
     detail: "What if a chatbot hides behind a person in a romantic relationship and fully manages dialogues?"
     link: "https://donghoon.io/spring2021crp/"
     description: |
         <p>Have you ever wished a robot to send romantic messages to the other on behalf of yourself? Having a conversation in a romantic relationship is often difficult. Sometimes we ask our friends for help, but such help is limited.<br><br></p>
         <p>In this project, we assumed that an AI agent in chat settings became so smart that it perfectly analyzes the counterpart's emotion and suggests responses in a chat setting. Along with a prototype app LOVEGORITHM that helps such a romantic relationship, we designed and developed an LOVEGORITHM online user community that illustrates possible feedback and behaviors of users. Check out the link above!<br><br></p>
         <p>This work was submitted as a team project assignment to the Spring 2021 Creative Research Practice course.</p>
-        <img src="site.baseurl/assets/images/projects_detail/lovegorithm-1.jpg" class="img-responsive">
+        <img src="site.baseurl/assets/images/projects_detail/spring2021crp-1.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreens of LOVEGORITHM</b></p>
-        <img src="site.baseurl/assets/images/projects_detail/lovegorithm-2.png" class="img-responsive">
+        <img src="site.baseurl/assets/images/projects_detail/spring2021crp-2.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreen of LOVEGORITHM online user community</b></p>
         <hr>
         <p><b>[What I've done in this project]</b><br>Web development, prototype design, setting up dialogues, ideation</p>
   - title: "PoliNewsBot"
-    id: polinewsbot
+    id: spring2021hci
     tags:
-        - '# Coursework'
+        - '# Schoolwork'
         - '# CMC'
         - '# iOS'
-    image: polinewsbot.jpg
+    image: spring2021hci.jpg
     detail: "Chat moderator for facilitating discussion on political issues"
     description: |
         <p>We aimed to develop a system that facilitates users' conversation on political issues and developed a high-fidelity prototype: PoliNewsBot.</p>
         <p>This work was submitted as a team project assignment to the Spring 2021 HCI Theory and Practice course.</p>
-        <img src="site.baseurl/assets/images/projects_detail/polinewsbot.jpg" class="img-responsive">
+        <img src="site.baseurl/assets/images/projects_detail/spring2021hci.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>Keyscreens of PoliNewsBot</b></p>
         <hr>
         <p><b>[What I've done in this project]</b><br>System development, ideation, setting up dialogues</p>
@@ -287,13 +287,13 @@ projects:
         <hr>
         <p><b>[What I've done in this project]</b><br>Prototype development, running experiment, writing</p>
   - title: "Digital Ethnography"
-    id: digitalethnography
+    id: spring2020digiethno
     paper: "spring2020_digital-ethnography_report.pdf"
     tags:
         - "# Schoolwork"
         - '# Research'
         - "# Micro-mobility"
-    image: mobility.jpg
+    image: spring2020digiethno.jpg
     detail: "Term paper on needfinding of Korean micro-mobility users submitted to Spring 2020 Digital Ethnography course (written in Korean)"
     description: |
         <p>I've been working as an iOS developer in a local micro-mobility sharing startup for about 2 years. As working in a tech company, I got to know
@@ -304,7 +304,7 @@ projects:
         <p>Even though I could run the user observation study neither for a long term nor with a large number (COVID-19),
         it was really interesting to understand how HCI researchers explore users with qualitative methodologies in the real-world context.<br><br></p>
         <p>Please kindly understand that the paper was written in Korean language.</p>
-        <img src="site.baseurl/assets/images/projects_detail/mobility.jpg" class="img-responsive">
+        <img src="site.baseurl/assets/images/projects_detail/spring2020digiethno.jpg" class="img-responsive">
         <hr>
         <p><b>[What I've done in this project]</b><br>Independent project</p>
   - title: "PRP"
@@ -399,7 +399,7 @@ projects:
     id: ecegrad
     appstore: "https://apps.apple.com/app/id1450808330"
     tags:
-        - "# Personal"
+        - "# Individual"
         - "# iOS"
     image: ecegrad.jpg
     detail: "Graduation managing app for SNU ECE undergrads"
