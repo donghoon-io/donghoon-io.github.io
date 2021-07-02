@@ -212,6 +212,12 @@ publications:
         id: amslertouch
   - type: Work In Progress
     list:
+      - title: "Designing a Collaborative Mobile Dialectical Behavioral Therapy Application for Managing Daily Anxiety"
+        author: 'Advised by <a href="http://hwajunghong.com">Hwajung Hong</a>'
+        id: dbt
+        tags:
+          - 'Healthcare'
+          - 'Mental health'
       - title: "Learning from Human Visual Explanations to Guide the Design of AI Explanations"
         author: 'Advised by <a href="https://kenholstein.com">Kenneth Holstein</a> & <a href="https://perer.org">Adam Perer</a>'
         id: satellite-imagery
