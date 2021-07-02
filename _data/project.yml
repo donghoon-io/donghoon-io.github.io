@@ -14,7 +14,21 @@ projects:
         <img src="site.baseurl/assets/images/projects_detail/satellite-imagery.jpg" class="img-responsive">
         <p style="text-align: center; font-size: 14px;"><b>An example of imagery that depicts a damaged area</b></p>
         <hr>
-        <p><b>[What I've done in this project]</b><br>User study, open-coding responses</p>
+        <p><b>[What I'm doing in this project]</b><br>User study, open-coding responses</p>
+  - title: "Collaborative DBT App"
+    id: dbt
+    tags:
+        - '# Research'
+        - '# Ongoing'
+        - '# mHealth'
+    image: dbt.jpg
+    detail: "Designing a Collaborative Mobile DBT Application for Managing Daily Anxiety"
+    description: |
+        <p>Dialectical Behavioral Therapy (DBT) is known to be effective in managing various types of anxiety.
+        In this project, we aim to design a collaborative mobile DBT app for augmenting user engagement, practice, and implementation.<br><br></p>
+        <p>This project is being advised by <a href="http://hwajunghong.com/">Hwajung Hong</a>.</p>
+        <hr>
+        <p><b>[What I'm doing in this project]</b><br>Leading the project, preliminary interview, storyboarding, writing, system development</p>
   - title: "MOOC analysis"
     id: kmooc
     tags:
