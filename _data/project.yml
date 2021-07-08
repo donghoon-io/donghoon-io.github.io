@@ -1,6 +1,8 @@
 projects:
   - title: "Explainability for Satellite Imageries"
     id: satellite-imagery
+    category:
+        - "industry"
     tags:
         - '# Research'
         - '# Ongoing'
@@ -17,6 +19,8 @@ projects:
         <p><b>[What I'm doing in this project]</b><br>User study, open-coding responses</p>
   - title: "Collaborative DBT App"
     id: dbt
+    category:
+        - "research"
     tags:
         - '# Research'
         - '# Ongoing'
@@ -31,6 +35,8 @@ projects:
         <p><b>[What I'm doing in this project]</b><br>Leading the project, preliminary interview, storyboarding, writing, system development</p>
   - title: "MOOC analysis"
     id: kmooc
+    category:
+        - "research"
     tags:
         - "# Research"
         - "# Data-analysis"
@@ -46,6 +52,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Running interview sessions, open-coding responses, analyzing log data, writing</p>
   - title: "LOVEGORITHM"
     id: spring2021crp
+    category:
+        - "coursework"
     tags:
         - '# Schoolwork'
         - '# Web'
@@ -65,6 +73,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Web development, prototype design, setting up dialogues, ideation</p>
   - title: "PoliNewsBot"
     id: spring2021hci
+    category:
+        - "coursework"
     tags:
         - '# Schoolwork'
         - '# CMC'
@@ -80,6 +90,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development, ideation, setting up dialogues</p>
   - title: "Trkic G00gle"
     id: trkic-g00gle
+    category:
+        - "research"
     tags:
         - '# Research'
         - '# <i class="fas fa-book"></i>&nbsp; Published'
@@ -96,6 +108,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Writing, designing figures</p>
   - title: "AmslerTouch"
     id: amslertouch
+    category:
+        - "research"
     tags:
         - '# <i class="fas fa-book"></i>&nbsp; Thesis'
         - '# Web'
@@ -115,6 +129,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Independent project</p>
   - title: "LiquidEye"
     id: liquideye
+    category:
+        - "research"
     tags:
         - "# Research"
         - '# <i class="fas fa-book"></i>&nbsp; Published'
@@ -133,6 +149,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development, running interview sessions, writing</p>
   - title: "BlahBlahBot"
     id: blahblahbot
+    category:
+        - "research"
     image: blahblahbot.jpg
     paper: "chi2021_blahblahbot_poster.pdf"
     video: https://youtu.be/6UQi9gCgMjU
@@ -154,6 +172,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development, running interview sessions, writing</p>
   - title: "Easier Said than Done"
     id: fall2020instell
+    category:
+        - "coursework"
     image: fall2020instell.jpg
     detail: "iOS-based serious game app submitted to Fall 2020 Interactive Storytelling course"
     appstore: "https://apps.apple.com/app/id1542957206"
@@ -173,6 +193,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development</p>
   - title: "夜-planet"
     id: fall2020ucd
+    category:
+        - "coursework"
     image: fall2020ucd.jpg
     detail: "Design homework submitted to Fall 2020 User-Centered Design course"
     link: "https://www.notion.so/6e350a9141b44a3ab9886b6e443547d1"
@@ -190,6 +212,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>User study, ideating design elements</p>
   - title: "TalkingBoogie"
     id: talkingboogie
+    category:
+        - "research"
     paper: "chi2020_talkingboogie_paper.pdf"
     slide: "chi2020_talkingboogie_slide.pdf"
     appstore: "https://apps.apple.com/app/id1435744898"
@@ -228,6 +252,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development, writing, user study, running interview sessions, data analysis</p>
   - title: "Music Knows."
     id: dt4c_p3
+    category:
+        - "coursework"
     image: dt4c_p3.jpg
     detail: "What my favorite sets of music tell about my emotion"
     tags:
@@ -243,6 +269,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Independent project</p>
   - title: 'COVID-19, the Infodemics'
     id: dt4c_p2
+    category:
+        - "coursework"
     image: dt4c_p2.jpg
     detail: "How misinformation and disinformation are spread and exacerbate COVID-19"
     tags:
@@ -258,6 +286,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Independent project</p>
   - title: "Tech Champion's League"
     id: dt4c_p1
+    category:
+        - "coursework"
     image: dt4c_p1.jpg
     tags:
         - "# Schoolwork"
@@ -273,6 +303,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Independent project</p>
   - title: "Bixby: Intelligent Visual"
     id: bixby
+    category:
+        - "industry"
     tags:
         - "# Industry"
         - "# Experiment"
@@ -288,6 +320,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Prototype development, running experiment, writing</p>
   - title: "Digital Ethnography"
     id: spring2020digiethno
+    category:
+        - "coursework"
     paper: "spring2020_digital-ethnography_report.pdf"
     tags:
         - "# Schoolwork"
@@ -309,6 +343,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Independent project</p>
   - title: "PRP"
     id: prp
+    category:
+        - "research"
     paper: "mobilehci2020_prp_poster.pdf"
     tags:
         - "# Research"
@@ -327,6 +363,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Writing</p>
   - title: "PersonaBot"
     id: personabot
+    category:
+        - "research"
     paper: "chi2020_personabot_workshop.pdf"
     tags:
         - "# Research"
@@ -347,6 +385,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development, running experiment, writing</p>
   - title: "Juvis J Bot"
     id: juvis
+    category:
+        - "industry"
     link: "http://www.juvis.co.kr"
     tags:
         - "# Commercial"
@@ -363,6 +403,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development</p>
   - title: "elecle"
     id: elecle
+    category:
+        - "industry"
     link: "https://elecle.bike"
     appstore: "https://apps.apple.com/app/id1456461872"
     tags:
@@ -385,6 +427,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development, design ideation</p>
   - title: "BADA"
     id: bada
+    category:
+        - "research"
     link: "https://www.hankookilbo.com/News/Read/201808021348769510"
     tags:
         - "# Research"
@@ -397,6 +441,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>System development</p>
   - title: "ECE Grad"
     id: ecegrad
+    category:
+        - "personal"
     appstore: "https://apps.apple.com/app/id1450808330"
     tags:
         - "# Individual"
@@ -413,6 +459,8 @@ projects:
         <p><b>[What I've done in this project]</b><br>Independent project</p>
   - title: "HCI+d Website"
     id: hcidweb
+    category:
+        - "personal"
     link: "http://hcid.snu.ac.kr"
     tags:
         - "# Design"

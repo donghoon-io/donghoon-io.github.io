@@ -8,8 +8,25 @@ order: 2
 ---
 
 {% include core/metabar.html %}
-
 {% assign projects = site.data.project %}
+
+
+<style>
+  #tag-all:checked ~ .tag-label#label-all,
+  #tag-research:checked ~ .tag-label#label-research,
+  #tag-coursework:checked ~ .tag-label#label-coursework,
+  #tag-industry:checked ~ .tag-label#label-industry,
+  #tag-personal:checked ~ .tag-label#label-personal {
+    font-weight: 500;
+  }
+
+  #tag-research:checked ~ #grid-list > .item:not(.research),
+  #tag-coursework:checked ~ #grid-list > .item:not(.coursework),
+  #tag-industry:checked ~ #grid-list > .item:not(.industry),
+  #tag-personal:checked ~ #grid-list > .item:not(.personal) {
+    display: none !important;
+  }
+</style>
 
 <link rel="stylesheet" href="{{ 'assets/css/modal.css' | relative_url }}">
 <style>
@@ -48,10 +65,27 @@ order: 2
 {% endfor %}
 
 <article class="content">
-  <section class="grid section">
+  <div class="category-tags">
+    <input type="radio" name="tag" id="tag-all" checked>
+    <input type="radio" name="tag" id="tag-research">
+    <input type="radio" name="tag" id="tag-coursework">
+    <input type="radio" name="tag" id="tag-industry">
+    <input type="radio" name="tag" id="tag-personal">
+
+    <label for="tag-all" class="tag-label" id="label-all">All ({{ projects.projects.size }})</label>
+    {% assign research_projects = projects.projects | where: "category", "research" %}
+    <label for="tag-research" class="tag-label" id="label-research">Research ({{ research_projects.size }})</label>
+    {% assign coursework_projects = projects.projects | where: "category", "coursework" %}
+    <label for="tag-coursework" class="tag-label" id="label-coursework">Coursework ({{ coursework_projects.size }})</label>
+    {% assign industry_projects = projects.projects | where: "category", "industry" %}
+    <label for="tag-industry" class="tag-label" id="label-industry">Industry ({{ industry_projects.size }})</label>
+    {% assign personal_projects = projects.projects | where: "category", "personal" %}
+    <label for="tag-personal" class="tag-label" id="label-personal">Personal ({{ personal_projects.size }})</label>
+  </div>
+  <section id="grid-list" class="grid section">
     {% for project in projects.projects %}
-    <div style="cursor: pointer;" class="item {{ project.id }}">
-      <div class="content-masonry blog wow fadeIn" data-wow-delay="0.1s">
+    <div style="cursor: pointer;" class="item {{ project.id }}{% for cat in project.category %} {{ cat }}{% endfor %}">
+      <div class="content-masonry blog">
         <img class="photothumb" src="{{site.baseurl}}/assets/images/projects/{{ project.image }}">
         <div class="title">
           <h3 style="font-size: 15px; font-weight: 500;">{{ project.title }}</h3>
@@ -76,7 +110,7 @@ order: 2
 
         allItems = document.getElementsByClassName("item-dt4c");
         for (x = 0; x < allItems.length; x++) {
-            imagesLoaded(allItems[x], resizeDt4cInstance);
+          imagesLoaded(allItems[x], resizeDt4cInstance);
         }
         {% endif %}
         document.getElementById("{{ project.id }}-checkbox").checked = true;

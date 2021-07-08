@@ -3816,4 +3816,25 @@ a.cusInnerPage:hover{
 	background : #f15a5a10;
 }
 
+.category-tags {
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.category-tags > input {
+	display: none;
+}
+
+@media (min-width:48.0625em) {
+	.category-tags {
+		text-align: right;
+	}
+}
+
+.tag-label {
+	font-weight: 300;
+	font-size: 13px;
+	padding: 5px;
+}
+
 /*# sourceMappingURL=styles.css.map */
