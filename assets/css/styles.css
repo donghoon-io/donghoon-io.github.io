@@ -3816,25 +3816,27 @@ a.cusInnerPage:hover{
 	background : #f15a5a10;
 }
 
-.category-tags {
+.project-view {
 	padding-top: 1rem;
-	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.category-tags > input {
+.project-view > input {
 	display: none;
 }
 
 @media (min-width:48.0625em) {
-	.category-tags {
-		text-align: right;
+	.project-view {
+		justify-content: center;
 	}
 }
 
 .tag-label {
 	font-weight: 300;
 	font-size: 13px;
-	padding: 5px;
+	padding: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
