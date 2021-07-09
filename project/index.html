@@ -72,15 +72,15 @@ order: 2
     <input type="radio" name="tag" id="tag-industry">
     <input type="radio" name="tag" id="tag-personal">
 
-    <label for="tag-all" class="tag-label" id="label-all" onclick="resize">All ({{ projects.projects.size }})</label>
+    <label for="tag-all" class="tag-label" id="label-all" onclick="resize()">All ({{ projects.projects.size }})</label>
     {% assign research_projects = projects.projects | where: "category", "research" %}
-    <label for="tag-research" class="tag-label" id="label-research" onclick="resize">Research ({{ research_projects.size }})</label>
+    <label for="tag-research" class="tag-label" id="label-research" onclick="resize()">Research ({{ research_projects.size }})</label>
     {% assign coursework_projects = projects.projects | where: "category", "coursework" %}
-    <label for="tag-coursework" class="tag-label" id="label-coursework" onclick="resize">Coursework ({{ coursework_projects.size }})</label>
+    <label for="tag-coursework" class="tag-label" id="label-coursework" onclick="resize()">Coursework ({{ coursework_projects.size }})</label>
     {% assign industry_projects = projects.projects | where: "category", "industry" %}
-    <label for="tag-industry" class="tag-label" id="label-industry" onclick="resize">Industry ({{ industry_projects.size }})</label>
+    <label for="tag-industry" class="tag-label" id="label-industry" onclick="resize()">Industry ({{ industry_projects.size }})</label>
     {% assign personal_projects = projects.projects | where: "category", "personal" %}
-    <label for="tag-personal" class="tag-label" id="label-personal" onclick="resize">Personal ({{ personal_projects.size }})</label>
+    <label for="tag-personal" class="tag-label" id="label-personal" onclick="resize()">Personal ({{ personal_projects.size }})</label>
   <section id="grid-list" class="grid section">
     {% for project in projects.projects %}
     <div style="cursor: pointer;" class="item {{ project.id }}{% for cat in project.category %} {{ cat }}{% endfor %}">
