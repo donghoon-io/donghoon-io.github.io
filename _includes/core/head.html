@@ -72,6 +72,10 @@
   <title>
     {% if page.title %} {{ page.title }} | Donghoon Shin {% else %} Donghoon Shin {% endif %}
   </title>
+  {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
+  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+  {% if page.url == '/' %}<meta property="og:image" content="{{ 'assets/images/misc/og.jpg' | relative_url }}">{% endif %}
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
   <!-- CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
