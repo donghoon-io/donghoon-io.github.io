@@ -55,7 +55,7 @@ projects:
     category:
         - "coursework"
     tags:
-        - '# Schoolwork'
+        - '# Coursework'
         - '# Web'
         - '# Speculative design'
     image: spring2021crp.jpg
@@ -76,7 +76,7 @@ projects:
     category:
         - "coursework"
     tags:
-        - '# Schoolwork'
+        - '# Coursework'
         - '# CMC'
         - '# iOS'
     image: spring2021hci.jpg
@@ -179,7 +179,7 @@ projects:
     appstore: "https://apps.apple.com/app/id1542957206"
     code: "https://github.com/donghoon-io/Easier-said-than-done"
     tags:
-        - "# Schoolwork"
+        - "# Coursework"
         - "# Serious game"
         - "# iOS"
     description: |
@@ -199,7 +199,7 @@ projects:
     detail: "Design homework submitted to Fall 2020 User-Centered Design course"
     link: "https://www.notion.so/6e350a9141b44a3ab9886b6e443547d1"
     tags:
-        - "# Schoolwork"
+        - "# Coursework"
         - "# Design"
         - "# Prototype"
     description: |
@@ -257,7 +257,7 @@ projects:
     image: dt4c_p3.jpg
     detail: "What my favorite sets of music tell about my emotion"
     tags:
-        - "# Schoolwork"
+        - "# Coursework"
         - "# InfoVis"
         - "# D3.js"
     description: |
@@ -274,7 +274,7 @@ projects:
     image: dt4c_p2.jpg
     detail: "How misinformation and disinformation are spread and exacerbate COVID-19"
     tags:
-        - "# Schoolwork"
+        - "# Coursework"
         - "# Infographics"
         - "# Illustrator"
     description: |
@@ -290,7 +290,7 @@ projects:
         - "coursework"
     image: dt4c_p1.jpg
     tags:
-        - "# Schoolwork"
+        - "# Coursework"
         - "# Small multiple"
         - "# Illustrator"
     detail: "What if well-known tech companies run their football team?"
@@ -324,7 +324,7 @@ projects:
         - "coursework"
     paper: "spring2020_digital-ethnography_report.pdf"
     tags:
-        - "# Schoolwork"
+        - "# Coursework"
         - '# Research'
         - "# Micro-mobility"
     image: spring2020digiethno.jpg
