@@ -1,5 +1,6 @@
 .grid {
     display: grid;
+    text-align: left !important;
     grid-column-gap: 50px;
     grid-row-gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
