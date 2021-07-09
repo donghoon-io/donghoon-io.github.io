@@ -13,13 +13,13 @@ order: 4
 
 <article class="content">
   {% for music in musics.musics %}
-  <section id="{{ pubtype.type }}" class="section wow fadeIn" data-wow-delay="0.1s">
+  <section class="section">
     <h2 class="section-title">{{ music.title }}</h2>
     <article class="section-writing">
       <div class="h_iframe">
-        <p align="center"><iframe src="{{ music.link }}" height="400" style="border:none; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></p>
+        <p align="center"><iframe loading="auto" src="{{ music.link }}" height="400" style="border:none; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></p>
       </div>
-      <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="{{ music.applemusic }}"></iframe>
+      <iframe loading="auto" allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="{{ music.applemusic }}"></iframe>
       <p class="section-body pub-detail"><i class="fas fa-user-music"></i>&nbsp;&nbsp; {{ music.type }}</p>
 
     </article>

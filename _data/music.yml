@@ -1,4 +1,8 @@
 musics:
+  - title: "Taylor Swift - Cruel Summer"
+    link: "https://www.youtube.com/embed/w0AOmseKpAU"
+    applemusic: "https://embed.music.apple.com/us/album/cruel-summer/1468058165?i=1468058171"
+    type: Piano cover
   - title: "IU - Celebrity"
     link: "https://www.youtube.com/embed/WZbIrvzpoXI"
     applemusic: "https://embed.music.apple.com/us/album/celebrity/1550907177?i=1550907178"

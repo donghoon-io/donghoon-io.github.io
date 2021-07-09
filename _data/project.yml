@@ -2,7 +2,7 @@ projects:
   - title: "Explainability for Satellite Imageries"
     id: satellite-imagery
     category:
-        - "industry"
+        - "research"
     tags:
         - '# Research'
         - '# Ongoing'

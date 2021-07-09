@@ -3650,7 +3650,7 @@ p a {
 	background-color: #ececec;
 	font-size: 12px;
 	text-decoration: none;
-	font-weight: 400;
+	font-weight: 300;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
@@ -3834,9 +3834,18 @@ a.cusInnerPage:hover{
 }
 
 .tag-label {
+	height: 24px;
+	position: relative;
+	margin: 0 10px 10px 0;
+	padding: 0 10px 0 12px;
+	border-radius: 12px;
+	font-family: Poppins, 'Noto Sans KR', Arial, sans-serif;
+	color: #666666;
+	background-color: #ececec;
+	font-size: 12px;
+	text-decoration: none;
 	font-weight: 300;
-	font-size: 13px;
-	padding: 10px;
+	cursor: pointer
 }
 
 /*# sourceMappingURL=styles.css.map */

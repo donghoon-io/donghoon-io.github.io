@@ -9,21 +9,20 @@ order: 2
 
 {% include core/metabar.html %}
 {% assign projects = site.data.project %}
-
+{% assign categories = site.data.category %}
 
 <style>
-  #tag-all:checked ~ .tag-label#label-all,
-  #tag-research:checked ~ .tag-label#label-research,
-  #tag-coursework:checked ~ .tag-label#label-coursework,
-  #tag-industry:checked ~ .tag-label#label-industry,
-  #tag-personal:checked ~ .tag-label#label-personal {
+  {% for category in categories.categories %}
+  #tag-{{ category }}:checked ~ .tag-label#label-{{ category }},
+  {% endfor %}
+  #tag-all:checked ~ .tag-label#label-all {
     font-weight: 500;
   }
 
-  #tag-research:checked ~ #grid-list > .item:not(.research),
-  #tag-coursework:checked ~ #grid-list > .item:not(.coursework),
-  #tag-industry:checked ~ #grid-list > .item:not(.industry),
-  #tag-personal:checked ~ #grid-list > .item:not(.personal) {
+  {% for category in categories.categories %}
+  #tag-{{ category }}:checked ~ #grid-list > .item:not(.{{ category }}),
+  {% endfor %}
+  #tag-all:checked ~ #grid-list > .item:not(.item) {
     display: none !important;
   }
 </style>
@@ -67,64 +66,60 @@ order: 2
 <article class="content">
   <div class="project-view">
     <input type="radio" name="tag" id="tag-all" checked>
-    <input type="radio" name="tag" id="tag-research">
-    <input type="radio" name="tag" id="tag-coursework">
-    <input type="radio" name="tag" id="tag-industry">
-    <input type="radio" name="tag" id="tag-personal">
+    {% for category in categories.categories %}
+    <input type="radio" name="tag" id="tag-{{ category }}">
+    {% endfor %}
 
-    <label for="tag-all" class="tag-label" id="label-all" onclick="resize()">All ({{ projects.projects.size }})</label>
-    {% assign research_projects = projects.projects | where: "category", "research" %}
-    <label for="tag-research" class="tag-label" id="label-research" onclick="resize()">Research ({{ research_projects.size }})</label>
-    {% assign coursework_projects = projects.projects | where: "category", "coursework" %}
-    <label for="tag-coursework" class="tag-label" id="label-coursework" onclick="resize()">Coursework ({{ coursework_projects.size }})</label>
-    {% assign industry_projects = projects.projects | where: "category", "industry" %}
-    <label for="tag-industry" class="tag-label" id="label-industry" onclick="resize()">Industry ({{ industry_projects.size }})</label>
-    {% assign personal_projects = projects.projects | where: "category", "personal" %}
-    <label for="tag-personal" class="tag-label" id="label-personal" onclick="resize()">Personal ({{ personal_projects.size }})</label>
-  <section id="grid-list" class="grid section">
-    {% for project in projects.projects %}
-    <div style="cursor: pointer;" class="item {{ project.id }}{% for cat in project.category %} {{ cat }}{% endfor %}">
-      <div class="content-masonry blog">
-        <img class="photothumb" src="{{site.baseurl}}/assets/images/projects/{{ project.image }}">
-        <div class="title">
-          <h3 style="font-size: 15px; font-weight: 500;">{{ project.title }}</h3>
-        </div>
-        <div class="desc">
-          <p style="font-size: 13px">{{ project.detail }}</p>
-          <div class="tags">
-            <p>
-              {% for tag in project.tags %}
-              <a title="" href="">{{ tag }}</a>
-              {% endfor %}
-            </p>
+    <label for="tag-all" class="tag-label" id="label-all" onclick="resize()">All</label>
+
+    {% for category in categories.categories %}
+    {% assign research_projects = projects.projects | where: "category", category %}
+    <label for="tag-{{ category }}" class="tag-label" id="label-{{ category }}" onclick="resize()" style="text-transform: capitalize;"># {{ category }} ({{ research_projects.size }})</label>
+    {% endfor %}
+    <section id="grid-list" class="grid section">
+      {% for project in projects.projects %}
+      <div style="cursor: pointer;" class="item {{ project.id }}{% for cat in project.category %} {{ cat }}{% endfor %}">
+        <div class="content-masonry blog">
+          <img class="photothumb" src="{{site.baseurl}}/assets/images/projects/{{ project.image }}">
+          <div class="title">
+            <h3 style="font-size: 15px; font-weight: 500;">{{ project.title }}</h3>
+          </div>
+          <div class="desc">
+            <p style="font-size: 13px">{{ project.detail }}</p>
+            <div class="tags">
+              <p>
+                {% for tag in project.tags %}
+                <a title="" href="">{{ tag }}</a>
+                {% endfor %}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <script>
-      $(".{{ project.id }}").click(function () {
-        {% if project.id == "spring2020dt4c" %}
-        window.onload = resizeAllDt4cGridItems();
-        window.addEventListener("resize", resizeAllDt4cGridItems);
+      <script>
+        $(".{{ project.id }}").click(function () {
+          {% if project.id == "spring2020dt4c" %}
+          window.onload = resizeAllDt4cGridItems();
+          window.addEventListener("resize", resizeAllDt4cGridItems);
 
-        allItems = document.getElementsByClassName("item-dt4c");
-        for (x = 0; x < allItems.length; x++) {
-          imagesLoaded(allItems[x], resizeDt4cInstance);
-        }
-        {% endif %}
-        document.getElementById("{{ project.id }}-checkbox").checked = true;
-        document.body.style.overflow = "hidden";
+          allItems = document.getElementsByClassName("item-dt4c");
+          for (x = 0; x < allItems.length; x++) {
+            imagesLoaded(allItems[x], resizeDt4cInstance);
+          }
+          {% endif %}
+          document.getElementById("{{ project.id }}-checkbox").checked = true;
+          document.body.style.overflow = "hidden";
 
-        return false;
-      });
+          return false;
+        });
 
-      document.getElementById('{{ project.id }}-checkbox').addEventListener('change', (event) => {
-        document.body.style.overflow = "auto";
-      })
-    </script>
-    {% endfor %}
-  </section>
-</div>
+        document.getElementById('{{ project.id }}-checkbox').addEventListener('change', (event) => {
+          document.body.style.overflow = "auto";
+        })
+      </script>
+      {% endfor %}
+    </section>
+  </div>
 </article>
 
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
