@@ -15,9 +15,11 @@
 <li class="nav-link">
   <a class="{% if page.url contains 'music' %} nav-active {% endif %}" href="{{ 'music' | relative_url }}" aria-label="Music">Music</a>
 </li>
+<!--
 <li class="nav-link">
   <a class="{% if page.url contains 'cv' %} nav-active {% endif %}" href="{{ 'cv.pdf' | relative_url }}" aria-label="{{ entry.title }}">CV</a>
 </li>
+-->
 <!--
 {% assign entries = site.pages | where: "lang", page.lang | sort: "order" %}
 {% for entry in entries %}
