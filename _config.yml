@@ -1,0 +1,16 @@
+title: UW Prosocial Computing Group
+author:
+  name: UW Prosocial Computing Group
+  email: your-email@domain.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  Prosocial Computing Group is a research lab at the University of Washington
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+theme: minima

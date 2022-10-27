@@ -1,0 +1,74 @@
+---
+layout: default
+baseurl: /people
+title: People
+---
+
+{% assign counter = 0 %}
+{% assign color = '#9B2F7A, #379DD4, #61BA84, #E1B917' | split: ', ' %}
+
+<div class="container pt-4">
+    {% for group in site.data.people.people %}
+        <p style="font-weight: 500 !important; text-transform: uppercase;">{{ group.type }}</p>
+        <div class="row my-4">
+            {% assign people = group.list | sort: "member_since" %}
+            {% for person in people %}
+                <div class="col-6 col-lg-2 col-sm-4 align-self-center zoom">
+                    {% if person.website %}
+                    <a href="{{ person.website }}"><img src="{{ 'assets/images/people/' | append: person.image | relative_url }}" alt="" style="height: auto; width: 100%;"></a>
+                    {% else %}
+                    <img src="{{ 'assets/images/people/' | append: person.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+                    {% endif %}
+                    {% assign idx = counter | modulo: 4 %}
+                    <div class="mb-3" style="{{ color[idx] | prepend: 'background-color: ' }}">
+                        <p style="font-size: 1rem; font-weight: 500 !important; padding: .5rem .5rem 0 .75rem; margin: 0 !important; text-align: left; color: white;">{{ person.name }}</p>
+                        {% assign email = person.email | split: "@" %}
+                        <a href="#" class="cryptedmail"
+                            data-name="{{ email[0] }}"
+                            data-domain="{{ email[1] }}"
+                            onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain; return false;">
+                        </a>
+                    </div>
+                    {% assign counter = counter | plus: 1 %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+<div class="container pb-4">
+    <p style="font-size: 1.1rem; font-weight: 500 !important">ALUMNI</p>
+    {% for group in site.data.alumni.alumni %}
+    <p class="mt-3 mb-1" style="font-size: 1rem; font-weight: 500 !important">{{ group.type }}</p>
+    {% assign people = group.list | sort: "member_since" %}
+    <div class="mb-4">
+        {% for person in people %}
+        <div class="row">
+            <div class="col-4 col-sm-2 align-self-center">
+                {% if person.website %}
+                <a class="mt-1" style="font-size: 1rem; font-weight: 300;" href="{{ person.website }}">{{ person.name }}</a>
+                {% else %}
+                <p class="mt-1" style="font-size: 1rem; font-weight: 300;">{{ person.name }}</p>
+                {% endif %}
+            </div>
+            <div class="col-8 col-sm-10 align-self-center">
+                <p class="mt-1" style="font-size: 1rem; font-weight: 300;">now {{ person.role }} at {{ person.affiliation }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+    .cryptedmail {
+        font-size: .8rem;
+        font-weight: 100 !important;
+        padding: 0 .5rem .75rem .75rem !important;
+        margin: 0 !important;
+        color: white !important;
+        display:inline-block;
+    }
+    .cryptedmail:after {
+        content: attr(data-name) "@" attr(data-domain)
+    }
+</style>

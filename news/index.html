@@ -1,0 +1,21 @@
+---
+layout: default
+baseurl: /news
+title: News
+---
+
+{% assign news = site.data.news.list %}
+
+<div class="container py-4">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
+    <div class="row mt-4">
+        {% for new in news %}
+        <div class="col-12 col-sm-6">
+            <p class="mb-0" style="font-size: 1rem; font-weight: 400 !important;">{{ new.title }}</p>
+            <p class="mb-1" style="font-size: .85rem; font-weight: 200 !important;">{{ new.date | date_to_long_string }}</p>
+            <p style="font-size: .95rem; font-weight: 300 !important;">{{ new.description }}</p>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+</div>

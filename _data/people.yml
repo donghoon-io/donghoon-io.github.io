@@ -1,0 +1,54 @@
+people:
+  - type: "Faculty"
+    list:
+      - name: Gary Hsieh
+        website: https://faculty.washington.edu/garyhs/
+        email: garyhs@uw.edu
+        image: gary.jpg
+        member_since: 2017
+  - type: "Ph.D. Students"
+    list:
+      - name: Donghoon Shin
+        website: https://donghoon.io
+        email: dhoon@uw.edu
+        image: donghoon.jpg
+        member_since: 2022
+      - name: Ruoxi Shang
+        website: https://ruoxishang.com/
+        email: rxshang@uw.edu
+        image: anna.jpg
+        member_since: 2020
+      - name: Keri Mallari
+        website: https://www.keri.xyz/
+        email: kmallari@uw.edu
+        image: keri.jpg
+        member_since: 2019
+      - name: Raina Langevin
+        website: https://www.rainalangevin.com/
+        email: rlangevi@uw.edu
+        image: raina.jpg
+        member_since: 2018
+      - name: Spencer Williams
+        website: https://www.sprwilliams.com/
+        email: sw1918@uw.edu
+        image: spencer.jpg
+        member_since: 2018
+      - name: Himanshu Zade
+        website: https://students.washington.edu/himanz/
+        email: himanz@uw.edu
+        image: himanshu.jpg
+        member_since: 2016
+  - type: "Masters Students"
+    list:
+      - name: Masters 1
+        website: https://google.com
+        email: masters1@uw.edu
+        image: placeholder.jpg
+        member_since: 2022
+  - type: "Interns"
+    list:
+      - name: Intern 1
+        website: https://google.com
+        email: intern1@uw.edu
+        image: placeholder.jpg
+        member_since: 2022
