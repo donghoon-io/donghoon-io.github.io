@@ -17,7 +17,7 @@ title: Project
         <div class="col-12 col-md-8 mb-3 mb-md-0 align-self-center">
             <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
             <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
-            <a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View publications</a>
+            {% if project.pdf %}<a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View publications</a>{% endif %}
         </div>
     </div>
     {% else %}
@@ -28,7 +28,7 @@ title: Project
         <div class="col-12 col-md-8 mb-3 mb-md-0 order-md-1 align-self-center">
             <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
             <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
-            <a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View publications</a>
+            {% if project.pdf %}<a href="{{ '/assets/pdf/' | append: project.pdf | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View paper</a>{% endif %}
         </div>
     </div>
     {% endif %}

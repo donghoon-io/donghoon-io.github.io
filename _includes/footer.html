@@ -2,16 +2,22 @@
   <hr style="margin-left: 15px; color: #000 !important; background-color: #000 !important; opacity: 1 !important; width: 40px; height: .5px !important; margin-bottom: 2rem !important;">
   <div class="row m-0">
     <div class="col-12 col-md-3 col-sm-4 mb-4 mb-sm-0">
-      <p>Donghoon's theme<br>Up-to-date as of </p>
-      <i class="fas fa-location-dot mr-1"></i> Seattle is <img style="width: auto; height: 23px;" src="/images/weather/{prefix(data.weather[0].id)}.svg">Clear
+      <p>Donghoon's theme<br>Up-to-date as of <span id="date">loading...</span></p>
+      <i class="fas fa-location-dot mr-1"></i> Seattle is <img style="width: auto; height: 23px;" id="weather_icon"><span id="weather">Loading...</span>
     </div>
     <div class="col-12 col-md-9 col-sm-8">
       <p>
-        <a style="font-weight: 100" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a><br>
-        <a style="font-weight: 100" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-twitter mr-2"></i>Twitter</a><br>
-        <a style="font-weight: 100" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-facebook mr-2"></i>Facebook</a><br>
-        <a style="font-weight: 100" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-instagram mr-2"></i>Instagram</a>
+        <a style="font-weight: 100" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-linkedin" style="margin-right: 10.5px"></i>LinkedIn</a><br>
+        <a style="font-weight: 100" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-twitter" style="margin-right: 7.5px"></i>Twitter</a><br>
+        <a style="font-weight: 100" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-facebook" style="margin-right: 8px"></i>Facebook</a><br>
+        <a style="font-weight: 100" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-instagram" style="margin-right: 10.5px"></i>Instagram</a><br>
+        <a href="https://mina.onl/"><i class="fas fa-heart mr-2"></i></a>
       </p>
     </div>
   </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+<script src="{{ '/js/weather.js' | relative_url }}"></script>
+<script src="{{ '/js/github_date.js' | relative_url }}"></script>
