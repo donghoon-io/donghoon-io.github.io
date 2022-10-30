@@ -12,7 +12,7 @@ title: Publication
         display: none !important;
     }
   {% for type in category.types %}
-  #tag-{{ type | replace: ' ', '' }}:checked ~ .tag-label#label-{{ type | replace: ' ', '' }},
+  #tag-{{ type | replace: ' / ', '' }}:checked ~ .tag-label#label-{{ type | replace: ' / ', '' }},
   {% endfor %}
   #tag-all:checked ~ .tag-label#label-all {
     text-decoration: underline;
@@ -21,16 +21,16 @@ title: Publication
 
 
   {% for type in category.types %}
-  #tag-all:checked ~ #publications > #{{ type | replace: ' ', '' }} > .item:not(.item), #publications > .div:not(.div) {
+  #tag-all:checked ~ #publications > #{{ type | replace: ' / ', '' }} > .item:not(.item), #publications > .div:not(.div) {
     display: none !important;
   }
-  #tag-{{ type | replace: ' ', '' }}:checked ~ #publications > .div:not(.{{ type | replace: ' ', '' }}) {
+  #tag-{{ type | replace: ' / ', '' }}:checked ~ #publications > .div:not(.{{ type | replace: ' / ', '' }}) {
     display: none !important;
   }
   {% endfor %}
 
   {% for type in category.types %}
-  #tag-{{ type | replace: ' ', '' }}:checked ~ #publications > .item:not(.tag-{{ type | replace: ' ', '' }}) {
+  #tag-{{ type | replace: ' / ', '' }}:checked ~ #publications > .item:not(.tag-{{ type | replace: ' / ', '' }}) {
     display: none !important;
   }
   {% endfor %}
@@ -64,36 +64,43 @@ title: Publication
     <div class="project-view">
       <input type="radio" name="tag" id="tag-all" aria-labelledby="tag-all" checked>
       {% for cat in category.types %}
-      <input type="radio" name="tag" id="tag-{{ cat | replace: ' ', '' }}" aria-labelledby="tag-{{ cat | replace: ' ', '' }}">
+      <input type="radio" name="tag" id="tag-{{ cat | replace: ' / ', '' }}" aria-labelledby="tag-{{ cat | replace: ' / ', '' }}">
       {% endfor %}
     
       <label style="font-size: .95rem !important; cursor: pointer" for="tag-all" class="tag-label tag-all" id="label-all">All</label>
       {% for cat in category.types %}
-      <label style="font-size: .95rem !important; cursor: pointer" for="tag-{{ cat | replace: ' ', '' }}" class="ml-3 tag-label tag-{{ cat | replace: ' ', '' }}" id="label-{{ cat | replace: ' ', '' }}">{{ cat }}</label>
+      <label style="font-size: .95rem !important; cursor: pointer" for="tag-{{ cat | replace: ' / ', '' }}" class="ms-4 tag-label tag-{{ cat | replace: ' / ', '' }}" id="label-{{ cat | replace: ' / ', '' }}">{{ cat }}</label>
       {% endfor %}
+
       <div class="row mt-4" style="flex: 0 0 100%;" id="publications">
-          {% for pub in publications %}
-          <div class="item col-12 px-0 {% if pub.category %}tag-{{ pub.category | replace: ' ', '' }}{% endif %}">
-              <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;">{{ pub.title }}</p>
-              <p class="mb-2" style="font-size: .95rem; font-weight: 200 !important;">{{ pub.authors }}</p>
-              <p class="mb-2" style="font-size: .95rem; font-weight: 300 !important;">{{ pub.venue_short }}{%if pub.venue_long %}: {{ pub.venue_long }}{% endif %}</p>
-              {% if pub.award %}
-              <p class="mb-2" style="font-size: .95rem; font-weight: 300 !important;"><i class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ pub.award }}</p>
+        {% for pub in publications %}
+        <div class="col-12 px-0 mb-3 {% unless forloop.first %}mt-5{% endunless %}">
+          <p style="font-weight: 400">{{ pub.year }}</p>
+        </div>
+        {% for paper in pub.pubs %}
+        <div class="item col-12 px-0 {% for cat_each in paper.category %}tag-{{ cat_each | replace: ' / ', '' }} {% endfor %}">
+          <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;">{{ paper.title }}</p>
+          
+          <p class="mb-2" style="font-size: .95rem; font-weight: 200 !important;">{% for author in paper.authors %}{% if author == "Donghoon Shin" %}<a style="font-weight: 400;" href="#" data-toggle="tooltip" title="Some tooltip text!">Donghoon Shin</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+          <p class="mb-2" style="font-size: .95rem; font-weight: 300 !important;"><span style="font-weight: 400">{{ paper.venue }}</span>.{%if paper.note %} ({{ paper.note }}){% endif %}</p>
+          {% if paper.award %}
+          <p class="mb-2" style="font-size: .95rem; font-weight: 400 !important;"><i class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
+          {% endif %}
+          <p style="font-size: .9rem; font-weight: 300 !important;">
+              <a href="{{ '/assets/pdf/publications/' | append: paper.id | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% if paper.video %}
+              <a href="{{ paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}
-              <p style="font-size: .9rem; font-weight: 300 !important;">
-                  {% if pub.pdf %}
-                  <a href="{{ '/assets/pdf/publications/' | append: pub.pdf | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  {% endif %}
-                  {% if pub.video %}
-                  <a href="{{ pub.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  {% endif %}
-                  {% if pub.slides %}
-                  <a href="{{ pub.slides }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  {% endif %}
-              </p>
-              <hr>
-          </div>
-          {% endfor %}
+              {% if paper.slides %}
+              <a href="{{ paper.slides }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endif %}
+          </p>
+          {% unless forloop.last %}
+          <hr>
+          {% endunless %}
+      </div>
+        {% endfor %}
+        {% endfor %}
       </div>
     </div>
 </div>

@@ -1,362 +1,378 @@
 publication:
-  - title: "Can I Talk to You about Your Social Needs? Understanding Preference for Conversational User Interface in Health"
-    authors : "Rafal Kocielnik, Raina Langevin, James S George, Shota Akenaga, Amelia Wang, Darwin P Jones, Alexander Argyle, Callan Fockele, Layla Anderson, Dennis T Hsieh, Kabir Yadav, Herbert C Duber, Gary Hsieh, Andrea L Hartzler"
-    venue_short: "CUI 2021"
-    venue_long: "ACM Conference on Conversational User Interfaces"
-    pdf: "kocielnik-CUI2021-CUI.pdf"
-    slides: ""
-    award: "Honorable Mention Award"
-    category: "CAs"
-  - title: "The Effects of User Comments on Science News Engagement"
-    authors : "Spencer Williams, Gary Hsieh"
-    venue_short: "CSCW 2021"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "spencer-cscw2022-science.pdf"
-    video: "https://www.youtube.com/watch?v=V1VD2AiH_jg"
-    category: "Transitional research"
-  - title: "Heuristic Evaluation of Conversational Agents"
-    authors : "Raina Langevin, Ross Lordon, Thi Avrahami, Benjamin Cowan, Tad Hirsch, Gary Hsieh"
-    venue_short: "CHI 2021"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "langevin-CHI2021-caheuristics.pdf"
-    award: "Best Paper Award"
-    video: "https://www.youtube.com/watch?v=CMHsYnhs6Xk"
-    category: "CAs"
-  - title: "Understanding Analytics Needs of Video Game Streamers"
-    authors : "Keri Mallari, Spencer Williams, Gary Hsieh"
-    venue_short: "CHI 2021"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "mallari-chi2021-streamers.pdf"
-    video: "https://www.youtube.com/watch?v=mCg6_QNxdQo"
-    category: "Transitional research"
-  - title: "Human Values and Digital Citizen Science Interactions"
-    authors : "Victoria Palacina, Maria Angela Ferrario, Gary Hsieh, Antti Knutas, Annika Wolff, Jari Porras"
-    venue_short: "IJHCS: International Journal of Human-Computer Studies"
-    pdf: "palacin-IJHCS-values.pdf"
-    category: "Behavior change"
-  - title: "Parallel Journeys of Patients with Cancer and Depression: Challenges and Opportunities for Technology-Enabled Collaborative Care"
-    authors : "Jina Suh, Spencer Williams, Jesse R Fann, James Anthony Fogarty, Amy M Bauer, Gary Hsieh"
-    venue_short: "CSCW 2020"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "suh-CSCW2020-journeys.pdf"
-    category: "Reflection"
-  - title: "Explain like I am a Scientist: The Linguistic Barriers of Entry to r/science"
-    authors : "Tal August, Dallas Card, Gary Hsieh, Noah A Smith, Katharina Reinecke"
-    venue_short: "CHI 2020"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "august-CHI2020-scientist.pdf"
-    category: "Transitional research"
-  - title: "HarborBot: A Chatbot for Social Needs Screening"
-    authors : "Rafal Kocielnik, Elena Agapie, Alexander Argyle, Dennis T. Hsieh, Kabir Yadav, Breena Taira, Gary Hsieh"
-    venue_short: "AMIA 2019: American Medical Informatics Association Annual Symposium"
-    pdf: "kocielnik-AMIA2019-harborbot.pdf"
-    category: "CAs"
-  - title: "A Translational Science Model for HCI"
-    authors : "Lucas Colusso, Ridley Jones, Sean Munson, Gary Hsieh"
-    venue_short: "CHI 2019"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "colusso-chi2019-translationalmodel.pdf"
-    award: "Best Paper Award"
-    category: "Transitional research"
-  - title: "r/science: Challenges and Opportunities for Online Science Communication"
-    authors : "Ridley Jones, Lucas Colusso, Katharina Reinecke, Gary Hsieh"
-    venue_short: "CHI 2019"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "jones-chi2019-rscience.pdf"
-    category: "Transitional research"
-  - title: "The 'Had Mores': Exploring Korean Immigrants' Information Behavior and ICT Usage When Settling in the United States"
-    authors : "Mia Suh, Gary Hsieh"
-    venue_short: "ASIS&T 2019"
-    venue_long: "Journal of the Associate for Information Science and Technology"
-    pdf: "suh-JAIST2018-immigrants.pdf"
-    category: "Reflection"
-  - title: "Reciprocity and Donation: How Article Topic, Quality and Dwell Time Predict Banner Donation on Wikipedia"
-    authors : "Rafal Kocielnik, Os Keyes, Jonathan Morgan, Dario Taraborelli, David McDonald, Gary Hsieh"
-    venue_short: "CSCW 2018"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "kocielnik-CSCW2018-donation.pdf"
-    category: "CAs"
-  - title: "Types of Motivation Affect Study Selection, Attention, and Dropouts in Online Experiments"
-    authors : "Eunice Jun, Gary Hsieh, Katharina Reinecke"
-    venue_short: "CSCW 2018"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "jun-CSCW2018-onlineexp.pdf"
-    category: "CAs"
-  - title: "ReactionBot: Exploring the effects of Expression-Triggered Emoji in Text Messages"
-    authors : "Miki Liu, Austin Wong, Ruhi Pudipeddi, Betty Hou, David Wang, Gary Hsieh"
-    venue_short: "CSCW 2018"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "liu-CSCW2018-reactionbot.pdf"
-    category: "CAs"
-  - title: "Chapter 5: Helping Users Reflect on Their Own Health-Related Behaviors"
-    authors : "Rafal Kocielnik, Gary Hsieh, Daniel Avrahami"
-    venue_short: "Studies in Conversational UX Design"
-    pdf: "Ch5_Studies+in+Conversational+UX+Design.pdf"
-    category: "CAs"
-  - title: "Reflection Companion: A Conversational System for Engaging Users in Reflection on Physical Activity"
-    authors : "Rafal Kocielnik, Lillian Xiao, Daniel Avrahami, Gary Hsieh"
-    venue_short: "IMWUT 2018"
-    venue_long: "PACM on Interactive, Mobile, Wearable and Ubiquitous Technologies"
-    pdf: "kocielnik-UBICOMP2018-reflection.pdf"
-    category: "CAs"
-  - title: "Supporting Answerers with Feedback in Social Q&A"
-    authors : "John Frens, Erin Walker, Gary Hsieh"
-    venue_short: "L@S 2018"
-    venue_long: "ACM Conference on Learning at Scale"
-    pdf: "frens-L@S2018-feedback.pdf"
-    category: "CAs"
-  - title: "Designing for Workplace Reflection: A Chat and Voice-Based Conversational Agent"
-    authors : "Rafal Kocielnik, Daniel Avrahami, Jennifer Marlow, Di Lu, Gary Hsieh"
-    venue_short: "DIS 2018"
-    venue_long: "ACM Conference on Designing Interactive Systems"
-    pdf: "kocielnik-DIS2018-workplacereflection.pdf"
-    category: "CAs"
-  - title: "Behavior Change Design Sprints"
-    authors : "Lucas Colusso, Tien Do, Gary Hsieh"
-    venue_short: "DIS 2018"
-    venue_long: "ACM Conference on Designing Interactive Systems"
-    pdf: "colusso-dis2018-bcds.pdf"
-    category: "CAs"
-  - title: "Crowdsourcing Exercise Plans Aligned with Expert Guidelines and Everyday Constraints"
-    authors : "Elena Agapie, Bonnie Chinh, Laura R. Pina, Diana Oviedo, Molly C. Welsh, Gary Hsieh, Sean A. Munson"
-    venue_short: "CHI 2018"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "agapie-chi2018-exerciseplans.pdf"
-    category: "CAs"
-  - title: "Exploring the Design and Role of Mobile Apps for Healthcare Providers to Find Teratogenic Information"
-    authors : "Lily Lei, Vishwas Shetty, Karan Gupta, Janine E. Polifka, Glen Markham, Sarah Albee, Carol Collins, Gary Hsieh"
-    venue_short: "AMIA 2017"
-    venue_long: "American Medical Informatics Association Annual Symposium"
-    pdf: "lei-AMIA2017_teratogenApp.pdf"
-    category: "CAs"
-  - title: "Translational Resources: Reducing the Gap Between Academic Research and HCI Practice"
-    authors : "Lucas Colusso, Cynthia Bennett, Gary Hsieh, Sean Munson"
-    venue_short: "DIS 2017"
-    venue_long: "ACM Conference on Designing Interactive Systems"
-    pdf: "colusso_dis2017_researchpractice.pdf"
-    category: "CAs"
-  - title: "Designing for Targeted Responder Models: Exploring Barriers to Respond"
-    authors : "Kerem Özcan, Dawn Jorgenson, Christian Richard, Gary Hsieh"
-    venue_short: "CSCW 2017"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "ozcan_CSCW2017_targetedresponder.pdf"
-    category: "CAs"
-  - title: "Send Me a Different Message: Utilizing Cognitive Space to Create Engaging Message Triggers"
-    authors : "Rafal Kocielnik, Gary Hsieh"
-    venue_short: "CSCW 2017"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "kocielnik-CSCW2017-messages.pdf"
-    category: "CAs"
-  - title: '"How Did We Get Here?": Topic Drift in Online Health Discussions'
-    authors : "Albert Park, Andrea L Hartzler, Jina Huh, Gary Hsieh, David W McDonald, Wanda Pratt"
-    venue_short: "Journal of Medical Internet Research"
-    pdf: "MC5112365/"
-    category: "CAs"
-  - title: "'Designing Closeness to Increase Gamers'' Performance'"
-    authors : "Lucas Colusso, Gary Hsieh, Sean A. Munson"
-    venue_short: "CHI 2016"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "colusso-CHI2016-closeness.pdf"
-    category: "CAs"
-  - title: "Designing for Future Behaviors: Understanding the Effect of Temporal Distance on Planned Behaviors"
-    authors : "Minhyang (Mia) Suh, Gary Hsieh"
-    venue_short: "CHI 2016"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "suh-CHI2016-future.pdf"
-    category: "CAs"
-  - title: "Crumbs: Lightweight Daily Food Challenges to Promote Engagement and Mindfulness"
-    authors : "Daniel A. Epstein, Felicia Cordeiro, James Fogarty, Gary Hsieh, Sean A. Munson"
-    venue_short: "CHI 2016"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "epstein-CHI2016-crumbs.pdf"
-    category: "CAs"
-  - title: "You Get Who You Pay for: The Impact of Incentives on Participation Bias"
-    authors : "Gary Hsieh, Rafal Kocielnik"
-    venue_short: "CSCW 2016"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "hsieh-CSCW2016-incentives.pdf"
-    award: "Best Paper Award"
-    category: "CAs"
-  - title: "PlanSourcing: Generating Behavior Change Plans with Friends and Crowds"
-    authors : "Elena Agapie, Lucas Colusso, Sean Munson, Gary Hsieh"
-    venue_short: "CSCW 2016"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "agapie-cscw2016-plansourcing.pdf"
-    category: "CAs"
-  - title: "Tools for teen moms to reduce infant obesity: a randomized clinical trial"
-    authors : "Mildred A Horodynski, Kami Silk, Gary Hsieh, Alice Hoffman, Mackenzie Robson"
-    venue_short: "BMC Public Health"
-    pdf: "horodynski-BMC-2015.pdf"
-    category: "CAs"
-  - title: "Making Use of Derived Personality: The Case of Social Media Ad Targeting"
-    authors : "Jilin Chen, Eben Haber, Ruogu Kang, Gary Hsieh, Jalal Mahmud"
-    venue_short: "ICWSM 2015: International AAAI Conference on Web and Social Media"
-    pdf: "chen-ICWSM2015-travelers.pdf"
-    category: "CAs"
-  - title: "What Motivates People to Review Articles? The Case of the Human-Computer Interaction Community"
-    authors : "Syavash Nobarany, Kellogg S. Booth, Gary Hsieh"
-    venue_short: "JAIST: Journal of the Association for Information Science and Technology"
-    pdf: "nobarany-JAIST-Review.pdf"
-    category: "CAs"
-  - title: "Problem with Cross-Cultural Comparison of User-Generated Ratings on Mechanical Turk"
-    authors : "Hao-Chuan Wang, Tau-Heng Yeo, Syavash Nobarany, Gary Hsieh"
-    venue_short: "Chinese CHI 2015: International Symposium of Chinese CHI"
-    pdf: "wang-CHINESECHI-ratings.pdf"
-    category: "CAs"
-  - title: "How Activists Are Both Born and Made: An Analysis of Users on Change.org"
-    authors : "Shih-Wen Huang, Minhyang (Mia) Suh, Benjamin Mako Hill, Gary Hsieh"
-    venue_short: "CHI 2015"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "huang-CHI2015-change.pdf"
-    category: "CAs"
-  - title: "You Read What You Value: Understanding Personal Values and Reading Interests"
-    authors : "Gary Hsieh, Jilin Chen, Jalal Mahmud, Jeffrey Nichols"
-    venue_short: "CHI 2014"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "hsieh-CHI2014-values.pdf"
-    category: "CAs"
-  - title: "'Understanding Individuals'' Personal Values from Social Media Word Use'"
-    authors : "Jilin Chen, Gary Hsieh, Jalal Mahmud, Jeffrey Nichols"
-    venue_short: "CSCW 2014"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "chen-CSCW2014-values.pdf"
-    category: "CAs"
-  - title: "Does Slacktivism Hurt Activism?: The Effects of Moral Balancing and Consistency in Online Activism"
-    authors : "Yu-Hao Lee & Gary Hsieh"
-    venue_short: "CHI 2013"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "lee-chi2013-slacktivism.pdf"
-    category: "CAs"
-  - title: "The Presentation of Health-Related Search Results and Its Impact on Negative Emotional Outcomes"
-    authors : "Carolyn Lauckner & Gary Hsieh"
-    venue_short: "CHI 2013"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: "lauckner-chi2013-health.pdf"
-    category: "CAs"
-  - title: "'Welcome!': Social and Psychological Predictors of Volunteer Socializers in Online Communities"
-    authors : "Gary Hsieh, Youyang Hou, Ian Chen, Khai Truong"
-    venue_short: "CSCW 2013"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: "hsieh-cscw2013-socialization.pdf"
-    category: "CAs"
-  - title: "Online Information: Access, Search, and Exchange"
-    authors : "Gary Hsieh & Nicolas Friederici"
-    venue_short: "The Sage Handbook of Digital Technology Research."
-    pdf: ""
-    category: "CAs"
-  - title: "The Influence of Competition, Cooperation, and Player Relationship on Performance, Motivation, and Goal Commitment in Game Play"
-    authors : "Wei Peng & Gary Hsieh"
-    venue_short: "Computers and Human Behavior"
-    pdf: ""
-    category: "CAs"
-  - title: "Unlocking the Expressivity of Point Lights."
-    authors : "Chris Harrison, John Horstman, Gary Hsieh, Scott E. Hudson"
-    venue_short: "CHI 2012"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    award: "Honorable Mention Award"
-    category: "CAs"
-  - title: "Donate for Credibility: How Contribution Incentives Can Improve Credibility"
-    authors : "Gary Hsieh, Robert E. Kraut, Scott E. Hudson"
-    venue_short: "CHI 2012"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    category: "CAs"
-  - title: "Kineticons: Using Iconographic Motion in Graphical User Interface Design"
-    authors : "Chris Harrison, Gary Hsieh, Karl D.D. Willis, Jodi Forlizzi, Scott E. Hudson"
-    venue_short: "CHI 2011"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    award: "Honorable Mention Award"
-    category: "CAs"
-  - title: "Why Pay: Exploring How Financial Incentives are Used for Question & Answer"
-    authors : "Gary Hsieh, Robert E. Kraut, Scott E. Hudson"
-    venue_short: "CHI 2010"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    category: "CAs"
-  - title: "'Don''t Ask Me: Designing Social Q&A Services'"
-    authors : "Gary Hsieh"
-    venue_short: "ACM Crossroads"
-    pdf: ""
-    category: "CAs"
-  - title: "mimir: A Market-Based Real-Time Question and Answer Service"
-    authors : "Gary Hsieh, Scott Counts"
-    venue_short: "CHI 2009"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    category: "CAs"
-  - title: "Evaluating Peripheral Displays"
-    authors : "Tara Matthews, Gary Hsieh and Jennifer Mankoff"
-    venue_short: "Awareness Systems: Advances in Theory, Methodology and Design"
-    pdf: ""
-    category: "CAs"
-  - title: "Can Markets Help?: Applying Market Mechanisms to Improve Synchronous Communication"
-    authors : "Gary Hsieh, Robert E. Kraut, Scott E. Hudson and Roberto Weber"
-    venue_short: "CSCW 2008"
-    venue_long: "ACM Conference on Computer Supported Cooperative Work"
-    pdf: ""
-    category: "CAs"
-  - title: "Using Visualization to Increase Compliance in Experience Sampling"
-    authors : "Gary Hsieh, Ian Li, Anind Dey, Jodi Forlizzi and Scott E. Hudson"
-    venue_short: "UBICOMP 2008"
-    venue_long: " International Conference on Ubiquitous Computing"
-    pdf: ""
-    category: "CAs"
-  - title: "Using Tags to Assist Near-Synchronous Communication"
-    authors : "Gary Hsieh, Scott E. Hudson, Robert E. Kraut and Jennifer Lai"
-    venue_short: "CHI 2008"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    category: "CAs"
-  - title: "Field Deployment of IMBuddy: A Study of Privacy Control and Feedback Mechanism for Contextual IM"
-    authors : "Gary Hsieh, Karen P. Tang, Wai Y. Low and Jason I. Hong"
-    venue_short: "UBICOMP 2007"
-    venue_long: "International Conference on Ubiquitous Computing"
-    pdf: ""
-    category: "CAs"
-  - title: "Prioritization in Computer-Mediated Communication: Influences of Urgency, Notification, and Identity"
-    authors : "Laura Dabbish, Gary Hsieh, Scott E. Hudson and Robert E. Kraut"
-    venue_short: "AOM 2007"
-    venue_long: "Academy of Management Best Paper Proceedings"
-    pdf: ""
-    award: "Best Paper Award"
-    category: "CAs"
-  - title: "User-Controllable Security and Privacy For Pervasive Computing"
-    authors : "Jason Cornwell, Ian Fette, Gary Hsieh et al"
-    venue_short: "HotMobile 2007: IEEE Workshop on Mobile Computing Systems and Applications"
-    pdf: ""
-    category: "CAs"
-  - title: "Peripheral Display of Digital Handwritten Notes"
-    authors : "Gary Hsieh, Ken Wood and Abigail Sellen"
-    venue_short: "CHI 2006"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    category: "CAs"
-  - title: "Cafe Life in the Digital Age: Augmenting Information Flow in a caf챕-work-entertainment Space"
-    authors : "Elizabeth Churchill, Les Nelson and Gary Hsieh"
-    venue_short: "CHI 2006"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    category: "CAs"
-  - title: "DanceAlong: Supporting Positive Social Exchange and Exercise for the Elderly Through Dance"
-    authors : "Pedram Keyani, Gary hsieh, Bilge Mutlu, Matthew Easterday and Jodi Forlizzi"
-    venue_short: "CHI 2005"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    category: "CAs"
-  - title: "A Comparison of Two Peripheral Displays for Monitoring Email: Measuring Usability, Awareness, and Distraction"
-    authors : "Gary Hsieh and Jennifer Mankoff"
-    venue_short: "Berkeley EECS Technical Report"
-    pdf: ""
-    category: "CAs"
-  - title: "Heuristic evaluation of ambient displays"
-    authors : "Jennifer Mankoff, Anind K. Dey, Gary Hsieh et al"
-    venue_short: "CHI 2003"
-    venue_long: "ACM Conference on Human Factors in Computing Systems"
-    pdf: ""
-    category: "CAs"
-  - title: "Using Low-Cost Sensing to Support Nutritional Awareness"
-    authors : "Jennifer Mankoff, Gary Hsieh, Ho C. Hung, Sharon Lee and Elizabeth Nitao"
-    venue_short: "UBICOMP 2002: International Conference on Ubiquitous Computing"
-    pdf: ""
+  - year: '2023'
+    pubs:
+      - title: Evaluating the Impact of Human Explanation Strategies on Human-AI Visual Decision-Making
+        image: satellite-explainability-cscw.jpg
+        authors:
+          - Katelyn C. Morrison
+          - Donghoon Shin
+          - Kenneth Holstein
+          - Adam Perer
+        id: cscw2023_satellite-explainability_paper
+        venue: CSCW 2023
+        venue_full: ''
+        abstract: Artificial intelligence (AI) is increasingly being deployed in high-stakes domains, such as disaster relief and radiology, to aid practitioners during the decision-making process for interpreting images. Explainable AI techniques have been developed and deployed to provide users insights into why the AI made a certain prediction. However, recent research suggests that these techniques may confuse or mislead users. We conducted a series of two studies to uncover strategies human use to explain decisions and then understand how those explanation strategies impact visual decision-making. In our first study, we elicit explanations from humans when assessing and localizing damaged buildings after natural disasters from satellite imagery and identify four core explanation strategies that humans employed. We then follow-up by studying the impact of these explanation strategies by framing explanations from Study 1 as if they were generated by AI and showing them to a different set of decision-makers performing the same task. We provide initial insights on how causal explanation strategies improve humans’ accuracy and calibrate humans’ reliance on AI when the AI is incorrect. However, we also find that causal explanation strategies may lead to incorrect rationalizations when the AI presents a correct assessment with incorrect localization. We explore the implications of our findings for the design of human-centered explainable AI and address directions for future work.
+        note: accepted with minor revision
+        category: 
+          - "AI / NLP"
+        featured: true
+  - year: '2022'
+    pubs:
+      - title: Exploring the Effects of AI-assisted Emotional Support Processes in Online Mental Health Community
+        image: omhc.jpg
+        authors:
+          - Donghoon Shin
+          - Subeen Park
+          - Esther Hehsun Kim
+          - Soomin Kim
+          - Jinwook Seo
+          - Hwajung Hong
+        id: chi2022_omhc_poster
+        video: JVqjovjOcwo
+        poster: chi2022_omhc_poster_conference.pdf
+        slide: chi2022_omhc_slide.pdf
+        venue: CHI 2022 Extended Abstracts
+        venue_full: Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems
+        abstract: Social support in online mental health communities (OMHCs) is an effective and accessible way of managing mental wellbeing. In this process, sharing emotional supports is considered crucial to the thriving social supports in OMHCs, yet often difficult for both seekers and providers. To support empathetic interactions, we design an AI-infused workflow that allows users to write emotional supporting messages to other users' posts based on the elicitation of the seeker's emotion and contextual keywords from writing. Based on a preliminary user study (N = 10), we identified that the system helped seekers to clarify emotion and describe text concretely while writing a post. Providers could also learn how to react empathetically to the post. Based on these results, we suggest design implications for our proposed system.
+        bibtex: |-
+          @inproceedings{omhcs,
+                    title = {Exploring the Effects of AI-assisted Emotional Support Processes in Online Mental Health Community},
+                    author = {Shin, Donghoon and Park, Subeen and Kim, Esther Hehsun and Kim, Soomin and Seo, Jinwook and Hong, Hwajung},
+                    year = 2022,
+                    booktitle = {Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems},
+                    location = {New Orleans, LA, USA},
+                    publisher = {ACM},
+                    address = {New York, NY, USA},
+                    series = {CHI EA '22},
+                    doi = {10.1145/3491101.3519854},
+                    isbn = {978-1-4503-9156-6/22/04},
+                    url = {http://doi.acm.org/10.1145/3491101.3519854},
+                    keywords = {online mental health community, AI-infused system, emotional support, peer support}
+                  }
+        note: Late-breaking work
+        category: 
+          - "AI / NLP"
+          - "Healthcare"
+          - "CSCW"
+        featured: true
+      - title: Leveraging AI to Assist Emotional Supports in Online Mental Health Community
+        image: omhc-flow.jpg
+        authors:
+          - Donghoon Shin
+          - Subeen Park
+          - Esther Hehsun Kim
+          - Soomin Kim
+          - Jinwook Seo
+          - Hwajung Hong
+        id: chi2022_omhc_workshop
+        venue: CHI 2022 Workshop
+        venue_full: Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems
+        abstract: Although sharing emotional supports in online mental health communities (OMHCs) is an effective and accessible way of managing mental wellbeing, it is often difficult for both seekers and providers. To support empathetic interactions, we design an AI-infused workflow that allows users to write emotional supporting messages to other users' posts based on the elicitation of the seeker's emotion and contextual keywords from writing. Based on a preliminary user study (N = 10), we identified that the system helped seekers to clarify emotion and describe text concretely while writing a post. Providers could also learn how to react empathetically to the post. Based on these results, we suggest design implications for our proposed system.
+        bibtex: |-
+          @inproceedings{omhcs_workshop,
+                    title = {Leveraging AI to Assist Emotional Supports in Online Mental Health Community},
+                    author = {Shin, Donghoon and Park, Subeen and Kim, Esther Hehsun and Kim, Soomin and Seo, Jinwook and Hong, Hwajung},
+                    year = 2022,
+                    booktitle = {CHI 2022 Workshop on the Future of Emotion in HCI},
+                    location = {New Orleans, LA, USA},
+                    keywords = {online mental health community, AI-infused system, emotional support, peer support}
+                  }
+        note: Future of Emotion in HCI
+        category: 
+          - "AI / NLP"
+          - "Healthcare"
+          - "CSCW"
+      - title: "AmslerTouch: Self-testing Amsler Grid Application for Supporting a Quantitative Report of AMD Symptoms"
+        image: amslertouch.jpg
+        id: hcik2022_amslertouch_paper
+        authors:
+          - Donghoon Shin
+        slide: hcik2022_amslertouch_slide.pdf
+        video: YK8v5d85ZMU
+        venue: HCI Korea 2022
+        venue_full: Proceedings of HCI Korea 2022
+        category:
+          - "Healthcare"
+        bibtex: |-
+          @inproceedings{amslertouch,
+                    title = {AmslerTouch: Self-testing Amsler Grid Application for Supporting a Quantitative Report of Age-related Macular Degeneration Symptoms},
+                    author = {Shin, Donghoon},
+                    year = 2022,
+                    booktitle = {Proceedings of the 2022 HCI Korea},
+                    publisher = {HCI Korea},
+                    series = {HCI Korea '22},
+                    keywords = {Healthcare, Medical informatics}
+                  }
+        abstract: Age-related macular degeneration (AMD) is a progressive chronic disease that is led by damage in the macula. Due to its irreversible characteristics and disastrous effects on the patients, a precise diagnosis of the symptoms is extremely important. Yet, paperbased Amsler Grid, which is known as the most prevalent testing method, is highly limited in that it requires the indirect report of patients and quantitative reporting is difficult. To address this, I propose AmslerTouch, a touch-based Amslertesting web app that supports patients to self-report AMD symptoms. Based on the heuristic evaluation for identifying enhancements, I also discuss possible enhancements of my proposed system.
+  - year: '2021'
+    pubs:
+      - title: Characterizing Human Explanation Strategies to Inform the Design of Explainable AI for Building Damage Assessment
+        image: satellite-explainability-neurips.jpg
+        id: neurips2021_satellite-explainability_workshop
+        authors:
+          - Donghoon Shin
+          - Sachin Grover
+          - Kenneth Holstein
+          - Adam Perer
+        venue: NeurIPS 2021 Workshop
+        abstract: Explainable AI (XAI) is a promising means of supporting human-AI collaborations for high-stakes visual detection tasks, such as damage detection tasks from satellite imageries, as fully-automated approaches are unlikely to be perfectly safe and reliable. However, most existing XAI techniques are not informed by the understandings of task-specific needs of humans for explanations. Thus, we took a first step toward understanding what forms of XAI humans require in damage detection tasks. We conducted an online crowdsourced study to understand how people explain their own assessments, when evaluating the severity of building damage based on satellite imagery. Through the study with 60 crowdworkers, we surfaced six major strategies that humans utilize to explain their visual damage assessments. We present implications of our findings for the design of XAI methods for such visual detection contexts, and discuss opportunities for future research.
+        note: AI for HADR
+        venue_full: NeurIPS 2021 Workshop on AI for Humanitarian Assistance and Disaster Response
+        poster: neurips2021_satellite-explainability_poster.pdf
+        category:
+          - "AI / NLP"
+        bibtex: |-
+          @inproceedings{satellite,
+                    title = {Characterizing Human Explanation Strategies to Inform the Design of Explainable AI for Building Damage Assessment},
+                    author = {Shin, Donghoon and Grover, Sachin and Holstein, Kenneth and Perer, Adam},
+                    year = 2021,
+                    booktitle = {NeurIPS 2021 Workshop on Artificial Intelligence for Humanitarian Assistance and Disaster Response},
+                    location = {Sydney, Australia},
+                    keywords = {explainable AI, satellite imagery, damage detection, disaster response}
+                  }
+      - title: "Trkic G00gle: Why and How Users Game Translation Algorithms"
+        image: trkic-g00gle.jpg
+        id: cscw2021_trkic-g00gle_paper
+        video: VVAQqC5tedQ
+        authors:
+          - Soomin Kim
+          - Changhoon Oh
+          - Won Ik Cho
+          - Donghoon Shin
+          - Bongwon Suh
+          - Joonhwan Lee
+        venue: CSCW 2021
+        venue_full: 'Proceedings of the ACM on Human-Computer Interaction, 5(CSCW2)'
+        abstract: Individuals interact with algorithms in various ways. Users even game and circumvent algorithms so as to achieve favorable outcomes. This study aims to come to an understanding of how various stakeholders interact with each other in tricking algorithms, with a focus towards online review communities. We employed a mixed-method approach in order to explore how and why users write machine non-translatable reviews as well as how those encrypted messages are perceived by those receiving them. We found that users are able to find tactics to trick the algorithms in order to avoid censoring, to mitigate interpersonal burden, to protect privacy, and to provide authentic information for enabling the formation of informative review communities. They apply several linguistic and social strategies in this regard. Furthermore, users perceive encrypted messages as both more trustworthy and authentic. Based on these findings, we discuss implications for online review community and content moderation algorithms.
+        category:
+          - "AI / NLP"
+          - "CSCW"
+        bibtex: |-
+          @article{trkicg00gle,
+                    title = {Trkic G00gle: Why and How Users Game Translation Algorithms},
+                    author = {Kim, Soomin and Oh, Changhoon and Cho, Won Ik and Shin, Donghoon and Suh, Bongwon and Lee, Joonhwan},
+                    year = 2021,
+                    journal = {Proceedings of the ACM on Human-Computer Interaction},
+                    publisher = {ACM},
+                    address = {New York, NY, USA},
+                    volume = 5,
+                    number = {CSCW2},
+                    pages = {1--24},
+                    doi = {10.1145/3476085},
+                    url = {http://doi.acm.org/10.1145/3476085},
+                    keywords = {Human-AI Interaction, algorithmic experience, gaming, translation algorithm, online review, recommendation algorithm, peer-to-peer platform}
+                  }
+        featured: true
+      - title: "BlahBlahBot: Facilitating Conversation between Strangers using a Chatbot with ML-infused Personalized Topic Suggestion"
+        image: blahblahbot.jpg
+        id: chi2021_blahblahbot_poster
+        authors:
+          - Donghoon Shin
+          - Sangwon Yoon
+          - Soomin Kim
+          - Joonhwan Lee
+        venue: CHI 2021 Extended Abstracts
+        venue_full: Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems
+        note: Late-breaking work
+        abstract: It is a prevalent behavior of having a chat with strangers in online settings where people can easily gather. Yet, people often fnd it difcult to initiate and maintain conversation due to the lack of information about strangers. Hence, we aimed to facilitate conversation between the strangers with the use of machine learning (ML) algorithms and present BlahBlahBot, an ML-infused chatbot that moderates conversation between strangers with personalized topics. Based on social media posts, BlahBlahBot supports the conversation by suggesting topics that are likely to be of mutual interest between users. A user study with three groups (control, random topic chatbot, and BlahBlahBot; N=18) found the feasibility of BlahBlahBot in increasing both conversation quality and closeness to the partner, along with the factors that led to such increases from the user interview. Overall, our preliminary results imply that an ML-infused conversational agent can be efective for augmenting a dyadic conversation.
+        poster: chi2021_blahblahbot_poster_conference.pdf
+        video: 0blBM7xkELw
+        category: 
+          - "AI / NLP"
+          - "Chatbot"
+          - "CSCW"
+        bibtex: |-
+          @inproceedings{blahblahbot,
+                    title = {BlahBlahBot: Facilitating Conversation between Strangers using a Chatbot with ML-infused Personalized Topic Suggestion based on Social Media Posts},
+                    author = {Shin, Donghoon and Yoon, Sangwon and Kim, Soomin and Lee, Joonhwan},
+                    year = 2021,
+                    booktitle = {Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems},
+                    location = {Yokohama, Japan},
+                    publisher = {ACM},
+                    address = {New York, NY, USA},
+                    series = {CHI EA '21},
+                    doi = {10.1145/3411763.3451771},
+                    isbn = {978-1-4503-8095-9/21/05},
+                    url = {http://doi.acm.org/10.1145/3411763.3451771},
+                    keywords = {chatbot, topic suggestion, computer mediated communication, chat moderation}
+                  }
+        featured: true
+      - title: "Design Guidelines of Computer-based Intervention for Computer Vision Syndrome: Focus Group Study and In-the-wild Deployment"
+        image: liquideye.jpg
+        id: jmir_liquideye_paper
+        authors:
+          - Youjin Hwang
+          - Donghoon Shin
+          - Jinsu Eun
+          - Bongwon Suh
+          - Joonhwan Lee
+        venue: 'Journal of Medical Internet Research 23(3), 2021'
+        venue_full: 'Journal of Medical Internet Research, 23(3), e22099'
+        category: 
+          - "Healthcare"
+        abstract: >-
+          Background:
+
+          Prolonged time of computer use increases the prevalence of ocular
+          problems, including eye strain, tired eyes, irritation, redness, blurred
+          vision, and double vision, which are collectively referred to as
+          computer vision syndrome (CVS). Approximately 70% of computer users have
+          vision-related problems. For these reasons, properly designed
+          interventions for users with CVS are required. To design an effective
+          screen intervention for preventing or improving CVS, we must understand
+          the effective interfaces of computer-based interventions.
+
+
+          Objective:
+
+          In this study, we aimed to explore the interface elements of
+          computer-based interventions for CVS to set design guidelines based on
+          the pros and cons of each interface element.
+
+
+          Methods:
+
+          We conducted an iterative user study to achieve our research objective.
+          First, we conducted a workshop to evaluate the overall interface
+          elements that were included in previous systems for CVS (n=7). Through
+          the workshop, participants evaluated existing interface elements. Based
+          on the evaluation results, we eliminated the elements that negatively
+          affect intervention outcomes. Second, we designed our prototype system
+          LiquidEye that includes multiple interface options (n=11). Interface
+          options included interface elements that were positively evaluated in
+          the workshop study. Lastly, we deployed LiquidEye in the real world to
+          see how the included elements affected the intervention outcomes.
+          Participants used LiquidEye for 14 days, and during this period, we
+          collected participants’ daily logs (n=680). Additionally, we conducted
+          prestudy and poststudy surveys, and poststudy interviews to explore how
+          each interface element affects participation in the system.
+
+
+          Results:
+
+          User data logs collected from the 14 days of deployment were analyzed
+          with multiple regression analysis to explore the interface elements
+          affecting user participation in the intervention (LiquidEye).
+          Statistically significant elements were the instruction page of the eye
+          resting strategy (P=.01), goal setting of the resting period (P=.009),
+          compliment feedback after completing resting (P<.001), a mid-size popup
+          window (P=.02), and CVS symptom-like effects (P=.004).
+
+
+          Conclusions:
+
+          Based on the study results, we suggested design implications to consider
+          when designing computer-based interventions for CVS. The sophisticated
+          design of the customization interface can make it possible for users to
+          use the system more interactively, which can result in higher engagement
+          in managing eye conditions. There are important technical challenges
+          that still need to be addressed, but given the fact that this study was
+          able to clarify the various factors related to computer-based
+          interventions, the findings are expected to contribute greatly to the
+          research of various computer-based intervention designs in the future.
+        bibtex: |-
+          @article{liquideye,
+                    title = {Design Guidelines of Computer-based Intervention for Computer Vision Syndrome: Focus Group Study and In-the-wild Deployment},
+                    author = {Hwang, Youjin and Shin, Donghoon and Eun, Jinsu and Suh, Bongwon and Lee, Joonhwan},
+                    year = 2021,
+                    month = {Feb},
+                    day = 25,
+                    journal = {J Med Internet Res},
+                    doi = {10.2196/22099},
+                    url = {https://doi.org/10.2196/22099}
+                  }
+  - year: '2020'
+    pubs:
+      - title: "TalkingBoogie: Collaborative Mobile AAC System for Non-verbal Children with Developmental Disabilities and Their Caregivers"
+        image: talkingboogie.jpg
+        id: chi2020_talkingboogie_paper
+        authors:
+          - Donghoon Shin
+          - Jaeyoon Song
+          - Seokwoo Song
+          - Jisoo Park
+          - Joonhwan Lee
+          - Soojin Jun
+        venue: CHI 2020
+        venue_full: "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems"
+        abstract: "Augmentative and alternative communication (AAC) technologies are widely used to help non-verbal children enable communication. For AAC-aided communication to be successful, caregivers should support children with consistent intervention strategies in various settings. As such, caregivers need to continuously observe and discuss children's AAC usage to create a shared understanding of these strategies. However, caregivers often find it challenging to effectively collaborate with one another due to a lack of family involvement and the unstructured process of collaboration. To address these issues, we present TalkingBoogie, which consists of two mobile apps: TalkingBoogie-AAC for caregiver-child communication, and TalkingBoogie-coach supporting caregiver collaboration. Working together, these applications provide contextualized layouts for symbol arrangement, scaffold the process of sharing and discussing observations, and induce caregivers' balanced participation. A two-week deployment study with four groups (N=11) found that TalkingBoogie helped increase mutual understanding of strategies and encourage balanced participation between caregivers with reduced cognitive loads."
+        award: Honorable Mention Award
+        slide: chi2020_talkingboogie_slide.pdf
+        category: 
+          - "Healthcare"
+          - "CSCW"
+        bibtex: |-
+          @inproceedings{talkingboogie,
+                    title = {TalkingBoogie: Collaborative Mobile AAC System for Non-verbal Children with Developmental Disabilities and Their Caregivers},
+                    author = {Shin, Donghoon and Song, Jaeyoon and Song, Seokwoo and Park, Jisoo and Lee, Joonhwan and Jun, Soojin},
+                    year = 2020,
+                    booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},
+                    location = {Honolulu, HI, USA},
+                    publisher = {ACM},
+                    address = {New York, NY, USA},
+                    series = {CHI '20},
+                    doi = {10.1145/3313831.3376154},
+                    isbn = {978-1-4503-6708-0/20/04},
+                    url = {http://doi.acm.org/10.1145/3313831.3376154},
+                    keywords = {AAC, developmental disability, assistive technology, caregiver collaboration, accessibility}
+                  }
+        featured: true
+      - title: "Applying the Persona of User’s Family Member and the Doctor to the Conversational Agents for Healthcare"
+        image: personabot.jpg
+        id: chi2020_personabot_workshop
+        authors:
+          - Youjin Hwang
+          - Donghoon Shin
+          - Sion Baek
+          - Bongwon Suh
+          - Joonhwan Lee
+        venue: CHI 2020 Workshop
+        venue_full: CHI 2020 Workshop on Conversational Agents for Health and Wellbeing
+        abstract: Conversational agents have been showing lots of opportunities in healthcare by taking over a lot of tasks that used to be done by a human. One of the major functions of conversational healthcare agent is intervening users’ daily behaviors. In this case, forming an intimate and trustful relationship with users is one of the major issues. Factors affecting human-agent relationship should be deeply explored to improve long-term acceptance of healthcare agent. Even though a bunch of ideas and researches have been suggested to increase the acceptance of conversational agents in healthcare, challenges still remain. From the preliminary work we conducted, we suggest an idea of applying the personas of users’ family members and the doctor who are in the relationship with users in the real world as a solution for forming the rigid relationship between humans and the chatbot.
+        note: CAs for Health and Wellbeing
+        category: 
+          - "AI / NLP"
+          - "Healthcare"
+          - "Chatbot"
+          - "CSCW"
+        bibtex: |-
+          @inproceedings{chatbotpersona,
+                    title = {Applying the Persona of User’s Family Member and the Doctor to the Conversational Agents for Healthcare},
+                    author = {Hwang, Youjin and Shin, Donghoon and Baek, Sion and Suh, Bongwon and Lee, Joonhwan},
+                    year = 2020,
+                    booktitle = {CHI 2020 Workshop on Conversational Agents for Health and Wellbeing},
+                    location = {Honolulu, HI, USA},
+                    keywords = {chatbot, persona, healthcare}
+                  }
+      - title: Linguistic Features to Consider When Applying Persona of the Real Persona to the Text-based Agent
+        image: prp.jpg
+        id: mobilehci2020_prp_poster
+        authors:
+          - Youjin Hwang
+          - Seokwoo Song
+          - Donghoon Shin
+          - Joonhwan Lee
+        venue: MobileHCI 2020 Extended Abstracts
+        venue_full: 22nd International Conference on Human-Computer Interaction with Mobile Devices and Services
+        abstract: As artificial intelligence (AI) technologies advance, the possibility of developing virtual agents capable of mimicking human beings is increasing. Furthermore, AI techniques applicable to mimicking certain features of a specific person (e.g., facial expression, voice, motion) are becoming more sophisticated. Although the HCI community has explored how to design or develop AI agents mimicking a real person, limited studies on mimicking someone’s text-based behavior shown in the instant messaging exist. This study investigates the features that make users perceive text-based agents as people they know in reality. On top of the previous efforts of designing human-like virtual agents, our work suggests design guidelines for applying the persona of the real person (PRP) to text-based agents.
+        note: Late-breaking result
+        category: 
+          - "AI / NLP"
+          - "Healthcare"
+          - "Chatbot"
+          - "CSCW"
+        bibtex: |-
+          @inproceedings{linguisticfeatures,
+                    title = {Linguistic Features to Consider When Applying Persona of the Real Persona to the Text-based Agent},
+                    author = {Hwang, Youjin and Song, Seokwoo and Shin, Donghoon and Lee, Joonhwan},
+                    year = 2020,
+                    booktitle = {22th International Conference on Human-Computer Interaction with Mobile Devices and Services},
+                    location = {Oldenburg, Germany},
+                    publisher = {ACM},
+                    address = {New York, NY, USA},
+                    series = {MobileHCI '20},
+                    doi = {10.1145/3406324.3410723},
+                    isbn = {978-1-4503-8052-2/20/10},
+                    url = {http://doi.acm.org/10.1145/3406324.3410723},
+                    keywords = {chatbot, chat analysis, personality, authorship attribution}
+                  }
