@@ -30,10 +30,7 @@ body {
 	padding: 0 10rem !important;
 }
 footer {
-    background-color: #9B2F7A;
-    color: white;
-	padding: 2rem 10rem !important;
-    margin-top: 2rem;
+	padding: 1rem 10rem 2rem 10rem !important;
 }
 ::-moz-selection {
 	color: #333;
