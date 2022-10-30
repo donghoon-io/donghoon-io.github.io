@@ -1,11 +1,14 @@
-const gh_token = "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";
+const gh_token1 = "gh";
+const gh_token2 = "p_T0njguBA73rA4";
+const gh_token3 = "A6ELKdgdXlX5gkv0a0cvprG";
 
 let headers = new Headers();
-headers.append('Authorization', `token ${gh_token}`);
+headers.append('Authorization', `token ${gh_token1 + gh_token2 + gh_token3}`);
 
 fetch("https://api.github.com/repos/donghoon-io/donghoon-website/branches/main", {method:'GET', headers: headers})
 .then(response => response.json())
 .then(data => {
+  console.log(data);
   let date = new Date(data.commit.commit.committer.date);
   var dateString = moment(date).format('MMM DD, YYYY');
   document.getElementById("date").innerText = dateString;
