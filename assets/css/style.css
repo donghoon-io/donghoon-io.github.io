@@ -18,7 +18,6 @@
 }
 
 html {
-	background-color: #9B2F7A
 }
 
 body {
@@ -92,12 +91,13 @@ h4 {
 }
 
 .active {
-	font-weight: 500 !important;
+	text-decoration: underline !important;
 }
 
 .nav-link {
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: .75px;
+	font-size: 1.05rem;
 	color: black !important;
 }
 .navbar-nav > li{
