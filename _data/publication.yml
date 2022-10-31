@@ -15,6 +15,7 @@ publication:
         note: accepted with minor revision
         category: 
           - "AI / NLP"
+          - "CSCW"
         featured: true
   - year: '2022'
     pubs:
@@ -89,7 +90,7 @@ publication:
           - Donghoon Shin
         slide: hcik2022_amslertouch_slide.pdf
         video: YK8v5d85ZMU
-        venue: HCI Korea 2022
+        venue: HCIK 2022
         venue_full: Proceedings of HCI Korea 2022
         category:
           - "Healthcare"
