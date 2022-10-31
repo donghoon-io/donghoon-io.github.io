@@ -3,34 +3,41 @@ layout: default
 title: Music
 ---
 
-{% assign projects = site.data.project.project %}
+{% assign musics = site.data.music.musics %}
 
 <div class="container py-4">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Music</p>
-    {% for project in projects %}
-    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
+    {% for music in musics %}
     <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-3 mb-md-0 align-self-center">
-            <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <p style="font-size: 1rem;">{{ music.artist }} - {{ music.title }}</p>
         </div>
         <div class="col-12 col-md-8 mb-3 mb-md-0 align-self-center">
-            <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
-            {% if project.pdf %}<a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View publications</a>{% endif %}
+            <div class="h_iframe">
+                <p align="center"><iframe loading="auto" src="{{ music.link }}" height="400" style="border:none; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></p>
+            </div>
+            <iframe loading="auto" allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="{{ music.applemusic }}"></iframe>
+            <p class="section-body pub-detail pt-2"><i class="fa-solid fa-music"></i>&nbsp;&nbsp; {{ music.type }}</p>
         </div>
     </div>
-    {% else %}
-    <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-3 mb-md-0 order-md-2 align-self-center">
-            <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-        </div>
-        <div class="col-12 col-md-8 mb-3 mb-md-0 order-md-1 align-self-center">
-            <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
-            {% if project.pdf %}<a href="{{ '/assets/pdf/' | append: project.pdf | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View paper</a>{% endif %}
-        </div>
-    </div>
-    {% endif %}
     {% endfor %}
 </div>
+<style>
+  .h_iframe {
+	background-color: #f6f6f9;
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	margin-bottom: 10px;
+	height: 0;
+  }
+  
+.h_iframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
