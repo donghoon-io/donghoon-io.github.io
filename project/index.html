@@ -6,7 +6,19 @@ title: Project
 {% assign projects = site.data.project.project %}
 
 <div class="container py-4">
-    <p style="font-weight: 500 !important; text-transform: uppercase;">project</p>
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Research Area & Projects</p>
+    <div class="row">
+    <div class="col-xs-12 col-sm-9 my-auto">
+        <p class="section-body">My research focuses on <span class="intext-highlight" id="designing">designing</span> and evaluating <span class="intext-highlight" id="social">social computing systems</span> that support real-world collaborative processes by harnessing <span class="intext-highlight" id="ai-ml">machine intelligence</span>.
+        <br><br>Specifically, my research aims to (i) surface challenges of collaborations arising in the multi-faceted user group and (ii) build AI-infused systems to support them.<br><br>(+ I like mixed-methods approach!)</p>
+        </div>
+    <div class="col-xs-12 col-sm-3 my-auto">
+        <div class="venn" id="venn"></div>
+        <div id="tooltip">&nbsp;</div>
+        <p class="venn-caption">↑ Hover over the diagram!</p>
+    </div>
+    </div>
+    <hr>
     {% for project in projects %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
@@ -15,7 +27,7 @@ title: Project
             <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
         </div>
         <div class="col-12 col-md-8 mb-3 mb-md-0 align-self-center">
-            <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
+            <p class="mt-2" style="font-size: 1rem; font-weight: 400 !important;">{{ project.title }}</p>
             <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
             {% if project.pdf %}<a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View publications</a>{% endif %}
         </div>
@@ -34,3 +46,27 @@ title: Project
     {% endif %}
     {% endfor %}
 </div>
+
+<style>
+    .intext-highlight {
+        text-decoration: none;
+        background-position-y: -0%;
+        background-image: linear-gradient( white 50%, #ffe13a 50%);
+        background-size: auto 175%;
+        font-weight: 400;
+        color: #000;
+    }
+
+
+.venn-caption {
+	font-size: 12px !important;
+	text-align: center;
+	font-weight: 300;
+	color: #666;
+}
+</style>
+
+<link rel="stylesheet" href="{{ '/assets/css/venn-diagram.css' | relative_url }}">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="{{ '/js/venn.js' | relative_url }}"></script>
+<script src="{{ '/js/venn-diagram.js' | relative_url }}"></script>

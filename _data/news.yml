@@ -1,13 +1,16 @@
 list: # format date as dd/mm/yyyy
-  - title: "News 4 title"
-    date: "21/10/2021" # Oct 21, 2021
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus."
-  - title: "News 3 title"
-    date: "25/06/2011" # Jun 25, 2011
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus."
-  - title: "News 2 title"
-    date: "21/01/1997"
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus."
+  - title: "CSCW paper accepted"
+    date: "15/10/2022" # Oct 21, 2021
+    description: "Excited to share that our paper on understanding the impact of human explanation strategies on human-AI collaboration has been accepted to CSCW 2023!"
+  - title: "Submitted three CHI papers"
+    date: "15/09/2022" # Oct 21, 2021
+    description: "Submitted three CHI papers on AI (LLMs in particular), CSCW, and learning analytics. Finger crossed 🤞"
+  - title: "Started my graduate studies at UW HCDE"
+    date: "28/09/2022" # Jun 25, 2011
+    description: "Excited to share that I just started my new journey as a Ph.D. student in HCDE at the University of Washington 🎉"
+  - title: "First in-person conference attendance @ CHI 2022"
+    date: "30/04/2022"
+    description: "So excited to attend my first in-person conference (CHI 2022) in New Orleans, LA!"
   - title: "News 1 title"
     date: "21/08/1987" # Oct 21, 1997
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus."

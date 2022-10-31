@@ -1,0 +1,36 @@
+---
+layout: default
+title: Music
+---
+
+{% assign projects = site.data.project.project %}
+
+<div class="container py-4">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Music</p>
+    {% for project in projects %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="row mt-5">
+        <div class="col-12 col-md-4 mb-3 mb-md-0 align-self-center">
+            <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+        </div>
+        <div class="col-12 col-md-8 mb-3 mb-md-0 align-self-center">
+            <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
+            <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
+            {% if project.pdf %}<a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View publications</a>{% endif %}
+        </div>
+    </div>
+    {% else %}
+    <div class="row mt-5">
+        <div class="col-12 col-md-4 mb-3 mb-md-0 order-md-2 align-self-center">
+            <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+        </div>
+        <div class="col-12 col-md-8 mb-3 mb-md-0 order-md-1 align-self-center">
+            <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
+            <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
+            {% if project.pdf %}<a href="{{ '/assets/pdf/' | append: project.pdf | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View paper</a>{% endif %}
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

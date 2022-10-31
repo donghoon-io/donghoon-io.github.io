@@ -86,15 +86,20 @@ title: Publication
           {% if paper.award %}
           <p class="mb-2" style="font-size: .95rem; font-weight: 400 !important;"><i class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
           {% endif %}
+          {% unless paper.note contains 'accepted' %}
           <p style="font-size: .9rem; font-weight: 300 !important;">
-              <a href="{{ '/assets/pdf/publications/' | append: paper.id | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{{ '/assets/pdf/' | append: paper.id | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% if paper.video %}
               <a href="{{ paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}
-              {% if paper.slides %}
-              <a href="{{ paper.slides }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% if paper.slide %}
+              <a href="{{ paper.slide }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endif %}
+              {% if paper.poster %}
+              <a href="{{ paper.poster }}"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;Poster</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}
           </p>
+          {% endunless %}
           {% unless forloop.last %}
           <hr>
           {% endunless %}

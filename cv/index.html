@@ -4,11 +4,277 @@ baseurl: /cv
 title: CV
 ---
 
+{% assign publications = site.data.publication.publication %}
+
 <div class="container py-4">
-    <p style="font-weight: 500 !important; text-transform: uppercase;">Curriculum Vitae</p>
-    <div class="row mt-4">
+    <div class="row">
         <div class="col-12">
-            <iframe src="{{'/assets/pdf/cv.pdf' | relative_url }}" style="width: 100%; height: 1000px !important;"></iframe>
+            <main>
+                <header>
+                  <h1>Donghoon Shin <a class="pdf" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" rel="external"><i class="fas fa-file-pdf"></i> <b>PDF</b></a></h1>
+                  <p><a href="#" class="cryptedmail"
+                    data-name="dhoon"
+                    data-domain="uw"
+                    data-tld="edu"
+                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a><br><a href="https://donghoon.io">donghoon.io</a><br></p>
+                </header>
+                <section id="education">
+                  <h2>Education</h2>
+                  <div class="dated-entry">
+                      <div class="dated-date">2022 -</div>
+                      <div class="dated-content"><b><a href="https://uw.edu">University of Washington</a></b>, Seattle, WA<br>
+                      Ph.D., <a href="https://hcde.uw.edu">Human Centered Design and Engineering</a><br>
+                      <small>Advisor: <a href="https://faculty.washington.edu/garyhs/">Gary Hsieh</a></small><br>
+                      </div>
+                  </div>
+                  <div class="dated-entry">
+                      <div class="dated-date">2016 - 2022</div>
+                      <div class="dated-content"><b><a href="https://snu.ac.kr/">Seoul National University</a></b>, Seoul, Korea<br>
+                      B.S., <a href="https://ee.snu.ac.kr/">Electrical and Computer Engineering</a><br>
+                      B.A., <a href="https://isc.snu.ac.kr/">Information Science and Culture</a><br>
+                      <small>Graduated <i>cum laude</i></small><br>
+                      </div>
+                  </div>
+                </section>
+                <section id="publications">
+                  <h2>Publications</h2>
+                  {% for pubs in publications %}
+                    {% for pub in pubs.pubs %}
+                    <div class="dated-entry">
+                      <div class="dated-date">{% if forloop.first %}{{ pubs.year }}{% endif %}</div>
+                      <div class="dated-content"><a style="font-weight: 500" href="/publication/{{ pub.id }}">{{ pub.title }}</a><br>
+                        {% for author in pub.authors %}
+                        {% if author == "Donghoon Shin" %}<span style="font-weight: 500 !important">Donghoon Shin</span>{% else %}{{ author }}{% endif %}{% unless forloop.last%}, {% endunless %}
+                        {% endfor %}
+                        <br>
+                        {{ pub.venue }}.{% if pub.note %} ({{ pub.note}}){% endif %}<br>
+                        {% if pub.award %}<i class="fas fa-medal"></i><span style="font-weight: 500">{{ pub.award }}</span><br>{% endif %}
+                      </div>
+                    </div>
+                    {% endfor %}
+                  {% endfor %}
+                </section>
+                <section id="research">
+                  <h2>Research Experience</h2>
+                  <div class="dated-entry">
+                    <div class="dated-date">2022 -</div>
+                    <div class="dated-content">
+                      <b><a href="https://prosocialcomputing.com/">Prosocial Computing Lab</a></b>, <a href="https://uw.edu/">University of Washington</a><br>
+                      Graduate research assistant<br>
+                      <small>Advisor: <a href="https://faculty.washington.edu/garyhs/">Gary Hsieh</a></small>
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2020 - 2022</div>
+                    <div class="dated-content">
+                      <b><a href="https://thecoalalab.com/">CoALA Lab</a> & <a href="https://dig.cmu.edu/">Data Interaction Group</a></b>, <a href="https://cmu.edu/">Carnegie Mellon University</a><br>
+                      Research Intern<br>
+                      <small>Advisor: <a href="https://kenholstein.com/">Kenneth Holstein</a> & <a href="https://perer.org/">Adam Perer</a></small>
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2019 - 2020</div>
+                    <div class="dated-content">
+                      <b><a href="https://hcid.snu.ac.kr/">HCI+d Lab</a></b>, <a href="https://snu.ac.kr/">Seoul National University</a><br>
+                      Research Intern<br>
+                      <small>Advisor: <a href="https://hcid.snu.ac.kr/people/joonhwan">Joonhwan Lee</a></small>
+                    </div>
+                  </div>
+                </section>
+                <section id="awards">
+                  <h2>Honors and Awards</h2>
+                  <div class="dated-entry">
+                    <div class="dated-date">2022 -</div>
+                    <div class="dated-content">
+                      <b>Government Scholarship for Overseas Study</b>, Republic of Korea<br>
+                      Merit-based scholarship for graduate studies funded by the Korean government (~ 50 recipients selected annually)
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2022</div>
+                    <div class="dated-content">
+                      <b>UW Graduate School Fellowship</b>, University of Washington<br>
+                      Selected by the department
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2022</div>
+                    <div class="dated-content">
+                      <b>Gary Marsden Travel Award</b>, ACM SIGCHI<br>
+                      Travel grant for attending CHI 2022
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2022</div>
+                    <div class="dated-content">
+                      <b>Special Recognition for Outstanding Reviews</b>, ACM CHI 2022<br>
+                      Recognition for the paper review
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2020</div>
+                    <div class="dated-content">
+                      <b>Honorable Mention Award</b>, ACM CHI 2020<br>
+                      Selected among the top 5% of paper submissions
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2020 -</div>
+                    <div class="dated-content">
+                      <b>Presidential Science Scholarship</b>, Republic of Korea<br>
+                      Merit-based scholarship for undergraduate studies funded by the Korean government (~ 150 recipients selected annually)
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2020</div>
+                    <div class="dated-content">
+                      <b>Conference and Travel Scholarship</b>, Google<br>
+                      Travel grant for attending CHI 2020 (travel canceled due to COVID-19)
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2020</div>
+                    <div class="dated-content">
+                      <b>Best Undergraduate Research Award</b>, Seoul National University<br>
+                      Selected 1st among all the undergraduate research projects in 2019
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2019, 2021</div>
+                    <div class="dated-content">
+                      <b>Undergraduate Research Grant</b>, Seoul National University<br>
+                      $10,000 research grant for two research projects
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2016, 2017</div>
+                    <div class="dated-content">
+                      <b>Merit-based Scholarship</b>, Seoul National University<br>
+                      Undergraduate merit-based scholarship
+                    </div>
+                  </div>
+                </section>
+                <section id="teaching">
+                  <h2>Teaching Experience</h2>
+                  <div class="dated-entry">
+                    <div class="dated-date">2021</div>
+                    <div class="dated-content"><b>Teaching Assistant</b>, Basic Computing (L0444.000400)<br>
+                      Teaching assistant for Basic Computing (elective course at Seoul National University)</div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">2018, 2020</div>
+                    <div class="dated-content"><b>Invited Keynote</b>, Dept. of Information Science & Culture<br>
+                      Introduction to iOS Programming (Oct 2018)<br>
+                      Doing HCI Research as an undergrad (Apr 2020)</div>
+                  </div>
+                </section>
+                <section id="work">
+                  <h2>Work Experience</h2>
+                  <div class="dated-entry">
+                    <div class="dated-date">2020 - 2021</div>
+                    <div class="dated-content"><b>iOS Developer</b>, <a href="https://elecle.bike/">Elecle</a><br>
+                      Worked as an iOS developer at Elecle: A Korean electric-bike sharing service startup</div>
+                  </div>
+                </section>
+                <section id="service">
+                  <h2>Academic Services</h2>
+                  <h3>Reviewer</h3>
+                  <div class="oneline-entries">
+                    <div class="dated-entry">
+                      <div class="dated-date">2020 -</div>
+                      <div class="dated-content">ACM CHI</div>
+                    </div>
+                    <div class="dated-entry">
+                      <div class="dated-date">2021</div>
+                      <div class="dated-content">ACM MobileHCI</div>
+                    </div>
+                    <div class="dated-entry">
+                      <div class="dated-date">2021</div>
+                      <div class="dated-content">Journal of Medical Internet Research</div>
+                    </div>
+                  </div>
+                  <h3>Student Volunteer</h3>
+                  <div class="oneline-entries">
+                    <div class="dated-entry">
+                      <div class="dated-date">2020</div>
+                      <div class="dated-content">ACM ISS</div>
+                    </div>
+                  </div>
+                </section>
+                <section id="skill">
+                  <h2>Skills</h2>
+                  <h3>Languages</h3>
+                  <div class="oneline-entries">
+                    <div class="dated-entry">
+                      <div class="dated-date"></div>
+                      <div class="dated-content">Korean: Native</div>
+                    </div>
+                    <div class="dated-entry">
+                      <div class="dated-date"></div>
+                      <div class="dated-content">English: Full professional proficiency</div>
+                    </div>
+                  </div>
+                </section>
+              </main>
         </div>
     </div>
 </div>
+<style>
+    /* reset base styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+    /* page header */
+    header { margin-bottom: 2rem; padding-left: 6.5rem; }
+    header h1 { font-size: 1.5rem; }
+    header p { margin: .5rem 0; font-size: 1rem !important}
+
+    main b {font-weight: 500}
+  
+    /* normal body content */
+    h2 { font-size: 1.1rem; margin-bottom: 0.75rem; margin-left: 6.5rem; text-transform: uppercase; }
+    h3 { border-bottom: 1px solid black; font-size: .9rem; margin: 1rem 0 .5rem 6.5rem }
+    p { margin-bottom: 0.5rem; }
+    a { color: inherit; /*#0000ee;*/ }
+    section { margin-bottom: 3rem; }
+  
+    /* misc */
+    .pdf { font-size: .9rem !important; font-weight: 300; margin-left: 1.5rem; white-space: nowrap;}
+    .pdf i { margin-right: .1rem;}
+    
+    .material { font-size: small; margin-left: .5rem;}
+    :global(i) {
+      padding-right: 4px !important
+    }
+  
+    /* dated entries */
+    .dated-entry { display: flex; flex-flow: row wrap; position: relative; margin-bottom: 1rem; }
+    .dated-date { width: 6.5rem; text-align: right; padding-top: .15rem; padding-right: 1.5rem; font-size: .8rem }
+    .dated-content { width: calc(100% - 6.5rem); font-size: .95rem}
+  
+    .oneline-entries { margin-bottom: 0.5rem; }
+    .oneline-entries .dated-entry { margin-bottom: 0; }
+  
+    /* hide extra awards info for now, not sure what to include */
+    #awards em { display: none; }
+    
+    .author-tooltip {
+      font-weight: 400;
+      font-size: .8rem !important;
+      text-align: center;
+    }
+  
+    /* on narrow displays, make the font smaller */
+    @media (max-width: 480px) {
+      html { font-size: 14px; }
+    }
+  
+    /* when printing, make the font smaller and the page full-width */
+    @media print {
+      html { font-size: 12px; }
+      main { margin-top: 0; max-width: 100%; }
+    }
+    .cryptedmail:after {
+      content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+    }
+
+    </style>
