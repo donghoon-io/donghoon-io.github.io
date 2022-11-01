@@ -57,9 +57,7 @@ title: Publication
 
 <div class="container py-4">
     <div class="row pb-3">
-        <div class="col-md-4">
-          <p style="font-weight: 500 !important; text-transform: uppercase;">Publication</p>
-        </div>
+      <p style="font-weight: 500 !important; text-transform: uppercase;">Publication</p>
     </div>
     <div class="project-view">
       <input type="radio" name="tag" id="tag-all" aria-labelledby="tag-all" checked>
@@ -90,13 +88,13 @@ title: Publication
           <p style="font-size: .9rem; font-weight: 300 !important;">
               <a href="{{ '/assets/pdf/' | append: paper.id | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% if paper.video %}
-              <a href="{{ paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}
               {% if paper.slide %}
-              <a href="{{ paper.slide }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{{ '/assets/pdf/' | append: paper.slide | relative_url }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}
               {% if paper.poster %}
-              <a href="{{ paper.poster }}"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;Poster</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{{ '/assets/pdf/' | append: paper.poster | relative_url }}"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;Poster</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}
           </p>
           {% endunless %}
