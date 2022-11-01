@@ -7,10 +7,13 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
+url: "https://donghoon.io" # the base hostname & protocol for your site
+  
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-sitemap
 
 theme: minima
