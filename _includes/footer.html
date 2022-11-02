@@ -11,7 +11,7 @@
         <a style="font-weight: 300" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-twitter" style="margin-right: 7.5px"></i>Twitter</a><br>
         <a style="font-weight: 300" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-facebook" style="margin-right: 8px"></i>Facebook</a><br>
         <a style="font-weight: 300" href="https://linkedin.com/in/donghoon-io"><i class="fab fa-instagram" style="margin-right: 10.5px"></i>Instagram</a><br>
-        <a href="https://mina.onl/"><i class="fas fa-heart mr-2"></i></a>
+        <a href="https://mina.onl/" class="heart"><i class="fas fa-heart mr-2"></i></a>
       </p>
     </div>
   </div>
@@ -21,3 +21,12 @@
 
 <script src="{{ '/js/weather.js' | relative_url }}"></script>
 <script src="{{ '/js/github_date.js' | relative_url }}"></script>
+
+<style>
+  .heart {
+    transition: 0.3s;
+  }
+  .heart:hover {
+    color: red !important;
+  }
+</style>
