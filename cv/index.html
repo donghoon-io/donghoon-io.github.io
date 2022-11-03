@@ -42,7 +42,7 @@ title: CV
                     {% for pub in pubs.pubs %}
                     <div class="dated-entry">
                       <div class="dated-date">{% if forloop.first %}{{ pubs.year }}{% endif %}</div>
-                      <div class="dated-content"><a style="font-weight: 500" href="/publication/{{ pub.id }}">{{ pub.title }}</a><br>
+                      <div class="dated-content"><a style="font-weight: 500" href="{{ '/assets/pdf/' | append: pub.id | append: '.pdf' | relative_url }}">{{ pub.title }}</a><br>
                         {% for author in pub.authors %}
                         {% if author == "Donghoon Shin" %}<span style="font-weight: 500 !important">Donghoon Shin</span>{% else %}{{ author }}{% endif %}{% unless forloop.last%}, {% endunless %}
                         {% endfor %}
