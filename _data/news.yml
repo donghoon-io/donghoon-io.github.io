@@ -2,9 +2,7 @@ list: # format date as dd/mm/yyyy
   - title: "CSCW paper accepted"
     date: "15/10/2022" # Oct 21, 2021
     description: "Excited to share that our paper on understanding the impact of human explanation strategies on human-AI collaboration has been accepted to CSCW 2023!"
-  - title: "Submitted three CHI papers"
-    date: "15/09/2022" # Oct 21, 2021
-    description: "Submitted three CHI papers on AI (LLMs in particular), CSCW, and learning analytics. Finger crossed 🤞"
+  
   - title: "Started my graduate studies at UW HCDE"
     date: "28/09/2022" # Jun 25, 2011
     description: "Excited to share that I just started my new journey as a Ph.D. student in HCDE at the University of Washington 🎉"
