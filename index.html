@@ -9,8 +9,8 @@ title: Donghoon Shin
 <div class="container py-3">
     <div class="row">
         <div class="col-12 col-md-3 align-self-center mb-4 mb-md-0">
-            <img src="{{ '/assets/images/main/donghoon.svg' | relative_url }}" alt="" class="profile-image" id="hero">
-            <p class="mt-2" style="font-size: 0.8rem; font-weight: 400 !important; text-align: center;"><a id="music">Loading...</a></p>
+            <img src="{{ '/assets/images/main/donghoon.svg' | relative_url }}" alt="" class="profile-image">
+            <p class="mt-2" style="font-size: 0.8rem; font-weight: 400 !important; text-align: center;">Claimed by <a href="https://mina.onl">Mina</a></p>
         </div>
         <div class="col-12 col-md-9 align-self-center">
             <h4>Donghoon Shin</h4>
@@ -61,17 +61,3 @@ title: Donghoon Shin
         <a href="{{ 'news' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
     </div>
 </div>
-
-<script>
-    var musics = [
-        {
-            "file": "love_dive",
-            "caption": "IVE - Love Dive",
-            "link": "https://music.apple.com/us/album/love-dive/1616804151?i=1616804152"
-        }
-    ];
-    const selected = musics[Math.floor(Math.random() * musics.length)];
-    document.getElementById("hero").src = "/assets/images/main/hero/" + selected.file + ".svg";
-    document.getElementById("music").innerText = selected.caption;
-    document.getElementById("music").href = selected.link;
-</script>
