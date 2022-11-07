@@ -35,7 +35,7 @@ title: Donghoon Shin
         {% for project in projects limit: 4 %}
         <div class="col-6 col-md-3 mb-3 mb-md-0 align-self-center">
             <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-            <p class="mt-1 mt-md-2" style="font-size: .9rem; font-weight: 400 !important; line-height: 1.2rem; text-align: center;">{{ project.title }}</p>
+            <p class="pt-2 mt-md-2" style="font-size: .9rem; font-weight: 400 !important; line-height: 1.1rem; text-align: center;">{{ project.title }}</p>
         </div>
         {% endfor %}
     </div>
