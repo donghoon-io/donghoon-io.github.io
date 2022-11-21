@@ -7,6 +7,8 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
+permalink: /:title
+
 url: "https://donghoon.io" # the base hostname & protocol for your site
   
 # Minima date format
@@ -15,5 +17,9 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
  - jekyll-sitemap
+
+collections:
+  publication:
+    output: true
 
 theme: minima

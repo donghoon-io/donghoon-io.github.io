@@ -4,7 +4,7 @@ baseurl: /publication
 title: Publication
 ---
 
-{% assign publications = site.data.publication.publication %}
+{% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
 {% assign category = site.data.publication-category %}
 
 <style>
@@ -34,8 +34,6 @@ title: Publication
     display: none !important;
   }
   {% endfor %}
-
-
 
 .project-view {
 	padding-top: .5rem;
@@ -73,11 +71,11 @@ title: Publication
       <div class="row mt-4" style="flex: 0 0 100%;" id="publications">
         {% for pub in publications %}
         <div class="col-12 px-0 mb-3 {% unless forloop.first %}mt-5{% endunless %}">
-          <p style="font-weight: 400">{{ pub.year }}</p>
+          <p style="font-weight: 400">{{ pub.name }}</p>
         </div>
-        {% for paper in pub.pubs %}
+        {% for paper in pub.items %}
         <div class="item col-12 px-0 {% for cat_each in paper.category %}tag-{{ cat_each | replace: ' / ', '' }} {% endfor %}">
-          <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;">{{ paper.title }}</p>
+          <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;"><a href="{{ paper.slug | prepend: '/publication/' | relative_url }}">{{ paper.title }}</a></p>
           
           <p class="mb-2" style="font-size: .95rem; font-weight: 200 !important;">{% for author in paper.authors %}{% if author == "Donghoon Shin" %}<a style="font-weight: 400;" href="#" data-toggle="tooltip" title="Some tooltip text!">Donghoon Shin</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
           <p class="mb-2" style="font-size: .95rem; font-weight: 300 !important;"><span style="font-weight: 400">{{ paper.venue }}</span>.{% if paper.note %} ({{ paper.note }}){% endif %}</p>
@@ -86,7 +84,10 @@ title: Publication
           {% endif %}
           {% unless paper.note contains 'accepted' %}
           <p style="font-size: .9rem; font-weight: 300 !important;">
-              <a href="{{ '/assets/pdf/' | append: paper.id | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{{ paper.slug | prepend: '/publication/' | relative_url }}"><i class="fa-solid fa-external-link-alt"></i>&nbsp;&nbsp;Project</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% unless paper.note contains 'appear' %}
+              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endunless %}
               {% if paper.video %}
               <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}

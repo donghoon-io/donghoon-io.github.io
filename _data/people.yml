@@ -1,0 +1,90 @@
+people:
+  - name: Katelyn C. Morrison
+    affiliation: Carnegie Mellon University
+    website: "https://katelyn98.github.io"
+    image: katelyn.jpg
+  - name: Donghoon Shin
+    affiliation: University of Washington
+    website: "https://donghoon.io"
+    image: donghoon.jpg
+  - name: Kenneth Holstein
+    affiliation: Carnegie Mellon University
+    website: "https://kenholstein.com"
+    image: ken.jpg
+  - name: Adam Perer
+    affiliation: Carnegie Mellon University
+    website: "https://perer.org"
+    image: adam.jpg
+  - name: Juho Kim
+    affiliation: KAIST
+    website: "https://juhokim.com"
+    image: juho.jpg
+  - name: Sachin Grover
+    affiliation: Carnegie Mellon University
+    website: "https://groversachin.com"
+    image: sachin.jpg
+  - name: Subeen Park
+    affiliation: Seoul National University
+  - name: Esther Hehsun Kim
+    affiliation: Seoul National University
+    image: esther.jpg
+  - name: Soomin Kim
+    affiliation: Samsung Electronics
+    website: "https://k-soomin.github.io"
+    image: soomin.jpg
+  - name: Jinwook Seo
+    affiliation: Seoul National University
+    website: "http://hcil.snu.ac.kr/people/jinwook-seo"
+    image: jinwook.jpg
+  - name: Hwajung Hong
+    affiliation: KAIST
+    website: "http://hwajunghong.com/"
+    image: hwajung.jpg
+  - name: Changhoon Oh
+    affiliation: Yonsei University
+    website: "http://www.changhoonoh.com/"
+    image: changhoon.jpg
+  - name: Won Ik Cho
+    affiliation: Seoul National University
+    website: "https://sites.google.com/site/warnikchow"
+    image: wonik.jpg
+  - name: Bongwon Suh
+    affiliation: Seoul National University
+    website: "http://hcc.snu.ac.kr/wordpress/people/bongwon-suh"
+    image: bongwon.jpg
+  - name: Sangwon Yoon
+    affiliation: Seoul National University
+    image: sangwon.jpg
+  - name: Joonhwan Lee
+    affiliation: Seoul National University
+    website: "http://hcid.snu.ac.kr/people"
+    image: joonhwan.jpg
+  - name: Youjin Hwang
+    affiliation: Samsung Electronics
+    website: "https://youjin-h.github.io/"
+    image: youjin.jpg
+  - name: Jinsu Eun
+    affiliation: Seoul National University
+  - name: Jaeyoon Song
+    affiliation: Massachusetts Institute of Technology
+    website: "https://jaeyoon.io/"
+    image: jaeyoon.jpg
+  - name: Seokwoo Song
+    affiliation: Samsung Research
+    image: seokwoo.jpg
+  - name: Jisoo Park
+    affiliation: SK Broadband
+  - name: Soojin Jun
+    affiliation: Yonsei University
+    website: "https://uic.yonsei.ac.kr/main/academic.asp?mid=m03_01_01&act=view&uid=947"
+    image: soojin.jpg
+  - name: Sion Baek
+    affiliation: LINE Bank
+    website: "https://www.linkedin.com/in/sion-baek-3b0b8812a/"
+    image: sion.jpg
+  - name: Junseok Park
+    affiliation: Harvard Medical School
+  - name: Eduardo A. Maury
+    affiliation: Harvard Medical School
+  - name: Alice Eunjung Lee
+    affiliation: Harvard Medical School

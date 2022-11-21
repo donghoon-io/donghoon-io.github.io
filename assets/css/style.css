@@ -192,3 +192,107 @@ h4 {
 .heart:hover {
 	color: red !important;
 }
+  .publication-title {
+    font-weight: 500 !important;
+    font-size: 1.2rem !important
+  }
+  .author-image {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 100px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 100px;
+    -moz-background-clip: padding;
+    border-radius: 100px;
+    background-clip: padding-box;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .author-name {
+    font-weight: 400;
+    font-size: .9rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 3px !important;
+    text-align: center;
+  }
+
+  .affiliation-name {
+    font-weight: 300;
+    font-size: .85rem !important;
+    line-height: 1.4 !important;
+    text-align: center;
+  }
+
+  .img-responsive {
+    display: block;
+    width: 95%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-title {
+    font-weight: 500 !important;
+    font-size: 1rem !important
+  }
+  .metadata > a {
+    margin-right: 8px !important;
+  }
+  .metadata > a > i {
+    padding-right: 4px !important;
+  }
+
+  .publication-title {
+    font-weight: 500 !important;
+    font-size: 1.2rem !important
+  }
+
+  .author-image {
+    width: 100px !important;
+    height: 100px !important;
+    -webkit-border-radius: 100px !important;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 100px !important;
+    -moz-background-clip: padding;
+    border-radius: 100px !important;
+    background-clip: padding-box;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .author-name {
+    font-weight: 400;
+    font-size: .9rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 3px !important;
+    text-align: center;
+  }
+
+  .affiliation-name {
+    font-weight: 300;
+    font-size: .85rem !important;
+    line-height: 1.4 !important;
+    text-align: center;
+  }
+
+  .publication-image {
+    display: block !important;
+    width: 95% !important;
+    max-width: 500px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-title {
+    font-weight: 500 !important;
+    font-size: 1rem !important
+  }
+  .metadata > a {
+    margin-right: 8px !important;
+  }
+  .metadata > a > i {
+    padding-right: 4px !important;
+  }
