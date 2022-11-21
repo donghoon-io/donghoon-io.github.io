@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: Genomic data processing with GenomeFlow
+title: Genomic Data Processing with GenomeFlow
 year: 2022
 authors:
   - Junseok Park

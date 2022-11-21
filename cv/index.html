@@ -4,7 +4,7 @@ baseurl: /cv
 title: CV
 ---
 
-{% assign publications = site.data.publication.publication %}
+{% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
 
 <div class="container py-4">
     <div class="row">
@@ -39,10 +39,10 @@ title: CV
                 <section id="publications">
                   <h2>Publications</h2>
                   {% for pubs in publications %}
-                    {% for pub in pubs.pubs %}
+                    {% for pub in pubs.items %}
                     <div class="dated-entry">
-                      <div class="dated-date">{% if forloop.first %}{{ pubs.year }}{% endif %}</div>
-                      <div class="dated-content"><a style="font-weight: 500" href="{{ '/assets/pdf/' | append: pub.id | append: '.pdf' | relative_url }}">{{ pub.title }}</a><br>
+                      <div class="dated-date">{% if forloop.first %}{{ pubs.name }}{% endif %}</div>
+                      <div class="dated-content"><a style="font-weight: 500" href="{{ '/assets/pdf/' | append: pub.slug | append: '.pdf' | relative_url }}">{{ pub.title }}</a><br>
                         {% for author in pub.authors %}
                         {% if author == "Donghoon Shin" %}<span style="font-weight: 500 !important">Donghoon Shin</span>{% else %}{{ author }}{% endif %}{% unless forloop.last%}, {% endunless %}
                         {% endfor %}

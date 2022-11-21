@@ -10,6 +10,9 @@ layout: default
     {% else %}
     <p style="font-weight: 400">Published in {{ page.venue }}.</p>
     {% endif %}
+    {% if page.award %}
+    <p style="font-weight: 400"><i class="fa-solid fa-medal" style="margin-right: 6px"></i>{{ page.award }}</p>
+    {% endif %}
   </div>
   <div class="row mb-5">
     {% for author in page.authors %}
