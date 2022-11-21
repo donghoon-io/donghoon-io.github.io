@@ -86,7 +86,7 @@ title: Publication
           <p style="font-size: .9rem; font-weight: 300 !important;">
               <a href="{{ paper.slug | prepend: '/publication/' | relative_url }}"><i class="fa-solid fa-external-link-alt"></i>&nbsp;&nbsp;Project</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% unless paper.note contains 'appear' %}
-              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endunless %}
               {% if paper.video %}
               <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
