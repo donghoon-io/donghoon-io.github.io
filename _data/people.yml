@@ -66,9 +66,7 @@ people:
   - name: Jinsu Eun
     affiliation: Seoul National University
   - name: Jaeyoon Song
-    affiliation: Massachusetts Institute of Technology
-    website: "https://jaeyoon.io/"
-    image: jaeyoon.jpg
+    affiliation: MIT
   - name: Seokwoo Song
     affiliation: Samsung Research
     image: seokwoo.jpg
