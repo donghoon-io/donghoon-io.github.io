@@ -1,5 +1,12 @@
 # Donghoon's theme
-This repository contains the codebase of Donghoon's website
+This repository contains the codebase of Donghoon's website.
+
+![website_md](https://user-images.githubusercontent.com/28855330/204675255-dad28519-f4ea-4426-bc55-0f3aaa976db8.jpg)
+
+## Website examples that build on this theme
+
+- [Prosocial Computing Group](https://prosocialcomputing.com) (University of Washington)
+- [Ruoxi (Anna) Shang](https://ruoxishang.com) (University of Washington)
 
 ## Adding contents
 
