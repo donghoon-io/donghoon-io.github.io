@@ -43,9 +43,10 @@ description: Curriculum vitae of Donghoon Shin
                     {% for pub in pubs.items %}
                     <div class="dated-entry">
                       <div class="dated-date">{% if forloop.first %}{{ pubs.name }}{% endif %}</div>
-                      <div class="dated-content"><a style="font-weight: 500" href="{{ '/assets/pdf/' | append: pub.slug | append: '.pdf' | relative_url }}">{{ pub.title }}</a><br>
+                      <div class="dated-content"><a style="font-weight: 500" href="{{ '/publication/' | append: pub.slug | relative_url }}">{{ pub.title }}</a><br>
                         {% for author in pub.authors %}
-                        {% if author == "Donghoon Shin" %}<span style="font-weight: 500 !important">Donghoon Shin</span>{% else %}{{ author }}{% endif %}{% unless forloop.last%}, {% endunless %}
+                        {% assign author_data = site.data.people.people | where:"name", author | first %}
+                        {% if author == "Donghoon Shin" %}<a style="font-weight: 500 !important" href="https://donghoon.io">Donghoon Shin</a>{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}{% unless forloop.last%}, {% endunless %}
                         {% endfor %}
                         <br>
                         {{ pub.venue }}.{% if pub.note %} ({{ pub.note}}){% endif %}<br>

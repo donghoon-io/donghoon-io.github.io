@@ -15,6 +15,20 @@
 }
 
 html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+img, a {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 body {
@@ -295,4 +309,11 @@ h4 {
   }
   .metadata > a > i {
     padding-right: 4px !important;
+  }
+
+  .coauthor {
+    font-weight: 300 !important;
+  }
+  .coauthor:hover {
+    font-weight: 500 !important;
   }
