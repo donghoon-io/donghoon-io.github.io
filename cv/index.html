@@ -46,7 +46,7 @@ description: Curriculum vitae of Donghoon Shin
                       <div class="dated-content"><a style="font-weight: 500" href="{{ '/publication/' | append: pub.slug | relative_url }}">{{ pub.title }}</a><br>
                         {% for author in pub.authors %}
                         {% assign author_data = site.data.people.people | where:"name", author | first %}
-                        {% if author == "Donghoon Shin" %}<a style="font-weight: 500 !important" href="https://donghoon.io">Donghoon Shin</a>{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}{% unless forloop.last%}, {% endunless %}
+                        {% if author == "Donghoon Shin" %}<a style="font-weight: 500 !important" href="https://donghoon.io" data-bs-toggle="tooltip" title="{{ author }} is a Ph.D. student at the {{ author_data.affiliation }}">Donghoon Shin</a>{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}{% unless forloop.last%}, {% endunless %}
                         {% endfor %}
                         <br>
                         {{ pub.venue }}.{% if pub.note %} ({{ pub.note}}){% endif %}<br>
@@ -221,6 +221,14 @@ description: Curriculum vitae of Donghoon Shin
         </div>
     </div>
 </div>
+
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+
 <style>
     /* reset base styles */
     * { box-sizing: border-box; margin: 0; padding: 0; }
