@@ -312,8 +312,8 @@ h4 {
   }
 
   .coauthor {
-    font-weight: 300 !important;
+    font-weight: 200 !important;
   }
   .coauthor:hover {
-    font-weight: 500 !important;
+    font-weight: 400 !important;
   }
