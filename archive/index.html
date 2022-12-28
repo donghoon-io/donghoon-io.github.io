@@ -17,8 +17,10 @@ description: Research area and projects of Donghoon Shin
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
             <div class="archive-container">
                 <img class="archive-img" src="{{ archive.image | prepend: '/assets/images/archive/' | relative_url }}">
-                <p class="archive-title">{{ archive.title }}</p>
-                <p class="archive-description">{{ archive.description }}</p>
+                <div class="archive-container-inner">
+                    <p class="archive-title">{{ archive.title }}</p>
+                    <p class="archive-description">{{ archive.description }}</p>
+                </div>
             </div>
         </div>
         {% endfor %}
@@ -28,7 +30,9 @@ description: Research area and projects of Donghoon Shin
 <style>
     .archive-container {
         border: .5px solid #999;
-        padding: 15px;
+    }
+    .archive-container-inner {
+        padding: 0 15px 15px 15px;
     }
     .archive-title {
         font-size: .95rem !important;
