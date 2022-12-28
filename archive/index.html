@@ -1,0 +1,60 @@
+---
+layout: default
+title: Project archive
+permalink: /project/archive
+description: Research area and projects of Donghoon Shin
+---
+
+{% assign archives = site.data.archive.archive %}
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<div class="container py-4">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Project archive</p>
+    <div class="row mt-3 g-3 grid">
+        {% for archive in archives %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+            <div class="archive-container">
+                <img class="archive-img" src="{{ archive.image | prepend: '/assets/images/archive/' | relative_url }}">
+                <p class="archive-title">{{ archive.title }}</p>
+                <p class="archive-description">{{ archive.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .archive-container {
+        border: .5px solid #999;
+        padding: 15px;
+    }
+    .archive-title {
+        font-size: .95rem !important;
+        font-weight: 500;
+        line-height: 1.3;
+        margin-top: 15px;
+    }
+    .archive-img {
+        width: 100%;
+        height: auto;
+    }
+    .archive-description {
+        font-size: .9rem !important;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+</style>
+
+<script>
+    var grid = document.querySelector('.grid');
+    var msnry = new Masonry( grid, {
+        percentPosition: true,
+        itemSelector: '.grid-item'
+    });
+    imagesLoaded( grid ).on( 'progress', function() {
+        msnry.layout();
+    });
+
+</script>

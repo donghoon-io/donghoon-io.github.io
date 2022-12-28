@@ -34,7 +34,7 @@ img, a {
 body {
 	font-size: 1rem;
 	line-height: 1.7;
-	font-family: 'Barlow', 'Noto Sans KR' !important;
+	font-family: 'Barlow', 'Noto Sans TC', 'Noto Sans KR' !important;
 	font-weight: 300
 }
 .page-content {

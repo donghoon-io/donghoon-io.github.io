@@ -12,8 +12,12 @@
           <li class="nav-item">
             <a class="nav-link {% if page.url contains 'publication' %} active {% endif %}" aria-current="page" href="/publication">Publication</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'project' %} active {% endif %}" aria-current="page" href="/project">Project</a>
+          <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">projects</a>
+              <div class="dropdown-menu">
+                  <a href="/project" class="dropdown-item">current projects</a>
+                  <a href="/project/archive" class="dropdown-item">project archive</a>
+              </div>
           </li>
           <!--
           <li class="nav-item">
@@ -31,3 +35,34 @@
     </div>
   </nav>
 </header>
+
+<style>
+  .dropdown-toggle {
+    background-color: transparent;
+    border-color: #fff;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+  .dropdown-toggle:hover {
+    font-weight: 500
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+ .dropdown-menu {
+    --bs-dropdown-border-radius: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important
+ }
+ .dropdown-item {
+  font-size: .95rem !important;
+  padding: .3rem .75rem !important;
+ }
+ .dropdown-item:active {
+  background-color: #999 !important
+ }
+</style>
