@@ -246,6 +246,7 @@ h4 {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 0 !important;
   }
   .section-title {
     font-weight: 500 !important;
