@@ -8,7 +8,6 @@ headers.append('Authorization', `token ${gh_token1 + gh_token2 + gh_token3}`);
 fetch("https://api.github.com/repos/donghoon-io/donghoon-website/branches/main", {method:'GET', headers: headers})
 .then(response => response.json())
 .then(data => {
-  console.log(data);
   let date = new Date(data.commit.commit.committer.date);
   var dateString = moment(date).format('MMM DD, YYYY');
   document.getElementById("date").innerText = dateString;
