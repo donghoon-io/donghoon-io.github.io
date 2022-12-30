@@ -1,10 +1,13 @@
 list: # format date as dd/mm/yyyy
   - title: "CSCW paper accepted"
     date: "15/10/2022" # Oct 21, 2021
-    description: "Excited to share that our paper on understanding the impact of human explanation strategies on human-AI collaboration has been accepted to CSCW 2023!"
+    description: "Excited to share that our paper on understanding the impact of human explanation strategies on human-AI collaboration has been accepted to CSCW 2023"
   - title: "Started my graduate studies at UW HCDE"
     date: "28/09/2022" # Jun 25, 2011
-    description: "Excited to share that I just started my new journey as a Ph.D. student in HCDE at the University of Washington 🎉"
+    description: "Excited to begin my new journey as a Ph.D. student in HCDE at the University of Washington 🎉"
+  - title: "Seleted as the 2022 Korean Government Scholar for Overseas Studies"
+    date: "29/07/2022" # Jun 25, 2011
+    description: "Honored to be selected as one of the 2022 Korean Government Scholars for Overseas Studies"
   - title: "First in-person conference attendance @ CHI 2022"
     date: "30/04/2022"
-    description: "So excited to attend my first in-person conference (CHI 2022) in New Orleans, LA!"
+    description: "So excited to attend my first in-person conference (CHI 2022) in New Orleans, LA. See you there soon!"
