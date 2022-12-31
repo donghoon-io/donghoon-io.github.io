@@ -1,6 +1,6 @@
 archive:
   - detail: >
-      <p>Working with <a href='https://faculty.washington.edu/garyhs/'>Prof. Gary
+      <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary
       Hsieh</a>, we build a chatbot that helps familiarization of ad hoc teammates. Plus, we revealed the efficacy of such
       familiarization in ad hoc team performance. (CHI '23 under review)</p>
 
@@ -15,15 +15,15 @@ archive:
       <p><b>[My role in this project]</b><br>Leading the project</p>
     tags:
       - Research
-      - Ongoing
+      - Under review
       - Chatbot
     image: ai-familiarization.jpg
-    title: Exploring the use of CA-driven familiarization in ad hoc teams
+    title: Exploring the Use of CA-driven Familiarization in Ad Hoc Teams
     description: How does the chatbot-driven familiarization help ad hoc teams?
     id: ai-familiarization
   - detail: >
       <p>Working with <a href='https://taewankim.io/'>Taewan Kim</a> and <a
-      href='https://hwajunghong.com'>Prof. Hwajung Hong</a>, we explored the
+      href='https://hwajunghong.com'>Hwajung Hong</a>, we explored the
       design space of generative language models (e.g., GPT-3) in supporting a
       reflective writing process. (CHI '23 under review)</p>
 
@@ -39,7 +39,7 @@ archive:
       ideation</p>
     tags:
       - Research
-      - Ongoing
+      - Under review
       - Mental health
     image: diarymate.jpg
     title: DiaryMate
@@ -69,8 +69,8 @@ archive:
       <p><b>[My role in this project]</b><br>Running interview sessions, taking
       part in thematic analysis, analyzing log data, writing</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '22 (R&R)
       - Research
+      - Under review
       - Data-analysis
     image: kmooc.jpg
     title: How Older Adults Use Online Videos for Learning
@@ -106,11 +106,12 @@ archive:
       system development</p>
     tags:
       - Research
-      - Ongoing
+      - <i class='fas fa-book'></i>&nbsp; CSCW '23
       - <i class='fas fa-book'></i>&nbsp; NeurIPS '21
       - XAI
+      - Svelte
     image: satellite-explainability.jpg
-    title: Explainable AI for visual detection task
+    title: Explainable AI for Visual Detection Task
     description: >-
       Guiding the design of AI explanation for assessing building damages from
       satellite imageries
@@ -129,7 +130,7 @@ archive:
       saliency of each keywords to facilitate the experience-sharing
       processes.<br><br></p>
 
-      <p>This work was published in <a href='https://chi2022.acm.org/'>CHI 2022
+      <p>Co-advised by <a href='https://hwajunghong.com'>Hwajung Hong</a> and <a href='http://hcil.snu.ac.kr/people/jinwook-seo'>Jinwook Seo</a>, this work was published in <a href='https://chi2022.acm.org/'>CHI 2022
       Extended Abstracts</a> (Late-Breaking Work) and <a
       href='https://cis.unimelb.edu.au/hci/emotion-workshop'>CHI 2022 Workshop</a>
       (Future of Emotion in HCI).</p>
@@ -147,7 +148,7 @@ archive:
     paper: chi2022_omhc_poster.pdf
     tags:
       - Research
-      - Ongoing
+      - <i class='fas fa-book'></i>&nbsp; CHI '22
       - Mental health
     image: omhc.jpg
     title: AI-assisted Emotional Support Processes
@@ -287,9 +288,9 @@ archive:
 
       <p><b>[My role in this project]</b><br>Writing, designing figures</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CSCW '21
       - Research
-      - Algorithm
+      - <i class='fas fa-book'></i>&nbsp; CSCW '21
+      - Algorithmic experience
     image: trkic-g00gle.jpg
     title: Trkic G00gle
     description: Why and how users game translation algorithms
@@ -329,7 +330,7 @@ archive:
 
       <p><b>[My role in this project]</b><br>Independent project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; HCI Korea '22
+      - <i class='fas fa-book'></i>&nbsp; HCIK '22
       - Web
       - Svelte
     image: amslertouch.jpg
@@ -371,7 +372,7 @@ archive:
       <p><b>[My role in this project]</b><br>System development, running interview
       sessions, writing</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; JMIR
+      - <i class='fas fa-book'></i>&nbsp; JMIR '21
       - Research
       - MacOS
     image: liquideye.jpg
@@ -567,10 +568,10 @@ archive:
     title: TalkingBoogie
     image: talkingboogie.jpg
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '20
       - Research
-      - iOS
+      - <i class='fas fa-book'></i>&nbsp; CHI '20
       - <i class='fas fa-medal'></i>&nbsp; Honorable Mention
+      - iOS
       - <i class='fa-brands fa-app-store-ios'></i>&nbsp; App Store
     description: >-
       Collaborative mobile AAC system for non-verbal children with developmental
@@ -764,9 +765,9 @@ archive:
 
       <p><b>[My role in this project]</b><br>Writing</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; MobileHCI '20
       - Research
-      - KakaoTalk
+      - <i class='fas fa-book'></i>&nbsp; MobileHCI '20
+      - Chatbot
     image: prp.jpg
     title: PRP
     description: >-
@@ -809,7 +810,7 @@ archive:
     tags:
       - <i class='fas fa-book'></i>&nbsp; CHI '20
       - Research
-      - KakaoTalk
+      - Chatbot
     image: personabot.jpg
     title: PersonaBot
     description: Applying the persona of user's caregivers to health-managing chatbots
@@ -838,8 +839,8 @@ archive:
 
       <p><b>[My role in this project]</b><br>System development</p>
     tags:
-      - Commercial
-      - KakaoTalk
+      - Industry
+      - Chatbot
     image: juvis.jpg
     title: Juvis J Bot
     description: >-
@@ -916,7 +917,7 @@ archive:
 
       <p><b>[My role in this project]</b><br>Independent project</p>
     tags:
-      - Individual
+      - Personal
       - iOS
     image: ecegrad.jpg
     title: ECE Grad
