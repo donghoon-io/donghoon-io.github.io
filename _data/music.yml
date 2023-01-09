@@ -1,4 +1,12 @@
 musics:
+  - title: "LOVE DIVE"
+    artist: "IVE"
+    link: "https://www.youtube.com/embed/rPoPYQ5qEAU"
+    applemusic: "https://embed.music.apple.com/us/album/1616804151?i=1616804152"
+    type: Garageband cover
+    genre:
+      - Garageband_cover
+      - K-POP
   - title: "Illusion"
     artist: "aespa"
     link: "https://www.youtube.com/embed/QAvw-Q6cq9s"
