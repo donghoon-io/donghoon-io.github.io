@@ -1,4 +1,7 @@
 list: # format date as dd/mm/yyyy
+  - title: "Two CHI papers accepted"
+    date: "13/01/2023" # Oct 21, 2021
+    description: "Excited to share that two papers on (i) AI-mediated communication and (ii) online learning has been accepted to CHI 2023. Stay tuned!"
   - title: "CSCW paper accepted"
     date: "15/10/2022" # Oct 21, 2021
     description: "Excited to share that our paper on understanding the impact of human explanation strategies on human-AI collaboration has been accepted to CSCW 2023"
