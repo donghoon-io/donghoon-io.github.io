@@ -27,7 +27,7 @@ archive:
   - detail: >
       <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary
       Hsieh</a>, we build a chatbot that helps familiarization of ad hoc teammates. Plus, we revealed the efficacy of such
-      familiarization in ad hoc team performance. (CHI '23 under review)</p>
+      familiarization in ad hoc team performance. (CHI '23, to appear)</p>
 
       <img src='site.baseurl/assets/images/archive_detail/ai-familiarization.jpg'
       class='img-responsive' alt='keyscreen of our system'>
@@ -44,6 +44,7 @@ archive:
       - Chatbot
     image: ai-familiarization.jpg
     title: Exploring the Use of CA-driven Familiarization in Ad Hoc Teams
+    paper: chi2023_introbot_paper.pdf
     description: How does the chatbot-driven familiarization help ad hoc teams?
     id: ai-familiarization
   - detail: >
@@ -73,6 +74,7 @@ archive:
       - Data-analysis
     image: kmooc.jpg
     title: How Older Adults Use Online Videos for Learning
+    paper: chi2023_mooc_paper.pdf
     description: Understanding how do older adults use online videos for learning
     id: kmooc
   - detail: >
