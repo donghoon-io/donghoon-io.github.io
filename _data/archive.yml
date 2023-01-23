@@ -1,5 +1,30 @@
 archive:
   - detail: >
+      <p>Working with <a href='https://taewankim.io/'>Taewan Kim</a> and <a
+      href='https://hwajunghong.com'>Hwajung Hong</a>, we explored the
+      design space of generative language models (e.g., GPT-3) in supporting a
+      reflective writing process.</p>
+
+      <img src='site.baseurl/assets/images/archive_detail/diarymate.jpg' class='img-responsive'
+      alt='keyscreen of our system'>
+
+      <p style='text-align: center;'><b>Keyscreen of our
+      system</b></p>
+
+      <hr>
+
+      <p><b>[My role in this project]</b><br>System development, design
+      ideation</p>
+    tags:
+      - Research
+      - Mental health
+    image: diarymate.jpg
+    title: DiaryMate
+    description: >-
+      How do we support reflective writing processes with a large language
+      model (LLM)?
+    id: diarymate
+  - detail: >
       <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary
       Hsieh</a>, we build a chatbot that helps familiarization of ad hoc teammates. Plus, we revealed the efficacy of such
       familiarization in ad hoc team performance. (CHI '23 under review)</p>
@@ -15,38 +40,12 @@ archive:
       <p><b>[My role in this project]</b><br>Leading the project</p>
     tags:
       - Research
-      - Under review
+      - <i class='fas fa-book'></i>&nbsp; CHI '23
       - Chatbot
     image: ai-familiarization.jpg
     title: Exploring the Use of CA-driven Familiarization in Ad Hoc Teams
     description: How does the chatbot-driven familiarization help ad hoc teams?
     id: ai-familiarization
-  - detail: >
-      <p>Working with <a href='https://taewankim.io/'>Taewan Kim</a> and <a
-      href='https://hwajunghong.com'>Hwajung Hong</a>, we explored the
-      design space of generative language models (e.g., GPT-3) in supporting a
-      reflective writing process. (CHI '23 under review)</p>
-
-      <img src='site.baseurl/assets/images/archive_detail/diarymate.jpg' class='img-responsive'
-      alt='keyscreen of our system'>
-
-      <p style='text-align: center;'><b>Keyscreen of our
-      system</b></p>
-
-      <hr>
-
-      <p><b>[My role in this project]</b><br>System development, design
-      ideation</p>
-    tags:
-      - Research
-      - Under review
-      - Mental health
-    image: diarymate.jpg
-    title: DiaryMate
-    description: >-
-      How do we support reflective writing processes with a generative language
-      model (LM)?
-    id: diarymate
   - detail: >
       <p>In this project, we investigated how older adults use online videos
       for learning. To better understand the online learning of older adults, we
@@ -56,7 +55,7 @@ archive:
 
       <p>Led by <a href='https://sites.google.com/view/seoyoung/'>Seoyoung
       Kim</a>, this project was advised by <a href='https://juhokim.com/'>Juho
-      Kim</a>. (CHI '23 under review)</p>
+      Kim</a>. (CHI '23, to appear)</p>
 
       <img src='site.baseurl/assets/images/archive_detail/kmooc.jpg' class='img-responsive'
       style='max-width: 650px !important;' alt='K-MOOC project image'>
@@ -70,7 +69,7 @@ archive:
       part in thematic analysis, analyzing log data, writing</p>
     tags:
       - Research
-      - Under review
+      - <i class='fas fa-book'></i>&nbsp; CHI '23
       - Data-analysis
     image: kmooc.jpg
     title: How Older Adults Use Online Videos for Learning
