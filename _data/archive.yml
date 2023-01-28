@@ -26,7 +26,7 @@ archive:
     id: diarymate
   - detail: >
       <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary
-      Hsieh</a>, we build a chatbot that helps familiarization of ad hoc teammates. Plus, we revealed the efficacy of such
+      Hsieh</a>, we built a chatbot that helps familiarization of ad hoc teammates. Plus, we revealed the efficacy of such
       familiarization in ad hoc team performance. (CHI '23, to appear)</p>
 
       <img src='site.baseurl/assets/images/archive_detail/ai-familiarization.jpg'

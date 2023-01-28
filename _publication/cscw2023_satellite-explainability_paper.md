@@ -3,7 +3,7 @@ layout: publication
 title: Evaluating the Impact of Human Explanation Strategies on Human-AI Visual Decision-Making
 year: 2023
 authors:
-  - Katelyn C. Morrison
+  - Katelyn Morrison
   - Donghoon Shin
   - Kenneth Holstein
   - Adam Perer
