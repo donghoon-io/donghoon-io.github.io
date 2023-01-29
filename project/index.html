@@ -21,8 +21,8 @@ description: Current research projects of Donghoon Shin
     </div>
     <hr>
     {% for project in projects %}
-    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
+    {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if cycle == 'odd' %}
     <div class="row mt-5">
         <div class="col-12 col-md-4 mb-3 mb-md-0 align-self-center">
             <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
@@ -30,7 +30,7 @@ description: Current research projects of Donghoon Shin
         <div class="col-12 col-md-8 mb-3 mb-md-0 align-self-center">
             <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
             <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
-            {% if project.pdf %}<a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View publications</a>{% endif %}
+            {% if project.pdf %}<a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> {{ project.venue }}</a>{% endif %}
         </div>
     </div>
     {% else %}
@@ -41,7 +41,7 @@ description: Current research projects of Donghoon Shin
         <div class="col-12 col-md-8 mb-3 mb-md-0 order-md-1 align-self-center">
             <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
             <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
-            {% if project.pdf %}<a href="{{ '/assets/pdf/' | append: project.pdf | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> View paper</a>{% endif %}
+            {% if project.pdf %}<a href="{{ '/assets/pdf/' | append: project.pdf | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> {{ project.venue }}</a>{% endif %}
         </div>
     </div>
     {% endif %}
