@@ -1,7 +1,7 @@
 list: # format date as dd/mm/yyyy
-  - title: "Internship at Naver AI Lab"
+  - title: "Summer internship at Naver AI Lab"
     date: "01/03/2023" # Oct 21, 2021
-    description: "I will be working as a research intern at <a href='https://clova.ai/en/research/research-areas.html'>Naver AI</a> this summer, working with <a href='http://younghokim.net/'>Dr. Young-Ho Kim</a>"
+    description: "I will be working as a research intern at <a href='https://clova.ai/en/research/research-areas.html'>Naver AI Lab</a> this summer, working with <a href='http://younghokim.net/'>Dr. Young-Ho Kim</a>"
   - title: "Two CHI papers accepted"
     date: "13/01/2023" # Oct 21, 2021
     description: "Excited to share that two papers on <a href='/publication/chi2023_introbot_paper'>AI-mediated communication</a> and <a href='/publication/chi2023_mooc_paper'>online learning</a> have been accepted to <a href='https://chi2023.acm.org/'>CHI 2023</a>!"
