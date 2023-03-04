@@ -38,10 +38,10 @@ body {
 	font-weight: 300
 }
 .page-content {
-	padding: 0 10rem !important;
+	padding: 0 18rem !important;
 }
 footer {
-	padding: 1rem 10rem 2rem 10rem !important;
+	padding: 1rem 18rem 4rem 18rem !important;
 }
 ::-moz-selection {
 	color: #333;
@@ -123,6 +123,24 @@ h4 {
 	.padding-row {
 		padding-top: 1rem !important;
 	}
+}
+
+@media screen and (max-width: 1600px) {
+	.page-content {
+		padding: 0 12rem !important;
+	}
+    footer {
+	    padding: 3rem 12rem !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+	.page-content {
+		padding: 0 8rem !important;
+	}
+    footer {
+	    padding: 2rem 8rem !important;
+    }
 }
 
 @media screen and (max-width: 1200px) {
