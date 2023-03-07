@@ -2,6 +2,7 @@
 layout: publication
 title: "Design Guidelines of Computer-based Intervention for Computer Vision Syndrome: Focus Group Study and In-the-wild Deployment"
 year: 2021
+month: 10
 authors:
   - Youjin Hwang
   - Donghoon Shin

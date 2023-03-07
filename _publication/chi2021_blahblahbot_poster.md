@@ -2,6 +2,7 @@
 layout: publication
 title: "BlahBlahBot: Facilitating Conversation between Strangers using a Chatbot with ML-infused Personalized Topic Suggestion"
 year: 2021
+month: 4
 authors:
   - Donghoon Shin
   - Sangwon Yoon

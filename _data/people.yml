@@ -18,9 +18,11 @@ people:
   - name: Taewan Kim
     affiliation: KAIST
     website: "https://taewankim.io/"
+    image: taewan.jpg
   - name: Young-Ho Kim
     affiliation: Naver AI Lab
     website: "http://younghokim.net/"
+    image: young-ho.jpg
   - name: Lucy Lu Wang
     affiliation: University of Washington
     website: "https://www.llwang.net/"

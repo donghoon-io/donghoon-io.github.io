@@ -2,6 +2,7 @@
 layout: publication
 title: "AmslerTouch: Self-testing Amsler Grid Application for Supporting a Quantitative Report of AMD Symptoms"
 year: 2022
+month: 2
 authors:
   - Donghoon Shin
 slide: hcik2022_amslertouch_slide.pdf

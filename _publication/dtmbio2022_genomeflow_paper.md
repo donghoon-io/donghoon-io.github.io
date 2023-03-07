@@ -2,6 +2,7 @@
 layout: publication
 title: Genomic Data Processing with GenomeFlow
 year: 2022
+month: 1
 authors:
   - Junseok Park
   - Eduardo A. Maury

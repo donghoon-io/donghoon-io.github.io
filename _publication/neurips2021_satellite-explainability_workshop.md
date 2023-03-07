@@ -2,6 +2,7 @@
 layout: publication
 title: Characterizing Human Explanation Strategies to Inform the Design of Explainable AI for Building Damage Assessment
 year: 2021
+month: 11
 authors:
   - Donghoon Shin
   - Sachin Grover

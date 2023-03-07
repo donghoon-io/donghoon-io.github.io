@@ -2,6 +2,7 @@
 layout: publication
 title: "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Online Collaborative Groups"
 year: 2023
+month: 5
 authors:
   - Donghoon Shin
   - Soomin Kim

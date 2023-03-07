@@ -5,7 +5,7 @@ title: Publication
 description: Publication list of Donghoon Shin
 ---
 
-{% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
+{% assign publications = site.publication | group_by: 'year' | sort: 'order' | reverse %}
 {% assign category = site.data.publication-category %}
 
 <style>
@@ -74,7 +74,8 @@ description: Publication list of Donghoon Shin
         <div class="col-12 px-0 mb-3 {% unless forloop.first %}mt-5{% endunless %}">
           <p style="font-weight: 400">{{ pub.name }}</p>
         </div>
-        {% for paper in pub.items %}
+        {% assign pub_items_sorted = pub.items | sort: "month" | reverse %}
+        {% for paper in pub_items_sorted %}
         <div class="item col-12 px-0 {% for cat_each in paper.category %}tag-{{ cat_each | replace: ' / ', '' }} {% endfor %}">
           <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;"><a href="{{ paper.slug | prepend: '/publication/' | relative_url }}">{{ paper.title }}</a></p>
           

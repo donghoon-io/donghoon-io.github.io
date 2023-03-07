@@ -2,6 +2,7 @@
 layout: publication
 title: "TalkingBoogie: Collaborative Mobile AAC System for Non-verbal Children with Developmental Disabilities and Their Caregivers"
 year: 2020
+month: 4
 authors:
   - Donghoon Shin
   - Jaeyoon Song

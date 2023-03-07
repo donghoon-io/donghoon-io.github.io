@@ -2,6 +2,7 @@
 layout: publication
 title: "DiaryMate: Exploring the Roles of Large Language Models in Facilitating AI-mediated Journaling"
 year: 2023
+month: 3
 authors:
   - Taewan Kim
   - Donghoon Shin

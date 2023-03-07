@@ -2,6 +2,7 @@
 layout: publication
 title: Exploring the Effects of AI-assisted Emotional Support Processes in Online Mental Health Community
 year: 2022
+month: 4
 authors:
   - Donghoon Shin
   - Subeen Park
