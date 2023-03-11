@@ -40,7 +40,8 @@ description: Curriculum vitae of Donghoon Shin
                 <section id="publications">
                   <h2>Publications</h2>
                   {% for pubs in publications %}
-                    {% for pub in pubs.items %}
+                    {% assign pub_items_sorted = pubs.items | sort: "month" | reverse %}
+                    {% for pub in pub_items_sorted %}
                     <div class="dated-entry">
                       <div class="dated-date">{% if forloop.first %}{{ pubs.name }}{% endif %}</div>
                       <div class="dated-content"><a style="font-weight: 500" href="{{ '/publication/' | append: pub.slug | relative_url }}">{{ pub.title }}</a><br>
