@@ -4,6 +4,7 @@ title: "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Onlin
 year: 2023
 month: 5
 video: WU2U2Hh1SCI
+slides: chi2023_introbot_slide.pdf
 authors:
   - Donghoon Shin
   - Soomin Kim
