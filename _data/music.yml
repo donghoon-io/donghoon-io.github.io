@@ -1,4 +1,12 @@
 musics:
+  - title: "Cruel Summer"
+    artist: "Taylor Swift"
+    link: "https://www.youtube.com/embed/pL0nv2AGeUc"
+    applemusic: "https://embed.music.apple.com/us/album/cruel-summer/1468058165?i=1468058171"
+    type: Garageband cover
+    genre:
+      - Garageband_cover
+      - POP
   - title: "LOVE DIVE"
     artist: "IVE"
     link: "https://www.youtube.com/embed/rPoPYQ5qEAU"
