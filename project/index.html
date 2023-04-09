@@ -1,75 +1,64 @@
 ---
 layout: default
 title: Project
-description: Current research projects of Donghoon Shin
+permalink: /project
+description: Projects of Donghoon Shin
 ---
 
 {% assign projects = site.data.project.project %}
 
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
 <div class="container py-4">
-    <p style="font-weight: 500 !important; text-transform: uppercase;">Current projects</p>
-    <div class="row">
-    <div class="col-xs-12 col-sm-9 my-auto">
-        <p class="section-body">My research focuses on <span class="intext-highlight" id="designing">designing</span> and evaluating <span class="intext-highlight" id="social">social computing systems</span> that support real-world collaborative processes (e.g., self-help groups in online communities, co-designing) by harnessing <span class="intext-highlight" id="ai-ml">machine intelligence</span>.
-        <br><br>Specifically, my research aims to design AI-infused systems that orchestrate both humans and AI to help people collaborate better.<br><br>(+ I like mixed-methods approach!)</p>
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Project</p>
+    <div class="row mt-3 g-3 grid">
+        {% for proj in projects %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+            <div class="archive-container" data-bs-toggle="modal" data-bs-target="#modal{{ forloop.index }}">
+                <img class="archive-img" src="{{ proj.image | prepend: '/assets/images/project/' | relative_url }}">
+                <div class="archive-container-inner">
+                    <p class="archive-title">{{ proj.title }}</p>
+                    <p class="archive-description">{{ proj.description }}</p>
+                    <div class="tags">
+                      <p>
+                        {% for tag in proj.tags %}
+                        <a title="" href="">{{ tag }}</a>
+                        {% endfor %}
+                      </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    <div class="col-xs-12 col-sm-3 my-auto">
-        <div class="venn" id="venn"></div>
-        <!--<div id="tooltip">&nbsp;</div> -->
-        <p class="venn-caption">↑ Hover over the diagram!</p>
+        <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1" aria-labelledby="exampleModal{{ forloop.index }}" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <div style="display: block !important">
+                        <h5 class="modal-title" id="exampleModalLabel">{{ proj.title }}</h5>
+                        <p class="modal-description">{{ proj.description }}</p>
+                        <p class="modal-link">{% if proj.paper %}<a href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"><i class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp; Video</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a href="/assets/pdf/{{ proj.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a href="{{ proj.appstore }}"><i class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.code %}<a href="{{ proj.code }}"><i class="fab fa-github"></i>&nbsp; Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a href="{{ proj.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif %}</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
+                </div>
+              </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-    </div>
-    <hr>
-    {% for project in projects %}
-    {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if cycle == 'odd' %}
-    <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-3 mb-md-0 align-self-center">
-            <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-        </div>
-        <div class="col-12 col-md-8 mb-3 mb-md-0 align-self-center">
-            <p class="mt-2 mb-1" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
-            <p class="mt-0" style="font-size: .85rem; font-weight: 300 !important;">Collaborators: {% for col in project.collaborators %}{% assign author_data = site.data.people.people | where:"name", col | first %}<a href="{{ author_data.website }}">{{ col }}</a>{% unless forloop.last%}, {% endunless %}{% endfor %}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
-            {% if project.pdf %}<a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> {{ project.venue }}</a>{% endif %}
-        </div>
-    </div>
-    {% else %}
-    <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-3 mb-md-0 order-md-2 align-self-center">
-            <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-        </div>
-        <div class="col-12 col-md-8 mb-3 mb-md-0 order-md-1 align-self-center">
-            <p class="mt-2 mb-1" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
-            <p class="mt-0" style="font-size: .85rem; font-weight: 300 !important;">Collaborators: {% for col in project.collaborators %}{% assign author_data = site.data.people.people | where:"name", col | first %}<a href="{{ author_data.website }}">{{ col }}</a>{% unless forloop.last%}, {% endunless %}{% endfor %}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.description }}</p>
-            {% if project.pdf %}<a href="{{ '/assets/pdf/' | append: project.pdf | relative_url }}" style="font-size: .95rem; font-weight: 400 !important;">> {{ project.venue }}</a>{% endif %}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
 </div>
 
-<style>
-    .intext-highlight {
-        text-decoration: none;
-        background-position-y: -0%;
-        background-image: linear-gradient( white 50%, #ffe13a 50%);
-        background-size: auto 175%;
-        font-weight: 400;
-        color: #000;
-    }
+<script>
+    var grid = document.querySelector('.grid');
+    var msnry = new Masonry( grid, {
+        percentPosition: true,
+        itemSelector: '.grid-item'
+    });
+    imagesLoaded( grid ).on( 'progress', function() {
+        msnry.layout();
+    });
 
-
-.venn-caption {
-	font-size: 12px !important;
-	text-align: center;
-	font-weight: 300;
-	color: #666;
-}
-</style>
-
-<link rel="stylesheet" href="{{ '/assets/css/venn-diagram.css' | relative_url }}">
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="{{ '/js/venn.js' | relative_url }}"></script>
-<script src="{{ '/js/venn-diagram.js' | relative_url }}"></script>
+</script>

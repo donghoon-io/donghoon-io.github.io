@@ -1,0 +1,76 @@
+---
+layout: default
+title: Artwork
+description: Artworks of Donghoon Shin
+---
+
+{% assign projects = site.data.project.project %}
+
+<div class="container py-4">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Artworks & Visualizations</p>
+    <div class="row mt-5">
+        <div class="col-12 col-md-3 mb-3 mb-md-0">
+            <p style="font-size: 1rem;">Venn diagram</p>
+        </div>
+        <div class="col-12 col-md-9 mb-3 mb-md-0">
+            <div class="row">
+                <div class="col-12 col-lg-4 px-3 align-self-center">
+                    <div class="venn" id="venn"></div>
+                    <p class="venn-caption">↑ Hover over the diagram</p>
+                </div>
+                <div class="col-12 col-lg-8 align-self-center mt-3 mt-md-0">
+                    <p class="section-body">My research focuses on <span class="intext-highlight" id="design">designing</span> and evaluating systems for <span class="intext-highlight" id="translational-science">translational science</span> that support real-world collaborative processes (e.g., self-help groups in online communities, co-designing) using <span class="intext-highlight" id="generative-ai">generative AI models</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-3 mb-3 mb-md-0">
+            <p style="font-size: 1rem;">WA license</p>
+        </div>
+        <div class="col-12 col-md-9 mb-3 mb-md-0">
+            <div class="row">
+                <div class="col-12 col-lg-4 align-self-center">
+                    <div class="head-card w-75 w-md-100 mx-auto">
+                        <div class="card-active">
+                            <div class="floating">
+                                <div class="thickness"></div>
+                                <div class="thickness"></div>
+                                <img src="{{ '/assets/images/main/license.svg' | relative_url }}">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="venn-caption">↑ Hover over the card</p>
+                </div>
+                <div class="col-12 col-lg-8 align-self-center mt-3 mt-md-0">
+                    <p class="section-body">Interactive WA driver license</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .intext-highlight {
+        text-decoration: none;
+        background-position-y: -0%;
+        background-image: linear-gradient( white 50%, #ffe13a 50%);
+        background-size: auto 175%;
+        font-weight: 400;
+        color: #000;
+    }
+
+
+.venn-caption {
+	font-size: 12px !important;
+	text-align: center;
+	font-weight: 300;
+	color: #666;
+}
+</style>
+
+<link rel="stylesheet" href="{{ '/assets/css/venn-diagram.css' | relative_url }}">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/venn.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/venn-diagram.js' | relative_url }}"></script>

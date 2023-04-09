@@ -12,26 +12,21 @@
           <li class="nav-item">
             <a class="nav-link {% if page.url contains 'publication' %} active {% endif %}" aria-current="page" href="/publication">Publication</a>
           </li>
-          <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">projects</a>
-              <div class="dropdown-menu">
-                  <a href="/project" class="dropdown-item">current projects</a>
-                  <a href="/project/archive" class="dropdown-item">project archive</a>
-              </div>
-          </li>
-          <!--
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'blog' %} active {% endif %}" aria-current="page" href="/blog">Blog</a>
-          </li>
-          -->
-          <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'music' %} active {% endif %}" aria-current="page" href="/music">Music</a>
+            <a class="nav-link {% if page.url contains 'project' %} active {% endif %}" aria-current="page" href="/project">Project</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {% if page.url contains 'cv' %} active {% endif %}" aria-current="page" href="/cv">CV</a>
           </li>
+          <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle {% if page.url contains 'music' or page.url contains 'artwork' %} active {% endif %}" data-bs-toggle="dropdown">fun</a>
+              <div class="dropdown-menu">
+                  <a href="/music" class="dropdown-item">music</a>
+                  <a href="/artwork" class="dropdown-item">artwork</a>
+              </div>
+          </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'cv' %} active {% endif %}" aria-current="page" target="_blank" rel="noopener noreferrer" href="https://donghoon.io/blog/">Blog<i class="fa-regular fa-arrow-up-right-from-square" style="padding-left: 5px;"></i></a>
+            <a class="nav-link {% if page.url contains 'blog' %} active {% endif %}" aria-current="page" target="_blank" rel="noopener noreferrer" href="https://donghoon.io/blog/">Blog<i class="fa-regular fa-arrow-up-right-from-square" style="padding-left: 5px;"></i></a>
           </li>
         </ul>
       </div>
