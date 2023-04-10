@@ -18,7 +18,5 @@ category:
   - "AI / NLP"
   - "Chatbot"
   - "CSCW"
-note: "to appear"
 featured: true
-preprint: true
 ---
