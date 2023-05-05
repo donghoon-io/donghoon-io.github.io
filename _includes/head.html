@@ -60,6 +60,6 @@
   {% else %}
   <meta name="citation_conference_title" content="{{ page.venue }}">
   {% endif %}
-  <meta name="citation_pdf_url" content="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}">
+  <meta name="citation_pdf_url" content="{{ page.slug | prepend: 'https://donghoon.io/assets/pdf/' | append: '.pdf' }}">
   {% endif %}
 </head>
