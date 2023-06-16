@@ -1,4 +1,9 @@
 project:
+  - title: "Daily exercise planning with AI"
+    description: "Social support in online mental health communities (OMHCs) is an effective and accessible way of managing mental wellbeing. In this process, sharing emotional supports is considered crucial to the thriving social supports in OMHCs, yet often difficult for both seekers and providers. To support empathetic interactions, we design an AI-infused workflow that allows users to write emotional supporting messages to other users' posts based on the elicitation of the seeker's emotion and contextual keywords from writing. Based on a preliminary user study (N = 10), we identified that the system helped seekers to clarify emotion and describe text concretely while writing a post. Providers could also learn how to react empathetically to the post. Based on these results, we suggest design implications for our proposed system."
+    image: "exercise.svg"
+    collaborators:
+      - Young-Ho Kim
   - title: "AI-generated design cards that translate scholarly articles for designers"
     description: "A design card is a format of information that designers can use to conduct various design activities: understanding a phenomenon at hand, collaborative and playful ideation, co-design, formative evaluation of design concepts, and advocacy. (Fedosov et al., 2019)<br><br>Digging deeper into design cards led us to explore the following design question: how might we automatically transform the scholarly article to such actionable formats (i.e., design card) to support the design activities of designers - who are less familiar with research articles?"
     image: "design_card.svg"
@@ -22,11 +27,3 @@ project:
       - Taewan Kim
       - Young-Ho Kim
       - Hwajung Hong
-  - title: "AI-assisted supports in online mental health communities"
-    description: "Social support in online mental health communities (OMHCs) is an effective and accessible way of managing mental wellbeing. In this process, sharing emotional supports is considered crucial to the thriving social supports in OMHCs, yet often difficult for both seekers and providers. To support empathetic interactions, we design an AI-infused workflow that allows users to write emotional supporting messages to other users' posts based on the elicitation of the seeker's emotion and contextual keywords from writing. Based on a preliminary user study (N = 10), we identified that the system helped seekers to clarify emotion and describe text concretely while writing a post. Providers could also learn how to react empathetically to the post. Based on these results, we suggest design implications for our proposed system."
-    image: "omhc.svg"
-    pdf: "chi2022_omhc_poster.pdf"
-    venue: "CHI '22 Poster"
-    collaborators:
-      - Hwajung Hong
-      - Jinwook Seo
