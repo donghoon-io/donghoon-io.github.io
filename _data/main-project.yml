@@ -4,7 +4,7 @@ project:
     image: "exercise.svg"
     collaborators:
       - Young-Ho Kim
-  - title: "AI-generated design cards that translate scholarly articles for designers"
+  - title: "AI-generated design cards for communicating design insights from academic papers"
     description: "A design card is a format of information that designers can use to conduct various design activities: understanding a phenomenon at hand, collaborative and playful ideation, co-design, formative evaluation of design concepts, and advocacy. (Fedosov et al., 2019)<br><br>Digging deeper into design cards led us to explore the following design question: how might we automatically transform the scholarly article to such actionable formats (i.e., design card) to support the design activities of designers - who are less familiar with research articles?"
     image: "design_card.svg"
     collaborators:
