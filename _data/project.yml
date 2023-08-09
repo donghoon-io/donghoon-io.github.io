@@ -1,6 +1,6 @@
 project:
   - detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2. (UIST '23, under review)</p>
+      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2.</p>
 
       <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='img-responsive' alt='keyscreen of our system'>
 
