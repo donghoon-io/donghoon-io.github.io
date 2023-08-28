@@ -127,19 +127,19 @@ h4 {
 
 @media screen and (max-width: 1600px) {
 	.page-content {
-		padding: 0 12rem !important;
+		padding: 0 18rem !important;
 	}
     footer {
-	    padding: 3rem 12rem !important;
+	    padding: 3rem 18rem !important;
     }
 }
 
 @media screen and (max-width: 1440px) {
 	.page-content {
-		padding: 0 8rem !important;
+		padding: 0 12rem !important;
 	}
     footer {
-	    padding: 2rem 8rem !important;
+	    padding: 2rem 12rem !important;
     }
 }
 
