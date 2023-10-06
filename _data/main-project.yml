@@ -1,15 +1,15 @@
 project:
-  - title: "Daily exercise planning with AI"
-    description: "Social support in online mental health communities (OMHCs) is an effective and accessible way of managing mental wellbeing. In this process, sharing emotional supports is considered crucial to the thriving social supports in OMHCs, yet often difficult for both seekers and providers. To support empathetic interactions, we design an AI-infused workflow that allows users to write emotional supporting messages to other users' posts based on the elicitation of the seeker's emotion and contextual keywords from writing. Based on a preliminary user study (N = 10), we identified that the system helped seekers to clarify emotion and describe text concretely while writing a post. Providers could also learn how to react empathetically to the post. Based on these results, we suggest design implications for our proposed system."
-    image: "exercise.svg"
-    collaborators:
-      - Young-Ho Kim
   - title: "AI-generated design cards for communicating design insights from academic papers"
     description: "A design card is a format of information that designers can use to conduct various design activities: understanding a phenomenon at hand, collaborative and playful ideation, co-design, formative evaluation of design concepts, and advocacy. (Fedosov et al., 2019)<br><br>Digging deeper into design cards led us to explore the following design question: how might we automatically transform the scholarly article to such actionable formats (i.e., design card) to support the design activities of designers - who are less familiar with research articles?"
     image: "design_card.svg"
     collaborators:
       - Gary Hsieh
-      - Lucy Lu Wang 
+      - Lucy Lu Wang
+  - title: "Daily exercise planning with AI"
+    description: "Social support in online mental health communities (OMHCs) is an effective and accessible way of managing mental wellbeing. In this process, sharing emotional supports is considered crucial to the thriving social supports in OMHCs, yet often difficult for both seekers and providers. To support empathetic interactions, we design an AI-infused workflow that allows users to write emotional supporting messages to other users' posts based on the elicitation of the seeker's emotion and contextual keywords from writing. Based on a preliminary user study (N = 10), we identified that the system helped seekers to clarify emotion and describe text concretely while writing a post. Providers could also learn how to react empathetically to the post. Based on these results, we suggest design implications for our proposed system."
+    image: "exercise.svg"
+    collaborators:
+      - Young-Ho Kim
   - title: "Chatbot for assisting collaboration of ad hoc teammates"
     description: "Many people gather online and form teams with strangers to collaborate on tasks. However, while intrateam trust and cohesion are critical for team performance, such characteristics take time to establish and are harder to build up through computer-mediated communication. Building on prior research that has shown that establishing common ground between members can help, we hypothesized that the use of a chatbot to support the familiarization of ad hoc teammates can help their collaboration. As such, we designed IntroBot, a chatbot that builds on an online discussion facilitator framework and leverages the social media data of users to assist their familiarization process. Through a between-subjects study (N=60), we found that participants who used IntroBot reported higher levels of trust, cohesion, and interaction quality, as well as generated more ideas in a collaborative brainstorming task. We discuss insights gained from our study, and present opportunities for the future of chatbot-assisted collaboration."
     image: "chatbot.svg"
