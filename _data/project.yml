@@ -1,6 +1,31 @@
 project:
-  - detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2.</p>
+  - title: PlanFitting
+    image: exercise-planning.jpg
+    paper: arxiv2023_planfitting_paper.pdf
+    detail: >
+      <p>Working with <a href='http://younghokim.net/'>Young-Ho Kim</a> at Naver AI, I built an interface that helps users to generate evidence-baesd exercise plans using an LLM chatbot.</p>
+
+      <p>This work was done during my internship at Naver AI. (under review)</p>
+
+      <img src='site.baseurl/assets/images/project_detail/exercise-planning.jpg' class='img-responsive' alt='keyscreen of our system'>
+
+      <p style='text-align: center;'><b>Keyscreen of our system</b></p>
+
+      <hr>
+
+      <p><b>[My role in this project]</b><br>Leading the project</p>
+    tags:
+      - Research
+      - Healthcare
+      - LLM
+      - Chatbot
+    description: >-
+      Natural language interface that helps to craft and iterate on evidence-based exercise plans
+    id: design_card
+  - title: From Text to Card
+    image: design-card.jpg
+    detail: >
+      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2. (under review)</p>
 
       <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='img-responsive' alt='keyscreen of our system'>
 
@@ -11,12 +36,32 @@ project:
       <p><b>[My role in this project]</b><br>Leading the project</p>
     tags:
       - Research
+      - Designer
       - Translational science
-    image: design-card.jpg
-    title: AI-generated Design Card
+      - LLM
     description: >-
-      Automatically generating design cards using generative AI models
-    id: diarymate
+      Creating design cards from HCI papers using generative AI models
+    id: design_card
+  - title: AI-assisted Theory-driven Designing for Designers
+    image: cpd.jpg
+    detail: >
+      <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (under review)</p>
+
+      <img src='site.baseurl/assets/images/project_detail/cpd-example.jpg' class='img-responsive' alt='keyscreen of our system'>
+
+      <p style='text-align: center;'><b>An example of causal pathway diagram (CPD)</b></p>
+
+      <hr>
+
+      <p><b>[My role in this project]</b><br>Building a system</p>
+    tags:
+      - Research
+      - Designer
+      - Translational science
+      - LLM
+    description: >-
+      Building an LLM-infused Miro plugin that helps causal pathway diagramming (CPD)
+    id: design_card
   - detail: >
       <p>Working with <a href='https://taewankim.io/'>Taewan Kim</a> and <a
       href='https://hwajunghong.com'>Hwajung Hong</a>, we explored the
@@ -37,11 +82,11 @@ project:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CHI '23
       - Mental health
+      - LLM
     image: diarymate.jpg
     title: DiaryMate
     description: >-
-      How do we support reflective writing processes with a large language
-      model (LLM)?
+      Supporting reflective writing processes using an LLM
     id: diarymate
   - detail: >
       <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary
@@ -61,6 +106,7 @@ project:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CHI '23
       - Chatbot
+      - NLP
     image: ai-familiarization.jpg
     title: Exploring the Use of CA-driven Familiarization in Ad Hoc Teams
     paper: chi2023_introbot_paper.pdf
@@ -170,6 +216,7 @@ project:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CHI '22
       - Mental health
+      - NLP
     image: omhc.jpg
     title: AI-assisted Emotional Support Processes
     description: >-
