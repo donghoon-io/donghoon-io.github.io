@@ -457,3 +457,9 @@ h4 {
 .thickness:nth-child(3) {
   transform: translateZ(-11px);
 }
+
+.logo {
+  width: 17px;
+  height: 17px;
+  margin: 0 4px 3px 4px;
+}
