@@ -1,7 +1,7 @@
 list: # format date as dd/mm/yyyy
   - title: "Summer internship at Adobe Research"
     date: "12/12/2023" # Oct 21, 2021
-    description: "I'll join <a href='https://research.adobe.com/'>Adobe Research</a> as a research scientist intern next summer!"
+    description: "I'll be joining <a href='https://research.adobe.com/'>Adobe Research</a> as a research scientist intern next summer!"
   - title: "Joining program committee for CHI 2024"
     date: "10/12/2023" # Oct 21, 2021
     description: "Happy to announce that I'll be serving as a program committee member for <a href='https://chi2024.acm.org/'>CHI 2024</a>!"
