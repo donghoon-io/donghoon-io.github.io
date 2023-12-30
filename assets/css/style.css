@@ -463,3 +463,11 @@ h4 {
   height: 17px;
   margin: 0 4px 3px 4px;
 }
+.footer-text {
+  font-size: .9rem !important;
+  font-weight: 300 !important;
+}
+.friend-text {
+  font-size: .875rem !important;
+  font-weight: 300 !important;
+}
