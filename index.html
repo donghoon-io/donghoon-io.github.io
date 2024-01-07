@@ -26,7 +26,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
 <div class="container">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Recent projects</p>
 	<div class="scroller">
-		<div class="scroller__inner">
+		<div class="scroller-inner">
             {% for project in projects %}
 			<div class="paper-container non-select">
                 <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
@@ -58,11 +58,23 @@ description: HCI researcher | Ph.D. student at the University of Washington
 
 <style>
 
-	.paper-container {
-		width: 225px;
+	.paper-container, .paper {
+		width: 175px;
 	}
-	.paper {
-		width: 225px;
+	@media (min-width: 576px) {
+		.paper-container, .paper {
+			width: 200px;
+		}
+	}
+	@media (min-width: 768px) {
+		.paper-container, .paper {
+			width: 225px;
+		}
+	}
+	@media (min-width: 992px) {
+		.paper-container, .paper {
+			width: 250px;
+		}
 	}
 	.paper-title {
 		text-align: center;
@@ -72,7 +84,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
 		line-height: 1.1;
 	}
 
-	.scroller__inner {
+	.scroller-inner {
 		padding-block: .5rem;
 		display: flex;
 		flex-wrap: wrap;
@@ -84,26 +96,26 @@ description: HCI researcher | Ph.D. student at the University of Washington
 		-webkit-mask: linear-gradient(
 			90deg,
 			transparent,
-			white 15%,
-			white 85%,
+			white 10%,
+			white 90%,
 			transparent
 		);
 		mask: linear-gradient(
 			90deg,
 			transparent,
-			white 15%,
-			white 85%,
+			white 10%,
+			white 90%,
 			transparent
 		);
 	}
 
-	.scroller .scroller__inner {
+	.scroller .scroller-inner {
 		width: max-content;
 		flex-wrap: nowrap;
 		animation: scroll var(--_animation-duration, 40s)
 			var(--_animation-direction, forwards) linear infinite;
 	}
-	.scroller .scroller__inner:hover {
+	.scroller .scroller-inner:hover {
 		animation-play-state: paused;
 	}
 
@@ -126,7 +138,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
 			scroller.setAttribute("data-animated", true);
 
 			// Make an array from the elements within `.scroller-inner`
-			const scrollerInner = scroller.querySelector(".scroller__inner");
+			const scrollerInner = scroller.querySelector(".scroller-inner");
 			const scrollerContent = Array.from(scrollerInner.children);
 
 			// For each item in the array, clone it
