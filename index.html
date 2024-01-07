@@ -9,9 +9,9 @@ description: HCI researcher | Ph.D. student at the University of Washington
 
 <div class="container pt-3 pb-4">
     <h4>Donghoon Shin</h4>
-    <p class="mt-3">I am an HCI researcher and a Ph.D. student in <a href="http://hcde.uw.edu">Human Centered Design & Engineering</a> at the <a href="https://uw.edu">University of Washington</a>, where I am co-advised by Profs. <a href="https://faculty.washington.edu/garyhs/">Gary Hsieh</a> and <a href="https://www.llwang.net/">Lucy Lu Wang</a></p>
+    <p class="mt-3">I am an HCI researcher and a Ph.D. student in <a href="http://hcde.uw.edu">Human Centered Design & Engineering</a> at the <a href="https://uw.edu"><img class="logo" src="{{ 'assets/images/logo/uw.svg' | relative_url }}"/>University of Washington</a>, where I am co-advised by Profs. <a href="https://faculty.washington.edu/garyhs/">Gary Hsieh</a> and <a href="https://www.llwang.net/">Lucy Lu Wang</a>. I will be joining <a href="https://research.adobe.com/"><img class="logo" src="{{ 'assets/images/logo/adobe.svg' | relative_url }}"/>Adobe Research</a> as a research scientist intern this summer</p>
     <p>My research interests lie at the intersection of HCI, NLP, and social science. More specifically, I design and build natural language interfaces to lower communication burdens in various contexts, such as designing, healthcare, and online ad hoc collaboration</p>
-    <p>Before joining UW, I did my undergrad in ECE and Information Science at <a href="https://en.snu.ac.kr/">Seoul National University</a>, where I was honored to be selected as the <a href="https://www.kosaf.go.kr/eng/jsp/aid/aid02_01_01.jsp">Presidential Science Scholar</a>. I also worked as a research intern at <a href="https://clova.ai/en/research/research-areas.html">Naver AI Lab</a> and an iOS developer at <a href="https://elecle.bike/">Elecle</a></p>
+    <p>Before joining UW, I did my undergrad in ECE and Information Science at <a href="https://en.snu.ac.kr/">Seoul National University</a>, where I was honored to be selected as the <a href="https://www.kosaf.go.kr/eng/jsp/aid/aid02_01_01.jsp">Presidential Science Scholar</a>. I also worked as a research intern at <a href="https://clova.ai/en/research/research-areas.html">Naver AI</a> and an iOS developer at <a href="https://elecle.bike/">Elecle</a></p>
     <p>I am the recipient of the 2022 <a href="https://www.studyinkorea.go.kr/en/scholarship/Gks4Native1.do#">Korean Government Scholarship for Overseas Study</a> and Honorable Mention Award at CHI 2020</p>
     <p>
       <a href="#" class="cryptedmail"
@@ -25,14 +25,16 @@ description: HCI researcher | Ph.D. student at the University of Washington
 </div>
 <div class="container">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Recent projects</p>
-    <div class="row mt-2">
-        {% for project in projects limit: 4 %}
-        <div class="col-6 col-md-3 mb-3 mb-md-0 align-self-center">
-            <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-            <p class="pt-2 mt-md-2" style="font-size: .9rem; font-weight: 400 !important; line-height: 1.1rem; text-align: center;">{{ project.title }}</p>
-        </div>
-        {% endfor %}
-    </div>
+	<div class="scroller">
+		<div class="scroller__inner">
+            {% for project in projects %}
+			<div class="paper-container non-select">
+                <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+                <p class="pt-2 mt-md-2" style="font-size: .9rem; font-weight: 400 !important; line-height: 1.1rem; text-align: center;">{{ project.title }}</p>
+			</div>
+            {% endfor %}
+		</div>
+	</div>
     <div class="d-flex flex-row-reverse mt-4">
         <a href="{{ 'project' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
     </div>
@@ -53,3 +55,90 @@ description: HCI researcher | Ph.D. student at the University of Washington
         <a href="{{ 'news' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
     </div>
 </div>
+
+<style>
+
+	.paper-container {
+		width: 225px;
+	}
+	.paper {
+		width: 225px;
+	}
+	.paper-title {
+		text-align: center;
+		font-size: 10px;
+		margin-top: 5px;
+		color: #666;
+		line-height: 1.1;
+	}
+
+	.scroller__inner {
+		padding-block: .5rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	.scroller {
+		overflow: hidden;
+		-webkit-mask: linear-gradient(
+			90deg,
+			transparent,
+			white 15%,
+			white 85%,
+			transparent
+		);
+		mask: linear-gradient(
+			90deg,
+			transparent,
+			white 15%,
+			white 85%,
+			transparent
+		);
+	}
+
+	.scroller .scroller__inner {
+		width: max-content;
+		flex-wrap: nowrap;
+		animation: scroll var(--_animation-duration, 40s)
+			var(--_animation-direction, forwards) linear infinite;
+	}
+	.scroller .scroller__inner:hover {
+		animation-play-state: paused;
+	}
+
+	.scroller {
+		--_animation-direction: reverse;
+		--_animation-duration: 40s;
+	}
+
+	@keyframes scroll {
+		to {
+			transform: translate(calc(-50% - 0.5rem));
+		}
+	}
+</style>
+
+<script>
+	function addAnimation(scrollers) {
+		scrollers.forEach((scroller) => {
+			// add data-animated="true" to every `.scroller` on the page
+			scroller.setAttribute("data-animated", true);
+
+			// Make an array from the elements within `.scroller-inner`
+			const scrollerInner = scroller.querySelector(".scroller__inner");
+			const scrollerContent = Array.from(scrollerInner.children);
+
+			// For each item in the array, clone it
+			// add aria-hidden to it
+			// add it into the `.scroller-inner`
+			scrollerContent.forEach((item) => {
+				const duplicatedItem = item.cloneNode(true);
+				duplicatedItem.setAttribute("aria-hidden", true);
+				scrollerInner.appendChild(duplicatedItem);
+			});
+		});
+	}
+	const scrollers = document.querySelectorAll(".scroller");
+	addAnimation(scrollers);
+</script>
