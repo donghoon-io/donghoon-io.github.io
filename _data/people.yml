@@ -115,9 +115,13 @@ people:
     affiliation: Harvard Medical School
   - name: Ruican Zhong
     affiliation: University of Washington
+    image: rachel.jpg
   - name: Rosemary Meza
     affiliation: Kaiser Permanente
+    image: rosemary.jpg
   - name: Predrag Klasnja
     affiliation: University of Michigan
+    image: pedja.jpg
   - name: Lucas Colusso
     affiliation: Microsoft
+    image: lucas.jpg

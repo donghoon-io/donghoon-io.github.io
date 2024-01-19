@@ -25,7 +25,7 @@ project:
   - title: From Text to Card
     image: design-card.jpg
     detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2. (under review)</p>
+      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2. (CHI 2024, to appear)</p>
 
       <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='img-responsive' alt='keyscreen of our system'>
 
@@ -36,16 +36,17 @@ project:
       <p><b>[My role in this project]</b><br>Leading the project</p>
     tags:
       - Research
+      - <i class='fas fa-book'></i>&nbsp; CHI '24
+      - LLM
       - Designer
       - Translational science
-      - LLM
     description: >-
       Creating design cards from HCI papers using generative AI models
     id: design_card
   - title: AI-assisted Theory-driven Designing for Designers
     image: cpd.jpg
     detail: >
-      <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (under review)</p>
+      <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (CHI 2024, to appear)</p>
 
       <img src='site.baseurl/assets/images/project_detail/cpd-example.jpg' class='img-responsive' alt='keyscreen of our system'>
 
@@ -56,9 +57,10 @@ project:
       <p><b>[My role in this project]</b><br>Building a system</p>
     tags:
       - Research
+      - <i class='fas fa-book'></i>&nbsp; CHI '24
+      - LLM
       - Designer
       - Translational science
-      - LLM
     description: >-
       Building an LLM-infused Miro plugin that helps causal pathway diagramming (CPD)
     id: design_card
@@ -66,7 +68,7 @@ project:
       <p>Working with <a href='https://taewankim.io/'>Taewan Kim</a> and <a
       href='https://hwajunghong.com'>Hwajung Hong</a>, we explored the
       design space of generative language models (e.g., GPT-3) in supporting a
-      reflective writing process.</p>
+      reflective writing process. (CHI 2024, to appear)</p>
 
       <img src='site.baseurl/assets/images/project_detail/diarymate.jpg' class='img-responsive'
       alt='keyscreen of our system'>
@@ -80,9 +82,9 @@ project:
       ideation</p>
     tags:
       - Research
-      - <i class='fas fa-book'></i>&nbsp; CHI '23
-      - Mental health
       - LLM
+      - <i class='fas fa-book'></i>&nbsp; CHI '24
+      - Mental health
     image: diarymate.jpg
     title: DiaryMate
     description: >-
