@@ -22,7 +22,7 @@ people:
     website: "http://younghokim.net/"
     image: young-ho.jpg
   - name: Lucy Lu Wang
-    affiliation: University of Washington
+    affiliation: University of Washington<br>Allen Institute for AI
     website: "https://www.llwang.net/"
     image: "lucy.jpg"
   - name: Jeongyeon Kim
