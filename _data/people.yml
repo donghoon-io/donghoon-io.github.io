@@ -119,9 +119,12 @@ people:
   - name: Rosemary Meza
     affiliation: Kaiser Permanente
     image: rosemary.jpg
+    website: "https://www.kpwashingtonresearch.org/our-research/our-scientists/meza-rosemary"
   - name: Predrag Klasnja
     affiliation: University of Michigan
+    website: "https://www.pedjaklasnja.com/"
     image: pedja.jpg
   - name: Lucas Colusso
     affiliation: Microsoft
+    website: "https://www.linkedin.com/in/lucascolusso/"
     image: lucas.jpg
