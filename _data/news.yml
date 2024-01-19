@@ -1,4 +1,7 @@
 list: # format date as dd/mm/yyyy
+  - title: "Three CHI papers accepted"
+    date: "18/01/2024" # Oct 21, 2021
+    description: "Three CHI papers on LLMs for designing / health have been accepted to <a href='https://chi2024.acm.org/'>CHI 2024</a>. Stay tuned!"
   - title: "Summer internship at Adobe Research"
     date: "12/12/2023" # Oct 21, 2021
     description: "I'll be joining <a href='https://research.adobe.com/'>Adobe Research</a> as a research scientist intern next summer!"
