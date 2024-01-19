@@ -15,6 +15,7 @@ layout: default
     {% endif %}
   </div>
   <div class="row mb-5">
+    {% if page.coauthors %}<p style="font-size: .8rem; font-weight: 400; text-align: right;">(* co-first authorship)</p>{% endif %}
     {% for author in page.authors %}
     {% assign author_data = site.data.people.people | where:"name", author | first %}
     {% if author_data %}
@@ -37,11 +38,11 @@ layout: default
       <div class="row mt-2">
         {% if author_data.website %}
         <a href="{{ author_data.website }}">
-          <p class="author-name">{{ author_data.name }}</p>
+          <p class="author-name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
           <p class="affiliation-name">{{ author_data.affiliation }}</p>
         </a>
         {% else %}
-        <p class="author-name">{{ author_data.name }}</p>
+        <p class="author-name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
         <p class="affiliation-name">{{ author_data.affiliation }}</p>
         {% endif %}
       </div>
@@ -68,7 +69,7 @@ layout: default
   <div class="row">
     <p class="section-title">Materials</p>
     <p class="metadata">
-      {% if page.venue == "arXiv" %}<a style="padding-right: 4px" href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> Preprint</a> {% else %}<a style="padding-right: 4px" href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> PDF</a> {% endif %}
+      {% if page.venue == "arXiv" %}<a style="padding-right: 4px" href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> Preprint</a> {% else %}{% unless page.pdf == false %}<a style="padding-right: 4px" href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> PDF</a> {% endunless %}{% endif %}
       {% if page.video %}<a style="padding-right: 4px" href="{{ page.video | prepend: 'https://youtu.be/'}}" rel="external"><i class="fa-solid fa-play"></i> Video</a>{% endif %}
       {% if page.slide %}<a style="padding-right: 4px" href="{{ page.slide | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-file-powerpoint"></i> Slide</a> {% endif %}
       {% if page.poster %}<a style="padding-right: 4px" href="{{ page.poster | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-presentation-screen"></i> Poster</a> {% endif %}
