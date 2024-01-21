@@ -17,7 +17,7 @@ award: Honorable Mention Award
 slide: chi2020_talkingboogie_slide.pdf
 category: 
   - "Healthcare"
-  - "CSCW"
+  - "Design"
 bibtex: |-
   @inproceedings{talkingboogie,
             title = {TalkingBoogie: Collaborative Mobile AAC System for Non-verbal Children with Developmental Disabilities and Their Caregivers},

@@ -16,7 +16,6 @@ category:
   - "AI / NLP"
   - "Healthcare"
   - "Chatbot"
-  - "CSCW"
 bibtex: |-
   @inproceedings{linguisticfeatures,
             title = {Linguistic Features to Consider When Applying Persona of the Real Persona to the Text-based Agent},

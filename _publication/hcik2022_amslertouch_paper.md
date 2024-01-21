@@ -10,6 +10,7 @@ video: YK8v5d85ZMU
 venue: HCIK 2022
 venue_full: Proceedings of HCI Korea 2022
 category:
+  - "Design"
   - "Healthcare"
 bibtex: |-
   @inproceedings{amslertouch,

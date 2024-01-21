@@ -17,6 +17,5 @@ abstract: "Many people gather online and form teams with strangers to collaborat
 category: 
   - "AI / NLP"
   - "Chatbot"
-  - "CSCW"
 featured: true
 ---

@@ -18,7 +18,6 @@ slide: chi2021_blahblahbot_slide.pdf
 category: 
   - "AI / NLP"
   - "Chatbot"
-  - "CSCW"
 bibtex: |-
   @inproceedings{blahblahbot,
             title = {BlahBlahBot: Facilitating Conversation between Strangers using a Chatbot with ML-infused Personalized Topic Suggestion based on Social Media Posts},

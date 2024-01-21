@@ -73,6 +73,7 @@ layout: default
       {% if page.video %}<a style="padding-right: 4px" href="{{ page.video | prepend: 'https://youtu.be/'}}" rel="external"><i class="fa-solid fa-play"></i> Video</a>{% endif %}
       {% if page.slide %}<a style="padding-right: 4px" href="{{ page.slide | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-file-powerpoint"></i> Slide</a> {% endif %}
       {% if page.poster %}<a style="padding-right: 4px" href="{{ page.poster | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-presentation-screen"></i> Poster</a> {% endif %}
+      {% if page.demo %}<a style="padding-right: 4px" href="{{ page.demo }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i> Demo</a>{% endif %}
       {% if page.bibtex %}<a style="padding-right: 4px" href="https://donghoon.io" rel="external"><i class="fa-solid fa-book"></i> BibTeX</a>{% endif %}
     </p>
   </div>

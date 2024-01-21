@@ -35,6 +35,5 @@ note: Late-breaking work
 category: 
   - "AI / NLP"
   - "Healthcare"
-  - "CSCW"
 featured: true
 ---

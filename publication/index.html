@@ -95,6 +95,9 @@ description: Publication list of Donghoon Shin
               <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endunless %}
               {% endif %}
+              {% if paper.demo %}
+              <a href="{{ paper.demo }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i>&nbsp;&nbsp;Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endif %}
               {% if paper.video %}
               <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}

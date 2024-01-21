@@ -17,7 +17,7 @@ category:
   - "AI / NLP"
   - "Healthcare"
   - "Chatbot"
-  - "CSCW"
+  - "Design"
 bibtex: |-
   @inproceedings{chatbotpersona,
             title = {Applying the Persona of User’s Family Member and the Doctor to the Conversational Agents for Healthcare},

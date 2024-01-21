@@ -15,5 +15,5 @@ note: Intelligent and Interactive Writing Assistants
 category: 
   - "AI / NLP"
   - "Healthcare"
-  - "CSCW"
+  - "Design"
 ---

@@ -14,5 +14,7 @@ abstract: "A personally tailored exercise regimen is crucial to ensuring suffici
 category:
   - "AI / NLP"
   - "Chatbot"
+  - "Healthcare"
+  - "Design"
 featured: true
 ---

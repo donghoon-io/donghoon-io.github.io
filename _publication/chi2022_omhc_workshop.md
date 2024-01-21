@@ -26,5 +26,4 @@ note: Future of Emotion in HCI
 category: 
   - "AI / NLP"
   - "Healthcare"
-  - "CSCW"
 ---
