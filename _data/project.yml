@@ -82,8 +82,8 @@ project:
       ideation</p>
     tags:
       - Research
-      - LLM
       - <i class='fas fa-book'></i>&nbsp; CHI '24
+      - LLM
       - Mental health
     image: diarymate.jpg
     title: DiaryMate
