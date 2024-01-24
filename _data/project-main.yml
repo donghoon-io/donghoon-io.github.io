@@ -1,0 +1,21 @@
+project:
+  - title: "Transforming HCI papers into design cards using generative AI"
+    image: "design_card.jpg"
+    venue: CHI '24
+    slug: chi2024_from-paper-to-card_paper
+  - title: "AI-infused plugin for assisting designers in theory-driven designing"
+    image: "cpd.jpg"
+    venue: CHI '24
+    slug: chi2024_cpd-hcd_paper
+  - title: "Tailoring an evidence-based exercise plan with LLMs"
+    image: "exercise.jpg"
+    venue: arXiv
+    slug: arxiv2023_planfitting_paper
+  - title: "AI chatbot for assisting ad hoc teamworks"
+    image: "chatbot.jpg"
+    venue: CHI '23
+    slug: chi2023_introbot_paper
+  - title: "Exploring the roles of LLMs in personal journaling"
+    image: "diary.jpg"
+    venue: CHI '24
+    slug: chi2024_diarymate_paper
