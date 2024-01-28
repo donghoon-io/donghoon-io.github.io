@@ -17,5 +17,4 @@ category:
   - "Design"
   - "Healthcare"
 featured: true
-pdf: false
 ---

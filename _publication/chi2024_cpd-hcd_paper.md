@@ -22,5 +22,4 @@ category:
   - "Design"
 demo: "https://miro.com/app-install/?response_type=code&client_id=3458764542648826179&redirect_uri=%2Fconfirm-app-install%2F"
 featured: true
-pdf: false
 ---
