@@ -1,9 +1,9 @@
 project:
-  - title: "Transforming HCI papers into design cards using generative AI"
+  - title: "Transforming HCI papers into design cards with generative AI"
     image: "design_card.jpg"
     venue: CHI '24
     slug: chi2024_from-paper-to-card_paper
-  - title: "AI-infused plugin for assisting designers in theory-driven designing"
+  - title: "AI-infused plugin for assisting designers in creating causal pathway diagrams"
     image: "cpd.jpg"
     venue: CHI '24
     slug: chi2024_cpd-hcd_paper
