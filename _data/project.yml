@@ -22,8 +22,9 @@ project:
     description: >-
       Natural language interface that helps to craft and iterate on evidence-based exercise plans
     id: design_card
-  - title: From Text to Card
+  - title: From Paper to Card
     image: design-card.jpg
+    paper: chi2024_paper2card_paper.pdf
     detail: >
       <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2. (CHI 2024, to appear)</p>
 
@@ -45,6 +46,7 @@ project:
     id: design_card
   - title: AI-assisted Theory-driven Designing for Designers
     image: cpd.jpg
+    paper: chi2024_cpd-hcd_paper.pdf
     detail: >
       <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (CHI 2024, to appear)</p>
 
@@ -87,6 +89,7 @@ project:
       - Mental health
     image: diarymate.jpg
     title: DiaryMate
+    paper: chi2024_diarymate_paper.pdf
     description: >-
       Supporting reflective writing processes using an LLM
     id: diarymate
