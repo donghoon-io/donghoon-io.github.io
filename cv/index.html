@@ -79,14 +79,14 @@ description: Curriculum vitae of Donghoon Shin
                     {% for pub in pub_items_sorted %}
                     <div class="dated-entry">
                       <div class="dated-date">{% if forloop.first %}{{ pubs.name }}{% endif %}</div>
-                      <div class="dated-content"><a style="font-weight: 500" href="{{ '/publication/' | append: pub.slug | relative_url }}">{{ pub.title }}</a><br>
+                      <div class="dated-content"><a style="font-weight: 400" href="{{ '/publication/' | append: pub.slug | relative_url }}">{{ pub.title }}</a><br>
                         {% for author in pub.authors %}
                         {% assign author_data = site.data.people.people | where:"name", author | first %}
-                        {% if author == "Donghoon Shin" %}<a style="font-weight: 500 !important" href="https://donghoon.io">Donghoon Shin</a>{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else %}<span class="coauthor">{{ author }}</span>{% endif %}{% endif %}{% for co in pub.coauthors %}{% if co == author %}<span style="font-weight: 200">*</span>{% endif %}{% endfor %}{% unless forloop.last%}, {% endunless %}
-                        {% endfor %}{% if pub.coauthors %}<span style="font-size: .8rem;  font-weight: 300" class="ms-2">(* co-first authorship)</span>{% endif %}
+                        {% if author == "Donghoon Shin" %}<a style="font-weight: 400 !important" href="https://donghoon.io">Donghoon Shin</a>{% if pub.coauthors contains author %}*{% endif %}{% else %}{% if pub.coauthors contains author %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor" style="font-weight: 400 !important">{{ author }}</a>*{% else %}<span class="coauthor" style="font-weight: 400 !important">{{ author }}</span>*{% endif %}{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else %}<span class="coauthor">{{ author }}</span>{% endif %}{% endif %}{% endif %}{% unless forloop.last%}, {% endunless %}
+                        {% endfor %}{% if pub.coauthors %}<span style="font-size: .8rem; font-weight: 300" class="ms-2">(* co-first authorship)</span>{% endif %}
                         <br>
-                        {{ pub.venue }}.{% if pub.note %} ({{ pub.note}}){% endif %}<br>
-                        {% if pub.award %}<i class="fas fa-medal"></i><span style="font-weight: 500">{{ pub.award }}</span><br>{% endif %}
+                        {{ pub.venue }}.{% if pub.note %} <span style="font-weight: 200 !important">({{ pub.note}})</span>{% endif %}<br>
+                        {% if pub.award %}<i class="fas fa-medal"></i><span style="font-weight: 400">{{ pub.award }}</span><br>{% endif %}
                       </div>
                     </div>
                     {% endfor %}
