@@ -26,7 +26,7 @@ project:
     image: design-card.jpg
     paper: chi2024_paper2card_paper.pdf
     detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2. (CHI 2024, to appear)</p>
+      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically generates design cards from HCI papers using generative AI models, such as GPT-3 and DALL-E 2. (CHI '24 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='img-responsive' alt='keyscreen of our system'>
 
@@ -48,7 +48,7 @@ project:
     image: cpd.jpg
     paper: chi2024_cpd-hcd_paper.pdf
     detail: >
-      <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (CHI 2024, to appear)</p>
+      <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (CHI '24 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/cpd-example.jpg' class='img-responsive' alt='keyscreen of our system'>
 
@@ -70,7 +70,7 @@ project:
       <p>Working with <a href='https://taewankim.io/'>Taewan Kim</a> and <a
       href='https://hwajunghong.com'>Hwajung Hong</a>, we explored the
       design space of generative language models (e.g., GPT-3) in supporting a
-      reflective writing process. (CHI 2024, to appear)</p>
+      reflective writing process. (CHI '24 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/diarymate.jpg' class='img-responsive'
       alt='keyscreen of our system'>
