@@ -127,28 +127,28 @@ h4 {
 
 @media screen and (max-width: 1600px) {
 	.page-content {
-		padding: 0 18rem !important;
+		padding: 0 15rem !important;
 	}
     footer {
-	    padding: 3rem 18rem !important;
+	    padding: 3rem 15rem !important;
     }
 }
 
 @media screen and (max-width: 1440px) {
 	.page-content {
-		padding: 0 12rem !important;
+		padding: 0 10rem !important;
 	}
     footer {
-	    padding: 2rem 12rem !important;
+	    padding: 2rem 10rem !important;
     }
 }
 
 @media screen and (max-width: 1200px) {
 	.page-content {
-		padding: 0 5rem !important;
+		padding: 0 4rem !important;
 	}
     footer {
-	    padding: 2rem 5rem !important;
+	    padding: 2rem 4rem !important;
     }
 }
 @media screen and (max-width: 991px) {
