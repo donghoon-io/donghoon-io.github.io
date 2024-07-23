@@ -1,4 +1,13 @@
 # Donghoon's theme
+
+<a href="https://jekyll-themes.com/[GITHUB USER NAME]/[GITHUB REPOSITORY NAME]">
+  <img
+    src="https://img.shields.io/badge/featured%20on-JT-red.svg"
+    height="20"
+    alt="Jekyll Themes Shield"
+  />
+</a>
+
 This repository contains the codebase of Donghoon's website.
 
 ![website_md](https://user-images.githubusercontent.com/28855330/204675255-dad28519-f4ea-4426-bc55-0f3aaa976db8.jpg)
