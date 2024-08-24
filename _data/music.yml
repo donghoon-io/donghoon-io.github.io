@@ -1,4 +1,20 @@
 musics:
+  - title: When We Were Young
+    artist: "Adele"
+    link: "lsrhRUQbcLM"
+    applemusic: "https://embed.music.apple.com/us/album/when-we-were-young/1544494115?i=1544494407"
+    type: Band cover (Keyboard)
+    genre:
+      - Band_cover
+      - Pop
+  - title: Someone Like You
+    artist: "Adele"
+    link: "ibrTB0mA8hc"
+    applemusic: "https://embed.music.apple.com/us/album/someone-like-you/1544491232?i=1544491998"
+    type: Band cover (Keyboard)
+    genre:
+      - Band_cover
+      - Pop
   - title: "Cruel Summer"
     artist: "Taylor Swift"
     link: "pL0nv2AGeUc"
