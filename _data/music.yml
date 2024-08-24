@@ -1,7 +1,7 @@
 musics:
   - title: "Cruel Summer"
     artist: "Taylor Swift"
-    link: "https://www.youtube.com/embed/pL0nv2AGeUc"
+    link: "pL0nv2AGeUc"
     applemusic: "https://embed.music.apple.com/us/album/cruel-summer/1468058165?i=1468058171"
     type: Garageband cover
     genre:
@@ -9,7 +9,7 @@ musics:
       - POP
   - title: "LOVE DIVE"
     artist: "IVE"
-    link: "https://www.youtube.com/embed/rPoPYQ5qEAU"
+    link: "rPoPYQ5qEAU"
     applemusic: "https://embed.music.apple.com/us/album/1616804151?i=1616804152"
     type: Garageband cover
     genre:
@@ -17,7 +17,7 @@ musics:
       - K-POP
   - title: "Illusion"
     artist: "aespa"
-    link: "https://www.youtube.com/embed/QAvw-Q6cq9s"
+    link: "QAvw-Q6cq9s"
     applemusic: "https://embed.music.apple.com/us/album/illusion/1626752981?i=1626752986"
     type: Garageband cover
     genre:
@@ -25,7 +25,7 @@ musics:
       - K-POP
   - title: "To You My Light"
     artist: "Maktub"
-    link: "https://www.youtube.com/embed/TC-cafoDrn8"
+    link: "TC-cafoDrn8"
     applemusic: "https://embed.music.apple.com/us/album/to-you-my-light-feat-lee-raon/1467378200?i=1467378201"
     type: Piano cover
     genre:
@@ -33,7 +33,7 @@ musics:
       - K-POP
   - title: "On The Ground"
     artist: "Rosé"
-    link: "https://www.youtube.com/embed/uckY63zDUBk"
+    link: "uckY63zDUBk"
     applemusic: "https://embed.music.apple.com/us/album/on-the-ground/1557744841?i=1557745420"
     type: Garageband cover
     genre:
@@ -41,15 +41,15 @@ musics:
       - K-POP
   - title: "Someday, The Boy"
     artist: "Kim feel"
-    link: "https://www.youtube.com/embed/pSwQiAzK1-E"
-    applemusic: "https://embed.music.apple.com/us/album/someday-the-boy/1499080014?i=1499080015"
+    link: "pSwQiAzK1-E"
+    applemusic: "https://embed.music.apple.com/us/album/%EA%B7%B8%EB%95%8C-%EA%B7%B8-%EC%95%84%EC%9D%B8/1686851932?i=1686851933"
     type: Piano cover
     genre:
       - Piano_cover
       - K-POP
   - title: "Stuck With U"
     artist: "Ariana Grande & <span style='white-space:nowrap'>Justin Bieber</span>"
-    link: "https://www.youtube.com/embed/SIqHO6Wp4i8"
+    link: "SIqHO6Wp4i8"
     applemusic: "https://embed.music.apple.com/us/album/stuck-with-u/1511562938?i=1511562950"
     type: Piano cover
     genre:
@@ -57,7 +57,7 @@ musics:
       - POP
   - title: "Bed of Roses"
     artist: "Bon Jovi"
-    link: "https://www.youtube.com/embed/4IMOlkGx4vo"
+    link: "4IMOlkGx4vo"
     applemusic: "https://embed.music.apple.com/us/album/bed-of-roses/1440826842?i=1440826868"
     type: Piano cover
     genre:
@@ -65,7 +65,7 @@ musics:
       - POP
   - title: "On The Ground"
     artist: "Rosé"
-    link: "https://www.youtube.com/embed/TE5guujngCA"
+    link: "TE5guujngCA"
     applemusic: "https://embed.music.apple.com/us/album/on-the-ground/1557744841?i=1557745420"
     type: Piano cover
     genre:
@@ -73,7 +73,7 @@ musics:
       - K-POP
   - title: "Cruel Summer"
     artist: "Taylor Swift"
-    link: "https://www.youtube.com/embed/w0AOmseKpAU"
+    link: "w0AOmseKpAU"
     applemusic: "https://embed.music.apple.com/us/album/cruel-summer/1468058165?i=1468058171"
     type: Piano cover
     genre:
@@ -81,7 +81,7 @@ musics:
       - POP
   - title: "Celebrity"
     artist: "IU"
-    link: "https://www.youtube.com/embed/WZbIrvzpoXI"
+    link: "WZbIrvzpoXI"
     applemusic: "https://embed.music.apple.com/us/album/celebrity/1550907177?i=1550907178"
     type: Piano cover
     genre:
@@ -89,7 +89,7 @@ musics:
       - K-POP
   - title: "Violeta"
     artist: "IZ*ONE"
-    link: "https://www.youtube.com/embed/jhrj195Ahcw"
+    link: "jhrj195Ahcw"
     applemusic: "https://embed.music.apple.com/us/album/violeta/1569293222?i=1569293224"
     type: Piano cover
     genre:
@@ -97,7 +97,7 @@ musics:
       - K-POP
   - title: Love Me Like You Do
     artist: "Ellie Goulding"
-    link: "https://www.youtube.com/embed/edzT2jVAGig"
+    link: "edzT2jVAGig"
     applemusic: "https://embed.music.apple.com/us/album/love-me-like-you-do/1440845197?i=1440845808"
     type: Garageband cover
     genre:
@@ -105,35 +105,39 @@ musics:
       - POP
   - title: Love Me Like You Do
     artist: "Ellie Goulding"
-    link: "https://www.youtube.com/embed/K1zSgJTnfYY"
+    link: "K1zSgJTnfYY"
     applemusic: "https://embed.music.apple.com/us/album/love-me-like-you-do/1440845197?i=1440845808"
     type: Piano cover
+    genre:
       - Piano_cover
       - POP
   - title: Me Gustas Tu
     artist: "GFriend"
-    link: "https://www.youtube.com/embed/Tl9EFafG40w"
-    applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1305043068?i=1305043078"
+    link: "Tl9EFafG40w"
+    applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1754044863?i=1754044871"
     type: Garageband cover
+    genre:
       - Garageband_cover
       - K-POP
   - title: Me Gustas Tu
     artist: "GFriend"
-    link: "https://www.youtube.com/embed/a5EjdVQt3Kg"
-    applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1305043068?i=1305043078"
+    link: "a5EjdVQt3Kg"
+    applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1754044863?i=1754044871"
     type: Piano cover
+    genre:
       - Piano_cover
       - K-POP
   - title: Style
     artist: "Taylor Swift"
-    link: "https://www.youtube.com/embed/VSgoMEGp55o"
+    link: "VSgoMEGp55o"
     applemusic: "https://embed.music.apple.com/us/album/style/1440935467?i=1440935812"
     type: Garageband cover
+    genre:
       - Garageband_cover
       - POP
   - title: Señorita
     artist: "(G)I-DLE"
-    link: "https://www.youtube.com/embed/ValKpeRchFo"
+    link: "ValKpeRchFo"
     applemusic: "https://embed.music.apple.com/us/album/se%C3%B1orita/1454363872?i=1454363873"
     type: Garageband cover
     genre:
@@ -141,23 +145,23 @@ musics:
       - K-POP
   - title: Rough
     artist: "GFriend"
-    link: "https://www.youtube.com/embed/U4Hu8g3LxoQ"
-    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
+    link: "U4Hu8g3LxoQ"
+    applemusic: "https://embed.music.apple.com/us/album/rough/1754048179?i=1754048194"
     type: Garageband cover
     genre:
       - Garageband_cover
       - K-POP
   - title: Rough
     artist: "GFriend"
-    link: "https://www.youtube.com/embed/jYONyo1PPU0"
-    applemusic: "https://embed.music.apple.com/us/album/rough/1078127178?i=1078127193"
+    link: "jYONyo1PPU0"
+    applemusic: "https://embed.music.apple.com/us/album/rough/1754048179?i=1754048194"
     type: Piano cover
     genre:
       - Piano_cover
       - K-POP
   - title: Make You Feel My Love
     artist: "Adele"
-    link: "https://www.youtube.com/embed/CV3CgVXjSnU"
+    link: "CV3CgVXjSnU"
     applemusic: "https://embed.music.apple.com/us/album/make-you-feel-my-love/1545382283?i=1545382976"
     type: Piano cover
     genre:
@@ -165,7 +169,7 @@ musics:
       - POP
   - title: New
     artist: "Yves (LOONA)"
-    link: "https://www.youtube.com/embed/aVaXe810xLQ"
+    link: "aVaXe810xLQ"
     applemusic: "https://embed.music.apple.com/us/album/new/1317708847?i=1317708941"
     type: Piano cover
     genre:
@@ -173,7 +177,7 @@ musics:
       - K-POP
   - title: LION
     artist: "(G)I-DLE"
-    link: "https://www.youtube.com/embed/NXF1S9DAkVk"
+    link: "NXF1S9DAkVk"
     applemusic: "https://embed.music.apple.com/us/album/lion/1504618353?i=1504618600"
     type: Garageband cover
     genre:
@@ -181,7 +185,7 @@ musics:
       - K-POP
   - title: Wish You Were Gay
     artist: "Billie Eilish"
-    link: "https://www.youtube.com/embed/J4FBj071HZs"
+    link: "J4FBj071HZs"
     applemusic: "https://embed.music.apple.com/us/album/wish-you-were-gay/1450695723?i=1450695871"
     type: Piano cover
     genre:
@@ -189,15 +193,15 @@ musics:
       - POP
   - title: Western Sky
     artist: "Ulala Session"
-    link: "https://www.youtube.com/embed/pPp1nfJMa0g"
-    applemusic: "https://embed.music.apple.com/us/album/서쪽-하늘/477072518?i=477072528"
+    link: "pPp1nfJMa0g"
+    applemusic: "https://embed.music.apple.com/us/album/%EC%84%9C%EC%AA%BD-%ED%95%98%EB%8A%98/1688123514?i=1688123535"
     type: Piano cover
     genre:
       - Piano_cover
       - K-POP
   - title: When We Were Young
     artist: "Adele"
-    link: "https://www.youtube.com/embed/ESZBkmPgcvo"
+    link: "ESZBkmPgcvo"
     applemusic: "https://embed.music.apple.com/us/album/when-we-were-young/1544494115?i=1544494407"
     type: Garageband cover
     genre:
@@ -205,15 +209,15 @@ musics:
       - POP
   - title: One's Way Back
     artist: "NAUL"
-    link: "https://www.youtube.com/embed/Cz3IctD6rig"
-    applemusic: "https://embed.music.apple.com/us/album/귀로/1266619284?i=1266619292"
+    link: "Cz3IctD6rig"
+    applemusic: "https://embed.music.apple.com/us/album/%EA%B7%80%EB%A1%9C/1673931678?i=1673931985"
     type: Piano cover
     genre:
       - Piano_cover
       - K-POP
   - title: Cheer Up
     artist: "TWICE"
-    link: "https://www.youtube.com/embed/1CfaRMrpYHE"
+    link: "1CfaRMrpYHE"
     applemusic: "https://embed.music.apple.com/us/album/cheer-up/1555389971?i=1555389973"
     type: Piano cover
     genre:
@@ -221,7 +225,7 @@ musics:
       - K-POP
   - title: How You Like That
     artist: "BLACKPINK"
-    link: "https://www.youtube.com/embed/lgww4uXx5WQ"
+    link: "lgww4uXx5WQ"
     applemusic: "https://embed.music.apple.com/us/album/how-you-like-that/1520233748?i=1520233767"
     type: Piano cover
     genre:
@@ -229,7 +233,7 @@ musics:
       - K-POP
   - title: Eyes, Nose, Lips
     artist: "Taeyang"
-    link: "https://www.youtube.com/embed/TgK95chxQuc"
+    link: "TgK95chxQuc"
     applemusic: "https://embed.music.apple.com/us/album/eyes-nose-lips/1317322300?i=1317322831"
     type: Piano cover
     genre:
@@ -237,39 +241,39 @@ musics:
       - K-POP
   - title: I’m Not The Only One
     artist: "Sam Smith"
-    link: "https://www.youtube.com/embed/X8bV_tSvJak"
-    applemusic: "https://embed.music.apple.com/us/album/im-not-the-only-one/1440824561?i=1440824586"
+    link: "X8bV_tSvJak"
+    applemusic: "https://embed.music.apple.com/us/album/im-not-the-only-one/1536993568?i=1536993857"
     type: Garageband cover
     genre:
       - Garageband_cover
       - POP
   - title: Stay With Me
     artist: "Sam Smith"
-    link: "https://www.youtube.com/embed/IONQVm5q5BU"
-    applemusic: "https://embed.music.apple.com/us/album/stay-with-me/1440824580?i=1440824580"
+    link: "IONQVm5q5BU"
+    applemusic: "https://embed.music.apple.com/us/album/stay-with-me/1536993568?i=1536993755"
     type: Garageband cover
     genre:
       - Garageband_cover
       - POP
   - title: When Night Is Falling
     artist: "Punch"
-    link: "https://www.youtube.com/embed/BRgLHwsFovI"
-    applemusic: "https://embed.music.apple.com/us/album/when-night-is-falling/1291178961?i=1291178961"
+    link: "BRgLHwsFovI"
+    applemusic: "https://embed.music.apple.com/us/album/when-night-is-falling/1624445935?i=1624445942"
     type: Band cover (Keyboard)
     genre:
       - Band_cover
       - K-POP
   - title: The Moon of Seoul
     artist: "Roy Kim"
-    link: "https://www.youtube.com/embed/AGfyG7E44D8"
-    applemusic: "https://embed.music.apple.com/us/album/the-moon-of-seoul/576262051?i=576262053"
+    link: "AGfyG7E44D8"
+    applemusic: "https://embed.music.apple.com/us/album/the-moon-of-seoul/1655096851?i=1655096860"
     type: Band cover (Vocal), I have no idea why I wore this weird costume then...
     genre:
       - Band_cover
       - K-POP
   - title: Karaoke
     artist: "Jang Beom June"
-    link: "https://www.youtube.com/embed/cmVwSbQt1xw"
+    link: "cmVwSbQt1xw"
     applemusic: "https://embed.music.apple.com/us/album/karaoke/1457171018?i=1457171018"
     type: Garageband cover
     genre:
@@ -277,7 +281,7 @@ musics:
       - K-POP
   - title: Twentyfive Twentyone
     artist: "Jaurim"
-    link: "https://www.youtube.com/embed/Q0tDczd_sUE"
+    link: "Q0tDczd_sUE"
     applemusic: "https://embed.music.apple.com/us/album/%EC%8A%A4%EB%AC%BC%EB%8B%A4%EC%84%AF-%EC%8A%A4%EB%AC%BC%ED%95%98%EB%82%98/1404760680?i=1404760688"
     type: Band cover (Keyboard)
     genre:
@@ -285,7 +289,7 @@ musics:
       - K-POP
   - title: Confession
     artist: "Delispice"
-    link: "https://www.youtube.com/embed/ynrTJeQW0Uo"
+    link: "ynrTJeQW0Uo"
     applemusic: "https://embed.music.apple.com/us/album/%EA%B3%A0%EB%B0%B1/1449535556?i=1449535562"
     type: Band cover (Vocal)
     genre:
