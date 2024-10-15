@@ -398,10 +398,10 @@ function prefix(id) {
 
   return icon;
 }
-const city = "Busan";
+const city = "Seattle";
 const openweathermap_token = "05d354a6f8e22e86e0f4394c6f9144c8";
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${openweathermap_token}&units=metric`)           //api for the get request
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${openweathermap_token}&units=metric`)
 .then(response => response.json())
 .then(data => {
   document.getElementById('weather_icon').src = `/assets/images/weather/${prefix(data.weather[0].id)}.svg`;

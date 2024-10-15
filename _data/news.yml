@@ -1,27 +1,30 @@
 list: # format date as dd/mm/yyyy
+  - title: "Joining program committee for IUI 2025"
+    date: "14/10/2024"
+    description: "I'll be serving as a program committee member for <a href='https://iui.acm.org/2025/'>IUI 2025</a>"
   - title: "Three CHI papers accepted"
-    date: "18/01/2024" # Oct 21, 2021
+    date: "18/01/2024"
     description: "Three CHI papers on LLMs for designing / health have been accepted to <a href='https://chi2024.acm.org/'>CHI 2024</a>. Stay tuned!"
   - title: "Summer internship at Adobe Research"
-    date: "12/12/2023" # Oct 21, 2021
+    date: "12/12/2023"
     description: "I'll be joining <a href='https://research.adobe.com/'>Adobe Research</a> as a research scientist intern this summer, working with <a href='https://gromitchan.com/'>Dr. Gromit Chan</a>"
   - title: "Joining program committee for CHI 2024"
-    date: "10/12/2023" # Oct 21, 2021
-    description: "Happy to announce that I'll be serving as a program committee member for <a href='https://chi2024.acm.org/'>CHI 2024</a>!"
+    date: "10/12/2023"
+    description: "I'll be serving as a program committee member for <a href='https://chi2024.acm.org/'>CHI 2024</a>"
   - title: "Summer internship at Naver AI Lab"
-    date: "01/03/2023" # Oct 21, 2021
+    date: "01/03/2023"
     description: "Excited to be working as a research intern at <a href='https://clova.ai/en/research/research-areas.html'>Naver AI Lab</a> this summer, working with <a href='http://younghokim.net/'>Dr. Young-Ho Kim</a>"
   - title: "Two CHI papers accepted"
-    date: "13/01/2023" # Oct 21, 2021
+    date: "13/01/2023"
     description: "Excited to share that two papers on <a href='/publication/chi2023_introbot_paper'>AI-mediated communication</a> and <a href='/publication/chi2023_mooc_paper'>online learning</a> have been accepted to <a href='https://chi2023.acm.org/'>CHI 2023</a>!"
   - title: "CSCW paper accepted"
-    date: "15/10/2022" # Oct 21, 2021
+    date: "15/10/2022"
     description: "Our paper on investigating <a href='/publication/cscw2023_satellite-explainability_paper'>explanation strategies in human-AI collaboration</a> has been accepted to <a href='https://cscw.acm.org/2023/'>CSCW 2023</a>"
   - title: "Started my graduate study at UW HCDE"
-    date: "28/09/2022" # Jun 25, 2011
+    date: "28/09/2022"
     description: "So excited to begin my new journey as a Ph.D. student in HCDE at the University of Washington 🎉"
   - title: "Seleted as the 2022 Korean Government Scholar for Overseas Studies"
-    date: "29/07/2022" # Jun 25, 2011
+    date: "29/07/2022"
     description: "Honored to be selected as one of the 2022 Korean Government Scholars for Overseas Studies"
   - title: "First in-person conference attendance @ CHI 2022"
     date: "30/04/2022"
