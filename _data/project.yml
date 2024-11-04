@@ -19,7 +19,7 @@ project:
     description: >-
       Tailoring design implications to individual designers’ needs with generative AI
     id: customized_design_card
-  - title: Agentic Workflow in Poster Design
+  - title: Agentic Workflow in Design
     image: persona-agents.jpg
     detail: >
       <p>Working with <a href='https://gromitchan.com/'>Gromit Chan</a> at Adobe Research, I built a system that generates persona-driven design agents for poster design.</p>
