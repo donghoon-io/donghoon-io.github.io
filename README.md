@@ -19,7 +19,7 @@ This repository contains the codebase for Donghoon's website.
 - [Prosocial Computing Group](https://prosocialcomputing.com) (University of Washington)
 - [Ruoxi Shang](https://ruoxishang.com) (University of Washington)
 - [Tao Long](https://cs.columbia.edu/~long) (Columbia University)
-- and many others (let me know if you deployed your website and want to be featured here)
+- and many others
 
 ## Adding contents
 
