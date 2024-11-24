@@ -10,7 +10,7 @@
 
 This repository contains the codebase for Donghoon's website.
 
-![website_md](https://user-images.githubusercontent.com/28855330/204675255-dad28519-f4ea-4426-bc55-0f3aaa976db8.jpg)
+![screenshot](https://github.com/user-attachments/assets/0944f7a9-7952-49d2-bedb-8270e0f760e9)
 
 ## Websites built on this theme
 
