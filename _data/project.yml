@@ -80,7 +80,7 @@ project:
       - Design
       - Translational science
     description: >-
-      Transforming design implications into design cards with generative AI
+      Transforming HCI papers into design cards with generative AI
     id: design_card
   - title: AI-assisted Theory-informed Designing
     image: cpd.jpg

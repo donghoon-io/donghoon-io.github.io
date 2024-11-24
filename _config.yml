@@ -2,17 +2,15 @@ title: Donghoon Shin
 author:
   name: Donghoon Shin
   email: dhoon@uw.edu
-description: > # this means to ignore newlines until "show_excerpts:"
-  Donghoon Shin is a first-year Ph.D. student in HCDE at the Unviersity of Washington
+description: >
+  HCI researcher | Ph.D. student at the Unviersity of Washington
+google_analytics_id: UA-215543768-1
 
 show_excerpts: false # set to true to show excerpts on the homepage
-
 permalink: /:title
 
 url: "https://donghoon.io" # the base hostname & protocol for your site
-  
-# Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
