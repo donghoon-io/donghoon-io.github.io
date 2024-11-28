@@ -463,8 +463,6 @@ h4 {
   transform: translateZ(-11px);
 }
 
-.logo {
-}
 .logo img {
   width: 17px;
   height: 17px;
@@ -472,6 +470,12 @@ h4 {
 }
 .logo span {
   white-space: nowrap;
+}
+
+.flag {
+  width: 27px;
+  height: 27px;
+  margin: 0 0 3px 1px;
 }
 
 .footer-text {
