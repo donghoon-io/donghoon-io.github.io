@@ -1,21 +1,33 @@
 project:
-  - title: "Transforming HCI papers into design cards with generative AI"
-    image: "design_card.jpg"
-    venue: CHI '24
-    slug: chi2024_paper2card_paper
-  - title: "AI-infused plugin for assisting designers in creating causal pathway diagrams"
-    image: "cpd.jpg"
-    venue: CHI '24
-    slug: chi2024_cpd-hcd_paper
-  - title: "Tailoring an evidence-based exercise plan with LLMs"
-    image: "exercise.jpg"
-    venue: arXiv
-    slug: arxiv2023_planfitting_paper
-  - title: "AI chatbot for assisting ad hoc teamworks"
-    image: "chatbot.jpg"
-    venue: CHI '23
-    slug: chi2023_introbot_paper
-  - title: "Exploring the roles of LLMs in personal journaling"
-    image: "diary.jpg"
-    venue: CHI '24
-    slug: chi2024_diarymate_paper
+  - title: "Virtual Try-on"
+    image: "vto_demo.png"
+    slug: virtual_try_on
+  - title: "AI Avatar Profile"
+    image: "avatar_profile.png"
+    slug: avatar_profile
+  - title: "Synthetic Data Pipeline for AI Architectures"
+    image: "synthetic_data.png"
+    slug: synthetic_data
+  - title: "User Satisfaction on 3D Avatar Facial Expression"
+    image: "facial_expression.png"
+    slug: facial_expression
+  - title: "An Empirical Study on How People Perceive AI-generated Music"
+    image: "cikm2022_music.png"
+    venue: CIKM '22
+    slug: cikm2022_music_paper
+  - title: "A Visual Analytics System for Improving Attention-based Traffic Forecasting Models"
+    image: "tvcg2023_analytics.png"
+    venue: TVCG '23
+    slug: tvcg2023_analytics_paper
+  - title: "Learning to Remember Patterns - Pattern Matching Memory Networks for Traffic Forecasting"
+    image: "iclr2022_pattern.png"
+    venue: ICLR '21
+    slug: iclr2022_pattern_paper
+  - title: "Wait, Let’s Think about Your Purchase Again - A Study on Interventions for Supporting Self-Controlled Online Purchases"
+    image: "www2021_purchase.png"
+    venue: WWW '21
+    slug: www2021_purchase_paper
+  - title: "An Empirical Experiment on Deep Learning Models for Predicting Traffic Data"
+    image: "icde2021_traffic.png"
+    venue: ICDE '21
+    slug: icde2021_traffic_paper

@@ -14,8 +14,11 @@ layout: default
     <p style="font-weight: 400"><i class="fa-solid fa-medal" style="margin-right: 6px"></i>{{ page.award }}</p>
     {% endif %}
   </div>
+
   <div class="row mb-5">
     {% if page.coauthors %}<p style="font-size: .8rem; font-weight: 400; text-align: right;">(* co-first authorship)</p>{% endif %}
+    
+    {% unless page.hide_authors %}
     {% for author in page.authors %}
     {% assign author_data = site.data.people.people | where:"name", author | first %}
     {% if author_data %}
@@ -38,34 +41,39 @@ layout: default
       <div class="row mt-2">
         {% if author_data.website %}
         <a href="{{ author_data.website }}">
-          <p class="author-name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
+          <p class="author-name" style="{% if author == 'Hyeshin Chu' %}font-weight: bold;{% endif %}">{{ author }}{% for co in page.coauthors %}{% if co == author %}*{% endif %}{% endfor %}</p>
           <p class="affiliation-name">{{ author_data.affiliation }}</p>
         </a>
         {% else %}
-        <p class="author-name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
-        <p class="affiliation-name">{{ author_data.affiliation }}</p>
+          <p class="author-name" style="{% if author == 'Hyeshin Chu' %}font-weight: bold;{% endif %}">{{ author }}{% for co in page.coauthors %}{% if co == author %}*{% endif %}{% endfor %}</p>
+          <p class="affiliation-name">{{ author_data.affiliation }}</p>
         {% endif %}
       </div>
     </div>
     {% else %}
     <div class="col my-3">
       <div class="row">
-        <div class="author-image" style="{{ '/assets/images/author/default.jpg' | relative_url | prepend: 'background-image: url(' | append: ')' }}"></div>
+          <div class="author-image" style="{{ '/assets/images/author/default.jpg' | relative_url | prepend: 'background-image: url(' | append: ')' }}"></div>
       </div>
       <div class="row mt-2">
-        <p class="author-name">{{ author }}</p>
+          <p class="author-name" style="{% if author == 'Hyeshin Chu' %}font-weight: bold;{% endif %}">{{ author }}</p>
       </div>
     </div>
     {% endif %}
     {% endfor %}
+    {% endunless %}
+
   </div>
+
   <div class="row mb-5">
     <img class="publication-image" alt="Landscape" src="{{ page.slug | prepend: '/assets/images/publication/' | append: '.jpg' | relative_url }}"/>
   </div>
+
   <div class="row mb-5">
     <p class="section-title">Abstract</p>
     <p>{{ page.abstract }}</p>
   </div>
+
   <div class="row">
     <p class="section-title">Materials</p>
     <p class="metadata">
@@ -74,7 +82,10 @@ layout: default
       {% if page.slide %}<a style="padding-right: 4px" href="{{ page.slide | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-file-powerpoint"></i> Slide</a> {% endif %}
       {% if page.poster %}<a style="padding-right: 4px" href="{{ page.poster | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-presentation-screen"></i> Poster</a> {% endif %}
       {% if page.demo %}<a style="padding-right: 4px" href="{{ page.demo }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i> Demo</a>{% endif %}
-      {% if page.bibtex %}<a style="padding-right: 4px" href="https://donghoon.io" rel="external"><i class="fa-solid fa-book"></i> BibTeX</a>{% endif %}
+      {% if page.bibtex %}<a style="padding-right: 4px" href="#" rel="external"><i class="fa-solid fa-book"></i> BibTeX</a>{% endif %}
     </p>
   </div>
 </div>
+
+
+

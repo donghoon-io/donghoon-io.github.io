@@ -1,0 +1,90 @@
+---
+layout: default
+title: Hyeshin Chu
+description: HCI researcher | AI Product Manager at SNOW Corporation
+---
+
+{% assign projects = site.data.project-main.project %}
+{% assign news = site.data.news.list %}
+
+<div class="container pt-3 pb-4">
+    <div class="container vertical-center">
+        <div class="row">
+            <div class="col-12 col-md-8 col-xxl-9 ps-0 align-self-center">
+                <h4>Donghoon Shin <img class="flag" src="{{ 'assets/images/misc/flag.svg' | relative_url }}"/></h4>
+                <div class="d-flex mx-2 mt-4 mb-3 justify-content-center d-md-none items-center">
+                    <img src="/assets/images/donghoon.jpg" class="w-75"/>
+                </div>
+                <p class="mt-3">Hi, I am an HCI Researcher and AI Product Manager in <a href="https://snowcorp.com/en/" class="logo"><span><img src="{{ 'assets/images/logo/snow.png' | relative_url }}"/>SNOW Corporation.</a></p>
+                <p>My research focuses on exploring how we can utilize generative AI technologies to enhance user experience and improve interaction between them. I believe in the intersectionality of quantitative and qualitative subjects, that neither approach alone can lead one to the absolute truth.</p>
+                <p>Previously, I received my M.S. in Graduate School of AI at <a href="https://en.snu.ac.kr/">UNIST</a> and B.B.A. in College of Business Administration at <a href="https://www.ewha.ac.kr/ewhaen/index.do">Ewha Womans University.</a></p>
+            </div>
+            <div class="d-none d-md-block col-12 col-md-4 col-xxl-3 align-self-center text-center">
+                <img src="/assets/images/donghoon.jpg" class="w-100" style="max-width: 225px;"/>
+            </div>
+        </div>
+    </div>
+    <p class="mt-3">
+      <a href="#" class="cryptedmail"
+        data-name="hyeshinchu"
+        data-domain="gmail"
+        data-tld="com"
+        onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+        <i class="fa-solid fa-envelope" style="margin-right: .3rem;"></i>
+      </a>
+    </p>
+    <p class="mt-3">
+        <a href="https://www.linkedin.com/in/hyeshinchu"><i class="fa-brands fa-linkedin" style="margin-right: .6rem;"></i>hyeshinchu</a>
+    </p>
+</div>
+<div class="container">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Recent projects</p>
+	<div class="scroller">
+		<div class="scroller-inner">
+            {% for project in projects %}
+			<div class="paper-container non-select">
+                <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+                <p class="pt-2 mt-md-2" style="font-size: .85rem; font-weight: 300 !important; line-height: 1rem; text-align: center;">{{ project.title }}{% if project.venue %}<a class="project-venue" href="{{ project.slug | prepend: 'publication/' | relative_url }}">{{ project.venue }}</a>{% endif %}</p>
+			</div>
+            {% endfor %}
+		</div>
+	</div>
+    <div class="d-flex flex-row-reverse mt-4">
+        <a href="{{ 'project' | relative_url }}" class="view-all">> View All</a>
+    </div>
+</div>
+<div class="container">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
+    <div class="row mt-4">
+        {% for new in news limit: 4 %}
+        <div class="col-12 col-sm-6">
+            <p class="mb-0" style="font-weight: 400 !important;">{{ new.title }}</p>
+            <p class="mb-1" style="font-size: .8rem; font-weight: 200 !important;">{{ new.date | date: "%b %-d, %Y" }}</p>
+            <p style="font-weight: 300 !important;">{{ new.description }}</p>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="d-flex flex-row-reverse mt-4">
+        <a href="{{ 'news' | relative_url }}" class="view-all">> View All</a>
+    </div>
+</div>
+
+<script>
+	function addAnimation(scrollers) {
+		scrollers.forEach((scroller) => {
+			scroller.setAttribute("data-animated", true);
+
+			const scrollerInner = scroller.querySelector(".scroller-inner");
+			const scrollerContent = Array.from(scrollerInner.children);
+            
+			scrollerContent.forEach((item) => {
+				const duplicatedItem = item.cloneNode(true);
+				duplicatedItem.setAttribute("aria-hidden", true);
+				scrollerInner.appendChild(duplicatedItem);
+			});
+		});
+	}
+	const scrollers = document.querySelectorAll(".scroller");
+	addAnimation(scrollers);
+</script>
