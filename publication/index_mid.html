@@ -1,0 +1,64 @@
+---
+layout: default
+baseurl: /publication
+title: Publication
+description: Publication list of Hyeshin Chu
+---
+
+{% assign all_publications = site.publication | sort: 'year' | reverse %}
+
+<style>
+    [type=radio] {
+        display: none !important;
+    }
+</style>
+
+<div class="container py-4">
+    <div class="row">
+      <div class="col-12 px-0">
+        <p style="font-weight: 500 !important; text-transform: uppercase;">Publication</p>
+      </div>
+    </div>
+
+    <div class="row" id="publications">
+      {% for paper in all_publications %}
+      <div class="item col-12 px-0 py-3">
+        <p class="mb-1" style="font-weight: 400 !important;"><a href="{{ paper.slug | prepend: '/publication/' | relative_url }}">{{ paper.title }}</a></p>
+        <p class="mb-1" style="font-weight: 200 !important;">
+          {% for author in paper.authors %}{% assign author_data = site.data.people.people | where:"name", author | first %}{% if author == "Donghoon Shin" %}<a href="https://donghoon.io" style="font-weight: 400 !important;">Donghoon Shin</a>{% if paper.coauthors contains author %}*{% endif %}{% else %}{% if paper.coauthors contains author %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor" style="font-weight: 400 !important">{{ author }}</a>*{% else %}<span class="coauthor" style="font-weight: 400 !important">{{ author }}</span>*{% endif %}{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if paper.coauthors %} <span style="font-size: .8rem; font-weight: 300" class="ms-2">(* co-first authorship)</span>{% endif %}</p>
+        <p class="mb-2" style="font-weight: 300 !important;"><span style="font-weight: 400">{{ paper.venue }}</span>.{% if paper.note %} ({{ paper.note }}){% endif %}</p>
+        {% if paper.award %}
+        <p class="mb-2" style="font-weight: 400 !important;"><i class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
+        {% endif %}
+        {% unless paper.note contains 'accepted' %}
+        <p style="font-size: .85rem; font-weight: 300 !important;">
+            <a href="{{ paper.slug | prepend: '/publication/' | relative_url }}"><i class="fa-solid fa-external-link-alt"></i>&nbsp;&nbsp;Project</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            {% if paper.venue == "arXiv" or paper.note == "to appear" %}
+            <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;Preprint</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            {% else %}
+            {% unless paper.pdf == false %}
+            <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endunless %}
+            {% endif %}
+            {% if paper.video %}
+            <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endif %}
+            {% if paper.slide %}
+            <a href="{{ '/assets/pdf/' | append: paper.slide | relative_url }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endif %}
+            {% if paper.poster %}
+            <a href="{{ '/assets/pdf/' | append: paper.poster | relative_url }}"><i class="fa-solid fa-presentation-screen"></i>&nbsp;&nbsp;Poster</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endif %}
+            {% if paper.demo %}
+            <a href="{{ paper.demo }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i>&nbsp;&nbsp;Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endif %}
+        </p>
+        {% endunless %}
+        {% unless forloop.last %}
+        <hr class="my-4">
+        {% endunless %}
+      </div>
+      {% endfor %}
+    </div>
+</div>
+

@@ -1,15 +1,15 @@
-title: Donghoon Shin
+title: Hyeshin Chu
 author:
-  name: Donghoon Shin
-  email: dhoon@uw.edu
+  name: Hyeshin Chu
+  email: hyeshinchu@gmail.com
 description: >
-  HCI researcher | Ph.D. student at the Unviersity of Washington
+  HCI researcher | AI Product Manager at SNOW Corporation
 google_analytics_id: UA-215543768-1
 
 show_excerpts: false # set to true to show excerpts on the homepage
 permalink: /:title
 
-url: "https://donghoon.io" # the base hostname & protocol for your site
+url: "https://hyeshinchu.io" # the base hostname & protocol for your site
 
 plugins:
  - jekyll-feed

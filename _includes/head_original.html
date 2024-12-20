@@ -1,0 +1,65 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{% if page.url == "/" %}{{ page.title }}{% else %}{{ page.title }} | Donghoon Shin{% endif %}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+  <link href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  <!-- GA -->
+  {% include google-analytics.html %}
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/images/main/favicon/favicon.ico' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/images/main/favicon/apple-icon-57x57.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ '/assets/images/main/favicon/apple-icon-60x60.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/images/main/favicon/apple-icon-72x72.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/images/main/favicon/apple-icon-76x76.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ '/assets/images/main/favicon/apple-icon-114x114.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ '/assets/images/main/favicon/apple-icon-120x120.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ '/assets/images/main/favicon/apple-icon-144x144.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ '/assets/images/main/favicon/apple-icon-152x152.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/main/favicon/apple-icon-180x180.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{ '/assets/images/main/favicon/android-icon-192x192.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/main/favicon/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/images/main/favicon/favicon-96x96.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/main/favicon/favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/images/main/favicon/manifest.json | relative_url }}">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="{{ '/assets/images/main/favicon/ms-icon-144x144.png' | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Opengraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{% if page.slug %}{{ '/assets/images/publication/' | append: page.slug | append: '.jpg' | relative_url }}{% else %}{{ '/assets/images/main/opengraph.jpg' | relative_url }}{% endif %}">
+  <meta property="og:title" content="{% if page.url == '/' %}{{ page.title }}{% else %}{{ page.title }} | Donghoon Shin{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Paper overview of {{ page.authors.first | split: ' ' | last }} et al., {{ page.year }}{% endif %}">
+
+  <!-- Google scholar -->
+  {% if page.slug %}
+  <meta name="citation_title" content="{{ page.title }}">
+  {% for author in page.authors%}
+  <meta name="citation_author" content="{{ author | split: ' ' | last }}, {{ author | split: ' ' | first }}">
+  {% endfor %}
+  <meta name="citation_publication_date" content="{{ page.year }}">
+  {% if page.venue contains ',' %}
+  <meta name="citation_journal_title" content="{{ page.venue | split: ', ' | first }}">
+  {% else %}
+  <meta name="citation_conference_title" content="{{ page.venue }}">
+  {% endif %}
+  <meta name="citation_pdf_url" content="{{ page.slug | prepend: 'https://donghoon.io/assets/pdf/' | append: '.pdf' }}">
+  {% endif %}
+</head>

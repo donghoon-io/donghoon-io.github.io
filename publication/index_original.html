@@ -1,0 +1,119 @@
+---
+layout: default
+baseurl: /publication
+title: Publication
+description: Publication list of Hyeshin Chu
+---
+
+{% assign publications = site.publication | sort: 'year' | group_by: 'year' | reverse %}
+{% assign category = site.data.publication-category %} 
+
+<style>
+    [type=radio] {
+        display: none !important;
+    }
+  {% for type in category.types %}
+  #tag-{{ type | replace: ' / ', '' }}:checked ~ .tag-label#label-{{ type | replace: ' / ', '' }},
+  {% endfor %}
+  #tag-all:checked ~ .tag-label#label-all {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+
+  {% for type in category.types %}
+  #tag-all:checked ~ #publications > #{{ type | replace: ' / ', '' }} > .item:not(.item), #publications > .div:not(.div) {
+    display: none !important;
+  }
+  #tag-{{ type | replace: ' / ', '' }}:checked ~ #publications > .div:not(.{{ type | replace: ' / ', '' }}) {
+    display: none !important;
+  }
+  {% endfor %}
+
+  {% for type in category.types %}
+  #tag-{{ type | replace: ' / ', '' }}:checked ~ #publications > .item:not(.tag-{{ type | replace: ' / ', '' }}) {
+    display: none !important;
+  }
+  {% endfor %}
+
+.project-view {
+	padding-top: .5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media (min-width:48.0625em) {
+	.project-view {
+		justify-content: center;
+	}
+}
+
+.item:last-child > hr {
+    display: none;
+  }
+</style>
+
+<div class="container py-4">
+    <div class="row pb-3">
+      <p style="font-weight: 500 !important; text-transform: uppercase;">Publication</p>
+    </div>
+    <div class="project-view">
+      <input type="radio" name="tag" id="tag-all" aria-labelledby="tag-all" checked>
+      {% for cat in category.types %}
+      <input type="radio" name="tag" id="tag-{{ cat | replace: ' / ', '' }}" aria-labelledby="tag-{{ cat | replace: ' / ', '' }}">
+      {% endfor %}
+    
+      <label style="font-size: .95rem !important; cursor: pointer" for="tag-all" class="tag-label tag-all" id="label-all">All</label>
+      {% for cat in category.types %}
+      <label style="font-size: .95rem !important; cursor: pointer" for="tag-{{ cat | replace: ' / ', '' }}" class="ms-4 tag-label tag-{{ cat | replace: ' / ', '' }}" id="label-{{ cat | replace: ' / ', '' }}">{{ cat }}</label>
+      {% endfor %}
+
+      <div class="row mt-4" style="flex: 0 0 100%;" id="publications">
+        {% for pub in publications %}
+        <div class="col-12 px-0 mb-3 {% unless forloop.first %}mt-5{% endunless %}">
+          <p style="font-weight: 400">{{ pub.name }}</p>
+        </div>
+        {% assign pub_items_sorted = pub.items | sort: "month" | reverse %}
+        {% for paper in pub_items_sorted %}
+        <div class="item col-12 px-0 {% for cat_each in paper.category %}tag-{{ cat_each | replace: ' / ', '' }} {% endfor %}">
+          <p class="mb-1" style="font-weight: 400 !important;"><a href="{{ paper.slug | prepend: '/publication/' | relative_url }}">{{ paper.title }}</a></p>
+          <p class="mb-1" style="font-weight: 200 !important;">
+            {% for author in paper.authors %}{% assign author_data = site.data.people.people | where:"name", author | first %}{% if author == "Donghoon Shin" %}<a href="https://donghoon.io" style="font-weight: 400 !important;">Donghoon Shin</a>{% if paper.coauthors contains author %}*{% endif %}{% else %}{% if paper.coauthors contains author %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor" style="font-weight: 400 !important">{{ author }}</a>*{% else %}<span class="coauthor" style="font-weight: 400 !important">{{ author }}</span>*{% endif %}{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if paper.coauthors %} <span style="font-size: .8rem; font-weight: 300" class="ms-2">(* co-first authorship)</span>{% endif %}</p>
+          <p class="mb-2" style="font-weight: 300 !important;"><span style="font-weight: 400">{{ paper.venue }}</span>.{% if paper.note %} ({{ paper.note }}){% endif %}</p>
+          {% if paper.award %}
+          <p class="mb-2" style="font-weight: 400 !important;"><i class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
+          {% endif %}
+          {% unless paper.note contains 'accepted' %}
+          <p style="font-size: .85rem; font-weight: 300 !important;">
+              <a href="{{ paper.slug | prepend: '/publication/' | relative_url }}"><i class="fa-solid fa-external-link-alt"></i>&nbsp;&nbsp;Project</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% if paper.venue == "arXiv" or paper.note == "to appear" %}
+              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;Preprint</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% else %}
+              {% unless paper.pdf == false %}
+              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endunless %}
+              {% endif %}
+              {% if paper.video %}
+              <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endif %}
+              {% if paper.slide %}
+              <a href="{{ '/assets/pdf/' | append: paper.slide | relative_url }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endif %}
+              {% if paper.poster %}
+              <a href="{{ '/assets/pdf/' | append: paper.poster | relative_url }}"><i class="fa-solid fa-presentation-screen"></i>&nbsp;&nbsp;Poster</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endif %}
+              {% if paper.demo %}
+              <a href="{{ paper.demo }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i>&nbsp;&nbsp;Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              {% endif %}
+          </p>
+          {% endunless %}
+          {% unless forloop.last %}
+          <hr>
+          {% endunless %}
+      </div>
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+</div>
