@@ -1,4 +1,12 @@
 musics:
+  - title: "UNFORGIVEN"
+    artist: "LE SSERAFIM"
+    link: "ol-dlmoGhQA"
+    applemusic: "https://embed.music.apple.com/us/album/unforgiven/1682502020?i=1682502472"
+    type: Garageband cover
+    genre:
+      - Garageband_cover
+      - K-POP
   - title: When We Were Young
     artist: "Adele"
     link: "lsrhRUQbcLM"
