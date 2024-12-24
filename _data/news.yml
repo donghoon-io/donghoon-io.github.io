@@ -1,7 +1,7 @@
 list: # format date as dd/mm/yyyy
   - title: "Joining Google Research as a student researcher"
     date: "21/11/2024"
-    description: "I'll be joining <a href='https://research.google/'>Google Research</a> as a student researcher, working with <a href='https://research.google/people/106305/'>Drs. Divy Thakkar</a> and <a href='https://research.google/people/anoopsinha/'>Anoop Sinha</a>"
+    description: "I'll be joining <a href='https://research.google/'>Google Research</a> as a student researcher, working with Drs. <a href='https://research.google/people/106305/'>Divy Thakkar</a> and <a href='https://research.google/people/anoopsinha/'>Anoop Sinha</a>"
   - title: "Program committee for IUI 2025"
     date: "14/10/2024"
     description: "I'll be serving as a program committee member for <a href='https://iui.acm.org/2025/'>IUI 2025</a>"
