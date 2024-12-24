@@ -3,9 +3,9 @@ musics:
     artist: "LE SSERAFIM"
     link: "ol-dlmoGhQA"
     applemusic: "https://embed.music.apple.com/us/album/unforgiven/1682502020?i=1682502472"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: When We Were Young
     artist: "Adele"
@@ -27,25 +27,25 @@ musics:
     artist: "Taylor Swift"
     link: "pL0nv2AGeUc"
     applemusic: "https://embed.music.apple.com/us/album/cruel-summer/1468058165?i=1468058171"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - POP
   - title: "LOVE DIVE"
     artist: "IVE"
     link: "rPoPYQ5qEAU"
     applemusic: "https://embed.music.apple.com/us/album/1616804151?i=1616804152"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: "Illusion"
     artist: "aespa"
     link: "QAvw-Q6cq9s"
     applemusic: "https://embed.music.apple.com/us/album/illusion/1626752981?i=1626752986"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: "To You My Light"
     artist: "Maktub"
@@ -59,9 +59,9 @@ musics:
     artist: "Rosé"
     link: "uckY63zDUBk"
     applemusic: "https://embed.music.apple.com/us/album/on-the-ground/1557744841?i=1557745420"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: "Someday, The Boy"
     artist: "Kim feel"
@@ -123,9 +123,9 @@ musics:
     artist: "Ellie Goulding"
     link: "edzT2jVAGig"
     applemusic: "https://embed.music.apple.com/us/album/love-me-like-you-do/1440845197?i=1440845808"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - POP
   - title: Love Me Like You Do
     artist: "Ellie Goulding"
@@ -139,9 +139,9 @@ musics:
     artist: "GFriend"
     link: "Tl9EFafG40w"
     applemusic: "https://embed.music.apple.com/us/album/me-gustas-tu/1754044863?i=1754044871"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: Me Gustas Tu
     artist: "GFriend"
@@ -155,25 +155,25 @@ musics:
     artist: "Taylor Swift"
     link: "VSgoMEGp55o"
     applemusic: "https://embed.music.apple.com/us/album/style/1440935467?i=1440935812"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - POP
   - title: Señorita
     artist: "(G)I-DLE"
     link: "ValKpeRchFo"
     applemusic: "https://embed.music.apple.com/us/album/se%C3%B1orita/1454363872?i=1454363873"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: Rough
     artist: "GFriend"
     link: "U4Hu8g3LxoQ"
     applemusic: "https://embed.music.apple.com/us/album/rough/1754048179?i=1754048194"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: Rough
     artist: "GFriend"
@@ -203,9 +203,9 @@ musics:
     artist: "(G)I-DLE"
     link: "NXF1S9DAkVk"
     applemusic: "https://embed.music.apple.com/us/album/lion/1504618353?i=1504618600"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: Wish You Were Gay
     artist: "Billie Eilish"
@@ -227,9 +227,9 @@ musics:
     artist: "Adele"
     link: "ESZBkmPgcvo"
     applemusic: "https://embed.music.apple.com/us/album/when-we-were-young/1544494115?i=1544494407"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - POP
   - title: One's Way Back
     artist: "NAUL"
@@ -267,17 +267,17 @@ musics:
     artist: "Sam Smith"
     link: "X8bV_tSvJak"
     applemusic: "https://embed.music.apple.com/us/album/im-not-the-only-one/1536993568?i=1536993857"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - POP
   - title: Stay With Me
     artist: "Sam Smith"
     link: "IONQVm5q5BU"
     applemusic: "https://embed.music.apple.com/us/album/stay-with-me/1536993568?i=1536993755"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - POP
   - title: When Night Is Falling
     artist: "Punch"
@@ -299,9 +299,9 @@ musics:
     artist: "Jang Beom June"
     link: "cmVwSbQt1xw"
     applemusic: "https://embed.music.apple.com/us/album/karaoke/1457171018?i=1457171018"
-    type: Garageband cover
+    type: GarageBand cover
     genre:
-      - Garageband_cover
+      - GarageBand_cover
       - K-POP
   - title: Twentyfive Twentyone
     artist: "Jaurim"

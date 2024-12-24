@@ -640,3 +640,7 @@ a>.coauthor:hover {
   border-radius: 5px;
   white-space: nowrap;
 }
+
+.misc-news {
+  font-size: .9rem;
+}
