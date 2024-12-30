@@ -1,4 +1,12 @@
 musics:
+  - title: "Into the New World"
+    artist: "Girls' Generation"
+    link: "P0fQP633sTc"
+    applemusic: "https://embed.music.apple.com/us/album/into-the-new-world/854926859?i=854927955"
+    type: GarageBand cover
+    genre:
+      - GarageBand_cover
+      - K-POP
   - title: "UNFORGIVEN"
     artist: "LE SSERAFIM"
     link: "ol-dlmoGhQA"
