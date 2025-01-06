@@ -62,6 +62,7 @@ project:
     id: design_card
   - title: From Paper to Card
     image: design-card.jpg
+    link: 'https://paper2card.com'
     paper: chi2024_paper2card_paper.pdf
     detail: >
       <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically transforms design implications from HCI papers into design cards with generative AI. (CHI '24 paper)</p>
@@ -133,7 +134,7 @@ project:
     id: diarymate
   - detail: >
       <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary
-      Hsieh</a>, we built a chatbot that helps familiarization of ad hoc teammates. Plus, we revealed the efficacy of such
+      Hsieh</a>, I built a chatbot that helps familiarization of ad hoc teammates. Plus, I revealed the efficacy of such
       familiarization in ad hoc team performance. (CHI '23 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/introbot.jpg'
@@ -156,9 +157,9 @@ project:
     id: introbot
   - detail: >
       <p>In this project, we investigated how older adults use online videos
-      for learning. To better understand the online learning of older adults, we
-      adopted a mixed-method approach: (1) analyzing 41.8M logs extracted from
-      K-MOOC, a Korean MOOC (Massive Open Online Course) platform and (2) running
+      for learning. More specifically, we
+      adopted a mixed-method approach by conducting (1) an analysis of 41.8M logs extracted from
+      K-MOOC, a Korean MOOC (Massive Open Online Course) platform and (2)
       in-depth interview sessions with older adults.<br><br></p>
 
       <p>Led by <a href='https://sites.google.com/view/seoyoung/'>Seoyoung
@@ -186,11 +187,8 @@ project:
     id: kmooc
   - detail: >
       <p>To guide the design of explanation for assessing damages from satellite
-      imageries, we are working on characterizing how humans generate
-      explainability.
-
-      I'm excited to learn about generating model explainability from my wonderful
-      colleagues.<br><br></p>
+      imageries, we characterized how humans generate
+      explainations on the AI detection and their effects.<br><br></p>
 
       <p>Working with <a href='https://katelyn98.github.io'>Katelyn Morrison</a>,
       this project was co-advised by <a
@@ -228,11 +226,11 @@ project:
     id: satellite-explainability
   - code: 'https://github.com/donghoon-io/KoSentimentAnalysis'
     detail: >
-      <p>In this project, we are investigating methods to assist emotional support
+      <p>In this project, we investigated methods to assist emotional support
       processes in online mental health community, particularly by leveraging
       AI.<br><br></p>
 
-      <p>Specifically, to support their community interactions, we developed and
+      <p>To support their community interactions, we developed and
       deployed (i) multi-class sentiment detection model using BERT to support the
       affectionate feedback process and (ii) keyword extraction based on the
       saliency of each keywords to facilitate the experience-sharing
@@ -268,23 +266,11 @@ project:
   - category: personal
     code: 'https://github.com/donghoon-io/snu-crs-refresher'
     detail: >
-      <p>Often referred to as a 'war', course registration process of Seoul
-      National University is highly competitive as it is first come, first
-      served.<br><br></p>
+      <p>The course registration process at Seoul National University, often referred to as a "war," is notoriously competitive due to its first-come, first-served nature.<br><br></p>
 
-      <p>In this process, students sometimes accidentally reload the website,
-      where the system immediately returns error message and forces user to log-in
-      again. (I suspect this is to prvent users from using macro, but no one
-      knows..) This is disastrous, since logging in makes users waste their times
-      a lot in such a urgent situation.<br><br></p>
+      <p>During this process, students occasionally refresh the registration website by mistake. When this happens, the system immediately displays an error message and forces the user to log in again. While this might be a measure to prevent the use of macros (though this remains unconfirmed), it poses a significant problem, since logging in again during such a high-pressure moment wastes precious time.<br><br></p>
 
-      <p>To address this, I made a browser extension, where users can simply click
-      one button to escape from the error message. This tweak is supported on both
-      <a
-      href='https://chrome.google.com/webstore/detail/snu-crs-refresher/hhdokgcmhmpckjdhekdjpoaafoggaaan'>Chrome</a>
-      and <a
-      href='https://store.whale.naver.com/detail/dkhijlinmdhldgjbbpmmelahpbnhmpcc'>Whale</a>
-      browser.</p>
+      <p>To address this issue, I developed a browser extension that allows users to bypass the error message with a single click, eliminating the need for a full log-in. This extension is compatible with both <a href='https://chrome.google.com/webstore/detail/snu-crs-refresher/hhdokgcmhmpckjdhekdjpoaafoggaaan'>Chrome</a> and <a href='https://store.whale.naver.com/detail/dkhijlinmdhldgjbbpmmelahpbnhmpcc'>Whale</a> browsers.</p>
 
       <img src='site.baseurl/assets/images/project_detail/crs.jpg' class='img-responsive' alt='SNU
       CRS project image'>
@@ -301,8 +287,7 @@ project:
     image: crs.jpg
     title: SNU CRS Refresher
     description: >-
-      Chrome extension for SNU course registration website that helps users escape
-      from error message
+      Chrome extension for the SNU course registration website designed to help users avoid error messages
     link: >-
       https://chrome.google.com/webstore/detail/snu-crs-refresher/hhdokgcmhmpckjdhekdjpoaafoggaaan
     id: crs
@@ -456,19 +441,16 @@ project:
       <p>Prolonged time of computer use increased the prevalence of ocular
       problems including eyestrain, tired eyes, irritation, redness, blurred
       vision, and double vision, collectively referred to as computer vision
-      syndrome. In this study, we aim to explore the interface elements of
+      syndrome. We aimed to explore the interface elements of
       computer-based intervention for computer vision syndrome to set design
       guidelines based on pros/cons of each interface element.<br><br></p>
 
       <p>In this project, I developed LiquidEye: an intervention application
-      targeted to MacOS. In order to understand which design elements of
-      intervention app do users prefer, we made the system to collect each user's
-      time-series system preferences. We later jointly analyzed them with the
-      self-reported satisfaction in order to identify the significance of each
-      element statistically.<br><br></p>
-
-      <p>This work was published in <a href='https://www.jmir.org/'>Journal of
-      Medical Internet Research</a>.</p>
+      targeted to MacOS. To understand which design elements of
+      intervention app do users prefer, we collected each user's
+      time-series system preferences through the study, which were jointly analyzed with the
+      self-reported satisfaction to identify the significance of each
+      element statistically. (JMIR '21 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/liquideye.jpg' class='img-responsive'
       alt='Liquid eye project image'>
@@ -510,10 +492,7 @@ project:
       conversation quality and closeness to the partner, along with the factors
       that led to such increases from the user interview. Overall, our preliminary
       results imply that an ML-infused conversational agent can be effective for
-      augmenting a dyadic conversation.<br><br></p>
-
-      <p>This work was published in <a href='https://chi2021.acm.org/'>CHI 2021
-      Extended Abstracts</a> (Late-Breaking Work).<br><br></p>
+      augmenting a dyadic conversation. (CHI '21 Late-Breaking Work)</p>
 
       <img src='site.baseurl/assets/images/project_detail/blahblahbot.jpg' class='img-responsive'
       style='max-width: 650px !important;' alt='BlahBlahBot project image'>
@@ -801,7 +780,7 @@ project:
       - Industry
       - Experiment
     image: bixby.jpg
-    title: 'Bixby: Intelligent Visual'
+    title: 'Samsung Bixby'
     description: Setting up coherent visual identities for Samsung Bixby system
     id: bixby
   - category: schoolwork
@@ -856,16 +835,10 @@ project:
       we proposed an idea of <b>applying the persona of real world caregivers into
       the chatbot</b>.<br><br></p>
 
-      <p>Led by <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we
+      <p>Working with <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we
       conducted a series of studies regarding this topic. Specifically, in this
-      study, we
-
-      aimed to <b>identify several important linguistic features that make users
-      perceive a chatbot as a real person</b>.<br><br></p>
-
-      <p>This study was published in <a
-      href='https://mobilehci.acm.org/2020/'>MobileHCI 2020 Extended Abstracts</a>
-      (Late-Breaking Result).</p>
+      study, we identified several important linguistic features that make users
+      perceive a chatbot as a real person. (MobileHCI '20 Late-Breaking Result)</p>
 
       <img src='site.baseurl/assets/images/project_detail/prp.jpg' class='img-responsive'
       alt='MobileHCI project image'>
