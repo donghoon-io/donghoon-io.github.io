@@ -58,7 +58,7 @@ description: Publication list of Donghoon Shin
         {% assign pub_items_sorted = pub.items | sort: "month" | reverse %}
         {% for paper in pub_items_sorted %}
         <div class="publication-item col-12 px-0 {% for cat_each in paper.category %}publication-tag-{{ cat_each | replace: ' / ', '' }} {% endfor %}">
-          <p class="mb-1"><a href="{{ paper.slug | prepend: '/publication/' | relative_url }}">{{ paper.title }}</a></p>
+          <p class="mb-1"><a class="publication-title" href="{{ paper.slug | prepend: '/publication/' | relative_url }}">{{ paper.title }}</a></p>
           <p class="mb-1">
             {% for author in paper.authors %}{% assign author_data = site.data.people.people | where:"name", author | first %}{% if author == "Donghoon Shin" %}<a href="https://donghoon.io">Donghoon Shin</a>{% if paper.coauthors contains author %}*{% endif %}{% else %}{% if paper.coauthors contains author %}{% if author_data.website %}<a href="{{ author_data.website }}">{{ author }}</a>*{% else %}<span>{{ author }}</span>*{% endif %}{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="publication-coauthor">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if paper.coauthors %} <span class="publication-cofirst ms-2">(* co-first authorship)</span>{% endif %}</p>
           <p class="mb-2"><span class="publication-venue">{{ paper.venue }}</span>.{% if paper.note %} <span class="publication-note">({{ paper.note }})</span>{% endif %}</p>
