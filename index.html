@@ -43,7 +43,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
             {% for project in projects %}
 			<div class="paper-container non-select">
                 <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-                <p class="pt-2 mt-md-2" style="font-size: .85rem; font-weight: 200 !important; line-height: 1rem; text-align: center;">{{ project.title }}{% if project.venue %}<a class="project-venue" href="{{ project.slug | prepend: 'publication/' | relative_url }}">{{ project.venue }}</a>{% endif %}</p>
+                <p class="pt-2 mt-md-2" style="font-size: .8rem; font-weight: 200 !important; line-height: 1rem; text-align: center;">{{ project.title }}{% if project.venue %}<a class="project-venue" href="{{ project.slug | prepend: 'publication/' | relative_url }}">{{ project.venue }}</a>{% endif %}</p>
 			</div>
             {% endfor %}
 		</div>

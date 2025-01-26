@@ -17,7 +17,6 @@ description: Publication list of Donghoon Shin
   {% endfor %}
   #tag-all:checked ~ .tag-label#label-all {
     text-decoration: underline;
-    font-weight: 400 !important;
   }
 
 
@@ -43,7 +42,7 @@ description: Publication list of Donghoon Shin
 	justify-content: center;
 }
 .project-view > label {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .project-view > label:hover {
@@ -71,9 +70,9 @@ description: Publication list of Donghoon Shin
       <input type="radio" name="tag" id="tag-{{ cat | replace: ' / ', '' }}" aria-labelledby="tag-{{ cat | replace: ' / ', '' }}">
       {% endfor %}
     
-      <label style="font-size: .95rem !important; cursor: pointer" for="tag-all" class="tag-label tag-all" id="label-all">All</label>
+      <label style="font-size: .9rem !important; cursor: pointer" for="tag-all" class="tag-label tag-all" id="label-all">All</label>
       {% for cat in category.types %}
-      <label style="font-size: .95rem !important; cursor: pointer" for="tag-{{ cat | replace: ' / ', '' }}" class="ms-4 tag-label tag-{{ cat | replace: ' / ', '' }}" id="label-{{ cat | replace: ' / ', '' }}">{{ cat }}</label>
+      <label style="font-size: .9rem !important; cursor: pointer" for="tag-{{ cat | replace: ' / ', '' }}" class="ms-4 tag-label tag-{{ cat | replace: ' / ', '' }}" id="label-{{ cat | replace: ' / ', '' }}">{{ cat }}</label>
       {% endfor %}
 
       <div class="row mt-4" style="flex: 0 0 100%;" id="publications">
@@ -87,7 +86,7 @@ description: Publication list of Donghoon Shin
           <p class="mb-1"><a href="{{ paper.slug | prepend: '/publication/' | relative_url }}" class="pub-title">{{ paper.title }}</a></p>
           <p class="mb-1" style="font-weight: 200 !important;">
             {% for author in paper.authors %}{% assign author_data = site.data.people.people | where:"name", author | first %}{% if author == "Donghoon Shin" %}<a href="https://donghoon.io" style="font-weight: 300 !important;">Donghoon Shin</a>{% if paper.coauthors contains author %}*{% endif %}{% else %}{% if paper.coauthors contains author %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor" style="font-weight: 300 !important">{{ author }}</a>*{% else %}<span class="coauthor" style="font-weight: 300 !important">{{ author }}</span>*{% endif %}{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if paper.coauthors %} <span style="font-size: .8rem; font-weight: 200" class="ms-2">(* co-first authorship)</span>{% endif %}</p>
-          <p class="mb-2"><span style="font-weight: 200 !important;">{{ paper.venue }}</span>.{% if paper.note %} ({{ paper.note }}){% endif %}</p>
+          <p class="mb-2"><span style="font-weight: 300 !important;">{{ paper.venue }}</span>.{% if paper.note %} ({{ paper.note }}){% endif %}</p>
           {% if paper.award %}
           <p class="mb-2" style="font-weight: 300 !important;"><i class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
           {% endif %}
