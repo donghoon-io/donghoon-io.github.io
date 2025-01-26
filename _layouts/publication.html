@@ -6,16 +6,16 @@ layout: default
   <div class="row pb-3">
     <p class="publication-title">{{ page.title }}</p>
     {% if page.note %}
-    <p><span style="font-weight: 400">{{ page.venue }}.</span> ({{ page.note }})</p>
+    <p><span style="font-weight: 200">{{ page.venue }}.</span> ({{ page.note }})</p>
     {% else %}
-    <p style="font-weight: 400">Published in {{ page.venue }}.</p>
+    <p style="font-weight: 200">Published in {{ page.venue }}.</p>
     {% endif %}
     {% if page.award %}
-    <p style="font-weight: 400"><i class="fa-solid fa-medal" style="margin-right: 6px"></i>{{ page.award }}</p>
+    <p style="font-weight: 200"><i class="fa-solid fa-medal" style="margin-right: 6px"></i>{{ page.award }}</p>
     {% endif %}
   </div>
   <div class="row mb-5">
-    {% if page.coauthors %}<p style="font-size: .8rem; font-weight: 400; text-align: right;">(* co-first authorship)</p>{% endif %}
+    {% if page.coauthors %}<p style="font-size: .8rem; font-weight: 200; text-align: right;">(* co-first authorship)</p>{% endif %}
     {% for author in page.authors %}
     {% assign author_data = site.data.people.people | where:"name", author | first %}
     {% if author_data %}

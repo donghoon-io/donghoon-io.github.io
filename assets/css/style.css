@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Barlow', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+  font-family: 'Roboto Flex', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-mono: 'Fira Mono', monospace;
   --pure-white: #ffffff;
@@ -36,7 +36,7 @@ a {
 body {
   font-size: 1rem;
   line-height: 1.7;
-  font-family: 'Barlow', 'Noto Sans TC', 'Noto Sans KR' !important;
+  font-family: 'Roboto Flex', 'Noto Sans TC', 'Noto Sans KR' !important;
   font-weight: 300
 }
 
@@ -74,7 +74,7 @@ a:hover {
 
 p {
   font-size: .95rem;
-  font-weight: 300;
+  font-weight: 200;
   margin-bottom: .75rem !important;
 }
 
@@ -83,7 +83,7 @@ p:last-child {
 }
 
 p>a {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h4 {
@@ -266,13 +266,13 @@ h4 {
 }
 
 .publication-title {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   font-size: 1.2rem !important
 }
 
 .author-image {
-  width: 100px;
-  height: 100px;
+  width: 100px !important;
+  height: 100px !important;
   -webkit-border-radius: 100px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 100px;
@@ -294,7 +294,7 @@ h4 {
 }
 
 .affiliation-name {
-  font-weight: 300;
+  font-weight: 200;
   font-size: .85rem !important;
   line-height: 1.4 !important;
   text-align: center;
@@ -310,7 +310,7 @@ h4 {
 }
 
 .section-title {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   font-size: 1rem !important
 }
 
@@ -322,52 +322,12 @@ h4 {
   padding-right: 4px !important;
 }
 
-.publication-title {
-  font-weight: 500 !important;
-  font-size: 1.2rem !important
-}
-
-.author-image {
-  width: 100px !important;
-  height: 100px !important;
-  -webkit-border-radius: 100px !important;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 100px !important;
-  -moz-background-clip: padding;
-  border-radius: 100px !important;
-  background-clip: padding-box;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-position: center center;
-}
-
-.author-name {
-  font-weight: 400;
-  font-size: .9rem !important;
-  line-height: 1.4 !important;
-  margin-bottom: 3px !important;
-  text-align: center;
-}
-
-.affiliation-name {
-  font-weight: 300;
-  font-size: .85rem !important;
-  line-height: 1.4 !important;
-  text-align: center;
-}
-
 .publication-image {
   display: block !important;
   width: 95% !important;
   max-width: 500px !important;
   margin-left: auto;
   margin-right: auto;
-}
-
-.section-title {
-  font-weight: 500 !important;
-  font-size: 1rem !important
 }
 
 .metadata>a {
@@ -379,11 +339,11 @@ h4 {
 }
 
 .coauthor {
-  font-weight: 200 !important;
+  font-weight: 150 !important;
 }
 
 a>.coauthor:hover {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 
 .archive-container {
@@ -397,7 +357,7 @@ a>.coauthor:hover {
 
 .archive-title {
   font-size: .9rem !important;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.3;
   margin: 15px 0 7px 0 !important;
 }
@@ -409,7 +369,7 @@ a>.coauthor:hover {
 
 .archive-description {
   font-size: .85rem !important;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.2;
   margin: 0 0 10px 0 !important;
 }
@@ -541,7 +501,7 @@ a>.coauthor:hover {
 
 .footer-text {
   font-size: .9rem !important;
-  font-weight: 300 !important;
+  font-weight: 200 !important;
 }
 
 .friend-text {
@@ -618,7 +578,7 @@ a>.coauthor:hover {
 
 @keyframes scroll {
   to {
-    transform: translate(calc(-50% - 0.5rem));
+    transform: translate(calc(-50% + 5rem));
   }
 }
 
@@ -634,7 +594,7 @@ a>.coauthor:hover {
 .project-venue {
   background-color: #ebebeb;
   margin-left: 5px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 90%;
   padding: 1px 3px;
   border-radius: 5px;
@@ -643,4 +603,11 @@ a>.coauthor:hover {
 
 .misc-news {
   font-size: .9rem;
+}
+
+.pub-title {
+  font-weight: 300 !important;
+}
+.pub-title:hover {
+  font-weight: 400 !important;
 }
