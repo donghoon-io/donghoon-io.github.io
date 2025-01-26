@@ -10,18 +10,15 @@ description: Some musics of Donghoon Shin
     <p style="font-weight: 500 !important; text-transform: uppercase;">Music</p>
     {% for music in musics %}
     <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-3 mb-md-0">
+        <div class="col-12 col-md-4 mb-md-0 mb-3 ">
             <p>{{ music.artist }} - {{ music.title }}</p>
         </div>
-        <div class="col-12 col-md-8 mb-3 mb-md-0 align-self-center">
-            <div class="h_iframe">
-                <p align="center">
-                    <iframe loading="auto" src="https://www.youtube.com/embed/{{ music.link }}&autoplay=1" height="400" style="border:none; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/{{ music.link }}?autoplay=1><img src=https://img.youtube.com/vi/{{ music.link }}/hqdefault.jpg alt='Donghoon's video'><span>▶</span></a>"
-                        ></iframe>
-                </p>
+        <div class="col-12 col-md-8 mb-md-0 mb-3 align-self-center">
+            <div class="music-container">
+                <iframe loading="auto" src="https://www.youtube.com/embed/{{ music.link }}&autoplay=1" height="400" style="border:none; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/{{ music.link }}?autoplay=1><img src=https://img.youtube.com/vi/{{ music.link }}/hqdefault.jpg alt='Donghoon's video'><span>▶</span></a>"></iframe>
             </div>
             <iframe loading="auto" allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="{{ music.applemusic }}"></iframe>
-            <p class="section-body pub-detail pt-2"><i class="fa-solid fa-music"></i>&nbsp;&nbsp; {{ music.type }}</p>
+            <p class="pt-2"><i class="fa-solid fa-music"></i>&nbsp;&nbsp; {{ music.type }}</p>
         </div>
     </div>
     {% endfor %}

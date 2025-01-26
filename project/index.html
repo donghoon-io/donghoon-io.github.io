@@ -11,16 +11,16 @@ description: Projects of Donghoon Shin
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 <div class="container py-4">
-    <p style="font-weight: 500 !important; text-transform: uppercase;">Project</p>
+    <p class="section-title">Project</p>
     <div class="row mt-3 g-3 grid">
         {% for proj in projects %}
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
-            <div class="archive-container" data-bs-toggle="modal" data-bs-target="#modal{{ forloop.index }}">
-                <img class="archive-img" src="{{ proj.image | prepend: '/assets/images/project/' | relative_url }}">
-                <div class="archive-container-inner">
-                    <p class="archive-title">{{ proj.title }}</p>
-                    <p class="archive-description">{{ proj.description }}</p>
-                    <div class="tags">
+            <div class="project-item-container" data-bs-toggle="modal" data-bs-target="#modal{{ forloop.index }}">
+                <img class="project-item-image" src="{{ proj.image | prepend: '/assets/images/project/' | relative_url }}">
+                <div class="project-item-container-inner">
+                    <p class="project-item-title">{{ proj.title }}</p>
+                    <p class="project-item-description">{{ proj.description }}</p>
+                    <div class="project-item-tags">
                       <p>
                         {% for tag in proj.tags %}
                         <a title="" href="">{{ tag }}</a>

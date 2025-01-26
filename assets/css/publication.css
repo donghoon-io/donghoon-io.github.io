@@ -1,0 +1,110 @@
+/* publication main */
+
+.publication-category {
+  font-size: .9rem !important;
+  cursor: pointer;
+}
+.publication-year {
+  font-weight: 400;
+}
+
+.publication-list {
+	padding-top: .5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.publication-list > label {
+  font-weight: 300;
+}
+
+.publication-list > label:hover {
+  font-weight: 400;
+}
+
+@media (min-width:48.0625em) {
+	.publication-list {
+		justify-content: center;
+	}
+}
+
+.publication-item:last-child > hr {
+  display: none;
+}
+.publication-coauthor {
+  font-weight: 100 !important
+}
+
+.publication-cofirst {
+  font-size: .75rem
+}
+
+.publication-note {
+  font-weight: 100
+}
+
+.publication-venue {
+  font-weight: 300 !important;
+}
+.publication-metadata {
+  font-size: .85rem;
+  font-weight: 200 !important;
+}
+
+/* publication detail */
+
+.publication-detail-metadata>a {
+  margin-right: 10px !important;
+}
+
+.publication-detail-metadata>a>i {
+  padding-right: 2px !important;
+}
+
+.publication-detail-author-name {
+  font-weight: 400;
+  font-size: .9rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 3px !important;
+  text-align: center;
+}
+
+.publication-detail-affiliation-name {
+  font-weight: 200;
+  font-size: .85rem !important;
+  line-height: 1.4 !important;
+  text-align: center;
+}
+
+.publication-detail-image {
+  display: block !important;
+  width: 95% !important;
+  max-width: 500px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.publication-detail-cofirst {
+  font-size: .8rem;
+  font-weight: 200;
+  text-align: right;
+}
+
+.publication-detail-title {
+  font-weight: 400 !important;
+  font-size: 1.1rem !important
+}
+
+.publication-detail-author-image {
+  width: 100px !important;
+  height: 100px !important;
+  -webkit-border-radius: 100px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 100px;
+  -moz-background-clip: padding;
+  border-radius: 100px;
+  background-clip: padding-box;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center center;
+}

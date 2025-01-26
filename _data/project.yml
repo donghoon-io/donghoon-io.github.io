@@ -4,7 +4,7 @@ project:
     detail: >
       <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (under review)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/customized-design-card.jpg' class='img-responsive' alt='keyscreen of our system'>
+      <img src='site.baseurl/assets/images/project_detail/customized-design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center;'><b>Pipeline of generating design cards using our system</b></p>
 
@@ -45,7 +45,7 @@ project:
 
       <p>This work was done during my internship at Naver AI. (under review)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/exercise-planning.jpg' class='img-responsive' alt='keyscreen of our system'>
+      <img src='site.baseurl/assets/images/project_detail/exercise-planning.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center;'><b>Keyscreen of our system</b></p>
 
@@ -67,7 +67,7 @@ project:
     detail: >
       <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically transforms design implications from HCI papers into design cards with generative AI. (CHI '24 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='img-responsive' alt='keyscreen of our system'>
+      <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center;'><b>Pipeline of generating design cards using our system</b></p>
 
@@ -89,7 +89,7 @@ project:
     detail: >
       <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (CHI '24 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/cpd-example.jpg' class='img-responsive' alt='keyscreen of our system'>
+      <img src='site.baseurl/assets/images/project_detail/cpd-example.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center;'><b>An example of causal pathway diagram (CPD)</b></p>
 
@@ -111,7 +111,7 @@ project:
       design space of generative language models (e.g., GPT-3) in supporting a
       reflective writing process. (CHI '24 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/diarymate.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/diarymate.jpg' class='modal-image-responsive'
       alt='keyscreen of our system'>
 
       <p style='text-align: center;'><b>Keyscreen of our
@@ -138,7 +138,7 @@ project:
       familiarization in ad hoc team performance. (CHI '23 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/introbot.jpg'
-      class='img-responsive' alt='keyscreen of our system'>
+      class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center;'><b>Overview of the IntroBot's system components</b></p>
 
@@ -166,7 +166,7 @@ project:
       Kim</a>, this project was advised by <a href='https://juhokim.com/'>Juho
       Kim</a>. (CHI '23 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/kmooc.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/kmooc.jpg' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='K-MOOC project image'>
 
       <p style='text-align: center;'><b>Example of the data
@@ -201,7 +201,7 @@ project:
       Assistance and Disaster Response).</p>
 
       <img src='site.baseurl/assets/images/project_detail/satellite-explainability.jpg'
-      class='img-responsive' alt='satellite imagery project image'>
+      class='modal-image-responsive' alt='satellite imagery project image'>
 
       <p style='text-align: center;'><b>Examples of the
       explanation in damage detection tasks from satellite imageries</b></p>
@@ -241,7 +241,7 @@ project:
       href='https://cis.unimelb.edu.au/hci/emotion-workshop'>CHI 2022 Workshop</a>
       (Future of Emotion in HCI).</p>
 
-      <img src='site.baseurl/assets/images/project_detail/omhc.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/omhc.jpg' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='AI in OMHCs'>
 
       <p style='text-align: center;'><b>Keyscreens of our
@@ -272,7 +272,7 @@ project:
 
       <p>To address this issue, I developed a browser extension that allows users to bypass the error message with a single click, eliminating the need for a full log-in. This extension is compatible with both <a href='https://chrome.google.com/webstore/detail/snu-crs-refresher/hhdokgcmhmpckjdhekdjpoaafoggaaan'>Chrome</a> and <a href='https://store.whale.naver.com/detail/dkhijlinmdhldgjbbpmmelahpbnhmpcc'>Whale</a> browsers.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/crs.jpg' class='img-responsive' alt='SNU
+      <img src='site.baseurl/assets/images/project_detail/crs.jpg' class='modal-image-responsive' alt='SNU
       CRS project image'>
 
       <p style='text-align: center;'><b>Keyscreen of SNU CRS
@@ -310,14 +310,14 @@ project:
       Creative Research Practice course.</p>
 
       <img src='site.baseurl/assets/images/project_detail/spring2021crp-1.jpg'
-      class='img-responsive' alt='Spring 2021 creative research practice project
+      class='modal-image-responsive' alt='Spring 2021 creative research practice project
       first image'>
 
       <p style='text-align: center;'><b>Keyscreens of
       LOVEGORITHM</b></p>
 
       <img src='site.baseurl/assets/images/project_detail/spring2021crp-2.jpg'
-      class='img-responsive' alt='Spring 2021 creative research practice project
+      class='modal-image-responsive' alt='Spring 2021 creative research practice project
       second image'>
 
       <p style='text-align: center;'><b>Keyscreen of LOVEGORITHM
@@ -347,7 +347,7 @@ project:
       <p>This work was submitted as a team project assignment to the Spring 2021
       HCI Theory and Practice course.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/spring2021hci.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/spring2021hci.jpg' class='modal-image-responsive'
       alt='Spring 2021 HCI theory and practice project image'>
 
       <p style='text-align: center;'><b>Keyscreens of
@@ -372,7 +372,7 @@ project:
       <p>This work was publised in <a href='https://cscw.acm.org/2021/'>CSCW
       2021</a>.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/trkic-g00gle.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/trkic-g00gle.jpg' class='modal-image-responsive'
       alt='Trick google project image'>
 
       <p style='text-align: center;'><b>Entities of reviewing
@@ -414,7 +414,7 @@ project:
       <p>This study was conducted for my B.S. thesis, and later published in HCI
       Korea 2022.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/amslertouch.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/amslertouch.jpg' class='modal-image-responsive'
       alt='Amsler touch project image'>
 
       <p style='text-align: center;'><b>Keyscreen of
@@ -452,7 +452,7 @@ project:
       self-reported satisfaction to identify the significance of each
       element statistically. (JMIR '21 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/liquideye.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/liquideye.jpg' class='modal-image-responsive'
       alt='Liquid eye project image'>
 
       <p style='text-align: center;'><b>Keyscreen of
@@ -494,7 +494,7 @@ project:
       results imply that an ML-infused conversational agent can be effective for
       augmenting a dyadic conversation. (CHI '21 Late-Breaking Work)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/blahblahbot.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/blahblahbot.jpg' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='BlahBlahBot project image'>
 
       <p style='text-align: center;'><b>Framework of
@@ -546,7 +546,7 @@ project:
       school students would be in the midst of a choice.<br><br></p>
 
       <img src='site.baseurl/assets/images/project_detail/fall2020instell.jpg'
-      class='img-responsive' alt='Fall 2020 interactive storytelling project
+      class='modal-image-responsive' alt='Fall 2020 interactive storytelling project
       image'>
 
       <p style='text-align: center;'><b>Keyscreens of Easier said
@@ -589,7 +589,7 @@ project:
       <p>If you are interested in taking a look at our prototype, please check out
       the link above:) (Korean)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/fall2020ucd.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/fall2020ucd.jpg' class='modal-image-responsive'
       alt='Fall 2020 user centered design project image'>
 
       <p style='text-align: center;'><b>Prototype of
@@ -629,7 +629,7 @@ project:
           drive the best strategies on child's communication. As a result, we developed <b>Talkingboogie, a mobile AAC system for children
           with developmental disabilities</b>.</p>
       <img src='site.baseurl/assets/images/project_detail/talkingboogie-1.jpg'
-      class='img-responsive' alt='Flow of TalkingBoogie system'>
+      class='modal-image-responsive' alt='Flow of TalkingBoogie system'>
 
       <p style='text-align: center;'><b>Usage flow of
       TalkingBoogie system</b><br><br></p>
@@ -638,13 +638,13 @@ project:
       <b>TalkingBoogie-AAC</b> for caregiver-child communication, and
           <b>TalkingBoogie-Coach</b> supporting caregiver collaboration.</p>
       <img src='site.baseurl/assets/images/project_detail/talkingboogie-2.jpg'
-      class='img-responsive' alt='Keyscreen of TalkingBoogie AAC app'>
+      class='modal-image-responsive' alt='Keyscreen of TalkingBoogie AAC app'>
 
       <p style='text-align: center;'><b>Keyscreens of
       TalkingBoogie-AAC</b></p>
 
       <img src='site.baseurl/assets/images/project_detail/talkingboogie-3.jpg'
-      class='img-responsive' alt='Keyscreen of TalkingBoogie Coach app'>
+      class='modal-image-responsive' alt='Keyscreen of TalkingBoogie Coach app'>
 
       <p style='text-align: center;'><b>Keyscreens of
       TalkingBoogie-Coach</b></p>
@@ -684,7 +684,7 @@ project:
       <p>This design work was submitted as an assignment to Spring 2020 Design
       Thinking for Communication course.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/P3.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/P3.jpg' class='modal-image-responsive'
       alt='Spring 2020 design thinking for communication project image'>
 
       <hr>
@@ -716,7 +716,7 @@ project:
       <p>This design work was submitted as an assignment to Spring 2020 Design
       Thinking for Communication course.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/P2.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/P2.jpg' class='modal-image-responsive'
       alt='Spring 2020 design thinking for communication project image'>
 
       <hr>
@@ -743,7 +743,7 @@ project:
       <p>This design work was submitted as an assignment to Spring 2020 Design
       Thinking for Communication course.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/P1.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/P1.jpg' class='modal-image-responsive'
       alt='Spring 2020 design thinking for communication project image'>
 
       <hr>
@@ -766,7 +766,7 @@ project:
       <p>During the study, I took part in developing prototypes and conducting
       user experiment.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/bixby.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/bixby.jpg' class='modal-image-responsive'
       alt='Bixby project image'>
 
       <p style='text-align: center;'><b>Example screen we used
@@ -811,7 +811,7 @@ project:
       language.</p>
 
       <img src='site.baseurl/assets/images/project_detail/spring2020digiethno.jpg'
-      class='img-responsive' alt='Spring 2020 digital ethnography project image'>
+      class='modal-image-responsive' alt='Spring 2020 digital ethnography project image'>
 
       <hr>
 
@@ -840,7 +840,7 @@ project:
       study, we identified several important linguistic features that make users
       perceive a chatbot as a real person. (MobileHCI '20 Late-Breaking Result)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/prp.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/prp.jpg' class='modal-image-responsive'
       alt='MobileHCI project image'>
 
       <hr>
@@ -879,7 +879,7 @@ project:
       href='https://dl.acm.org/doi/10.1145/3334480.3375154'>CHI 2020 Workshop</a>
       (Conversational Agents for Health and Wellbeing).</p>
 
-      <img src='site.baseurl/assets/images/project_detail/personabot.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/personabot.jpg' class='modal-image-responsive'
       alt='Personabot project image'>
 
       <p style='text-align: center;'><b>Three personas applied to
@@ -911,7 +911,7 @@ project:
       href='site.baseurl/assets/pdf/chi2020_personabot_workshop.pdf'>applying the
       persona on a chatbot</a>.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/juvis.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/juvis.jpg' class='modal-image-responsive'
       alt='Juvis project image'>
 
       <p style='text-align: center;'><b>Keyscreens of Juvis
@@ -944,13 +944,13 @@ project:
       <p>Elecle is currently available in more than 5 cities in Korea, including
       Seoul, Suwon, Bucheon, Gimpo, and Sejong.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/elecle-riding.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/elecle-riding.jpg' class='modal-image-responsive'
       alt='Me with an Elecle bike'>
 
       <p style='text-align: center;'><b>Me with an Elecle bike
       XD</b></p>
 
-      <img src='site.baseurl/assets/images/project_detail/elecle.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/elecle.jpg' class='modal-image-responsive'
       alt='Elecle image'>
 
       <p style='text-align: center;'><b>Keyscreens of Elecle iOS
@@ -989,7 +989,7 @@ project:
       <b>crawling function</b> that automatically crawls the relevant data within
       SNU mypage, by simply entering their ID and password.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/ecegrad.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/ecegrad.jpg' class='modal-image-responsive'
       alt='ECE grad project image'>
 
       <p style='text-align: center;'><b>Keyscreens of ECE
@@ -1016,7 +1016,7 @@ project:
 
       <p>It was a great experience to contribute to the lab with my skillsets!</p>
 
-      <img src='site.baseurl/assets/images/project_detail/lab_website.jpg' class='img-responsive'
+      <img src='site.baseurl/assets/images/project_detail/lab_website.jpg' class='modal-image-responsive'
       alt='Designing a lab website'>
 
       <p style='text-align: center;'><b>My profiile here
