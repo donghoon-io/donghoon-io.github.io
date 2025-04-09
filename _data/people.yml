@@ -7,6 +7,10 @@ people:
     affiliation: University of Washington
     website: "http://faculty.washington.edu/garyhs/"
     image: gary.jpg
+  - name: Alex Chen
+    affiliation: University of Washington
+    website: "https://www.linkedin.com/in/alextyc/"
+    image: alex.jpg
   - name: Ruoxi Shang
     affiliation: University of Washington
   - name: Seoyoung Kim

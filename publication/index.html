@@ -69,11 +69,11 @@ description: Publication list of Donghoon Shin
           <p class="publication-metadata">
               <a href="{{ paper.slug | prepend: '/publication/' | relative_url }}"><i class="fa-solid fa-external-link-alt"></i>&nbsp;&nbsp;Project</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% if paper.venue == "arXiv" or paper.note == "to appear" %}
-              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;Preprint</a>&nbsp;&nbsp;&nbsp;&nbsp;
-              {% else %}
               {% unless paper.pdf == false %}
-              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;Preprint</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endunless %}
+              {% else %}
+              <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endif %}
               {% if paper.video %}
               <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;

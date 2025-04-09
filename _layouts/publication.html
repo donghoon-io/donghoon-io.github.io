@@ -69,7 +69,7 @@ layout: default
   <div class="row">
     <p class="section-title">Materials</p>
     <p class="publication-detail-metadata">
-      {% if page.venue == "arXiv" or page.note == "to appear" %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> Preprint</a> {% else %}{% unless page.pdf == false %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> PDF</a> {% endunless %}{% endif %}
+      {% if page.venue == "arXiv" or page.note == "to appear" %}{% unless page.pdf == false %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> Preprint</a> {% endunless %}{% else %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> PDF</a> {% endif %}
       {% if page.video %}<a href="{{ page.video | prepend: 'https://youtu.be/'}}" rel="external"><i class="fa-solid fa-play"></i> Video</a>{% endif %}
       {% if page.slide %}<a href="{{ page.slide | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-file-powerpoint"></i> Slide</a> {% endif %}
       {% if page.poster %}<a href="{{ page.poster | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-presentation-screen"></i> Poster</a> {% endif %}

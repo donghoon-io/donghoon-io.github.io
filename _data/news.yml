@@ -1,4 +1,7 @@
 list: # format date as dd/mm/yyyy
+  - title: "DIS paper accepted"
+    date: "08/04/2025"
+    description: "Our paper on leveraging generative AI to tailor translational artifacts for design has been accepted to <a href='https://dis.acm.org/2025/'>DIS 2025</a>"
   - title: "Joining Microsoft Research as a research intern"
     date: "2/4/2025"
     description: "I'll be joining <a href='https://microsoft.com/research'>Microsoft Research</a> as a research intern, working with <a href='https://danibragg.com/'>Danielle Bragg</a>"
