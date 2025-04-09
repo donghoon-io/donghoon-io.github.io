@@ -1,5 +1,5 @@
 project:
-  - title: From Paper to Tailored Insights
+  - title: What About My Design Context?
     image: customized-design-card.jpg
     detail: >
       <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (DIS '25 paper, to appear)</p>
@@ -13,11 +13,12 @@ project:
       <p><b>[My role in this project]</b><br>Leading the project</p>
     tags:
       - Research
+      - <i class='fas fa-book'></i>&nbsp; DIS '25
       - LLM
       - Design
       - Translational science
     description: >-
-      Tailoring design implications to individual designers’ needs with generative AI
+      Leveraging generative Al to tailor translational artifacts for designers
     id: customized_design_card
   - title: Agentic Workflow in Design
     image: persona-agents.jpg
