@@ -1,8 +1,8 @@
 project:
-  - title: From Paper to Personalized Insights
+  - title: From Paper to Tailored Insights
     image: customized-design-card.jpg
     detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (under review)</p>
+      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (DIS '25 paper, to appear)</p>
 
       <img src='site.baseurl/assets/images/project_detail/customized-design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
