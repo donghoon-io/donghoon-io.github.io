@@ -701,38 +701,6 @@ project:
     id: dt4c_p3
   - category: schoolwork
     detail: >
-      <p>I personally don't prefer to believe things that haven't been proved yet.
-      But some posts in social networking services make people believe fake or
-      unproven news to be correct, and some even try to convey these for their
-      political purposes.<br><br></p>
-
-      <p>In this project, I aimed to provide examples of some 'controversial'
-      information that emerged during the COVID-19 situation. Then, I tried to let
-      readers decide on it. Well, this project was tough because COVID-19 was a
-      'relatively new' phenomenon then, and it lacked scientifically proven
-      information. However, I'm pretty fascinated with how 'seemingly ridiculous'
-      information is spread throughout people and later considered to be
-      true.<br><br></p>
-
-      <p>This design work was submitted as an assignment to Spring 2020 Design
-      Thinking for Communication course.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/P2.jpg' class='modal-image-responsive'
-      alt='Spring 2020 design thinking for communication project image'>
-
-      <hr>
-
-      <p><b>[My role in this project]</b><br>Independent project</p>
-    tags:
-      - Coursework
-      - Infographics
-      - Illustrator
-    image: dt4c_p2.jpg
-    title: 'COVID-19, the Infodemics'
-    description: How misinformation and disinformation are spread and exacerbate COVID-19
-    id: dt4c_p2
-  - category: schoolwork
-    detail: >
       <p>It's always fun to imagine things that won't happen XD<br><br></p>
 
       <p>In this project, I assumed that well-known tech companies run their own
