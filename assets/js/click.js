@@ -1,6 +1,7 @@
 document.addEventListener("click", function (event) {
   const id = event.target.id;
   if (id) {
+    alert(id)
     const rect = event.target.getBoundingClientRect();
     const boundingBox = {
       top: rect.top,
