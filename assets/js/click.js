@@ -8,6 +8,6 @@ document.addEventListener("click", function (event) {
       width: rect.width,
       height: rect.height
     };
-    window.parent.postMessage({ type: "click", clickedId: id, boundingBox }, "*");
+    window.parent.postMessage({ type: "click-event", clickedId: id, boundingBox }, "*");
   }
 });
