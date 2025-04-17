@@ -1,5 +1,7 @@
 document.addEventListener("click", function (event) {
   const id = event.target.id;
+  console.log(id)
+  alert(id)
   if (id) {
     const rect = event.target.getBoundingClientRect();
     console.log(rect)
