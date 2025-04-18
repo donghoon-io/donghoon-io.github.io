@@ -13,8 +13,8 @@ project:
     slug: chi2024_cpd-hcd_paper
   - title: "Tailoring an evidence-based exercise plan with LLMs"
     image: "exercise.jpg"
-    venue: arXiv
-    slug: arxiv2023_planfitting_paper
+    venue: CUI '25
+    slug: cui2025_planfitting_paper
   - title: "AI chatbot for assisting ad hoc teamworks"
     image: "chatbot.jpg"
     venue: CHI '23
