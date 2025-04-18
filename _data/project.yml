@@ -44,7 +44,7 @@ project:
     detail: >
       <p>Working with <a href='http://younghokim.net/'>Young-Ho Kim</a> at Naver AI, I built an interface that helps users to generate evidence-baesd exercise plans using an LLM chatbot.</p>
 
-      <p>This work was done during my internship at Naver AI. (under review)</p>
+      <p>This work was done during my internship at Naver AI. (CUI '25 paper, to appear)</p>
 
       <img src='site.baseurl/assets/images/project_detail/exercise-planning.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
@@ -55,6 +55,7 @@ project:
       <p><b>[My role in this project]</b><br>Leading the project</p>
     tags:
       - Research
+      - <i class='fas fa-book'></i>&nbsp; CUI '25
       - Healthcare
       - LLM
       - Chatbot
