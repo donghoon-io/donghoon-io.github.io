@@ -1,0 +1,212 @@
+---
+layout: default
+title: Fun
+description: Some fun stuffs of Donghoon Shin
+---
+
+<div class="container py-4">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Fun</p>
+    <div class="row mt-5">
+        <div class="col-12 col-md-4 mb-md-0 mb-3 ">
+            <p>PhD flight log</p>
+        </div>
+        <div class="col-12 col-md-8 mb-md-0 mb-3 align-self-center">
+            <div id="flight-map" style="width: 100%; height: auto;"></div>
+            <p id="mileage">Total miles flown: XXX</p>
+        </div>
+    </div>
+</div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/topojson@3"></script>
+
+<script>
+    const flights = [
+        { from: "ICN", to: "SFO" },
+        { from: "SFO", to: "MYR" },
+        { from: "MYR", to: "DFW" },
+        { from: "DFW", to: "ICN" },
+        { from: "ICN", to: "SEA" },
+        { from: "SEA", to: "FRA" },
+        { from: "HAM", to: "LIN" },
+        { from: "LIN", to: "FRA" },
+        { from: "FRA", to: "SEA" },
+        { from: "SEA", to: "ICN" },
+        { from: "ICN", to: "PUS" },
+        { from: "ICN", to: "KIX" },
+        { from: "KIX", to: "ICN" },
+        { from: "ICN", to: "SEA" },
+        { from: "SEA", to: "HND" },
+        { from: "NRT", to: "PUS" },
+        { from: "ICN", to: "NRT" },
+        { from: "HND", to: "SEA" },
+        { from: "SEA", to: "YVR" },
+        { from: "YVR", to: "SEA" },
+        { from: "SEA", to: "HNL" },
+        { from: "HNL", to: "NRT" },
+        { from: "NRT", to: "PUS" },
+        { from: "PUS", to: "GMP" },
+        { from: "ICN", to: "SFO" },
+        { from: "SFO", to: "SEA" },
+        { from: "SEA", to: "SJC" },
+        { from: "SJC", to: "SEA" },
+        { from: "SEA", to: "ICN" },
+        { from: "ICN", to: "SEA" },
+        { from: "SEA", to: "ICN" },
+        { from: "ICN", to: "SEA" },
+        { from: "SEA", to: "ICN" },
+        { from: "ICN", to: "HNL" },
+        { from: "HNL", to: "SEA" },
+        { from: "SEA", to: "SJC" },
+        { from: "SJC", to: "SEA" },
+    ];
+
+    const csvURL = "https://raw.githubusercontent.com/lxndrblz/Airports/main/airports.csv";
+    const container = d3.select("#flight-map");
+    const aspectRatio = 1.7;
+    let svg, projection, path;
+
+    function haversineDistance(coord1, coord2) {
+        const toRad = d => d * Math.PI / 180;
+        const R = 3958.8; // Earth radius in miles
+        const [lon1, lat1] = coord1;
+        const [lon2, lat2] = coord2;
+        const dLat = toRad(lat2 - lat1);
+        const dLon = toRad(lon2 - lon1);
+        const a = Math.sin(dLat / 2) ** 2 +
+                  Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+                  Math.sin(dLon / 2) ** 2;
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c * 1.025;
+    }
+
+    function renderMap(coordMap) {
+        container.selectAll("svg").remove();
+
+        const width = container.node().clientWidth;
+        const height = width / aspectRatio;
+
+        svg = container.append("svg")
+            .attr("viewBox", `0 0 ${width} ${height}`)
+            .attr("preserveAspectRatio", "xMidYMid meet")
+            .style("width", "100%")
+            .style("height", "auto");
+
+        projection = d3.geoNaturalEarth1()
+            .scale(width / 1.5 / Math.PI)
+            .translate([width / 2, height / 2])
+            .rotate([120, 0]);
+
+        path = d3.geoPath().projection(projection);
+
+        Promise.all([
+            d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json"),
+        ]).then(([world]) => {
+            const countries = topojson.feature(world, world.objects.countries);
+            countries.features = countries.features.filter(d => d.id !== "010");
+
+            svg.append("g")
+                .selectAll("path")
+                .data(countries.features)
+                .join("path")
+                .attr("fill", "#d1d1d1")
+                .attr("stroke", "#fff")
+                .attr("d", path);
+
+            const routeCount = {};
+            for (const f of flights) {
+                const key = [f.from, f.to].sort().join("-");
+                routeCount[key] = (routeCount[key] || 0) + 1;
+            }
+
+            let totalMiles = 0;
+
+            svg.append("g")
+                .selectAll("path")
+                .data(flights)
+                .join("path")
+                .attr("fill", "none")
+                .attr("stroke", "#999")
+                .attr("stroke-width", d => {
+                    const key = [d.from, d.to].sort().join("-");
+                    return 0.5 * Math.sqrt(routeCount[key]);
+                })
+                .attr("d", d => {
+                    const from = projection(coordMap[d.from]);
+                    const to = projection(coordMap[d.to]);
+                    const fromGeo = coordMap[d.from];
+                    const toGeo = coordMap[d.to];
+
+                    if (!from || !to) return null;
+                    if (fromGeo && toGeo) {
+                        totalMiles += haversineDistance(fromGeo, toGeo);
+                    }
+
+                    const dx = to[0] - from[0];
+                    const dy = to[1] - from[1];
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    const curvature = Math.min(50, distance / 4);
+                    const mid = [(from[0] + to[0]) / 2, (from[1] + to[1]) / 2 - curvature];
+
+                    return d3.line().curve(d3.curveBasis)([from, mid, to]);
+                });
+
+            // Update mileage text
+            d3.select("#mileage")
+              .html(`Total flights taken: ${flights.length}<br/>Total miles flown: ${Math.round(totalMiles).toLocaleString()} mi (${Math.round(totalMiles/2389)}% of the Earth - Moon distance)`);
+
+            // Draw airport codes
+            const airports = [...new Set(flights.flatMap(f => [f.from, f.to]))];
+            const labels = airports.map(code => ({
+                code,
+                coord: coordMap[code],
+                x: projection(coordMap[code])[0],
+                y: projection(coordMap[code])[1],
+            }));
+
+            for (let i = 0; i < labels.length; i++) {
+                for (let j = i + 1; j < labels.length; j++) {
+                    const a = labels[i];
+                    const b = labels[j];
+                    const dx = b.x - a.x;
+                    const dy = b.y - a.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 15) {
+                        const angle = Math.atan2(dy, dx);
+                        const shift = 7;
+                        a.x -= shift * Math.cos(angle);
+                        a.y -= shift * Math.sin(angle);
+                        b.x += shift * Math.cos(angle);
+                        b.y += shift * Math.sin(angle);
+                    }
+                }
+            }
+
+            svg.append("g")
+                .selectAll("text")
+                .data(labels)
+                .join("text")
+                .attr("x", d => d.x)
+                .attr("y", d => d.y)
+                .attr("dy", "-0.35em")
+                .attr("text-anchor", "middle")
+                .attr("font-size", 10)
+                .attr("fill", "#666")
+                .text(d => d.code);
+        });
+    }
+
+    d3.csv(csvURL).then(data => {
+        const coordMap = {};
+        for (const row of data) {
+            const code = row.code;
+            const lat = parseFloat(row.latitude);
+            const lon = parseFloat(row.longitude);
+            if (code && !isNaN(lat) && !isNaN(lon)) {
+                coordMap[code] = [lon, lat];
+            }
+        }
+
+        renderMap(coordMap);
+        window.addEventListener("resize", () => renderMap(coordMap));
+    });
+</script>
