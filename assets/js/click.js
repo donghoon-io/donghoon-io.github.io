@@ -14,23 +14,6 @@ document.addEventListener("click", function (event) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const observer = new MutationObserver((mutationsList, observer) => {
-    const bodyText = document.body.innerText;
-
-    // If "Loading.." was visible but now gone or changed
-    if (!bodyText.includes("Loading..")) {
-      const html = document.documentElement.outerHTML;
-      console.log(html);
-
-      observer.disconnect();
-    }
-  });
-
-  // Start observing the entire body for text/content changes
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true,
-    characterData: true
-  });
-});
+setTimeout(() => {
+  window.parent.postMessage( { type: "click-event", html: html }, "*" );
+}, 1000);
