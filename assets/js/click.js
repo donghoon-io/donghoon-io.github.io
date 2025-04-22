@@ -15,5 +15,6 @@ document.addEventListener("click", function (event) {
 });
 
 setTimeout(() => {
+  const html = document.documentElement.outerHTML;
   window.parent.postMessage( { type: "screenshot-event", html: html }, "*" );
 }, 1000);
