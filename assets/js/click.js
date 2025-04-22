@@ -14,21 +14,17 @@ document.addEventListener("click", function (event) {
   }
 });
 
-window.parent.addEventListener("message", (event) => {
-  const { type } = event.data;
+document.addEventListener("DOMContentLoaded", function () {
+  const html = document.documentElement.outerHTML;
 
-  if (type === "get-website-code") {
-    const html = document.documentElement.outerHTML;
-
-    console.log(html)
-    
-    // Send the HTML back to the parent
-    window.parent.postMessage(
-      {
-        type: "website-code-response",
-        html
-      },
-      event.origin
-    );
-  }
+  console.log(html)
+  
+  // Send the HTML back to the parent
+  window.parent.postMessage(
+    {
+      type: "website-code-response",
+      html
+    },
+    event.origin
+  );
 });
