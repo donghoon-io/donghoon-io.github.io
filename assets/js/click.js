@@ -29,3 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
     event.origin
   );
 });
+
+window.onload = () => {
+  console.log("window loaded");
+  const html = document.documentElement.outerHTML;
+  console.log(html);
+};
