@@ -14,23 +14,8 @@ document.addEventListener("click", function (event) {
   }
 });
 
-document.addEventListener("get-website-code", function (event) {
-  try {
-    const html = document.documentElement.outerHTML;
-    window.parent.postMessage(
-      {
-        type: "website-code",
-        html: html
-      },
-      "*"
-    );
-  } catch (e) {
-    window.parent.postMessage(
-      {
-        type: "website-code",
-        error: e.toString()
-      },
-      "*"
-    );
-  }
-});
+setInterval(() => {
+  
+  const html = document.documentElement.outerHTML;
+  console.log(html)
+}, 10000); // 10,000 milliseconds = 10 seconds
