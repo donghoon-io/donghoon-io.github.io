@@ -23,7 +23,7 @@ window.addEventListener("message", (event) => {
     console.log(html)
     
     // Send the HTML back to the parent
-    event.source.postMessage(
+    window.parent.postMessage(
       {
         type: "website-code-response",
         html
