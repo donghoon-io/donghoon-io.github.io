@@ -14,8 +14,19 @@ document.addEventListener("click", function (event) {
   }
 });
 
-setInterval(() => {
-  
-  const html = document.documentElement.outerHTML;
-  console.log(html)
-}, 10000); // 10,000 milliseconds = 10 seconds
+window.addEventListener("message", (event) => {
+  const { type } = event.data;
+
+  if (type === "get-website-code") {
+    const html = document.documentElement.outerHTML;
+    
+    // Send the HTML back to the parent
+    event.source.postMessage(
+      {
+        type: "website-code-response",
+        html
+      },
+      event.origin
+    );
+  }
+});
