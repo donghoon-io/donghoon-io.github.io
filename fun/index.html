@@ -12,7 +12,7 @@ description: Some fun stuffs of Donghoon Shin
         </div>
         <div class="col-12 col-md-8 mb-md-0 mb-3 align-self-center">
             <div id="flight-map" style="width: 100%; height: auto;"></div>
-            <p id="mileage">Total miles flown: XXX</p>
+            <p id="mileage">Loading..</p>
         </div>
     </div>
 </div>
@@ -58,6 +58,14 @@ description: Some fun stuffs of Donghoon Shin
         { from: "HNL", to: "SEA" },
         { from: "SEA", to: "SJC" },
         { from: "SJC", to: "SEA" },
+        { from: "SEA", to: "ICN" },
+        { from: "PUS", to: "GMP" },
+        { from: "ICN", to: "JFK" },
+        { from: "JFK", to: "LIS" },
+        { from: "LIS", to: "FNC" },
+        { from: "FNC", to: "LIS" },
+        { from: "LIS", to: "YYZ" },
+        { from: "YYZ", to: "JFK" },
     ];
 
     const csvURL = "https://raw.githubusercontent.com/lxndrblz/Airports/main/airports.csv";

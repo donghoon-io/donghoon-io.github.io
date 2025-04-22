@@ -13,3 +13,24 @@ document.addEventListener("click", function (event) {
     window.parent.postMessage({ type: "click-event", id: target.id, boundingBox: boundingBox }, "*");
   }
 });
+
+document.addEventListener("get-website-code", function (event) {
+  try {
+    const html = document.documentElement.outerHTML;
+    window.parent.postMessage(
+      {
+        type: "website-code",
+        html: html
+      },
+      "*"
+    );
+  } catch (e) {
+    window.parent.postMessage(
+      {
+        type: "website-code",
+        error: e.toString()
+      },
+      "*"
+    );
+  }
+});
