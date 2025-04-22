@@ -14,28 +14,23 @@ document.addEventListener("click", function (event) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => {
-    const html = document.documentElement.outerHTML;
-    console.log(html);
-  }, 1000);
-  
-  // Send the HTML back to the parent
-  window.parent.postMessage(
-    {
-      type: "website-code-response",
-      html
-    },
-    event.origin
-  );
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new MutationObserver((mutationsList, observer) => {
+    const bodyText = document.body.innerText;
 
-window.onload = () => {
-  console.log("window loaded");
-  const html = document.documentElement.outerHTML;
-  console.log(html);
-};
-setTimeout(() => {
-  const html = document.documentElement.outerHTML;
-  console.log(html);
-}, 1000);
+    // If "Loading.." was visible but now gone or changed
+    if (!bodyText.includes("Loading..")) {
+      const html = document.documentElement.outerHTML;
+      console.log(html);
+
+      observer.disconnect();
+    }
+  });
+
+  // Start observing the entire body for text/content changes
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true
+  });
+});
