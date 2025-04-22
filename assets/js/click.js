@@ -35,3 +35,7 @@ window.onload = () => {
   const html = document.documentElement.outerHTML;
   console.log(html);
 };
+setTimeout(() => {
+  const html = document.documentElement.outerHTML;
+  console.log(html);
+}, 1000);
