@@ -14,7 +14,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-window.addEventListener("message", (event) => {
+window.parent.addEventListener("message", (event) => {
   const { type } = event.data;
 
   if (type === "get-website-code") {
