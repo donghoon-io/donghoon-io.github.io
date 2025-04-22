@@ -15,9 +15,10 @@ document.addEventListener("click", function (event) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const html = document.documentElement.outerHTML;
-
-  console.log(html)
+  setTimeout(() => {
+    const html = document.documentElement.outerHTML;
+    console.log(html);
+  }, 1000);
   
   // Send the HTML back to the parent
   window.parent.postMessage(
