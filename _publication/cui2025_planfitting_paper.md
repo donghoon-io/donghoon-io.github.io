@@ -13,6 +13,7 @@ abstract: "Creating personalized, actionable exercise plans often requires itera
 category:
   - "AI / NLP"
   - "Healthcare"
+  - "Chatbot"
 featured: true
 note: to appear
 pdf: false
