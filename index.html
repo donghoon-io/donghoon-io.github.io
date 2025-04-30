@@ -37,10 +37,12 @@ description: HCI researcher | Ph.D. student at the University of Washington
 	<div class="home-project-scroller">
 		<div class="home-project-scroller-inner">
             {% for project in projects %}
-			<div class="home-project-container non-select">
-                <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-                <p class="pt-2 mt-md-2" style="font-size: .8rem; font-weight: 200 !important; line-height: 1rem; text-align: center;">{{ project.title }}{% if project.venue %}<a class="home-project-venue" href="{{ project.slug | prepend: 'publication/' | relative_url }}">{{ project.venue }}</a>{% endif %}</p>
-			</div>
+			<a href="{{ project.slug | prepend: 'publication/' | relative_url }}" class="home-project-link">
+                <div class="home-project-container non-select">
+                    <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+                    <p class="pt-2 mt-md-2 text-center" style="font-size: .8rem;">{{ project.title }}{% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}</p>
+                </div>
+              </a>
             {% endfor %}
 		</div>
 	</div>
@@ -66,7 +68,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
 </div>
 <div class="container">
     <div class="d-flex flex-row-reverse mt-4" id="music-highlight"></div>
-  </div>
+</div>
 
 <script>
 	function addAnimation(scrollers) {
@@ -115,5 +117,4 @@ description: HCI researcher | Ph.D. student at the University of Washington
             </p>
         `;
     }
-
 </script>

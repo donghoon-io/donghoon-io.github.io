@@ -64,6 +64,22 @@
   --_animation-direction: reverse;
   --_animation-duration: 40s;
 }
+.home-project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-project-link:hover .home-project-container {
+  transform: scale(1.04);
+  transition: transform 0.25s ease-in-out;
+  z-index: 10;
+}
+
+.home-project-container {
+  transition: transform 0.25s ease-in-out;
+  cursor: pointer;
+}
+
 
 @keyframes scroll {
   to {
