@@ -65,10 +65,8 @@ description: HCI researcher | Ph.D. student at the University of Washington
     </div>
 </div>
 <div class="container">
-    <div class="d-flex flex-row-reverse mt-4">
-        <p class="home-misc-news"><i class="fa-solid fa-music" style="margin-right: .5rem;"></i>Check out my GarageBand cover of <a href="{{ '/music/' | relative_url }}"><span style="white-space: nowrap;">Taylor Swift</span> - <span style="white-space: nowrap;">Style</span></a></p>
-    </div>
-</div>
+    <div class="d-flex flex-row-reverse mt-4" id="music-highlight"></div>
+  </div>
 
 <script>
 	function addAnimation(scrollers) {
@@ -87,4 +85,35 @@ description: HCI researcher | Ph.D. student at the University of Washington
 	}
 	const scrollers = document.querySelectorAll(".home-project-scroller");
 	addAnimation(scrollers);
+
+    const musics = {{ site.data.music.musics | jsonify }};
+    const randomMusic = musics[Math.floor(Math.random() * musics.length)];
+
+    let cleanType = randomMusic.type;
+
+    if (cleanType.trim() !== "GarageBand cover") {
+        // Remove parentheses and anything after comma
+        cleanType = cleanType
+        .replace(/\s*\([^)]*\)/g, '') // remove (xxx)
+        .split(',')[0]               // take only before first comma
+        .toLowerCase()
+        .trim();
+    }
+
+    const youtubeURL = `https://www.youtube.com/watch?v=${randomMusic.link}`;
+
+    const container = document.getElementById("music-highlight");
+    if (randomMusic && container) {
+        container.innerHTML = `
+            <p class="home-misc-news">
+            <i class="fa-solid fa-music" style="margin-right: .5rem;"></i>
+            Check out my ${cleanType} of 
+            <a href="${youtubeURL}" target="_blank" rel="noopener noreferrer">
+                <span style="white-space: nowrap;">${randomMusic.artist}</span> - 
+                <span style="white-space: nowrap;">${randomMusic.title}</span>
+            </a>
+            </p>
+        `;
+    }
+
 </script>
