@@ -135,3 +135,32 @@ people:
     affiliation: Microsoft
     website: "https://www.linkedin.com/in/lucascolusso/"
     image: lucas.jpg
+  - name: Jaewook Lee
+    affiliation: Niantic
+    website: "https://jaewook-lee.com/"
+    image: jaewook.jpg
+  - name: Guillermo Garcia-Hernando
+    affiliation: Niantic
+  - name: Isabel Kraus-Liang
+    affiliation: Niantic
+  - name: Jon E. Froehlich
+    affiliation: University of Washington
+    website: "https://jonfroehlich.github.io/"
+    image: jon.jpg
+  - name: Filippo Aleotti
+    affiliation: Niantic
+  - name: Sara Vicente
+    affiliation: Niantic
+  - name: Jakub Powierza
+    affiliation: Niantic
+  - name: Gabriel Brostow
+    affiliation: Niantic, University College London
+  - name: Diego Mazala
+    affiliation: Niantic
+  - name: Oliver James Johnston
+    affiliation: Niantic
+  - name: Donghoon Shin
+    affiliation: University of Washington
+  - name: Jessica Van Brummelen
+    affiliation: Niantic
+    website: "https://jessvb.github.io/"
