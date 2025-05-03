@@ -1,0 +1,28 @@
+
+<button class="copy-button" onclick="copyBibtex(this)">Copy BibTeX</button>
+<pre class="bibtex">
+  @inproceedings{<span></span>{{ page.authors[0] | split: ' ' | last | downcase }}{{ page.year }}{{ page.title | split: ' ' | first 
+  | replace: ':','' | replace: ',','' | replace: '.','' | replace: '?','' | replace: '!','' 
+  | replace: "'","" | replace: '"','' | replace: '(','' | replace: ')','' 
+  | replace: '&','' | replace: '-','' | replace: '_','' 
+  | downcase }},
+    title = {<span></span>{{ page.title }}<span></span>},
+    author = { {%- for a in page.authors -%} {%- assign parts = a | split: ' ' -%} {%- assign last = parts | last -%} {%- assign first_parts = parts | slice: 0, parts.size | slice: 0, parts.size -%} {%- assign first = '' -%} {%- for p in first_parts -%} {%- if p != last -%} {%- assign first = first | append: p | append: ' ' -%} {%- endif -%} {%- endfor -%} {{ last }}, {{ first | strip }}{% if forloop.last == false %} and {% endif %} {%- endfor -%} },
+    booktitle = {<span></span>{{ page.venue_full }}<span></span>},
+    year = {<span></span>{{ page.year }}<span></span>}
+  }
+</pre>
+
+<script>
+  function copyBibtex(button) {
+    const pre = button.nextElementSibling;
+    const temp = document.createElement("textarea");
+    temp.value = pre.innerText;
+    document.body.appendChild(temp);
+    temp.select();
+    document.execCommand("copy");
+    document.body.removeChild(temp);
+    button.textContent = "Copied ✓";
+    setTimeout(() => { button.textContent = "Copy BibTeX"; }, 2000);
+  }
+</script>

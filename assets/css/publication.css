@@ -62,8 +62,17 @@
   margin-right: 10px !important;
 }
 
-.publication-detail-metadata>a>i {
+.publication-detail-metadata > a > i,
+.publication-detail-metadata > label > i {
   padding-right: 2px !important;
+}
+
+.publication-detail-metadata>label {
+  font-weight: 300 !important;
+}
+
+.publication-detail-metadata>label:hover {
+  font-weight: 400 !important;
 }
 
 .publication-detail-author-name {
@@ -112,4 +121,35 @@
   margin-right: auto;
   background-size: cover;
   background-position: center center;
+}
+
+.bibtex {
+  padding: .5rem;
+  margin: 0 !important;
+  border: 1px solid #000;
+}
+#bibtex-block {
+  margin-top: 1rem;
+}
+#bibtex-toggle ~ #bibtex-block {
+  display: none;
+}
+#bibtex-toggle:checked ~ #bibtex-block {
+  display: block;
+}
+
+.copy-button {
+  font-size: 0.75rem;
+  padding: 2px 4px;
+  margin-bottom: 4px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+  background: black;
+  color: white;
 }
