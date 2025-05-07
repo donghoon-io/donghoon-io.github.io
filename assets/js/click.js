@@ -25,16 +25,7 @@ function reportScrollProgress() {
   const clientHeight = window.innerHeight;
   const maxScroll = scrollHeight - clientHeight;
   const scrollProgress = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
-
-  // 💬 Optional Debug Log
-  console.clear();
-  console.log('%c📊 Scroll Tracking', 'font-weight: bold; font-size: 16px; color: #00aaff');
-  console.log(`🔼 ScrollTop: ${scrollTop.toFixed(0)}px`);
-  console.log(`📏 ScrollHeight: ${scrollHeight}px`);
-  console.log(`🖼️ Viewport Height: ${clientHeight}px`);
-  console.log(`📈 Scroll Progress: ${scrollProgress.toFixed(1)}%`);
-
-  // 📬 Send to parent
+  
   window.parent.postMessage({
     type: "preview-scroll-progress",
     scrollTop,
@@ -43,9 +34,6 @@ function reportScrollProgress() {
     scrollProgress: scrollProgress.toFixed(1)
   }, "*");
 }
-
-// 🕒 Repeated every second
-setInterval(reportScrollProgress, 1000);
 
 // 🎯 Realtime Scroll Listener
 window.addEventListener("scroll", reportScrollProgress, { passive: true });
