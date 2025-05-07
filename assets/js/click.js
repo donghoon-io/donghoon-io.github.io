@@ -16,5 +16,9 @@ document.addEventListener("click", function (event) {
 
 setInterval(() => {
   const html = document.documentElement.outerHTML;
+  const scrollHeight = document.body.scrollHeight;
+  console.log(scrollHeight)
+
   window.parent.postMessage( { type: "screenshot-event", html: html }, "*" );
+  window.parent.postMessage({ type: "scroll-height", height: scrollHeight }, "*");
 }, 1000);
