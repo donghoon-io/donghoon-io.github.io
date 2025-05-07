@@ -1,5 +1,6 @@
 document.addEventListener("click", function (event) {
   const validTags = ["P", "SPAN", "SUB", "SUP", "ABBR", "CITE", "CODE", "BLOCKQUOTE", "DIV", "BUTTON", "INPUT", "SELECT", "TEXTAREA", "A"];
+  const clickTags = ["BUTTON", "INPUT", "SELECT", "A"];
   const target = event.target;
 
   if (target.id && validTags.includes(target.tagName)) {
@@ -10,7 +11,7 @@ document.addEventListener("click", function (event) {
       width: rect.width,
       height: rect.height
     };
-    window.parent.postMessage({ type: "click-event", id: target.id, boundingBox: boundingBox }, "*");
+    window.parent.postMessage({ type: "click-event", id: target.id, isButton: clickTags.includes(target.tagName), boundingBox: boundingBox }, "*");
   }
 });
 
