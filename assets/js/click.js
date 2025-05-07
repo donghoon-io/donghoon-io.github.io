@@ -20,8 +20,7 @@ document.addEventListener("mousedown", function (event) {
 
   window.parent.postMessage(
     {
-      type: "mouse-down",
-      id: target.id
+      type: "mouse-down"
     },
     "*"
   );
