@@ -43,4 +43,4 @@ setInterval(() => {
     clientHeight,
     scrollProgress: scrollProgress.toFixed(1)
   }, "*");
-}, 100);
+}, 1000);
