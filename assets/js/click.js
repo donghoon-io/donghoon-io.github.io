@@ -20,12 +20,16 @@ setInterval(() => {
 
   const currentScrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
   const currentScrollLeft = window.scrollX || document.documentElement.scrollLeft || document.body.scrollLeft;
+  const currentClientHeight = window.innerHeight;
+  const currentClientWidth = window.innerWidth;
 
   console.log(currentScrollTop)
 
   window.parent.postMessage( {
       type: "preview-scroll",
       scrollTop: currentScrollTop,
-      scrollLeft: currentScrollLeft
+      scrollLeft: currentScrollLeft,
+      clientHeight: currentClientHeight,
+      clientWidth: currentClientWidth
   }, "*" );
 }, 1000);
