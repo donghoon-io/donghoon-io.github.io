@@ -19,15 +19,14 @@ setInterval(() => {
   window.parent.postMessage( { type: "screenshot-event", html: html }, "*" );
 }, 1000);
 
-setInterval(() => {
+function reportScrollProgress() {
   const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
   const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
   const clientHeight = window.innerHeight;
-
   const maxScroll = scrollHeight - clientHeight;
   const scrollProgress = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
 
-  // 🎯 Neatly print scroll info in iframe console
+  // 💬 Optional Debug Log
   console.clear();
   console.log('%c📊 Scroll Tracking', 'font-weight: bold; font-size: 16px; color: #00aaff');
   console.log(`🔼 ScrollTop: ${scrollTop.toFixed(0)}px`);
@@ -43,4 +42,10 @@ setInterval(() => {
     clientHeight,
     scrollProgress: scrollProgress.toFixed(1)
   }, "*");
-}, 1000);
+}
+
+// 🕒 Repeated every second
+setInterval(reportScrollProgress, 1000);
+
+// 🎯 Realtime Scroll Listener
+window.addEventListener("scroll", reportScrollProgress, { passive: true });
