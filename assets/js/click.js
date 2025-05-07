@@ -35,32 +35,29 @@ setInterval(() => {
 }, 100);
 
 
-function trackScrollProgress() {
-  setInterval(() => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-    const clientHeight = window.innerHeight;
 
-    const maxScroll = scrollHeight - clientHeight;
-    const scrollProgress = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
+setInterval(() => {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+  const clientHeight = window.innerHeight;
 
-    // 🎯 Neatly print scroll info in iframe console
-    console.clear();
-    console.log('%c📊 Scroll Tracking', 'font-weight: bold; font-size: 16px; color: #00aaff');
-    console.log(`🔼 ScrollTop: ${scrollTop.toFixed(0)}px`);
-    console.log(`📏 ScrollHeight: ${scrollHeight}px`);
-    console.log(`🖼️ Viewport Height: ${clientHeight}px`);
-    console.log(`📈 Scroll Progress: ${scrollProgress.toFixed(1)}%`);
+  const maxScroll = scrollHeight - clientHeight;
+  const scrollProgress = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
 
-    // 📬 Send to parent
-    window.parent.postMessage({
-      type: "preview-scroll-progress",
-      scrollTop,
-      scrollHeight,
-      clientHeight,
-      scrollProgress: scrollProgress.toFixed(1)
-    }, "*");
-  }, 100);
-}
+  // 🎯 Neatly print scroll info in iframe console
+  console.clear();
+  console.log('%c📊 Scroll Tracking', 'font-weight: bold; font-size: 16px; color: #00aaff');
+  console.log(`🔼 ScrollTop: ${scrollTop.toFixed(0)}px`);
+  console.log(`📏 ScrollHeight: ${scrollHeight}px`);
+  console.log(`🖼️ Viewport Height: ${clientHeight}px`);
+  console.log(`📈 Scroll Progress: ${scrollProgress.toFixed(1)}%`);
 
-window.addEventListener("load", trackScrollProgress);
+  // 📬 Send to parent
+  window.parent.postMessage({
+    type: "preview-scroll-progress",
+    scrollTop,
+    scrollHeight,
+    clientHeight,
+    scrollProgress: scrollProgress.toFixed(1)
+  }, "*");
+}, 100);
