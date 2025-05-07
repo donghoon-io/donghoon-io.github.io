@@ -16,9 +16,51 @@ document.addEventListener("click", function (event) {
 
 setInterval(() => {
   const html = document.documentElement.outerHTML;
-  const scrollHeight = document.body.scrollHeight;
-  console.log(scrollHeight)
-
   window.parent.postMessage( { type: "screenshot-event", html: html }, "*" );
-  window.parent.postMessage({ type: "scroll-height", height: scrollHeight }, "*");
 }, 1000);
+
+setInterval(() => {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+  const clientHeight = window.innerHeight;
+  const scrollProgress = (scrollTop / (scrollHeight - clientHeight)) * 100;
+
+  window.parent.postMessage({
+    type: "preview-scroll-progress",
+    scrollTop,
+    scrollHeight,
+    clientHeight,
+    scrollProgress
+  }, "*");
+}, 100);
+
+
+function trackScrollProgress() {
+  setInterval(() => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight = window.innerHeight;
+
+    const maxScroll = scrollHeight - clientHeight;
+    const scrollProgress = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
+
+    // 🎯 Neatly print scroll info in iframe console
+    console.clear();
+    console.log('%c📊 Scroll Tracking', 'font-weight: bold; font-size: 16px; color: #00aaff');
+    console.log(`🔼 ScrollTop: ${scrollTop.toFixed(0)}px`);
+    console.log(`📏 ScrollHeight: ${scrollHeight}px`);
+    console.log(`🖼️ Viewport Height: ${clientHeight}px`);
+    console.log(`📈 Scroll Progress: ${scrollProgress.toFixed(1)}%`);
+
+    // 📬 Send to parent
+    window.parent.postMessage({
+      type: "preview-scroll-progress",
+      scrollTop,
+      scrollHeight,
+      clientHeight,
+      scrollProgress: scrollProgress.toFixed(1)
+    }, "*");
+  }, 100);
+}
+
+window.addEventListener("load", trackScrollProgress);
