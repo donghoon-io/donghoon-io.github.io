@@ -14,6 +14,11 @@ document.addEventListener("click", function (event) {
   }
 });
 
+document.addEventListener("mousedown", function (event) {
+  console.log("moused down")
+  window.parent.postMessage({ type: "mouse-down", id: target.id, boundingBox: boundingBox }, "*");
+});
+
 setInterval(() => {
   const html = document.documentElement.outerHTML;
   window.parent.postMessage( { type: "screenshot-event", html: html }, "*" );
