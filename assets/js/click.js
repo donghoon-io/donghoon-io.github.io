@@ -23,23 +23,6 @@ setInterval(() => {
   const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
   const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
   const clientHeight = window.innerHeight;
-  const scrollProgress = (scrollTop / (scrollHeight - clientHeight)) * 100;
-
-  window.parent.postMessage({
-    type: "preview-scroll-progress",
-    scrollTop,
-    scrollHeight,
-    clientHeight,
-    scrollProgress
-  }, "*");
-}, 100);
-
-
-
-setInterval(() => {
-  const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-  const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-  const clientHeight = window.innerHeight;
 
   const maxScroll = scrollHeight - clientHeight;
   const scrollProgress = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
