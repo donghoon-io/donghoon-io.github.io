@@ -15,8 +15,24 @@ document.addEventListener("click", function (event) {
 });
 
 document.addEventListener("mousedown", function (event) {
-  console.log("moused down")
-  window.parent.postMessage({ type: "mouse-down", id: target.id, boundingBox: boundingBox }, "*");
+  console.log("moused down");
+
+  const target = event.target;
+  const boundingBox = target.getBoundingClientRect();
+
+  window.parent.postMessage(
+    {
+      type: "mouse-down",
+      id: target.id,
+      boundingBox: {
+        top: boundingBox.top,
+        left: boundingBox.left,
+        width: boundingBox.width,
+        height: boundingBox.height,
+      },
+    },
+    "*"
+  );
 });
 
 setInterval(() => {
