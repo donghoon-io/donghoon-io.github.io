@@ -8,7 +8,7 @@ project:
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
       - Research
       - LLM
@@ -26,11 +26,11 @@ project:
 
       <img src='site.baseurl/assets/images/project_detail/customized-design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
-      <p style='text-align: center;'><b>Pipeline for generating customized design cards using our system</b></p>
+      <p style='text-align: center; font-weight: 300;'>Pipeline for generating customized design cards using our system</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; DIS '25
@@ -50,11 +50,11 @@ project:
 
       <img src='site.baseurl/assets/images/project_detail/exercise-planning.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
-      <p style='text-align: center;'><b>Keyscreen of our system</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreen of our system</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CUI '25
@@ -73,11 +73,11 @@ project:
 
       <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
-      <p style='text-align: center;'><b>Pipeline of generating design cards using our system</b></p>
+      <p style='text-align: center; font-weight: 300;'>Pipeline of generating design cards using our system</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CHI '24
@@ -95,11 +95,11 @@ project:
 
       <img src='site.baseurl/assets/images/project_detail/cpd-example.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
-      <p style='text-align: center;'><b>An example of causal pathway diagram (CPD)</b></p>
+      <p style='text-align: center; font-weight: 300;'>An example of causal pathway diagram (CPD)</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Building a system</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Building a system</p>
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CHI '24
@@ -118,12 +118,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/diarymate.jpg' class='modal-image-responsive'
       alt='keyscreen of our system'>
 
-      <p style='text-align: center;'><b>Keyscreen of our
-      system</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreen of our
+      system</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development, design
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, design
       ideation</p>
     tags:
       - Research
@@ -144,11 +144,11 @@ project:
       <img src='site.baseurl/assets/images/project_detail/introbot.jpg'
       class='modal-image-responsive' alt='keyscreen of our system'>
 
-      <p style='text-align: center;'><b>Overview of the IntroBot's system components</b></p>
+      <p style='text-align: center; font-weight: 300;'>Overview of the IntroBot's system components</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CHI '23
@@ -173,12 +173,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/kmooc.jpg' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='K-MOOC project image'>
 
-      <p style='text-align: center;'><b>Example of the data
-      analysis from our study</b></p>
+      <p style='text-align: center; font-weight: 300;'>Example of the data
+      analysis from our study</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Running interview sessions, taking
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Running interview sessions, taking
       part in thematic analysis, analyzing log data, writing</p>
     tags:
       - Research
@@ -207,12 +207,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/satellite-explainability.jpg'
       class='modal-image-responsive' alt='satellite imagery project image'>
 
-      <p style='text-align: center;'><b>Examples of the
-      explanation in damage detection tasks from satellite imageries</b></p>
+      <p style='text-align: center; font-weight: 300;'>Examples of the
+      explanation in damage detection tasks from satellite imageries</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>User study, open-coding responses,
+      <p><span style="font-weight: 300">[My role in this project]</span><br>User study, open-coding responses,
       system development</p>
     tags:
       - Research
@@ -248,12 +248,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/omhc.jpg' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='AI in OMHCs'>
 
-      <p style='text-align: center;'><b>Keyscreens of our
-      system</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of our
+      system</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Leading the project, preliminary
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project, preliminary
       interview, storyboarding, writing, system development</p>
     paper: chi2022_omhc_poster.pdf
     tags:
@@ -279,12 +279,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/crs.jpg' class='modal-image-responsive' alt='SNU
       CRS project image'>
 
-      <p style='text-align: center;'><b>Keyscreen of SNU CRS
-      Refresher</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreen of SNU CRS
+      Refresher</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Independent project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
     tags:
       - Personal
       - Chrome
@@ -317,19 +317,19 @@ project:
       class='modal-image-responsive' alt='Spring 2021 creative research practice project
       first image'>
 
-      <p style='text-align: center;'><b>Keyscreens of
-      LOVEGORITHM</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of
+      LOVEGORITHM</p>
 
       <img src='site.baseurl/assets/images/project_detail/spring2021crp-2.jpg'
       class='modal-image-responsive' alt='Spring 2021 creative research practice project
       second image'>
 
-      <p style='text-align: center;'><b>Keyscreen of LOVEGORITHM
-      online user community</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreen of LOVEGORITHM
+      online user community</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Web development, prototype design,
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Web development, prototype design,
       setting up dialogues, ideation</p>
     tags:
       - Coursework
@@ -354,12 +354,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/spring2021hci.jpg' class='modal-image-responsive'
       alt='Spring 2021 HCI theory and practice project image'>
 
-      <p style='text-align: center;'><b>Keyscreens of
-      PoliNewsBot</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of
+      PoliNewsBot</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development, ideation, setting
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, ideation, setting
       up dialogues</p>
     tags:
       - Coursework
@@ -379,12 +379,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/trkic-g00gle.jpg' class='modal-image-responsive'
       alt='Trick google project image'>
 
-      <p style='text-align: center;'><b>Entities of reviewing
-      communities where translation algorithm is applied</b></p>
+      <p style='text-align: center; font-weight: 300;'>Entities of reviewing
+      communities where translation algorithm is applied</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Writing, designing figures</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Writing, designing figures</p>
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CSCW '21
@@ -421,12 +421,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/amslertouch.jpg' class='modal-image-responsive'
       alt='Amsler touch project image'>
 
-      <p style='text-align: center;'><b>Keyscreen of
-      AmslerTouch</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreen of
+      AmslerTouch</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Independent project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
     tags:
       - <i class='fas fa-book'></i>&nbsp; HCIK '22
       - Web
@@ -459,12 +459,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/liquideye.jpg' class='modal-image-responsive'
       alt='Liquid eye project image'>
 
-      <p style='text-align: center;'><b>Keyscreen of
-      LiquidEye</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreen of
+      LiquidEye</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development, running interview
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running interview
       sessions, writing</p>
     tags:
       - <i class='fas fa-book'></i>&nbsp; JMIR '21
@@ -501,12 +501,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/blahblahbot.jpg' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='BlahBlahBot project image'>
 
-      <p style='text-align: center;'><b>Framework of
-      BlahBlahBot</b><br><br></p>
+      <p style='text-align: center; font-weight: 300;'>Framework of
+      BlahBlahBot<br><br></p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development, running interview
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running interview
       sessions, writing</p>
     title: BlahBlahBot
     image: blahblahbot.jpg
@@ -553,17 +553,17 @@ project:
       class='modal-image-responsive' alt='Fall 2020 interactive storytelling project
       image'>
 
-      <p style='text-align: center;'><b>Keyscreens of Easier said
-      than done</b><br><br></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of Easier said
+      than done<br><br></p>
 
-      <p><b>REFERENCE</b><br>[1] American Psychological Association. (2014).
+      <p>REFERENCE<br>[1] American Psychological Association. (2014).
       Stress in America: Are teens adopting adults’ stress habits. Washington, DC:
       Author.<br>[2] Kang, Y. (2014). Poll shows half of Korean teenagers have
       suicidal thoughts. The Wall Street Journal.</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development</p>
     title: Easier Said than Done
     image: fall2020instell.jpg
     tags:
@@ -596,12 +596,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/fall2020ucd.jpg' class='modal-image-responsive'
       alt='Fall 2020 user centered design project image'>
 
-      <p style='text-align: center;'><b>Prototype of
-      夜-planet</b></p>
+      <p style='text-align: center; font-weight: 300;'>Prototype of
+      夜-planet</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>User study, ideating design
+      <p><span style="font-weight: 300">[My role in this project]</span><br>User study, ideating design
       elements</p>
     title: 夜-planet
     image: fall2020ucd.jpg
@@ -615,8 +615,8 @@ project:
   - code: 'https://github.com/donghoon-io/TalkingBoogie'
     detail: >
       <p>At the end of my sophomore year, I read one CHI paper by chance:
-      <b>'Blocks4All: overcoming accessibility barriers to
-          blocks programming for children with visual impairments.'</b> Written by Milne and her colleagues, this paper
+      'Blocks4All: overcoming accessibility barriers to
+          blocks programming for children with visual impairments.' Written by Milne and her colleagues, this paper
           explores the methods of overcoming accessibility issues in existing block-based programming tools. I was super
           intrigued by how HCI researchers try to understand user groups and reflect design implications into an artifact.<br><br></p>
       <p>Surprisingly, at that moment my supervisor asked if I'm willing to lead a
@@ -626,36 +626,36 @@ project:
           previous research experience then. From then, I spent almost every night developing an iOS app, while simultaneously conducting
           user studies, reading relevant papers, and even designing! Literally everything was new: from being funded for a research to getting an
           approval from IRB for the evaluation! Fortunately, at the moment when I finished my research, we were almost at the deadline
-          of <b>CHI 2020</b> and submitted our work there, and got accepted with an <b>Honorable Mention Award</b>.<br><br></p>
+          of CHI 2020 and submitted our work there, and got accepted with an Honorable Mention Award.<br><br></p>
       <p>To summarize our paper briefly, we tried not to restrict a stakeholder of
       AAC to only a child, but also viewed their caregivers
           very important in the process of child's communication. Based on this research context, we aimed to develop a system that helps them collaborate to
-          drive the best strategies on child's communication. As a result, we developed <b>Talkingboogie, a mobile AAC system for children
-          with developmental disabilities</b>.</p>
+          drive the best strategies on child's communication. As a result, we developed Talkingboogie, a mobile AAC system for children
+          with developmental disabilities.</p>
       <img src='site.baseurl/assets/images/project_detail/talkingboogie-1.jpg'
       class='modal-image-responsive' alt='Flow of TalkingBoogie system'>
 
-      <p style='text-align: center;'><b>Usage flow of
-      TalkingBoogie system</b><br><br></p>
+      <p style='text-align: center; font-weight: 300;'>Usage flow of
+      TalkingBoogie system<br><br></p>
 
       <p>TalkingBoogie system consists of two mobile apps:
-      <b>TalkingBoogie-AAC</b> for caregiver-child communication, and
-          <b>TalkingBoogie-Coach</b> supporting caregiver collaboration.</p>
+      TalkingBoogie-AAC for caregiver-child communication, and
+          TalkingBoogie-Coach supporting caregiver collaboration.</p>
       <img src='site.baseurl/assets/images/project_detail/talkingboogie-2.jpg'
       class='modal-image-responsive' alt='Keyscreen of TalkingBoogie AAC app'>
 
-      <p style='text-align: center;'><b>Keyscreens of
-      TalkingBoogie-AAC</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of
+      TalkingBoogie-AAC</p>
 
       <img src='site.baseurl/assets/images/project_detail/talkingboogie-3.jpg'
       class='modal-image-responsive' alt='Keyscreen of TalkingBoogie Coach app'>
 
-      <p style='text-align: center;'><b>Keyscreens of
-      TalkingBoogie-Coach</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of
+      TalkingBoogie-Coach</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development, writing, user
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, writing, user
       study, running interview sessions, data analysis</p>
     title: TalkingBoogie
     image: talkingboogie.jpg
@@ -693,7 +693,7 @@ project:
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Independent project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
     tags:
       - Coursework
       - InfoVis
@@ -720,7 +720,7 @@ project:
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Independent project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
     tags:
       - Coursework
       - Small multiple
@@ -741,12 +741,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/bixby.jpg' class='modal-image-responsive'
       alt='Bixby project image'>
 
-      <p style='text-align: center;'><b>Example screen we used
-      during the user study</b></p>
+      <p style='text-align: center; font-weight: 300;'>Example screen we used
+      during the user study</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Prototype development, running
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Prototype development, running
       experiment, writing</p>
     tags:
       - Industry
@@ -766,9 +766,9 @@ project:
       <p>Thus, I decided to take 'Digital Ethnography' class, where students
       choose one topic they want to deal with and explore user groups to better
 
-      understand the topic. With the topic of <b>understanding why users hesitate
+      understand the topic. With the topic of understanding why users hesitate
       riding a sharing mobility device and discuss solutions using
-      ethnography</b>,
+      ethnography,
 
       I ran a couple of observation and interview studies with college students
       (N=6).<br><br></p>
@@ -787,7 +787,7 @@ project:
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Independent project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
     tags:
       - Coursework
       - Research
@@ -804,8 +804,8 @@ project:
       potential of journaling diets and managing one's
 
       health, it is suffering from the low acceptance of users. To overcome this,
-      we proposed an idea of <b>applying the persona of real world caregivers into
-      the chatbot</b>.<br><br></p>
+      we proposed an idea of applying the persona of real world caregivers into
+      the chatbot.<br><br></p>
 
       <p>Working with <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we
       conducted a series of studies regarding this topic. Specifically, in this
@@ -817,7 +817,7 @@ project:
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Writing</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Writing</p>
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; MobileHCI '20
@@ -834,15 +834,15 @@ project:
       potential of journaling diets and managing one's
 
       health, it is suffering from the low acceptance of users. To overcome this,
-      we proposed an idea of <b>applying the persona of real world caregivers into
-      the chatbot</b>.<br><br></p>
+      we proposed an idea of applying the persona of real world caregivers into
+      the chatbot.<br><br></p>
 
       <p>Led by <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we
       conducted a series of studies regarding this topic. Specifically, in this
       study, we
 
-      aimed to <b>compare user perception on personas (doctor, family member, and
-      w/o persona) applied to a chatbot</b>. Although this work is done with
+      aimed to compare user perception on personas (doctor, family member, and
+      w/o persona) applied to a chatbot. Although this work is done with
 
       Wizard-of-Oz methodology, we expect that the findings would be extensible to
       automated cases with ML.<br><br></p>
@@ -854,12 +854,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/personabot.jpg' class='modal-image-responsive'
       alt='Personabot project image'>
 
-      <p style='text-align: center;'><b>Three personas applied to
-      a chatbot</b></p>
+      <p style='text-align: center; font-weight: 300;'>Three personas applied to
+      a chatbot</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development, running
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running
       experiment, writing</p>
     tags:
       - <i class='fas fa-book'></i>&nbsp; CHI '20
@@ -886,12 +886,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/juvis.jpg' class='modal-image-responsive'
       alt='Juvis project image'>
 
-      <p style='text-align: center;'><b>Keyscreens of Juvis
-      chatbot</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of Juvis
+      chatbot</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development</p>
     tags:
       - Industry
       - Chatbot
@@ -919,18 +919,18 @@ project:
       <img src='site.baseurl/assets/images/project_detail/elecle-riding.jpg' class='modal-image-responsive'
       alt='Me with an Elecle bike'>
 
-      <p style='text-align: center;'><b>Me with an Elecle bike
-      XD</b></p>
+      <p style='text-align: center; font-weight: 300;'>Me with an Elecle bike
+      XD</p>
 
       <img src='site.baseurl/assets/images/project_detail/elecle.jpg' class='modal-image-responsive'
       alt='Elecle image'>
 
-      <p style='text-align: center;'><b>Keyscreens of Elecle iOS
-      app</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of Elecle iOS
+      app</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>System development, design
+      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, design
       ideation</p>
     tags:
       - Startup
@@ -948,8 +948,8 @@ project:
       during the undergraduate study. I'm surprised that many other friends also
       fased similar problem.<br><br></p>
 
-      <p>To make this process hassle-free, I made an iOS app called <b>ECE
-      grad</b>. Using this application, undergrads in ECE department may easily
+      <p>To make this process hassle-free, I made an iOS app called ECE
+      grad. Using this application, undergrads in ECE department may easily
       track their previously taken courses. Plus, this also shows how many credits
       they should additionally take. Plus, this system automatically visualizes
       the history and show some cheer-up messages for inducing students to take
@@ -958,18 +958,18 @@ project:
       <p>However, some of my friends suggested that it was a bit time-consuming to
       manually add courses into the system. Based on this feedback, in order to
       facilitate the process of entering their previous courses, I added a
-      <b>crawling function</b> that automatically crawls the relevant data within
+      crawling function that automatically crawls the relevant data within
       SNU mypage, by simply entering their ID and password.</p>
 
       <img src='site.baseurl/assets/images/project_detail/ecegrad.jpg' class='modal-image-responsive'
       alt='ECE grad project image'>
 
-      <p style='text-align: center;'><b>Keyscreens of ECE
-      grad</b></p>
+      <p style='text-align: center; font-weight: 300;'>Keyscreens of ECE
+      grad</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Independent project</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
     tags:
       - Personal
       - iOS
@@ -991,12 +991,12 @@ project:
       <img src='site.baseurl/assets/images/project_detail/lab_website.jpg' class='modal-image-responsive'
       alt='Designing a lab website'>
 
-      <p style='text-align: center;'><b>My profiile here
-      :)</b></p>
+      <p style='text-align: center; font-weight: 300;'>My profiile here
+      :)</p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Development, design</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Development, design</p>
     tags:
       - Design
       - Web
