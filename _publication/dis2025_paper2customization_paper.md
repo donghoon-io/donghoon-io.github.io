@@ -17,5 +17,4 @@ category:
 featured: true
 demo: "https://paper2card.com/"
 note: to appear
-pdf: false
 ---

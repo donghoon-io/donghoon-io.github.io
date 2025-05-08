@@ -19,12 +19,14 @@ project:
     id: customized_design_card
   - title: What About My Design Context?
     image: customized-design-card.jpg
+    link: 'https://paper2card.com'
+    paper: dis2025_paper2customization_paper.pdf
     detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (DIS '25 paper, to appear)</p>
+      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (DIS '25 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/customized-design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
-      <p style='text-align: center;'><b>Pipeline of generating design cards using our system</b></p>
+      <p style='text-align: center;'><b>Pipeline for generating customized design cards using our system</b></p>
 
       <hr>
 
@@ -39,12 +41,12 @@ project:
       Leveraging generative Al to tailor translational artifacts for designers
     id: customized_design_card
   - title: PlanFitting
-    image: exercise-planning.jpg
-    paper: arxiv2023_planfitting_paper.pdf
+    image: exercise-planning-prompt.jpg
+    paper: cui2025_planfitting_paper.pdf
     detail: >
       <p>Working with <a href='http://younghokim.net/'>Young-Ho Kim</a> at Naver AI, I built an interface that helps users to generate evidence-baesd exercise plans using an LLM chatbot.</p>
 
-      <p>This work was done during my internship at Naver AI. (CUI '25 paper, to appear)</p>
+      <p>This work was done during my internship at Naver AI. (CUI '25 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/exercise-planning.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
@@ -56,8 +58,8 @@ project:
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CUI '25
-      - Healthcare
       - LLM
+      - Healthcare
       - Chatbot
     description: >-
       Natural language interface that helps to craft and iterate on evidence-based exercise plans

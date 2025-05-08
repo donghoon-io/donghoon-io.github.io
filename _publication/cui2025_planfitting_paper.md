@@ -16,5 +16,4 @@ category:
   - "Chatbot"
 featured: true
 note: to appear
-pdf: false
 ---
