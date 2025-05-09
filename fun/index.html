@@ -117,7 +117,7 @@ description: Some fun stuffs of Donghoon Shin
                 .data(countries.features)
                 .join("path")
                 .attr("fill", "#d1d1d1")
-                .attr("stroke", "#fff")
+                .attr("stroke", window.matchMedia('(prefers-color-scheme: dark)').matches ? "#101218" : "#ffffff")
                 .attr("d", path);
 
             const routeCount = {};
