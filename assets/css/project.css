@@ -1,5 +1,5 @@
 .project-item-container {
-  border: .5px solid #999;
+  border: 0.5px solid var(--border-color) !important;
   cursor: pointer;
 }
 
@@ -34,8 +34,8 @@
   margin: 0 .1rem .1rem 0;
   padding: 0 .4rem;
   border-radius: .65rem;
-  color: #555 !important;
-  background-color: #eeeeee;
+  color: var(--element-secondary-color) !important;
+  background-color: var(--background-secondary-color) !important;
   font-size: .75rem;
   text-decoration: none;
   font-weight: 400 !important;
@@ -88,6 +88,7 @@
 
 .modal-content {
   border-radius: 0 !important;
+  background-color: var(--background-secondary-color) !important;
 }
 
 .modal-image-responsive {

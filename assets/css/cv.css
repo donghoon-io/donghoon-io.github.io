@@ -6,7 +6,7 @@
 .cv-oneline-entries .cv-dated-entry { margin-bottom: 0; }
 
 .cv h2 { font-size: 1.1rem; margin-bottom: 0.75rem; margin-left: 6rem; text-transform: uppercase; }
-.cv h3 { border-bottom: 1px solid black; font-size: .9rem; margin: 1rem 0 .5rem 6rem }
+.cv h3 { border-bottom: 1px solid var(--element-primary-color); font-size: .9rem; margin: 1rem 0 .5rem 6rem }
 .cv p { margin-bottom: 0.5rem; }
 .cv section { margin-bottom: 3rem; }
 

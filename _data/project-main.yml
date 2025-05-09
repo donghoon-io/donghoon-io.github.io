@@ -1,10 +1,10 @@
 project:
   - title: "Tailoring translational artifacts for design with generative AI"
-    image: "customized-design-card.jpg"
+    image: "customized-design-card.png"
     venue: DIS '25
     slug: dis2025_paper2customization_paper
   - title: "Transforming HCI papers into design cards with generative AI"
-    image: "design_card.jpg"
+    image: "design_card.png"
     venue: CHI '24
     slug: chi2024_paper2card_paper
   - title: "AI-assisted causal diagramming for human-centered design"

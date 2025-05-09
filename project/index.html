@@ -39,7 +39,7 @@ description: Projects of Donghoon Shin
                         <p class="modal-description">{{ proj.description }}</p>
                         <p class="modal-link">{% if proj.paper %}<a href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"><i class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp; Video</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a href="/assets/pdf/{{ proj.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a href="{{ proj.appstore }}"><i class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.code %}<a href="{{ proj.code }}"><i class="fab fa-github"></i>&nbsp; Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a href="{{ proj.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif %}</p>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close invert-on-dark" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
