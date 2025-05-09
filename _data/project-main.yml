@@ -12,14 +12,14 @@ project:
     venue: CHI '24
     slug: chi2024_cpd-hcd_paper
   - title: "Tailoring an evidence-based exercise plan with LLMs"
-    image: "exercise.jpg"
+    image: "exercise.png"
     venue: CUI '25
     slug: cui2025_planfitting_paper
   - title: "AI chatbot for assisting ad hoc teamworks"
-    image: "chatbot.jpg"
+    image: "chatbot.png"
     venue: CHI '23
     slug: chi2023_introbot_paper
   - title: "Exploring the roles of LLMs in personal journaling"
-    image: "diary.jpg"
+    image: "diary.png"
     venue: CHI '24
     slug: chi2024_diarymate_paper
