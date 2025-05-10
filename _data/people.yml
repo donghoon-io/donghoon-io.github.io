@@ -18,7 +18,7 @@ people:
     website: "https://sites.google.com/view/seoyoung/?pli=1"
     image: seoyoung.jpg
   - name: Taewan Kim
-    affiliation: KAIST
+    affiliation: Samsung
     website: "https://taewankim.io/"
     image: taewan.jpg
   - name: Young-Ho Kim
@@ -76,7 +76,7 @@ people:
     website: "http://www.changhoonoh.com/"
     image: changhoon.jpg
   - name: Won Ik Cho
-    affiliation: Seoul National University
+    affiliation: Samsung Electronics
     website: "https://sites.google.com/site/warnikchow"
     image: wonik.jpg
   - name: Bongwon Suh
@@ -124,7 +124,7 @@ people:
     image: rachel.jpg
     website: https://ruican-zhong.netlify.app/
   - name: Rosemary Meza
-    affiliation: Kaiser Permanente
+    affiliation: Kaiser Permanente Washington Health Research Institute
     image: rosemary.jpg
     website: "https://www.kpwashingtonresearch.org/our-research/our-scientists/meza-rosemary"
   - name: Predrag Klasnja
