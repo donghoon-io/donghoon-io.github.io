@@ -88,7 +88,8 @@
 
 .modal-content {
   border-radius: 0 !important;
-  background-color: var(--background-secondary-color) !important;
+  /*background-color: var(--background-secondary-color) !important;*/
+  background-color: white !important;
 }
 
 .modal-image-responsive {

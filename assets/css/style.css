@@ -12,6 +12,7 @@
   --column-width: 42rem;
   --column-margin-top: 4rem;
 }
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --element-primary-color: #d7d3ce;
@@ -24,6 +25,7 @@
     filter: invert(1) !important;
   }
 }
+*/
 
 html {
   -webkit-touch-callout: none;
