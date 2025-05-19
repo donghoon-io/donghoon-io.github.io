@@ -15,5 +15,4 @@ category:
   - "Healthcare"
   - "Chatbot"
 featured: true
-note: to appear
 ---
