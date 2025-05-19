@@ -704,7 +704,7 @@ project:
     id: dt4c_p3
   - category: schoolwork
     detail: >
-      <p>It's always fun to imagine things that won't happen XD<br><br></p>
+      <p>It's always fun to imagine things that will never happen XD<br><br></p>
 
       <p>In this project, I assumed that well-known tech companies run their own
       football team in a 'Tech Champions League.' In this tournament, each team
@@ -757,11 +757,11 @@ project:
     id: bixby
   - category: schoolwork
     detail: >
-      <p>I've been working as an iOS developer in a local micro-mobility sharing
-      startup for about 2 years. As working in a tech company, I got to know
+      <p>I worked as an iOS developer in a local micro-mobility sharing
+      startup for 2 years. While working in the mobility industry, I realized
 
       that understanding possible users is extremely important for the success of
-      service and business.<br><br></p>
+      the service.<br><br></p>
 
       <p>Thus, I decided to take 'Digital Ethnography' class, where students
       choose one topic they want to deal with and explore user groups to better
@@ -800,16 +800,10 @@ project:
     paper: spring2020_digital-ethnography_report.pdf
     id: spring2020digiethno
   - detail: >
-      <p>Although text-based conversational agents (chatbots) have a great
-      potential of journaling diets and managing one's
-
-      health, it is suffering from the low acceptance of users. To overcome this,
-      we proposed an idea of applying the persona of real world caregivers into
-      the chatbot.<br><br></p>
+      <p>Although text-based conversational agents (chatbots) hold great potential for journaling diets and managing personal health, they suffer from low user acceptance. To address this issue, we propose incorporating the persona of real-world caregivers into the chatbot.<br><br></p>
 
       <p>Working with <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we
-      conducted a series of studies regarding this topic. Specifically, in this
-      study, we identified several important linguistic features that make users
+      conducted a series of studies identifying several important linguistic features that make users
       perceive a chatbot as a real person. (MobileHCI '20 Late-Breaking Result)</p>
 
       <img src='site.baseurl/assets/images/project_detail/prp.jpg' class='modal-image-responsive'
@@ -830,22 +824,9 @@ project:
     paper: mobilehci2020_prp_poster.pdf
     id: prp
   - detail: >
-      <p>Although text-based conversational agents (chatbots) have a great
-      potential of journaling diets and managing one's
+      <p>Although text-based conversational agents (chatbots) hold significant potential for diet journaling and health management, they often face low user acceptance. To address this challenge, we propose incorporating the personas of real-world caregivers into the chatbot design.<br><br></p>
 
-      health, it is suffering from the low acceptance of users. To overcome this,
-      we proposed an idea of applying the persona of real world caregivers into
-      the chatbot.<br><br></p>
-
-      <p>Led by <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we
-      conducted a series of studies regarding this topic. Specifically, in this
-      study, we
-
-      aimed to compare user perception on personas (doctor, family member, and
-      w/o persona) applied to a chatbot. Although this work is done with
-
-      Wizard-of-Oz methodology, we expect that the findings would be extensible to
-      automated cases with ML.<br><br></p>
+      <p>Led by <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we conducted a series of studies comparing user perceptions of a chatbot across different personas: a doctor, a family member, and no persona. Although the study was carried out using a Wizard-of-Oz methodology, we believe the findings can be extended to automated chatbot systems powered by NLP.<br><br></p>
 
       <p>This study was presented in <a
       href='https://dl.acm.org/doi/10.1145/3334480.3375154'>CHI 2020 Workshop</a>
@@ -873,15 +854,7 @@ project:
   - category:
       - industry
     detail: >
-      <p>Juvis is a Korean diet-managing company. In order to give enough
-      information and lead users to successfully book a reservation,
-
-      we designed a chatbot. This experience led me to learn how we might design a
-      chatbot, and this motivated me to design a chatbot in my
-
-      another project on <a
-      href='site.baseurl/assets/pdf/chi2020_personabot_workshop.pdf'>applying the
-      persona on a chatbot</a>.</p>
+      <p>Juvis is a Korean company specializing in diet management. To provide users with sufficient information and guide them through the reservation process, we designed a chatbot. This experience taught me how to approach chatbot design and inspired me to create another chatbot in a subsequent project on <a href='site.baseurl/assets/pdf/chi2020_personabot_workshop.pdf'>applying personas to chatbot interactions</a>.</p>
 
       <img src='site.baseurl/assets/images/project_detail/juvis.jpg' class='modal-image-responsive'
       alt='Juvis project image'>
@@ -905,16 +878,11 @@ project:
   - category:
       - industry
     detail: >
-      <p>For more than 2 years, I've been working as an iOS developer in Elecle, a
-      Korean electric mobility-sharing startup.<br><br></p>
+      <p>For more than 2 years, I worked as an iOS developer at Elecle, an electric mobility-sharing startup based in Korea.<br><br></p>
 
-      <p>Since every single step of renting a mobility device and returing it is
-      done in a mobile app, mobile app development
-          is considered extremely crucial in mobility sharing services. Thus, we have put much emphasis on increasing
-          usability and usefulness of the mobile app for end-users and devised various interaction methods within
-          our app.<br><br></p>
-      <p>Elecle is currently available in more than 5 cities in Korea, including
-      Seoul, Suwon, Bucheon, Gimpo, and Sejong.</p>
+      <p>Because every step of renting and returning a mobility device is handled through a mobile app, app development is a critical component of mobility sharing services. Therefore, we have placed strong emphasis on enhancing the app’s usability and usefulness for end-users, and have designed various interaction methods to improve the overall experience. 4o<br><br></p>
+      
+      <p>Elecle is currently available in more than 5 cities in Korea, including Seoul, Suwon, Bucheon, Gimpo, and Sejong.</p>
 
       <img src='site.baseurl/assets/images/project_detail/elecle-riding.jpg' class='modal-image-responsive'
       alt='Me with an Elecle bike'>
@@ -944,22 +912,11 @@ project:
     id: elecle
   - category: personal
     detail: >
-      <p>It was extremely difficult for me to keep track of the courses I've taken
-      during the undergraduate study. I'm surprised that many other friends also
-      fased similar problem.<br><br></p>
+      <p>I found it incredibly difficult to keep track of the courses I took in college, and I was surprised to learn that many others faced the same problem.<br><br></p>
 
-      <p>To make this process hassle-free, I made an iOS app called ECE
-      grad. Using this application, undergrads in ECE department may easily
-      track their previously taken courses. Plus, this also shows how many credits
-      they should additionally take. Plus, this system automatically visualizes
-      the history and show some cheer-up messages for inducing students to take
-      courses and keep track of their course history.<br><br></p>
+      <p>To simplify the process, I developed an iOS app called ECE Grad. This app helps ECE undergrads easily track the courses they've completed and see how many credits they still need. It also automatically visualizes their course history and provides encouraging messages to motivate them to stay on top of their academic progress.<br><br></p>
 
-      <p>However, some of my friends suggested that it was a bit time-consuming to
-      manually add courses into the system. Based on this feedback, in order to
-      facilitate the process of entering their previous courses, I added a
-      crawling function that automatically crawls the relevant data within
-      SNU mypage, by simply entering their ID and password.</p>
+      <p>However, some users mentioned that manually entering courses into the system was a bit time-consuming. Based on their feedback, I added a crawling function to streamline the process: by simply entering their SNU credentials, the system automatically retrieves the relevant course data.</p>
 
       <img src='site.baseurl/assets/images/project_detail/ecegrad.jpg' class='modal-image-responsive'
       alt='ECE grad project image'>
@@ -980,19 +937,14 @@ project:
     id: ecegrad
   - category: personal
     detail: >
-      <p>As I started my internship at HCI+d lab, I found that the website was a
-      bit outdated. Thus, I worked with my colleagues to
+      <p>When I began my internship at the HCI+d Lab, I noticed that the website was somewhat outdated. I collaborated with my labmates to redesign it using a previously created template and updated it with the lab members' profiles.<br><br></p>
 
-      design the website (based upon the previously designed template) and added
-      up the lab members' profile.<br><br></p>
-
-      <p>It was a great experience to contribute to the lab with my skillsets!</p>
+      <p>It was a great experience contributing to the lab with my skillsets!</p>
 
       <img src='site.baseurl/assets/images/project_detail/lab_website.jpg' class='modal-image-responsive'
       alt='Designing a lab website'>
 
-      <p style='text-align: center; font-weight: 300;'>My profiile here
-      :)</p>
+      <p style='text-align: center; font-weight: 300;'>My profiile here:)</p>
 
       <hr>
 
