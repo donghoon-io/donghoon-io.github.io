@@ -17,5 +17,5 @@ category:
   - "AI / NLP"
   - "Healthcare"
 featured: true
-pdf: false
+pdf: true
 ---

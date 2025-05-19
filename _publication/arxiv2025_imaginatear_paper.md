@@ -22,5 +22,5 @@ abstract: 'While augmented reality (AR) enables new ways to play, tell stories, 
 category:
   - "AI / NLP"
 featured: true
-pdf: false
+pdf: true
 ---
