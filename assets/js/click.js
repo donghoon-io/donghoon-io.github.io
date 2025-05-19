@@ -24,7 +24,6 @@ document.addEventListener("mousedown", function (event) {
     },
     "*"
   );
-  console.log("moused down");
 });
 
 setInterval(() => {
