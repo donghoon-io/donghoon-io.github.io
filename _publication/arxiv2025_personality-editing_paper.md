@@ -15,5 +15,4 @@ abstract: "Large Language Models (LLMs) are integral to applications such as con
 category:
   - "AI / NLP"
 featured: true
-pdf: false
 ---
