@@ -59,10 +59,12 @@ description: Some fun stuffs of Donghoon Shin
         { from: "SEA", to: "SJC" },
         { from: "SJC", to: "SEA" },
         { from: "SEA", to: "NRT" },
-        { from: "NRT", to: "ICN" },
+        { from: "HND", to: "GMP" },
         { from: "GMP", to: "PUS" },
         { from: "PUS", to: "GMP" },
-        { from: "ICN", to: "JFK" },
+        { from: "ICN", to: "NRT" },
+        { from: "NRT", to: "SEA" },
+        { from: "SEA", to: "JFK" },
         { from: "JFK", to: "LIS" },
         { from: "LIS", to: "FNC" },
         { from: "FNC", to: "LIS" },
@@ -119,7 +121,8 @@ description: Some fun stuffs of Donghoon Shin
                 .data(countries.features)
                 .join("path")
                 .attr("fill", "#d1d1d1")
-                .attr("stroke", window.matchMedia('(prefers-color-scheme: dark)').matches ? "#101218" : "#ffffff")
+                .attr("stroke", "#ffffff")
+                //.attr("stroke", window.matchMedia('(prefers-color-scheme: dark)').matches ? "#101218" : "#ffffff")
                 .attr("d", path);
 
             const routeCount = {};
