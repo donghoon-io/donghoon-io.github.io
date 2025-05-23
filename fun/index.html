@@ -165,7 +165,7 @@ description: Some fun stuffs of Donghoon Shin
 
             // Update mileage text
             d3.select("#mileage")
-              .html(`Total flights taken: ${flights.length}<br/>Total miles flown: ${Math.round(totalMiles).toLocaleString()} mi (${Math.round(totalMiles/2389)}% of the Earth - Moon distance)`);
+              .html(`Total flights taken: ${flights.length}<br/>Total miles flown: ${Math.round(totalMiles).toLocaleString()} mi (${Math.round(totalMiles/2389)}% of the 🌎 ↔ 🌕 distance)`);
 
             // Draw airport codes
             const airports = [...new Set(flights.flatMap(f => [f.from, f.to]))];
