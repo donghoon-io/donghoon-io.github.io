@@ -1,4 +1,19 @@
 project:
+  - title: Internship at Google Research
+    image: google.jpg
+    detail: >
+      <p>From 2024 to 2025, I worked at Google Research as a Student Researcher on enhancing the use of LLMs (details confidential).</p>
+
+      <hr>
+
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Student Researcher</p>
+    tags:
+      - Research
+      - Internship
+      - LLM
+    description: >-
+      Enhancing the Use of LLMs
+    id: customized_design_card
   - title: Agentic Workflow in Design
     image: persona-agents.jpg
     detail: >
