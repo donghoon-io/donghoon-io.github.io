@@ -1,4 +1,21 @@
 project:
+  - title: Interacting with LLMs
+    image: google.jpg
+    detail: >
+      <p>I worked on enhancing the interaction with LLMs (Google confidential).</p>
+
+      <p>This work was done during my internship at Google Research.</p>
+
+      <hr>
+
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
+    tags:
+      - Research
+      - Internship
+      - LLM
+    description: >-
+      Shaping the Interaction with LLMs
+    id: customized_design_card
   - title: Agentic Workflow in Design
     image: persona-agents.jpg
     detail: >
@@ -11,6 +28,7 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
       - Research
+      - Internship
       - LLM
       - Design
       - Agent
@@ -58,6 +76,7 @@ project:
     tags:
       - Research
       - <i class='fas fa-book'></i>&nbsp; CUI '25
+      - Internship
       - LLM
       - Healthcare
       - Chatbot
