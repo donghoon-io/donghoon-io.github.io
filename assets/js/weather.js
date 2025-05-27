@@ -398,12 +398,22 @@ function prefix(id) {
 
   return icon;
 }
-const city = document.getElementById("city-name").innerText;
+
 const openweathermap_token = "05d354a6f8e22e86e0f4394c6f9144c8";
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${openweathermap_token}&units=metric`)
-.then(response => response.json())
-.then(data => {
-  document.getElementById('weather_icon').src = `/assets/images/weather/${prefix(data.weather[0].id)}.svg`;
-  document.getElementById('weather').innerText = weather(data.weather[0].id);
+fetch('https://donghoon-current-location.vercel.app/api/location')
+  .then(response => response.json())
+  .then(locationData => {
+    const city = locationData.city;
+    document.getElementById("city-name").innerText = city;
+
+    return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${openweathermap_token}&units=metric`);
+  })
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('weather_icon').src = `/assets/images/weather/${prefix(data.weather[0].id)}.svg`;
+    document.getElementById('weather').innerText = weather(data.weather[0].id);
+  })
+  .catch(error => {
+    console.error('Error fetching weather:', error);
   });
