@@ -98,6 +98,8 @@ people:
     affiliation: Seoul National University
   - name: Jaeyoon Song
     affiliation: MIT
+    image: jaeyoon.jpg
+    website: "https://jaeyoon.io"
   - name: Seokwoo Song
     affiliation: Samsung Research
     image: seokwoo.jpg
