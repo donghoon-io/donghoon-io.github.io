@@ -11,6 +11,18 @@ people:
     affiliation: University of Washington
     website: "https://www.linkedin.com/in/alextyc/"
     image: alex.jpg
+  - name: Gromit Chan
+    affiliation: Adobe Research
+    website: "https://gromitchan.com/"
+    image: gromit.jpg
+  - name: Daniel Lee
+    affiliation: Adobe
+    website: "https://www.linkedin.com/in/danieljslee/"
+    image: daniel.jpg
+  - name: Alex Chen
+    affiliation: University of Washington
+    website: "https://www.linkedin.com/in/alextyc/"
+    image: alex.jpg
   - name: Ruoxi Shang
     affiliation: University of Washington
   - name: Seoyoung Kim

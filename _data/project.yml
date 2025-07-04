@@ -19,17 +19,22 @@ project:
     detail: >
       <p>Working with <a href='https://gromitchan.com/'>Gromit Chan</a> at Adobe Research, I built a system that generates persona-driven design agents for poster design.</p>
 
-      <p>This work was done during my internship at Adobe Research. (under review)</p>
+      <p>This work was done during my internship at Adobe Research. (UIST '25 paper, to appear)</p>
+      
+      <img src='site.baseurl/assets/images/project_detail/postermate.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
+
+      <p style='text-align: center; font-weight: 300;'>Keyscreen of PosterMate</p>
+
 
       <hr>
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
       - Research
+      - <i class='fas fa-book'></i>&nbsp; UIST '25
       - Internship
-      - LLM
-      - Design
       - Agent
+      - Design
     description: >-
       Persona-driven Collaborative Agents for Poster Design
     id: postique
