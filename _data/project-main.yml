@@ -1,7 +1,7 @@
 project:
   - title: "Agentic workflow for design"
     image: "postermate.jpg"
-    venue: UIST '25
+    # venue: UIST '25
     slug: uist2025_postermate_paper
   - title: "Tailoring translational artifacts for design with generative AI"
     image: "customized-design-card.png"
