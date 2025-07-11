@@ -405,7 +405,8 @@ fetch('https://donghoon-current-location.vercel.app/api/location')
   .then(response => response.json())
   .then(locationData => {
     const city = locationData.city;
-    document.getElementById("city-name").innerText = city;
+    //document.getElementById("city-name").innerText = city;
+    document.getElementById("city-name").innerText = 'New York';
 
     return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${openweathermap_token}&units=metric`);
   })
