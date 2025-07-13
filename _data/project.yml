@@ -106,7 +106,7 @@ project:
     description: >-
       Transforming HCI papers into design cards with generative AI
     id: design_card
-  - title: AI-assisted Theory-informed Designing
+  - title: AI-assisted Microtheory-informed Designing
     image: cpd.jpg
     paper: chi2024_cpd-hcd_paper.pdf
     detail: >
