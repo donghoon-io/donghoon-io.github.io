@@ -23,6 +23,6 @@ category:
   - "AI / NLP"
   - "Design"
 featured: true
-pdf: false
-note: conditionally accepted
+pdf: true
+note: to appear
 ---
