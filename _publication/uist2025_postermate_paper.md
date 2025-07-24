@@ -16,6 +16,6 @@ category:
   - "Design"
   - "Chatbot"
 featured: true
-pdf: false
-note: conditionally accepted
+pdf: true
+note: to appear
 ---
