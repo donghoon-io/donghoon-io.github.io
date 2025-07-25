@@ -1,5 +1,5 @@
 project:
-  - title: "Agentic workflow for design"
+  - title: "Agent system to support real-time design collaboration"
     image: "postermate.jpg"
     venue: UIST '25
     slug: uist2025_postermate_paper
