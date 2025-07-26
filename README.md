@@ -8,7 +8,7 @@
   />
 </a>
 
-This repository contains the codebase for Donghoon's website.
+Codebase for Donghoon's website
 
 ![screenshot](https://github.com/user-attachments/assets/0944f7a9-7952-49d2-bedb-8270e0f760e9)
 
