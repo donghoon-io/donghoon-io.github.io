@@ -13,13 +13,13 @@ This repository contains the codebase for Donghoon's website.
 ![screenshot](https://github.com/user-attachments/assets/0944f7a9-7952-49d2-bedb-8270e0f760e9)
 
 ## Websites built on this theme
-
+> You must credit when distributing, remixing, adapting, and building upon this theme in any medium or format
 - [Donghoon Shin](https://donghoon.io) (University of Washington)
 - [Columbia HCI Group](https://columbiahci.github.io/) (Columbia CS)
 - [Prosocial Computing Group](https://prosocialcomputing.com) (University of Washington)
 - [Ruoxi Shang](https://ruoxishang.com) (University of Washington)
 - [Tao Long](https://cs.columbia.edu/~long) (Columbia University)
-- and many others (please credit!)
+- and many others
 
 ## Adding contents
 
