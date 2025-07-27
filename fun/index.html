@@ -12,7 +12,22 @@ description: Some fun stuffs of Donghoon Shin
         </div>
         <div class="col-12 col-md-8 mb-md-0 mb-3 align-self-center">
             <div id="flight-map" style="width: 100%; height: auto;"></div>
-            <p id="mileage">Loading..</p>
+            <p id="mileage" class="text-end">Loading..</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-4 mb-md-0 mb-3 ">
+            <p>Why monochrome?</p>
+        </div>
+        <div class="col-12 col-md-8 mb-md-0 mb-3 align-self-center">
+            <p>Some of you may have noticed that my entire website, and most of my design work, is in grayscale. This isn't just a coincidence; even my wardrobe is surprisingly monochrome. It's intentional.</p>
+            <p>That's because, one lesson I learned early on as an amateur designer is -- unless you're a genius with color, it's often better not to use it at all.</p>
+            <p>But what if you have to use color -- say, your branding requires it? In those cases, I usually limit the value (in HSV terms) to below 30%. In other words, I keep the colors as dark as possible. That way, I can stay true to the branding without sacrificing the sleek, minimal style.</p>
+            <p>Still, I would try my best to stick with a fully grayscaled style; technically, that means setting saturation to 0% in HSV. This way, the focus stays on the content itself, not on potentially questionable color choices.</p>
+            <div class="d-flex flex-column align-items-center">
+            <img src="{{ '/assets/images/misc/color.jpg' | relative_url }}" class="responsive-width mb-2">
+            <p style="font-weight: 400">Donghoon's mental model</p>
+            </div>
         </div>
     </div>
 </div>
@@ -224,3 +239,15 @@ description: Some fun stuffs of Donghoon Shin
         window.addEventListener("resize", () => renderMap(coordMap));
     });
 </script>
+
+<style>
+    .responsive-width {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .responsive-width {
+    width: 40%;
+  }
+}
+</style>
