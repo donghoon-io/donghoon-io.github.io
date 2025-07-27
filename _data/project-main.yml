@@ -4,7 +4,7 @@ project:
     venue: UIST '25
     slug: uist2025_postermate_paper
   - title: "Tailoring translational artifacts for design with generative AI"
-    image: "customized-design-card.png"
+    image: "customized-design-card.jpg"
     venue: DIS '25
     slug: dis2025_paper2customization_paper
   - title: "Transforming HCI papers into design cards with generative AI"
@@ -16,14 +16,14 @@ project:
     venue: CHI '24
     slug: chi2024_cpd-hcd_paper
   - title: "Tailoring an evidence-based exercise plan with LLMs"
-    image: "exercise.png"
+    image: "exercise.jpg"
     venue: CUI '25
     slug: cui2025_planfitting_paper
   - title: "AI chatbot for assisting ad hoc teamworks"
-    image: "chatbot.png"
+    image: "chatbot.jpg"
     venue: CHI '23
     slug: chi2023_introbot_paper
   - title: "Exploring the roles of LLMs in personal journaling"
-    image: "diary.png"
+    image: "diary.jpg"
     venue: CHI '24
     slug: chi2024_diarymate_paper
