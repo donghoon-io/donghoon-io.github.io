@@ -189,9 +189,13 @@ people:
     affiliation: Johns Hopkins University
   - name: Nikhil Sharma
     affiliation: Johns Hopkins University
+    image: nikhil.jpg
+    website: "https://www.nikhilsksharma.com/"
   - name: DaEun Choi
     affiliation: KAIST
+    website: "https://daeunchoi.com/"
   - name: Jeonghwan Kim
     affiliation: UIUC
   - name: Heng Ji
     affiliation: UIUC
+    website: "https://blender.cs.illinois.edu/hengji.html"

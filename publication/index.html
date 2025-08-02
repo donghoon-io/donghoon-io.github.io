@@ -68,7 +68,7 @@ description: Publication list of Donghoon Shin
           {% unless paper.note contains 'accepted' %}
           <p class="publication-metadata">
               <a href="{{ paper.slug | prepend: '/publication/' | relative_url }}"><i class="fa-solid fa-external-link-alt"></i>&nbsp;&nbsp;Project</a>&nbsp;&nbsp;&nbsp;&nbsp;
-              {% if paper.venue contains "arXiv" or paper.note == "to appear" %}
+              {% if paper.venue contains "arXiv" or paper.note contains "to appear" %}
               {% unless paper.pdf == false %}
               <a href="{{ '/assets/pdf/' | append: paper.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;Preprint</a>&nbsp;&nbsp;&nbsp;&nbsp;
               {% endunless %}
