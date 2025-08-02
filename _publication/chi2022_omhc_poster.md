@@ -31,7 +31,7 @@ bibtex: |-
             url = {http://doi.acm.org/10.1145/3491101.3519854},
             keywords = {online mental health community, AI-infused system, emotional support, peer support}
           }
-note: Late-breaking work
+note: Late-Breaking Work
 category: 
   - "AI / NLP"
   - "Healthcare"
