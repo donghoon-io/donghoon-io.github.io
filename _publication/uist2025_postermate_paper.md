@@ -2,7 +2,7 @@
 layout: publication
 title: "PosterMate: Audience-driven Collaborative Persona Agents for Poster Design"
 year: 2025
-month: 7
+month: 8
 authors:
   - Donghoon Shin
   - Daniel Lee
