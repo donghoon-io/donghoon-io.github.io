@@ -1,7 +1,7 @@
 list: # format date as dd/mm/yyyy
-  - title: "Two UIST papers accepted"
-    date: "24/07/2025"
-    description: "Two papers on agentic workflow in design and AI-assisted authoring for AR have been accepted to <a href='https://uist.acm.org/2025/'>UIST 2025</a>"
+  - title: "Two papers and one poster accepted to UIST"
+    date: "01/08/2025"
+    description: "Two papers and one poster on agentic workflow in design, AI-assisted AR authoring, and visual exploration of AI-generated images have been accepted to <a href='https://uist.acm.org/2025/'>UIST 2025</a>"
   - title: "Papers accepted to DIS and CUI"
     date: "15/05/2025"
     description: "Two papers on LLM personlization have been accepted to <a href='https://dis.acm.org/2025/'>DIS 2025</a> and <a href='https://cui.acm.org/2025/'>CUI 2025</a>"
