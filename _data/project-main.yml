@@ -7,7 +7,7 @@ project:
     image: "customized-design-card.jpg"
     venue: DIS '25
     slug: dis2025_paper2customization_paper
-  - title: "Transforming HCI papers into design cards with generative AI"
+  - title: "Transforming papers into design cards with generative AI"
     image: "design_card.jpg"
     venue: CHI '24
     slug: chi2024_paper2card_paper
