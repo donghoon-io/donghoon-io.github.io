@@ -78,7 +78,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
         <div class="row">
           <p class="travel-title mb-0">
             <span class="travel-date me-2">{{ travel.date | date: "%b %Y" }}</span> 
-            {{ travel.detail }} - {{ travel.location }}
+            {{ travel.detail }} · {{ travel.location }}
           </p>
         </div>
         {% unless forloop.last %}
