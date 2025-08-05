@@ -6,6 +6,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
 
 {% assign projects = site.data.project-main.project %}
 {% assign news = site.data.news.list %}
+{% assign travels = site.data.travel.list %}
 {% assign musics = site.data.music.musics %}
 
 <div class="container pt-3 pb-4">
@@ -51,19 +52,40 @@ description: HCI researcher | Ph.D. student at the University of Washington
     </div>
 </div>
 <div class="container">
-    <p class="section-title">News</p>
-    <div class="row mt-4">
-        {% for new in news limit: 4 %}
-        <div class="col-12 col-sm-6">
-            <p class="news-title mb-0">{{ new.title }}</p>
-            <p class="news-date mb-1">{{ new.date | date: "%b %-d, %Y" }}</p>
-            <p class="news-description">{{ new.description }}</p>
-            <hr>
+    <div class="row">
+        <!-- News Column -->
+        <div class="col-12 col-sm-8">
+            <p class="section-title">News</p>
+            {% for new in news limit: 3 %}
+            <div class="row">
+                <p class="news-title mb-0">{{ new.title }}</p>
+                <p class="news-date mb-1">{{ new.date | date: "%b %-d, %Y" }}</p>
+                <p class="news-description">{{ new.description }}</p>                
+            </div>
+            {% unless forloop.last %}
+            <hr class="my-3">
+            {% endunless %}
+            {% endfor %}
+            <div class="d-flex flex-row-reverse mt-4">
+                <a href="{{ 'news' | relative_url }}" class="home-view-all">> View All</a>
+            </div>
         </div>
-        {% endfor %}
-    </div>
-    <div class="d-flex flex-row-reverse mt-4">
-        <a href="{{ 'news' | relative_url }}" class="home-view-all">> View All</a>
+
+        <!-- Travel Column -->
+        <div class="col-12 col-sm-4">
+            <p class="section-title">Travel</p>
+            {% for travel in travels limit: 10 %}
+            <div class="row">
+                <p class="travel-title mb-0"><span class="travel-date me-2">{{ travel.date | date: "%b %-d, %Y" }}</span> {{ travel.detail }} - {{ travel.location }}</p>
+            </div>
+            {% unless forloop.last %}
+            <hr style="margin: .4rem 0 !important">
+            {% endunless %}
+            {% endfor %}
+            <div class="d-flex flex-row-reverse mt-4">
+                <a href="{{ 'fun' | relative_url }}" class="home-view-all">> View All</a>
+            </div>
+        </div>
     </div>
 </div>
 <div class="container">

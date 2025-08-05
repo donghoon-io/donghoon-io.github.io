@@ -9,3 +9,13 @@
 .news-description {
   font-weight: 200 !important;
 }
+
+.travel-title {
+  font-weight: 300 !important;
+  font-size: .75rem !important
+}
+
+.travel-date {
+  font-weight: 200 !important;
+  font-size: .7rem !important;
+}
