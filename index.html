@@ -72,21 +72,26 @@ description: HCI researcher | Ph.D. student at the University of Washington
 
     <!-- Travel Column -->
     <div class="col-12 col-sm-4 d-flex flex-column">
-      <div class="flex-fill d-flex flex-column">
-        <p class="section-title">Travel</p>
-        {% for travel in travels limit: 10 %}
-        <div class="row">
-          <p class="travel-title mb-0">
-            <span class="travel-date me-2">{{ travel.date | date: "%b %Y" }}</span> 
-            {{ travel.detail }} · {{ travel.location }}
-          </p>
+        <div class="flex-fill d-flex flex-column">
+            <p class="section-title">Travel</p>
+            {% for travel in travels limit: 10 %}
+            <div class="row">
+            <p class="travel-title mb-0 d-flex align-items-center">
+                <!-- Assign a fixed width to the date span -->
+                <span class="travel-date me-2" style="width: 55px;">
+                {{ travel.date | date: "%b %Y" }}
+                </span>
+                <span>
+                {{ travel.detail }} · {{ travel.location }}
+                </span>
+            </p>
+            </div>
+            {% unless forloop.last %}
+            <hr style="margin: .4rem 0 !important">
+            {% endunless %}
+            {% endfor %}
         </div>
-        {% unless forloop.last %}
-        <hr style="margin: .4rem 0 !important">
-        {% endunless %}
-        {% endfor %}
-      </div>
-    </div>
+        </div>
   </div>
 </div>
 
