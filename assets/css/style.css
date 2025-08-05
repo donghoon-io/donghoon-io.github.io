@@ -119,7 +119,7 @@ h4 {
 
   footer {
     max-width: 1500px !important;
-    padding: 3rem 0 5rem 0 !important;
+    padding: 2rem 0 5rem 0 !important;
     margin-left: auto;
     margin-right: auto;
   }
@@ -132,7 +132,7 @@ h4 {
   }
 
   footer {
-    padding: 3rem 15rem !important;
+    padding: 2rem 15rem !important;
   }
 }
 
@@ -142,7 +142,7 @@ h4 {
   }
 
   footer {
-    padding: 2rem 10rem !important;
+    padding: 1rem 10rem !important;
   }
 }
 
@@ -152,7 +152,7 @@ h4 {
   }
 
   footer {
-    padding: 2rem 4rem !important;
+    padding: 1rem 4rem !important;
   }
 }
 
@@ -162,7 +162,7 @@ h4 {
   }
 
   footer {
-    padding: 2rem 1rem !important;
+    padding: 1rem 1rem !important;
   }
 }
 
@@ -172,7 +172,7 @@ h4 {
   }
 
   footer {
-    padding: 2rem .3rem !important;
+    padding: 1rem .3rem !important;
   }
 }
 

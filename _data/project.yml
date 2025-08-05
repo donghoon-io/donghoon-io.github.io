@@ -18,7 +18,7 @@ project:
     paper: uist2025_postermate_paper.pdf
     detail: >
       <p>Working with <a href='https://gromitchan.com/'>Gromit Chan</a> at Adobe Research, I developed a system that assists with poster design by simulating real-time collaboration with persona-driven agents.</p>
-      <p>This work was done during my internship at Adobe Research. (UIST '25 paper, to appear)</p>
+      <p>This work was done during my internship at Adobe Research. (UIST '25 paper)</p>
       <img src='site.baseurl/assets/images/project_detail/postermate.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
       <p style='text-align: center; font-weight: 300;'>Keyscreen of PosterMate</p>
 

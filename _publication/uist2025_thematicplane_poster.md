@@ -19,5 +19,5 @@ category:
   - "Design"
 featured: true
 pdf: true
-note: Poster, to appear
+note: Poster
 ---

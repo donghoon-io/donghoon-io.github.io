@@ -24,5 +24,4 @@ category:
   - "Design"
 featured: true
 pdf: true
-note: to appear
 ---

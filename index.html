@@ -51,45 +51,43 @@ description: HCI researcher | Ph.D. student at the University of Washington
         <a href="{{ 'project' | relative_url }}" class="home-view-all">> View All</a>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <!-- News Column -->
-        <div class="col-12 col-sm-8">
-            <p class="section-title">News</p>
-            {% for new in news limit: 3 %}
-            <div class="row">
-                <p class="news-title mb-0">{{ new.title }}</p>
-                <p class="news-date mb-1">{{ new.date | date: "%b %-d, %Y" }}</p>
-                <p class="news-description">{{ new.description }}</p>                
-            </div>
-            {% unless forloop.last %}
-            <hr class="my-3">
-            {% endunless %}
-            {% endfor %}
-            <div class="d-flex flex-row-reverse mt-4">
-                <a href="{{ 'news' | relative_url }}" class="home-view-all">> View All</a>
-            </div>
+<div class="container mb-0">
+  <div class="row d-flex align-items-stretch">
+    <!-- News Column -->
+    <div class="col-12 col-sm-8 d-flex flex-column" style="padding-bottom: 3rem !important;">
+      <div class="flex-fill d-flex flex-column">
+        <p class="section-title">News</p>
+        {% for new in news limit: 3 %}
+        <div class="row">
+          <p class="news-title mb-0">{{ new.title }}</p>
+          <p class="news-date mb-1">{{ new.date | date: "%b %-d, %Y" }}</p>
+          <p class="news-description">{{ new.description }}</p>
         </div>
-
-        <!-- Travel Column -->
-        <div class="col-12 col-sm-4">
-            <p class="section-title">Travel</p>
-            {% for travel in travels limit: 10 %}
-            <div class="row">
-                <p class="travel-title mb-0"><span class="travel-date me-2">{{ travel.date | date: "%b %-d, %Y" }}</span> {{ travel.detail }} - {{ travel.location }}</p>
-            </div>
-            {% unless forloop.last %}
-            <hr style="margin: .4rem 0 !important">
-            {% endunless %}
-            {% endfor %}
-            <div class="d-flex flex-row-reverse mt-4">
-                <a href="{{ 'fun' | relative_url }}" class="home-view-all">> View All</a>
-            </div>
-        </div>
+        {% unless forloop.last %}
+        <hr class="my-3">
+        {% endunless %}
+        {% endfor %}
+      </div>
     </div>
-</div>
-<div class="container">
-    <div class="d-flex flex-row-reverse mt-4" id="music-highlight"></div>
+
+    <!-- Travel Column -->
+    <div class="col-12 col-sm-4 d-flex flex-column">
+      <div class="flex-fill d-flex flex-column">
+        <p class="section-title">Travel</p>
+        {% for travel in travels limit: 10 %}
+        <div class="row">
+          <p class="travel-title mb-0">
+            <span class="travel-date me-2">{{ travel.date | date: "%b %Y" }}</span> 
+            {{ travel.detail }} - {{ travel.location }}
+          </p>
+        </div>
+        {% unless forloop.last %}
+        <hr style="margin: .4rem 0 !important">
+        {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -109,34 +107,4 @@ description: HCI researcher | Ph.D. student at the University of Washington
 	}
 	const scrollers = document.querySelectorAll(".home-project-scroller");
 	addAnimation(scrollers);
-
-    const musics = {{ site.data.music.musics | jsonify }};
-    const randomMusic = musics[Math.floor(Math.random() * musics.length)];
-
-    let cleanType = randomMusic.type;
-
-    if (cleanType.trim() !== "GarageBand cover") {
-        // Remove parentheses and anything after comma
-        cleanType = cleanType
-        .replace(/\s*\([^)]*\)/g, '') // remove (xxx)
-        .split(',')[0]               // take only before first comma
-        .toLowerCase()
-        .trim();
-    }
-
-    const youtubeURL = `https://www.youtube.com/watch?v=${randomMusic.link}`;
-
-    const container = document.getElementById("music-highlight");
-    if (randomMusic && container) {
-        container.innerHTML = `
-            <p class="home-misc-news">
-            <i class="fa-solid fa-music" style="margin-right: .5rem;"></i>
-            Check out my ${cleanType} of 
-            <a href="${youtubeURL}" target="_blank" rel="noopener noreferrer">
-                <span style="white-space: nowrap;">${randomMusic.artist}</span> - 
-                <span style="white-space: nowrap;">${randomMusic.title}</span>
-            </a>
-            </p>
-        `;
-    }
 </script>
