@@ -129,6 +129,7 @@ people:
     affiliation: Harvard Medical School
   - name: Danielle Denisko
     affiliation: Harvard Medical School
+    website: "https://dcdxy.github.io/"
   - name: Eunjung Alice Lee
     affiliation: Harvard Medical School
   - name: Ruican Zhong
@@ -184,9 +185,11 @@ people:
     affiliation: Chung-Ang University
   - name: Hwanhee Lee
     affiliation: Chung-Ang University
+    website: "https://hwanheelee1993.github.io/"
     image: hwanhee.jpg
   - name: Harsh Sharma
     affiliation: University of Colorado Boulder
+    website: "https://www.linkedin.com/in/harsh7sharma/"
   - name: Nikhil Sharma
     affiliation: Johns Hopkins University
     image: nikhil.jpg
@@ -196,6 +199,7 @@ people:
     website: "https://daeunchoi.com/"
   - name: Jeonghwan Kim
     affiliation: UIUC
+    website: "https://wjdghks950.github.io/"
   - name: Heng Ji
     affiliation: UIUC
     website: "https://blender.cs.illinois.edu/hengji.html"

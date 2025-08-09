@@ -28,7 +28,6 @@
 
 .project-item-tags a {
   display: inline-block;
-  height: 1.2rem;
   position: relative;
   margin: 0 .1rem .1rem 0;
   padding: 0 .4rem;
@@ -45,10 +44,6 @@
   -ms-user-select: none;
   pointer-events: none;
   cursor: default;
-}
-
-.project-item-tags a:before {
-  content: "# "
 }
 
 .modal-title {
