@@ -40,6 +40,14 @@
   font-weight: 200 !important
 }
 
+.publication-author-list > a {
+  font-weight: 350
+}
+
+.publication-author-list > a:hover {
+  font-weight: 400
+}
+
 .publication-coauthor {
   font-weight: 200 !important
 }

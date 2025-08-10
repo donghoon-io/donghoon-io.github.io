@@ -17,7 +17,8 @@
 .cv header h1 { font-size: 1.25rem; }
 .cv header p { margin: .5rem 0; font-size: .9rem !important}
 
-.cv-pdf { font-size: .9rem !important; font-weight: 350; margin-left: 1.5rem; white-space: nowrap;}
+.cv-pdf { font-size: .9rem !important; font-weight: 350 !important; margin-left: 1.5rem; white-space: nowrap;}
+.cv-pdf:hover { font-weight: 500 !important;}
 .cv-pdf i { margin-right: .1rem;}
 
 .cv-coauthor {
