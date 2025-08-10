@@ -37,11 +37,11 @@
 }
 
 .publication-author-list {
-  font-weight: 100 !important
+  font-weight: 200 !important
 }
 
 .publication-coauthor {
-  font-weight: 100 !important
+  font-weight: 200 !important
 }
 
 .publication-cofirst {
@@ -49,11 +49,11 @@
 }
 
 .publication-note {
-  font-weight: 100
+  font-weight: 200
 }
 
 .publication-venue {
-  font-weight: 300 !important;
+  font-weight: 350 !important;
 }
 .publication-metadata {
   font-size: .85rem;

@@ -61,7 +61,7 @@ footer {
 
 p {
   font-size: .85rem;
-  font-weight: 200;
+  font-weight: 250;
   margin-bottom: .75rem !important;
   color: var(--element-primary-color) !important;
 }
@@ -110,7 +110,7 @@ h4 {
   text-transform: uppercase !important;
 }
 .subsection-title {
-  font-weight: 300 !important;
+  font-weight: 350 !important;
 }
 
 @media screen and (min-width: 1601px) {
@@ -185,7 +185,7 @@ h4 {
   text-transform: lowercase;
   letter-spacing: .75px;
   font-size: .9rem !important;
-  font-weight: 300 !important;
+  font-weight: 350 !important;
 }
 
 .nav-link:hover {

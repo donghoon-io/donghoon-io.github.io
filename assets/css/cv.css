@@ -1,6 +1,6 @@
 .cv-dated-entry { display: flex; flex-flow: row wrap; position: relative; margin-bottom: 1rem; }
 .cv-dated-date { width: 6rem; text-align: right; padding-top: .15rem; padding-right: 1.5rem; font-size: .8rem }
-.cv-dated-content { width: calc(100% - 6rem); font-size: .85rem; font-weight: 200;}
+.cv-dated-content { width: calc(100% - 6rem); font-size: .85rem; font-weight: 250;}
 
 .cv-oneline-entries { margin-bottom: 0.5rem; }
 .cv-oneline-entries .cv-dated-entry { margin-bottom: 0; }
@@ -10,30 +10,30 @@
 .cv p { margin-bottom: 0.5rem; }
 .cv section { margin-bottom: 3rem; }
 
-.cv a { font-weight:  200;}
-.cv b a { font-weight: 400;}
+.cv a { font-weight:  250;}
+.cv b a { font-weight: 350;}
 
 .cv header { margin: 2rem 0 !important; padding-left: 6rem !important; }
 .cv header h1 { font-size: 1.25rem; }
 .cv header p { margin: .5rem 0; font-size: .9rem !important}
 
-.cv-pdf { font-size: .9rem !important; font-weight: 300; margin-left: 1.5rem; white-space: nowrap;}
+.cv-pdf { font-size: .9rem !important; font-weight: 350; margin-left: 1.5rem; white-space: nowrap;}
 .cv-pdf i { margin-right: .1rem;}
 
 .cv-coauthor {
-  font-weight: 150 !important;
+  font-weight: 200 !important;
 }
 
 .cv-coauthor:hover {
-  font-weight: 300 !important;
+  font-weight: 350 !important;
 }
 
 .cv-author {
-  font-weight: 400 !important;
+  font-weight: 350 !important;
 }
 
 .cv-publication-title {
-  font-weight: 400 !important;
+  font-weight: 350 !important;
 }
 
 .cv-note {
@@ -41,5 +41,5 @@
   font-weight: 200 !important
 }
 .cv-award {
-  font-weight: 600 !important;
+  font-weight: 550 !important;
 }
