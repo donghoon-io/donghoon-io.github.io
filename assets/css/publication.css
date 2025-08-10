@@ -62,8 +62,9 @@
 
 /* publication detail */
 
-.publication-detail-metadata>a {
+.publication-detail-metadata>a, label {
   margin-right: 10px !important;
+  font-size: .9rem;
 }
 
 .publication-detail-metadata > a > i,
@@ -81,7 +82,7 @@
 
 .publication-detail-author-name {
   font-weight: 400;
-  font-size: .9rem !important;
+  font-size: .85rem !important;
   line-height: 1.4 !important;
   margin-bottom: 3px !important;
   text-align: center;
@@ -109,7 +110,7 @@
 
 .publication-detail-title {
   font-weight: 400 !important;
-  font-size: 1.1rem !important
+  font-size: 1rem !important
 }
 
 .publication-detail-author-image {
