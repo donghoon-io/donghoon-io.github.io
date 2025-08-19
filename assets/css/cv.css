@@ -1,12 +1,12 @@
 .cv-dated-entry { display: flex; flex-flow: row wrap; position: relative; margin-bottom: 1rem; }
-.cv-dated-date { width: 6rem; text-align: right; padding-top: .15rem; padding-right: 1.5rem; font-size: .8rem }
+.cv-dated-date { width: 6rem; text-align: right; padding-top: .15rem; padding-right: 1.25rem; font-size: .7rem; font-weight: 300; }
 .cv-dated-content { width: calc(100% - 6rem); font-size: .85rem; font-weight: 250;}
 
 .cv-oneline-entries { margin-bottom: 0.5rem; }
 .cv-oneline-entries .cv-dated-entry { margin-bottom: 0; }
 
 .cv h2 { font-size: .9rem; margin-bottom: 0.75rem; margin-left: 6rem; text-transform: uppercase; }
-.cv h3 { border-bottom: 1px solid var(--element-primary-color); font-size: .85rem; margin: 1rem 0 .5rem 6rem }
+.cv h3 { border-bottom: 1px solid var(--element-primary-color); font-size: .8rem; margin: 1rem 0 .5rem 6rem; font-weight: 400; }
 .cv p { margin-bottom: 0.5rem; }
 .cv section { margin-bottom: 3rem; }
 
