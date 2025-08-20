@@ -19,7 +19,7 @@ project:
     image: "exercise.jpg"
     venue: CUI '25
     slug: cui2025_planfitting_paper
-  - title: "AI chatbot for assisting ad hoc teamworks"
+  - title: "AI-infused chat moderation for ad hoc teamworks"
     image: "chatbot.jpg"
     venue: CHI '23
     slug: chi2023_introbot_paper
