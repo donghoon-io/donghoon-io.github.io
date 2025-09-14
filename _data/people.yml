@@ -11,6 +11,22 @@ people:
     affiliation: University of Washington
     website: "https://www.linkedin.com/in/alextyc/"
     image: alex.jpg
+  - name: Alice Gao
+    affiliation: University of Washington
+    website: "https://atgao.github.io/"
+    image: alice.jpg
+  - name: Katharina Reinecke
+    affiliation: University of Washington
+    website: "https://homes.cs.washington.edu/~reinecke/"
+    image: katharina.jpg
+  - name: Rock Yuren Pang
+    affiliation: University of Washington
+    website: "https://homes.cs.washington.edu/~ypang2/"
+    image: rock.jpg
+  - name: Emily Tseng
+    affiliation: Microsoft Research
+    website: "https://emtseng.me/"
+    image: emily.jpg
   - name: Gromit Yeuk-Yin Chan
     affiliation: Adobe Research
     website: "https://gromitchan.com/"
