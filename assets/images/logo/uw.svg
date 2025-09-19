@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.39 41.95">
-  <g id="Layer_1-2" data-name="Layer 1">
-    <path d="M45.79,0V7.57h5.32l-5.94,22.1S37.9,.41,37.8,0h-7.69c-.11,.4-7.97,29.66-7.97,29.66L16.67,7.57h5.54V0H0V7.57H4.92S13.41,41.54,13.52,41.95h11.92c.11-.4,5.69-21.64,5.69-21.64,0,0,5.31,21.23,5.41,21.64h11.92c.11-.41,9.04-34.38,9.04-34.38h4.88V0h-16.6"/>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 62.4 42">
+  <!-- Generator: Adobe Illustrator 29.8.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4d4d4d;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2">
+    <path class="st0" d="M45.8,0v7.6h5.3l-5.9,22.1S37.9.4,37.8,0h-7.7c-.1.4-8,29.7-8,29.7l-5.5-22.1h5.5V0H0v7.6h4.9s8.5,34,8.6,34.4h11.9c.1-.4,5.7-21.6,5.7-21.6,0,0,5.3,21.2,5.4,21.6h11.9c.1-.4,9-34.4,9-34.4h4.9V0h-16.6"/>
   </g>
 </svg>
