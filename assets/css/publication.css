@@ -41,11 +41,11 @@
 }
 
 .publication-author-list > a {
-  font-weight: 350
+  font-weight: 400
 }
 
 .publication-author-list > a:hover {
-  font-weight: 400
+  font-weight: 450 !important;
 }
 
 .publication-coauthor {

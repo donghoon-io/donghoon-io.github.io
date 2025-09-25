@@ -13,7 +13,7 @@ authors:
 video: JVqjovjOcwo
 poster: chi2022_omhc_poster_conference.pdf
 slide: chi2022_omhc_slide.pdf
-venue: CHI 2022 Extended Abstracts
+venue: ACM CHI 2022 Extended Abstracts
 venue_full: Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems
 abstract: Social support in online mental health communities (OMHCs) is an effective and accessible way of managing mental wellbeing. In this process, sharing emotional supports is considered crucial to the thriving social supports in OMHCs, yet often difficult for both seekers and providers. To support empathetic interactions, we design an AI-infused workflow that allows users to write emotional supporting messages to other users' posts based on the elicitation of the seeker's emotion and contextual keywords from writing. Based on a preliminary user study (N = 10), we identified that the system helped seekers to clarify emotion and describe text concretely while writing a post. Providers could also learn how to react empathetically to the post. Based on these results, we suggest design implications for our proposed system.
 bibtex: |-

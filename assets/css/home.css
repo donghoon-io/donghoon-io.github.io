@@ -78,8 +78,9 @@
 
 .home-project-venue {
   background-color: var(--background-secondary-color);
+  color: var(--element-primary-color) !important;
   margin-left: 5px;
-  font-weight: 300;
+  font-weight: 350;
   font-size: 90%;
   padding: 1px 3px;
   border-radius: 5px;

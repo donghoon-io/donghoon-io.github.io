@@ -5,7 +5,7 @@
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-mono: 'Fira Mono', monospace;
   --element-primary-color: #000000;
-  --element-secondary-color: #333333;
+  --element-secondary-color: #444444;
   --background-primary-color: #ffffff;
   --background-secondary-color: #ebebeb;
   --border-color: #999999;
@@ -72,17 +72,16 @@ p:last-child {
 
 a {
   text-decoration: none !important;
-  font-weight: 300;
-  color: var(--element-primary-color) !important;
-}
-
-a:hover {
-  font-weight: 400 !important;
+  font-weight: 400;
   color: var(--element-secondary-color) !important;
 }
 
+a:hover {
+  font-weight: 450 !important;
+}
+
 span {
-  color: var(--element-primary-color) !important;
+  color: var(--element-secondary-color) !important;
 }
 
 h4 {
