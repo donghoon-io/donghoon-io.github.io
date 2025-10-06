@@ -401,7 +401,7 @@ function prefix(id) {
 
 const openweathermap_token = "05d354a6f8e22e86e0f4394c6f9144c8";
 
-const city = 'Busan';
+const city = 'Seattle';
 document.getElementById("city-name").innerText = city;
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${openweathermap_token}&units=metric`)
