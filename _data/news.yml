@@ -34,7 +34,7 @@ list: # format date as dd/mm/yyyy
     description: "I'll be serving as a program committee member for <a href='https://chi2024.acm.org/'>CHI 2024</a>"
   - title: "Joining Naver AI as a research intern"
     date: "01/03/2023"
-    description: "Excited to be working as a research intern at <a href='https://clova.ai/en/research/research-areas.html'>Naver AI Lab</a> this summer, working with <a href='http://younghokim.net/'>Young-Ho Kim</a>"
+    description: "Excited to be working as a research intern at <a href='https://clova.ai/en/ai-research'>Naver AI Lab</a> this summer, working with <a href='http://younghokim.net/'>Young-Ho Kim</a>"
   - title: "Two CHI papers accepted"
     date: "13/01/2023"
     description: "Excited to share that two papers on <a href='/publication/chi2023_introbot_paper'>AI-mediated communication</a> and <a href='/publication/chi2023_mooc_paper'>online learning</a> have been accepted to <a href='https://chi2023.acm.org/'>CHI 2023</a>!"
