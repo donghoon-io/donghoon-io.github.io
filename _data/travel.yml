@@ -1,6 +1,6 @@
 list: # format date as dd/mm/yyyy
   - location: "Remote 🇺🇸"
-    date: "09/10/2025"
+    date: "09/11/2025"
     detail: "<a href='https://www.microsoft.com/research/theme/fate/'>Microsoft Research - FATE</a>"
   - location: "Busan, Korea 🇰🇷"
     date: "22/09/2025"
