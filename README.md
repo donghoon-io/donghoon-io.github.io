@@ -17,7 +17,6 @@ Codebase for Donghoon's website
 - [Donghoon Shin](https://donghoon.io) (University of Washington)
 - [Columbia HCI Group](https://columbiahci.github.io/) (Columbia CS)
 - [Prosocial Computing Group](https://prosocialcomputing.com) (University of Washington)
-- [Ruoxi Shang](https://ruoxishang.com) (University of Washington)
 - [Tao Long](https://cs.columbia.edu/~long) (Columbia University)
 - and many others
 
