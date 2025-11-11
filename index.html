@@ -13,14 +13,14 @@ description: HCI researcher | Ph.D. student at the University of Washington
     <div class="container vertical-center">
         <div class="row">
             <div class="col-12 col-md-8 col-xxl-9 px-0 align-self-center">
-                <h4>Donghoon Shin <img class="home-flag" src="{{ 'assets/images/misc/flag.svg' | relative_url }}"/></h4>
+                <h4>Donghoon Shin</h4>
                 <div class="d-flex mx-2 my-4 justify-content-center d-md-none items-center">
                     <img src="/assets/images/donghoon.jpg" style="width: 60%"/>
                 </div>
-                <p class="mt-3">I am an HCI researcher and a fourth-year Ph.D. student in <a href="http://hcde.uw.edu">Human Centered Design & Engineering</a> at the <a href="https://uw.edu">University of Washington</a>, advised by Profs. <a href="https://faculty.washington.edu/garyhs/">Gary Hsieh</a> and <a href="https://www.llwang.net/">Lucy Lu Wang</a></p>
-                <p>My research lies at the intersection of HCI and AI, where I develop systems that streamline the dissemination, access, and consumption of complex documents (e.g., scholarly papers) to support real-world practices (e.g., design). To achieve this, I draw on techniques from document understanding, UI understanding, and conversational agents</p>
-                <p>I received my B.S. in Electrical & Computer Engineering and B.A. in Information Science at <a href="https://en.snu.ac.kr/">Seoul National University</a>, where I was supported by the <a href="https://www.kosaf.go.kr/eng/jsp/aid/aid02_01_01.jsp">Presidential Science Scholarship</a>. Previously, I was a research intern at <a href="https://www.microsoft.com/research/">Microsoft Research</a>, <a href="https://research.google/">Google Research</a>, <a href="https://research.adobe.com/">Adobe Research</a>, and <a href="https://clova.ai/en/research/research-areas.html">Naver AI</a>, and a software engineer at <a href="https://elecle.bike/">Elecle</a></p>
-                <p>I am the <a href="https://www.studyinkorea.go.kr/en/scholarship/Gks4Native1.do#">2022 Korean Government Scholar for Overseas Study</a></p>
+                <p class="mt-3">I am an HCI researcher and a fourth-year Ph.D. student in <a href="http://hcde.uw.edu">Human Centered Design & Engineering</a> at the <a href="https://uw.edu">University of Washington</a>, advised by <a href="https://faculty.washington.edu/garyhs/">Gary Hsieh</a> and <a href="https://www.llwang.net/">Lucy Lu Wang</a></p>
+                <p>My research lies at the intersection of HCI and AI, where I build systems that streamline the dissemination, access, and consumption of complex documents (e.g., scholarly papers) to support real-world practices (e.g., design, healthcare). To achieve this, I draw on techniques from document understanding, UI understanding, and conversational agents</p>
+                <p>I received my B.S. in Electrical & Computer Engineering and B.A. in Information Science at <a href="https://en.snu.ac.kr/">Seoul National University</a>, where I was supported by the <a href="https://www.kosaf.go.kr/eng/jsp/aid/aid02_01_01.jsp">Presidential Science Scholarship</a>. Previously, I was a research intern at <a href="https://www.microsoft.com/research/">Microsoft Research</a>, <a href="https://research.google/">Google Research</a>, <a href="https://research.adobe.com/">Adobe Research</a>, and <a href="https://clova.ai/en/research/research-areas.html">Naver AI</a>, and a software engineer at <a href="https://elecle.bike/">elecle</a></p>
+                <p>I am the <a href="http://niied.go.kr/user/nd70479.do"><img class="home-flag" src="{{ 'assets/images/misc/flag.svg' | relative_url }}"/>Korean Government Scholar for Overseas Study</a></p>
             </div>
             <div class="d-none d-md-block col-12 col-md-4 col-xxl-3 align-self-center text-center">
                 <img src="/assets/images/donghoon.jpg" class="w-100" style="max-width: 225px;"/>
@@ -34,14 +34,14 @@ description: HCI researcher | Ph.D. student at the University of Washington
     </p>
 </div>
 <div class="container">
-    <p class="section-title">Recent projects</p>
+    <p class="section-title">Selected projects</p>
 	<div class="home-project-scroller">
 		<div class="home-project-scroller-inner">
             {% for project in projects %}
 			<a href="{{ project.slug | prepend: 'publication/' | relative_url }}" class="home-project-link">
                 <div class="home-project-container non-select">
                     <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-                    <p class="pt-2 mt-md-2 text-center" style="font-size: .8rem;">{{ project.title }}{% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}</p>
+                    <p class="pt-2 mt-md-2 text-center" style="font-size: .75rem;">{{ project.title }}{% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}</p>
                 </div>
               </a>
             {% endfor %}

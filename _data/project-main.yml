@@ -1,29 +1,29 @@
 project:
-  - title: "Agent system to simulate design collaboration"
+  - title: "PosterMate"
     image: "postermate.jpg"
     venue: UIST '25
     slug: uist2025_postermate_paper
-  - title: "Tailoring translational artifacts for design with generative AI"
+  - title: "What About My Design Context?"
     image: "customized-design-card.jpg"
     venue: DIS '25
     slug: dis2025_paper2customization_paper
-  - title: "Transforming papers into design cards with generative AI"
+  - title: "From Paper to Card"
     image: "design_card.jpg"
     venue: CHI '24
     slug: chi2024_paper2card_paper
-  - title: "AI-assisted causal diagramming for human-centered design"
+  - title: "AI-assisted design theorization"
     image: "cpd.jpg"
     venue: CHI '24
     slug: chi2024_cpd-hcd_paper
-  - title: "Tailoring an evidence-based exercise plan with LLMs"
+  - title: "PlanFitting"
     image: "exercise.jpg"
     venue: CUI '25
     slug: cui2025_planfitting_paper
-  - title: "AI-infused chat moderation for ad hoc teamworks"
+  - title: "IntroBot"
     image: "chatbot.jpg"
     venue: CHI '23
     slug: chi2023_introbot_paper
-  - title: "Exploring the roles of LLMs in personal journaling"
+  - title: "DiaryMate"
     image: "diary.jpg"
     venue: CHI '24
     slug: chi2024_diarymate_paper
