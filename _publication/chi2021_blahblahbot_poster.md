@@ -8,7 +8,7 @@ authors:
   - Sangwon Yoon
   - Soomin Kim
   - Joonhwan Lee
-venue: ACM CHI 2021 Extended Abstracts
+venue: CHI 2021 Extended Abstracts
 venue_full: Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems
 note: Late-Breaking Work
 abstract: It is a prevalent behavior of having a chat with strangers in online settings where people can easily gather. Yet, people often fnd it difcult to initiate and maintain conversation due to the lack of information about strangers. Hence, we aimed to facilitate conversation between the strangers with the use of machine learning (ML) algorithms and present BlahBlahBot, an ML-infused chatbot that moderates conversation between strangers with personalized topics. Based on social media posts, BlahBlahBot supports the conversation by suggesting topics that are likely to be of mutual interest between users. A user study with three groups (control, random topic chatbot, and BlahBlahBot; N=18) found the feasibility of BlahBlahBot in increasing both conversation quality and closeness to the partner, along with the factors that led to such increases from the user interview. Overall, our preliminary results imply that an ML-infused conversational agent can be efective for augmenting a dyadic conversation.
