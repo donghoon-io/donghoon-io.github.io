@@ -4,36 +4,51 @@
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon invert-on-dark"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto mt-4 mt-lg-0 navbar-nav-scroll">
+
           <li class="nav-item">
-            <a class="nav-link {% if page.url == '/' %} active {% endif %}" aria-current="page" href="/">Home</a>
+            <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="/">Home</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'publication' %} active {% endif %}" aria-current="page" href="/publication">Publication</a>
+            <a class="nav-link {% if page.url contains 'publication' %} active {% endif %}" href="/publication">Publication</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'project' %} active {% endif %}" aria-current="page" href="/project">Project</a>
+            <a class="nav-link {% if page.url contains 'project' %} active {% endif %}" href="/project">Project</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'cv' %} active {% endif %}" aria-current="page" href="/cv">CV</a>
+            <a class="nav-link {% if page.url contains 'cv' %} active {% endif %}" href="/cv">CV</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'music' %} active {% endif %}" aria-current="page" href="/music">Music</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle
+              {% if page.url contains 'music' or page.url contains 'fun' or page.url contains 'blog' %} active {% endif %}
+            " href="#" role="button" data-bs-auto-close="outside">
+              others
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/music">music</a></li>
+              <li><a class="dropdown-item" href="/fun">fun</a></li>
+              <li>
+                <a class="dropdown-item" href="https://donghoon.io/blog/" target="_blank" rel="noopener noreferrer">
+                  blog <i class="fa-regular fa-arrow-up-right-from-square" style="padding-left: 5px;"></i>
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'fun' %} active {% endif %}" aria-current="page" href="/fun">Fun</a>
-          </li>
-          <!--
-          <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'blog' %} active {% endif %}" aria-current="page" target="_blank" rel="noopener noreferrer" href="https://donghoon.io/blog/">Blog<i class="fa-regular fa-arrow-up-right-from-square" style="padding-left: 5px;"></i></a>
-          </li>
-          -->
+
+
         </ul>
       </div>
     </div>
   </nav>
 </header>
+
 
 <style>
   .dropdown-toggle {
@@ -53,15 +68,19 @@
     margin-top: 0;
  }
  .dropdown-menu {
-    --bs-dropdown-border-radius: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important
- }
- .dropdown-item {
-  font-size: .95rem !important;
-  padding: .3rem .75rem !important;
- }
- .dropdown-item:active {
-  background-color: #999 !important
- }
+  padding: 0.25rem 0 !important;
+  border-radius: 0.5rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.dropdown-item {
+  padding: 0.35rem .75rem !important;
+  font-size: 0.85rem !important;
+  transition: background 0.2s, padding-left 0.2s;
+}
+
+.dropdown-item:hover {
+  background: rgba(0,0,0,0.05) !important;
+  padding-left: 1.25rem !important; /* subtle movement */
+}
 </style>
