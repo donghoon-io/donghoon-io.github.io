@@ -4,7 +4,7 @@ author:
   email: dhoon@uw.edu
 description: >
   HCI researcher | Ph.D. student at the Unviersity of Washington
-google_analytics_id: UA-215543768-1
+gtag: G-098LLXGBCG
 
 show_excerpts: false # set to true to show excerpts on the homepage
 permalink: /:title
