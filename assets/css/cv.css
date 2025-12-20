@@ -10,8 +10,8 @@
 .cv p { margin-bottom: 0.5rem; }
 .cv section { margin-bottom: 3rem; }
 
-.cv a { font-weight:  250;}
-.cv b a { font-weight: 350;}
+.cv a { font-weight:  250; color: black !important;}
+.cv b a { font-weight: 400;}
 
 .cv header { margin: 2rem 0 !important; padding-left: 6rem !important; }
 .cv header h1 { font-size: 1.25rem; }
@@ -42,5 +42,6 @@
   font-weight: 200 !important
 }
 .cv-award {
-  font-weight: 550 !important;
+  color: black !important;
+  font-weight: 400 !important;
 }
