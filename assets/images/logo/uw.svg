@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 62.4 42">
-  <g id="Layer_1-2">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 62.4 50">
+  <g id="Layer_1-2" transform="scale(1, 1.1)">
     <path fill="#4B2E83" d="M45.8,0v7.6h5.3l-5.9,22.1S37.9.4,37.8,0h-7.7c-.1.4-8,29.7-8,29.7l-5.5-22.1h5.5V0H0v7.6h4.9s8.5,34,8.6,34.4h11.9c.1-.4,5.7-21.6,5.7-21.6,0,0,5.3,21.2,5.4,21.6h11.9c.1-.4,9-34.4,9-34.4h4.9V0h-16.6"/>
   </g>
 </svg>
