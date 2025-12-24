@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23">
-  <path fill="#4d4d4d" d="M1 1h10v10H1z"/>
-  <path fill="#7f7f7f" d="M12 1h10v10H12z"/>
-  <path fill="#3b3b3b" d="M1 12h10v10H1z"/>
-  <path fill="#a0a0a0" d="M12 12h10v10H12z"/>
+  <!-- Top-left -->
+  <path fill="#f35325" d="M1.2 1.2h9.7v9.7H1.2z"/>
+  <!-- Top-right -->
+  <path fill="#81bc06" d="M12.2 1.2h9.7v9.7H12.2z"/>
+  <!-- Bottom-left -->
+  <path fill="#05a6f0" d="M1.2 12.2h9.7v9.7H1.2z"/>
+  <!-- Bottom-right -->
+  <path fill="#ffba08" d="M12.2 12.2h9.7v9.7H12.2z"/>
 </svg>

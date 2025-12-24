@@ -102,11 +102,21 @@
 }
 
 .home-affiliation-logo span {
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
 
 .home-flag {
   width: 20px;
   height: 20px;
   margin: 0 3px 2px 1px;
+}
+
+.home-affiliation-logo img {
+  filter: brightness(0) contrast(.35); /* dark but not fully black */
+  transition: filter 0.3s;
+}
+
+/* Restore full color on hover */
+a:hover .home-affiliation-logo img {
+  filter: brightness(1) contrast(1);
 }
