@@ -95,14 +95,10 @@
   font-size: .85rem;
 }
 
-.home-affiliation-logo img {
+.affiliation-logo {
   width: 15px;
   height: 15px;
   margin: 0 4px 2px 2px;
-}
-
-.home-affiliation-logo span {
-  white-space: nowrap !important;
 }
 
 .home-flag {
@@ -111,12 +107,12 @@
   margin: 0 3px 2px 1px;
 }
 
-.home-affiliation-logo img {
+.affiliation-logo {
   filter: brightness(0) contrast(.35); /* dark but not fully black */
   transition: filter 0.3s;
 }
 
 /* Restore full color on hover */
-a:hover .home-affiliation-logo img {
+a:hover .affiliation-logo {
   filter: brightness(1) contrast(1);
 }
