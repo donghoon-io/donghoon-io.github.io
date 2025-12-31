@@ -16,7 +16,7 @@ note: CAs for Health and Wellbeing
 category: 
   - "AI / NLP"
   - "Healthcare"
-  - "Chatbot"
+  - "Agent"
   - "Design"
 bibtex: |-
   @inproceedings{chatbotpersona,

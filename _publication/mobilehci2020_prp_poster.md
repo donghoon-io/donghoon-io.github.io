@@ -15,7 +15,7 @@ note: Late-Breaking Results
 category: 
   - "AI / NLP"
   - "Healthcare"
-  - "Chatbot"
+  - "Agent"
 bibtex: |-
   @inproceedings{linguisticfeatures,
             title = {Linguistic Features to Consider When Applying Persona of the Real Persona to the Text-based Agent},

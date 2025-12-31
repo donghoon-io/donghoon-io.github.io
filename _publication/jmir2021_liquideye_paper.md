@@ -11,7 +11,7 @@ authors:
   - Joonhwan Lee
 venue: 'Journal of Medical Internet Research 23(3), 2021'
 venue_full: 'Journal of Medical Internet Research, 23(3), e22099'
-category: 
+category:
   - "Design"
   - "Healthcare"
 abstract: >-

@@ -15,7 +15,7 @@ abstract: 'Poster designing can benefit from synchronous feedback from target au
 category:
   - "AI / NLP"
   - "Design"
-  - "Chatbot"
+  - "Agent"
 featured: true
 pdf: true
 ---
