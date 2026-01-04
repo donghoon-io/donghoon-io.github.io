@@ -102,7 +102,7 @@ project:
     description: >-
       Transforming HCI papers into design cards with generative AI
     id: design_card
-  - title: AI-assisted Microtheory-informed Designing
+  - title: Theorizing Design with AI
     image: cpd.jpg
     paper: chi2024_cpd-hcd_paper.pdf
     detail: >
@@ -114,7 +114,7 @@ project:
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Building a system</p>
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Ideation, building a system, helping with the study</p>
     tags:
       - <i class='fas fa-book'></i>&nbsp; CHI '24
       - LLM
