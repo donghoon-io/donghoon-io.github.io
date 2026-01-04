@@ -2,7 +2,7 @@
 layout: publication
 title: "Personality Editing for Language Models through Relevant Knowledge Editing"
 year: 2025
-month: 10
+month: 2
 authors:
   - Seojin Hwang
   - Yumin Kim
