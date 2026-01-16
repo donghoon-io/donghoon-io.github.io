@@ -1,4 +1,7 @@
 list: # format date as dd/mm/yyyy
+  - title: "One paper conditionally accepted to CHI 2026"
+    date: "14/01/2026"
+    description: "One paper on AI-assised science communication has been conditionally accepted to <a href='https://chi2026.acm.org/'>CHI 2026</a>"
   - title: "Papers accepted to EACL 2026 and EMNLP 2025"
     date: "04/01/2026"
     description: "One paper and one workshop paper on LLM personlization has been accepted to <a href='https://2026.eacl.org/'>EACL 2026</a> main track and <a href='https://pals-nlp-workshop.github.io/'>EMNLP 2025 PALS Workshop</a>"

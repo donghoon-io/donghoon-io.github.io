@@ -41,6 +41,16 @@ people:
     image: alex.jpg
   - name: Ruoxi Shang
     affiliation: University of Washington
+    website: "https://ruoxishang.com/"
+  - name: Tony Zhou
+    affiliation: University of Washington
+    website: "https://tyzhou.com/"
+  - name: Meziah Ruby Cristobal
+    affiliation: University of Washington
+    website: "https://www.meziahruby.space/"
+  - name: Hyeonjeong Byeon
+    affiliation: University of Washington
+    website: "https://hyeonjeongbyeon.com/"
   - name: Seoyoung Kim
     affiliation: KAIST
     website: "https://sites.google.com/view/seoyoung/?pli=1"
