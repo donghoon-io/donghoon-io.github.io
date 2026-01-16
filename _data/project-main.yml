@@ -1,4 +1,8 @@
 project:
+  - title: "PaperTok"
+    image: "papertok.jpg"
+    venue: CHI '26
+    slug: chi2026_papertok_paper
   - title: "PosterMate"
     image: "postermate.jpg"
     venue: UIST '25

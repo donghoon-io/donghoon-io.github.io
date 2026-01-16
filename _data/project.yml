@@ -1,4 +1,26 @@
 project:
+  - title: PaperTok
+    image: papertok.jpg
+    link: 'https://papertok.com'
+    paper: chi2026_papertok_paper.pdf
+    detail: >
+      <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically transforms design implications from HCI papers into short-form videos with generative AI. (CHI '26 paper, to appear)</p>
+
+      <img src='site.baseurl/assets/images/project_detail/papertok.jpg' class='modal-image-responsive' alt='pipeline of our system'>
+
+      <p style='text-align: center; font-weight: 300;'>Pipeline of generating short-form videos using PaperTok</p>
+
+      <hr>
+
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Co-leading the project</p>
+    tags:
+      - <i class='fas fa-book'></i>&nbsp; CHI '26
+      - LLM
+      - Design
+      - Translational science
+    description: >-
+      Transforming HCI papers into short-form videos with generative AI
+    id: design_card
   - title: Internship at Google Research
     image: google.jpg
     detail: >
