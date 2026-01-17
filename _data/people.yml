@@ -45,12 +45,15 @@ people:
   - name: Tony Zhou
     affiliation: University of Washington
     website: "https://tyzhou.com/"
+    image: tony.jpg
   - name: Meziah Ruby Cristobal
     affiliation: University of Washington
     website: "https://www.meziahruby.space/"
+    image: meziah.jpg
   - name: Hyeonjeong Byeon
     affiliation: University of Washington
     website: "https://hyeonjeongbyeon.com/"
+    image: hyeonjeong.jpg
   - name: Seoyoung Kim
     affiliation: KAIST
     website: "https://sites.google.com/view/seoyoung/?pli=1"
