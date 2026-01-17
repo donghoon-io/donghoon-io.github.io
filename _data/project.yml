@@ -102,7 +102,7 @@ project:
     description: >-
       Natural language interface that helps to craft and iterate on evidence-based exercise plans
     id: planfitting
-  - title: From Paper to Card
+  - title: Paper2Card
     image: design-card.jpg
     link: 'https://paper2card.com'
     paper: chi2024_paper2card_paper.pdf
