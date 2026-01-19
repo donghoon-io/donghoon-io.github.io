@@ -19,7 +19,7 @@ project:
       - Design
       - Translational science
     description: >-
-      Transforming HCI papers into short-form videos with generative AI
+      Generative AI tool that transforms HCI papers into short-form videos
     id: design_card
   - title: Internship at Google Research
     image: google.jpg
@@ -53,7 +53,7 @@ project:
       - Agent
       - Design
     description: >-
-      Multi-agent system for supporting design by simulating real-time collaboration
+      Multi-agent design support tool that supports simulation of real-time collaboration
     link: https://research.adobe.com/news/the-research-behind-project-get-savvy/
     id: postermate
   - title: What About My Design Context?
@@ -76,7 +76,7 @@ project:
       - Design
       - Translational science
     description: >-
-      Leveraging generative Al to tailor translational artifacts for designers
+      Generative Al tool that helps designers tailor translational artifacts
     id: customized_design_card
   - title: PlanFitting
     image: exercise-planning-prompt.jpg
@@ -100,7 +100,7 @@ project:
       - Healthcare
       - Chatbot
     description: >-
-      Natural language interface that helps to craft and iterate on evidence-based exercise plans
+      Natural language interface that helps to craft and iterate on personalized and attributable exercise plans
     id: planfitting
   - title: Paper2Card
     image: design-card.jpg
@@ -122,7 +122,7 @@ project:
       - Design
       - Translational science
     description: >-
-      Transforming HCI papers into design cards with generative AI
+      Generative AI tool that transforms HCI papers into design cards
     id: design_card
   - title: Theorizing Design with AI
     image: cpd.jpg
@@ -143,7 +143,7 @@ project:
       - Design
       - Translational science
     description: >-
-      An LLM-infused Miro plugin that helps causal diagramming for human-centered design
+      LLM-infused Miro plugin that helps causal diagramming for human-centered design
     id: ai_assisted_cpd
   - detail: >
       <p>Working with <a href='https://taewankim.io/'>Taewan Kim</a> and <a
@@ -169,7 +169,7 @@ project:
     title: DiaryMate
     paper: chi2024_diarymate_paper.pdf
     description: >-
-      Supporting reflective writing processes using an LLM
+      LLM-infused system that supports reflective writing processes
     id: diarymate
   - detail: >
       <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary
@@ -191,7 +191,7 @@ project:
     image: introbot.jpg
     title: "IntroBot"
     paper: chi2023_introbot_paper.pdf
-    description: Conversational AI for supporting familiarization among ad hoc teammates
+    description: Conversational agent for supporting familiarization among ad hoc teammates
     id: introbot
   - detail: >
       <p>In this project, we investigated how older adults use online videos
@@ -220,7 +220,7 @@ project:
     image: kmooc.jpg
     title: How Older Adults Use Online Videos for Learning
     paper: chi2023_mooc_paper.pdf
-    description: Understanding how do older adults use online videos for learning
+    description: Understanding how older adults use online videos for learning
     id: kmooc
   - detail: >
       <p>To guide the design of explanation for assessing damages from satellite
@@ -294,8 +294,7 @@ project:
     image: omhc.jpg
     title: AI in Online Mental Health Communities
     description: >-
-      AI-assisted emotional support in online mental health communities
-      (OMHCs)
+      AI tool that supports emotional support in online mental health communities (OMHCs)
     id: omhc
   - category: personal
     code: 'https://github.com/donghoon-io/snu-crs-refresher'
@@ -397,7 +396,7 @@ project:
       - iOS
     image: spring2021hci.jpg
     title: PoliNewsBot
-    description: Chat moderator for facilitating discussion on political issues
+    description: Conversational agent for facilitating discussion on political issues
     id: spring2021hci
   - detail: >
       <p>We explored the role and behavior of entities surrounding translation
@@ -420,7 +419,7 @@ project:
       - Algorithmic experience
     image: trkic-g00gle.jpg
     title: Trkic G00gle
-    description: Why and how users game translation algorithms
+    description: Understanding why and how users game translation algorithms
     paper: cscw2021_trkic-g00gle_paper.pdf
     video: 'https://youtu.be/VVAQqC5tedQ'
     id: trkic-g00gle
@@ -501,8 +500,7 @@ project:
     image: liquideye.jpg
     title: LiquidEye
     description: >-
-      Exploring design space of Computer Vision Symdrome (CVS) intervention
-      application
+      MacOS-based intervention app to prevent Computer Vision Symdrome (CVS)
     paper: jmir_liquideye_paper.pdf
     id: liquideye
   - code: 'https://github.com/donghoon-io/BlahBlahBot'
@@ -543,8 +541,7 @@ project:
       - AI-MC
       - iOS
     description: >-
-      Facilitating conversation between strangers using a chatbot with ML-infused
-      personalized topic suggestion
+      Conversational agent that facilitates conversation between strangers with ML-infused personalized topic suggestion
     paper: chi2021_blahblahbot_poster.pdf
     video: 'https://youtu.be/6UQi9gCgMjU'
     id: blahblahbot
