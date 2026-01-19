@@ -16,7 +16,7 @@ project:
     tags:
       - <i class='fas fa-book'></i>&nbsp; CHI '26
       - LLM
-      - Design
+      - Video
       - Translational science
     description: >-
       Generative AI tool that transforms HCI papers into short-form videos
