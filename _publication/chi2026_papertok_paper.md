@@ -28,5 +28,4 @@ category:
   - "Design"
 note: "conditionally accepted"
 featured: true
-pdf: false
 ---
