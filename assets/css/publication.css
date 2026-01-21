@@ -104,11 +104,13 @@
 }
 
 .publication-detail-image {
-  display: block !important;
-  width: 95% !important;
-  max-width: 500px !important;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  max-width: 95%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
 }
 .publication-detail-cofirst {
   font-size: .8rem;
