@@ -43,6 +43,9 @@ project:
       <p>This work was done during my internship at Adobe Research. (UIST '25 paper)</p>
       <img src='site.baseurl/assets/images/project_detail/postermate.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
       <p style='text-align: center; font-weight: 300;'>Keyscreen of PosterMate</p>
+      <p style='margin-top: 2rem;'>Later, my project was translated into an <a href="https://research.adobe.com/news/the-research-behind-project-get-savvy/">Adobe product</a></p>
+      <div class="video-wrapper"> <iframe src="https://www.youtube.com/embed/74ltnOqck5c?si=DOrVs-ZNl0gGNFpf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe> </div><style>.video-wrapper { max-width: 500px; margin-left: auto; margin-right: auto; } .video-wrapper iframe { width: 100%; height: auto; aspect-ratio: 16 / 9; }</style>
+
 
       <hr>
 
