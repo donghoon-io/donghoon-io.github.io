@@ -26,7 +26,6 @@ abstract: 'The dissemination of scholarly research is critical, yet researchers 
 category:
   - "AI / NLP"
   - "Design"
-note: "conditionally accepted"
 featured: true
 pdf: true
 ---
