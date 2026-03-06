@@ -1,4 +1,7 @@
 list: # format date as dd/mm/yyyy
+  - location: "Seoul, Korea 🇰🇷"
+    date: "10/03/2026"
+    detail: "<a href='https://en.sejong.ac.kr/eng/index.do'>Sejong University</a>"
   - location: "Remote 🇺🇸"
     date: "09/11/2025"
     detail: "<a href='https://www.microsoft.com/research/theme/fate/'>Microsoft Research - FATE</a>"
