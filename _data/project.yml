@@ -4,7 +4,7 @@ project:
     link: 'https://papertok.com'
     paper: chi2026_papertok_paper.pdf
     detail: >
-      <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically transforms design implications from HCI papers into short-form videos with generative AI. (CHI '26 paper, to appear)</p>
+      <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically transforms design implications from HCI papers into short-form videos with generative AI. (CHI '26 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/papertok.jpg' class='modal-image-responsive' alt='pipeline of our system'>
 
