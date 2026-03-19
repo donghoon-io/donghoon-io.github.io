@@ -5,6 +5,8 @@ people:
     image: donghoon.jpg
   - name: Gloria Guo
     affiliation: University of Washington
+    website: "https://bguoac.info"
+    image: gloria.jpg
   - name: Gary Hsieh
     affiliation: University of Washington
     website: "http://faculty.washington.edu/garyhs/"
