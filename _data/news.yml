@@ -1,4 +1,7 @@
 list: # format date as dd/mm/yyyy
+  - title: "One paper conditionally accepted to DIS 2026"
+    date: "18/03/2026"
+    description: "One paper on academic paper-assisted UI support has been conditionally accepted to <a href='https://dis2026.acm.org/'>DIS 2026</a>"
   - title: "One paper accepted to CHI 2026"
     date: "14/01/2026"
     description: "One paper on AI-assisted science communication has been accepted to <a href='https://chi2026.acm.org/'>CHI 2026</a>"
