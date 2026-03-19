@@ -23,10 +23,6 @@ project:
     image: "cpd.jpg"
     venue: CHI '24
     slug: chi2024_cpd-hcd_paper
-  - title: "PlanFitting"
-    image: "exercise.jpg"
-    venue: CUI '25
-    slug: cui2025_planfitting_paper
   - title: "IntroBot"
     image: "chatbot.jpg"
     venue: CHI '23
