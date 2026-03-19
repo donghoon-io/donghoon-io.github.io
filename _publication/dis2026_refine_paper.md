@@ -17,5 +17,4 @@ category:
   - "Design"
 featured: true
 note: "to appear"
-pdf: false
 ---

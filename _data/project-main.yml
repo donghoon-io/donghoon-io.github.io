@@ -1,4 +1,8 @@
 project:
+  - title: "ReFinE"
+    image: "refine.jpg"
+    venue: DIS '26
+    slug: dis2026_refine_paper
   - title: "PaperTok"
     image: "papertok.jpg"
     venue: CHI '26

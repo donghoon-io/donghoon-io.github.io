@@ -1,4 +1,26 @@
 project:
+  - title: ReFinE
+    image: refine.jpg
+    paper: dis2026_refine_paper.pdf
+    detail: >
+      <p>Working with <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a> and <a href='https://www.llwang.net/'>Lucy Lu Wang</a>, I built a Figma plugin that transforms academic insights from HCI papers into UI design iteration supports with generative AI. (DIS '26 paper, to appear)</p>
+
+      <img src='site.baseurl/assets/images/project_detail/refine.jpg' class='modal-image-responsive' alt='pipeline of our system'>
+
+      <p style='text-align: center; font-weight: 300;'>Pipeline of generating design insights using ReFinE</p>
+
+      <hr>
+
+      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
+    tags:
+      - <i class='fas fa-book'></i>&nbsp; DIS '26
+      - UI understanding
+      - LLM
+      - Translational science
+      - Design
+    description: >-
+      Leveraging academic insights to support UI design iteration
+    id: refine
   - title: PaperTok
     image: papertok.jpg
     link: 'https://papertok.com'
@@ -20,7 +42,7 @@ project:
       - Translational science
     description: >-
       Generative AI tool that transforms HCI papers into short-form videos
-    id: design_card
+    id: papertok
   - title: Internship at Google Research
     image: google.jpg
     detail: >
@@ -34,7 +56,7 @@ project:
       - LLM
     description: >-
       Enhancing the Use of LLMs
-    id: customized_design_card
+    id: google
   - title: PosterMate
     image: postermate.jpg
     paper: uist2025_postermate_paper.pdf
@@ -64,7 +86,7 @@ project:
     link: 'https://paper2card.com'
     paper: dis2025_paper2customization_paper.pdf
     detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (DIS '25 paper)</p>
+      <p>Working with <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (DIS '25 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/customized-design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
 
