@@ -104,7 +104,10 @@
 .home-flag {
   width: 20px;
   height: 20px;
-  margin: 0 3px 2px 1px;
+  padding-top: 2px;
+  margin: 0 3px 0 1px;
+  display: inline-block;
+  vertical-align: text-bottom;
 }
 
 .affiliation-logo {
@@ -115,4 +118,13 @@
 /* Restore full color on hover */
 a:hover .affiliation-logo {
   filter: brightness(1) contrast(1);
+}
+
+
+.home-title {
+  padding: 0.2rem 0;
+}
+
+:lang(ko) {
+  font-family: 'Noto Sans KR', sans-serif !important;
 }

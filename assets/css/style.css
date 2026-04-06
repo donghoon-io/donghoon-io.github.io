@@ -9,6 +9,7 @@
   --background-primary-color: #ffffff;
   --background-secondary-color: #ebebeb;
   --border-color: #999999;
+  --separator-color: #d6d6d6;
   --column-width: 42rem;
   --column-margin-top: 4rem;
 }
@@ -86,6 +87,8 @@ span {
 
 h4 {
   font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 
@@ -219,9 +222,21 @@ h4 {
 .footer-weather-icon {
   width: auto;
   height: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.footer-weather-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0rem;
+  flex-wrap: wrap;
 }
 
 hr {
-  color: var(--element-primary-color) !important;
-  background-color: var(--element-primary-color) !important; 
+  border: 0 !important;
+  border-top: 1px solid var(--separator-color) !important;
+  color: var(--separator-color) !important;
+  background-color: var(--separator-color) !important; 
 }

@@ -7,9 +7,9 @@ description: Curriculum vitae of Donghoon Shin
 
 {% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
 
-<div class="cv container py-4">
-    <div class="row">
-        <div class="col-12">
+<div class="cv px-3 py-4">
+    <div>
+        <div>
                 <header>
                   <h1>Donghoon Shin <a class="cv-pdf" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" rel="external"><i class="fas fa-file-pdf"></i> PDF</a></h1>
                   <p><a href="#" class="cryptedmail"
@@ -24,7 +24,7 @@ description: Curriculum vitae of Donghoon Shin
                       <div class="cv-dated-date">2022 -</div>
                       <div class="cv-dated-content"><b><a href="https://uw.edu">University of Washington</a></b>, Seattle, WA<br>
                       Ph.D., <a href="https://hcde.uw.edu">Human Centered Design and Engineering</a><br>
-                      M.S., <a class="pe-1" href="https://hcde.uw.edu">Human Centered Design and Engineering</a> <!--<small class="text-nowrap">(concurrent with Ph.D.)</small>!--><br>
+                      M.S., <a class="pr-1" href="https://hcde.uw.edu">Human Centered Design and Engineering</a> <!--<small class="text-nowrap">(concurrent with Ph.D.)</small>!--><br>
                       <!--<small>Advisor: <a href="https://faculty.washington.edu/garyhs/">Gary Hsieh</a> & <a href="https://www.llwang.net/">Lucy Lu Wang</a></small><br>!-->
                       <small>Honor: Korean Government Scholar for Overseas Studies</small><br>
                       </div>
@@ -91,10 +91,10 @@ description: Curriculum vitae of Donghoon Shin
                         {% for author in pub.authors %}
                         {% assign author_data = site.data.people.people | where:"name", author | first %}
                         {% if author == "Donghoon Shin" %}<a class="cv-author" href="https://donghoon.io">Donghoon Shin</a>{% if pub.coauthors contains author %}*{% endif %}{% else %}{% if pub.coauthors contains author %}{% if author_data.website %}<a href="{{ author_data.website }}" class="cv-author">{{ author }}</a>*{% else %}<span class="cv-author">{{ author }}</span>*{% endif %}{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="cv-coauthor">{{ author }}</a>{% else %}<span>{{ author }}</span>{% endif %}{% endif %}{% endif %}{% unless forloop.last%}, {% endunless %}
-                        {% endfor %}{% if pub.coauthors %}<span class="cv-note" class="ms-2">(* co-first authorship)</span>{% endif %}
+                        {% endfor %}{% if pub.coauthors %}<span class="cv-note ml-2">(* co-first authorship)</span>{% endif %}
                         <br>
                         {{ pub.venue }}.{% if pub.note %} <span class="cv-note">({{ pub.note}})</span>{% endif %}<br>
-                        {% if pub.award %}<span class="cv-award"><i class="fas fa-trophy me-1"></i>{{ pub.award }}</span><br>{% endif %}
+                        {% if pub.award %}<span class="cv-award"><i class="fas fa-trophy mr-1"></i>{{ pub.award }}</span><br>{% endif %}
                       </div>
                     </div>
                     {% endfor %}
@@ -107,7 +107,7 @@ description: Curriculum vitae of Donghoon Shin
                     <div class="cv-dated-content">
                       <b>Method and Apparatus for Mimicking Conversational Style</b><br>
                       <span class="cv-coauthor">Youjin Hwang</span>, <span class="cv-coauthor">Joonhwan Lee</span>, <a href="https://donghoon.io">Donghoon Shin</a><br>
-                      Republic of Korea Patent <span class="ms-1" style="font-weight: 200 !important">(10-2021-0032858)</span>
+                      Republic of Korea Patent <span class="ml-1" style="font-weight: 200 !important">(10-2021-0032858)</span>
                     </div>
                   </div>
                 </section>
@@ -308,10 +308,3 @@ description: Curriculum vitae of Donghoon Shin
         </div>
     </div>
 </div>
-
-<script>
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-  })
-</script>

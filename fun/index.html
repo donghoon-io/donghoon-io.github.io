@@ -4,22 +4,22 @@ title: Fun
 description: Some fun stuffs of Donghoon Shin
 ---
 
-<div class="container py-4">
+<div class="px-3 py-4">
     <p class="section-title">Fun</p>
-    <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-md-0 mb-3 ">
+    <div class="mt-10 grid grid-cols-1 gap-3 md:grid-cols-12 md:gap-6">
+        <div class="mb-3 md:col-span-4 md:mb-0">
             <p class="subsection-title">Flight log</p>
         </div>
-        <div class="col-12 col-md-8 mb-md-0 mb-3 align-self-center">
+        <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <div id="flight-map" style="width: 100%; height: auto;"></div>
-            <p id="mileage" class="text-end">Loading..</p>
+            <p id="mileage" class="text-right">Loading..</p>
         </div>
     </div>
-    <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-md-0 mb-3 ">
+    <div class="mt-10 grid grid-cols-1 gap-3 md:grid-cols-12 md:gap-6">
+        <div class="mb-3 md:col-span-4 md:mb-0">
             <p class="subsection-title">Friends of Donghoon</p>
         </div>
-        <div class="col-12 col-md-8 mb-md-0 mb-3 align-self-center">
+        <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <p>Research is a team sport, and I've been lucky to have an all-star team of friends and collaborators inspiring me along the way (some are now senior enough that "friend" feels too casual, but you get the idea).</p>
             <p>From SNU to UW, my work has been always built on their support, and I wanted to give a few special shout-outs:</p>
             <ul>
@@ -65,11 +65,11 @@ description: Some fun stuffs of Donghoon Shin
             </ul>
         </div>
     </div>
-    <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-md-0 mb-3 ">
+    <div class="mt-10 grid grid-cols-1 gap-3 md:grid-cols-12 md:gap-6">
+        <div class="mb-3 md:col-span-4 md:mb-0">
             <p class="subsection-title">Why monochrome?</p>
         </div>
-        <div class="col-12 col-md-8 mb-md-0 mb-3 align-self-center">
+        <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <p>Some of you may have noticed that my entire website, and most of my design work, is in grayscale. This isn't just a coincidence; even my wardrobe is surprisingly monochrome. It's intentional.</p>
             <p>That's because, one lesson I learned early on as an amateur designer is -- unless you're a genius with color, it's often better not to use it at all. Then my question gets:</p>
             <ul>
@@ -78,13 +78,13 @@ description: Some fun stuffs of Donghoon Shin
             </ul>
             
             <p>This is likely true for most people, and it can even reduce the time spent considering too many design factors -- especially for those with agile workflows, like system HCI researchers like myself. If that's the case, trust me -- simply keeping your design monochrome, ideally in black and white, can significantly improve its mood.</p>
-            <div class="d-flex flex-column align-items-center my-4">
+            <div class="my-4 flex flex-col items-center">
             <img src="{{ '/assets/images/misc/color_comparison.jpg' | relative_url }}" class="responsive-width mb-2">
             <p style="font-weight: 400; text-align: center;">Grayscale designs often achieve the same or better level of visual appeal as well-colored ones, with significantly less time and effort.</p>
             </div>
             <p>But what if you have to use color -- say, your branding requires it? In those cases, I usually limit the value (in HSV terms) to below 30%. In other words, I keep the colors as dark as possible. That way, I can stay true to the branding without sacrificing the sleek, minimal style.</p>
             <p>Still, I would try my best to stick with a fully grayscaled style; technically, that means setting saturation to 0% in HSV. This way, the focus stays on the content itself, not on potentially questionable color choices.</p>
-            <div class="d-flex flex-column align-items-center">
+            <div class="flex flex-col items-center">
             <img src="{{ '/assets/images/misc/color.jpg' | relative_url }}" class="responsive-width mb-2">
             <p style="font-weight: 400; text-align: center;">Donghoon's mental model</p>
             </div>

@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="container py-4">
-  <div class="row pb-3">
+<div class="px-3 py-4">
+  <div class="pb-3">
     <p class="publication-detail-title">{{ page.title }}</p>
     {% if page.note %}
     <p><span>{{ page.venue }}.</span> ({{ page.note }})</p>
@@ -10,16 +10,18 @@ layout: default
     <p>Published in {{ page.venue }}.</p>
     {% endif %}
     {% if page.award %}
-    <p><i class="fa-solid fa-medal me-2"></i>{{ page.award }}</p>
+    <p><i class="fa-solid fa-medal mr-2"></i>{{ page.award }}</p>
     {% endif %}
   </div>
-  <div class="row mb-5">
-    {% if page.coauthors %}<p class="publication-detail-cofirst">(* co-first authorship)</p>{% endif %}
+  {% if page.coauthors %}
+  <p class="publication-detail-cofirst publication-detail-authors-note">(* co-first authorship)</p>
+  {% endif %}
+  <div class="publication-detail-authors mb-8">
     {% for author in page.authors %}
     {% assign author_data = site.data.people.people | where:"name", author | first %}
     {% if author_data %}
-    <div class="col my-3">
-      <div class="row">
+    <div class="publication-detail-author-card">
+      <div>
         {% if author_data.website %}
         {% if author_data.image %}
         <a href="{{ author_data.website }}"><div class="publication-detail-author-image" style="{{ author_data.image | prepend: '/assets/images/author/' | relative_url | prepend: 'background-image: url(' | append: ')' }}"></div></a>
@@ -34,7 +36,7 @@ layout: default
         {% endif %}
         {% endif %}
       </div>
-      <div class="row mt-2">
+      <div class="mt-2">
         {% if author_data.website %}
         <a href="{{ author_data.website }}">
           <p class="publication-detail-author-name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
@@ -47,25 +49,25 @@ layout: default
       </div>
     </div>
     {% else %}
-    <div class="col my-3">
-      <div class="row">
+    <div class="publication-detail-author-card">
+      <div>
         <div class="publication-detail-author-image" style="{{ '/assets/images/author/default.jpg' | relative_url | prepend: 'background-image: url(' | append: ')' }}"></div>
       </div>
-      <div class="row mt-2">
+      <div class="mt-2">
         <p class="publication-detail-author-name">{{ author }}</p>
       </div>
     </div>
     {% endif %}
     {% endfor %}
   </div>
-  <div class="row mb-5">
+  <div class="mb-8">
     <img class="publication-detail-image" alt="Landscape" src="{{ page.slug | prepend: '/assets/images/publication/' | append: '.jpg' | relative_url }}"/>
   </div>
-  <div class="row mb-5">
+  <div class="mb-8">
     <p class="section-title">Abstract</p>
     <p>{{ page.abstract }}</p>
   </div>
-  <div class="row">
+  <div>
     <p class="section-title">Materials</p>
     <div class="publication-detail-metadata">
       {% if page.venue contains "arXiv" or page.note contains "to appear" %}{% unless page.pdf == false %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> Preprint</a> {% endunless %}{% else %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> PDF</a> {% endif %}
