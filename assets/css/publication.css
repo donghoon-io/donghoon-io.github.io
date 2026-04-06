@@ -1,16 +1,16 @@
 /* publication main */
 
 .publication-category {
-  font-size: .9rem !important;
+  font-size: .85rem !important;
   cursor: pointer;
 }
 .publication-year {
   font-weight: 400;
-  margin: 1.6rem 0 0.9rem 0 !important;
+  margin: 1.75rem 0 0.9rem 0 !important;
 }
 
 .publication-list {
-	padding-top: .5rem;
+	padding-top: .75rem;
 	display: block;
 	width: 100%;
 }
@@ -23,7 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem 1.3rem;
+  gap: 0.75rem 1rem;
 }
 
 .publication-filter-row .publication-tag-label:hover {
