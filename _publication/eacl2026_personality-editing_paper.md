@@ -3,6 +3,7 @@ layout: publication
 title: "Personality Editing for Language Models through Adjusting Self-Referential Queries"
 year: 2026
 month: 1
+publication_type: full-paper
 authors:
   - Seojin Hwang
   - Yumin Kim

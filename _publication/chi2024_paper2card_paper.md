@@ -3,6 +3,7 @@ layout: publication
 title: "From Paper to Card: Transforming Design Implications with Generative AI"
 year: 2024
 month: 5
+publication_type: full-paper
 authors:
   - Donghoon Shin
   - Lucy Lu Wang

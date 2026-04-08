@@ -3,6 +3,7 @@ layout: publication
 title: Linguistic Features to Consider When Applying Persona of the Real Persona to the Text-based Agent
 year: 2020
 month: 2
+publication_type: poster-workshop
 authors:
   - Youjin Hwang
   - Seokwoo Song

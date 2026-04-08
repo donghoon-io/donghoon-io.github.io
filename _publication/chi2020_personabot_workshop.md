@@ -3,6 +3,7 @@ layout: publication
 title: "Applying the Persona of User’s Family Member and the Doctor to the Conversational Agents for Healthcare"
 year: 2020
 month: 3
+publication_type: poster-workshop
 authors:
   - Youjin Hwang
   - Donghoon Shin

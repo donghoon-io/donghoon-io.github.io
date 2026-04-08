@@ -3,6 +3,7 @@ layout: publication
 title: "ImaginateAR: AI-Assisted In-Situ Authoring in Augmented Reality"
 year: 2025
 month: 7
+publication_type: full-paper
 authors:
   - Jaewook Lee
   - Filippo Aleotti

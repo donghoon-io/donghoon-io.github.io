@@ -3,6 +3,7 @@ layout: publication
 title: "PlanFitting: Personalized Exercise Planning with Large Language Model-driven Conversational Agent"
 year: 2025
 month: 4
+publication_type: full-paper
 authors:
   - Donghoon Shin
   - Gary Hsieh

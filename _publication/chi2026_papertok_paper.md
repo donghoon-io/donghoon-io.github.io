@@ -3,6 +3,7 @@ layout: publication
 title: "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication"
 year: 2026
 month: 4
+publication_type: full-paper
 authors:
   - Meziah Ruby Cristobal
   - Hyeonjeong Byeon

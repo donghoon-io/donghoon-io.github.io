@@ -3,6 +3,7 @@ layout: publication
 title: "DiaryMate: Understanding User Perceptions and Experience in Human-AI Collaboration for Personal Journaling"
 year: 2024
 month: 1
+publication_type: full-paper
 authors:
   - Taewan Kim
   - Donghoon Shin

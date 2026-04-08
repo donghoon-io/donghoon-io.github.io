@@ -3,6 +3,7 @@ layout: publication
 title: "AI-Assisted Causal Pathway Diagram for Human-Centered Design"
 year: 2024
 month: 2
+publication_type: full-paper
 authors:
   - Ruican Zhong
   - Donghoon Shin

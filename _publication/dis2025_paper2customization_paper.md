@@ -3,6 +3,7 @@ layout: publication
 title: "What About My Design Context?: Exploring the Use of Generative AI to Support Customization of Translational Research Artifacts"
 year: 2025
 month: 5
+publication_type: full-paper
 authors:
   - Donghoon Shin
   - Alex Chen

@@ -3,6 +3,7 @@ layout: publication
 title: "Genomic Data Processing with GenomeFlow"
 year: 2025
 month: 1
+publication_type: preprint
 authors:
   - Junseok Park
   - Eduardo A. Maury

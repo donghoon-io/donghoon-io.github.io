@@ -3,6 +3,7 @@ layout: publication
 title: "ThematicPlane: Bridging Tacit User Intent and Latent Spaces for Image Generation"
 year: 2025
 month: 6
+publication_type: poster-workshop
 authors:
   - Daniel Lee
   - Nikhil Sharma

@@ -3,6 +3,7 @@ layout: publication
 title: Leveraging AI to Assist Emotional Supports in Online Mental Health Community
 year: 2022
 month: 3
+publication_type: poster-workshop
 authors:
   - Donghoon Shin
   - Subeen Park

@@ -3,6 +3,7 @@ layout: publication
 title: "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Online Collaborative Groups"
 year: 2023
 month: 5
+publication_type: full-paper
 video: uJbHsyujau4
 slides: chi2023_introbot_slide.pdf
 authors:

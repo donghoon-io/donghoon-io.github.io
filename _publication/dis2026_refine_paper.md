@@ -3,6 +3,7 @@ layout: publication
 title: "ReFinE: Streamlining UI Mockup Iteration with Research Findings"
 year: 2026
 month: 6
+publication_type: full-paper
 authors:
   - Donghoon Shin
   - Gloria Guo

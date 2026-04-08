@@ -3,6 +3,7 @@ layout: publication
 title: "Interrogating Design Homogenization in Web Vibe Coding"
 year: 2026
 month: 5
+publication_type: preprint
 authors:
   - Donghoon Shin
   - Alice Gao

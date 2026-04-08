@@ -3,6 +3,7 @@ layout: publication
 title: "Trkic G00gle: Why and How Users Game Translation Algorithms"
 year: 2021
 month: 6
+publication_type: full-paper
 video: VVAQqC5tedQ
 authors:
   - Soomin Kim

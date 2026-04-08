@@ -3,6 +3,7 @@ layout: publication
 title: "How Older Adults Use Online Videos for Learning"
 year: 2023
 month: 4
+publication_type: full-paper
 video: L5HAVSJr0PM
 authors:
   - Seoyoung Kim
