@@ -125,6 +125,14 @@ a:hover .affiliation-logo {
   padding: 0.2rem 0;
 }
 
+.vertical-center p a,
+.home-project-link,
+.mb-5.mt-8.px-3 p a,
+.news-title a,
+.travel-title a {
+  font-weight: 400;
+}
+
 :lang(ko) {
   font-family: 'Noto Sans KR', sans-serif !important;
 }

@@ -13,10 +13,10 @@ description: Publication list of Donghoon Shin
     display: none !important;
   }
   {% for type in category.types %}
-  #publication-tag-{{ type | replace: ' / ', '' }}:checked ~ .publication-filter-row .publication-tag-label#publication-label-{{ type | replace: ' / ', '' }},
+  #publication-tag-{{ type | replace: ' / ', '' }}:checked ~ .publication-filter-row .publication-tag-label#publication-label-{{ type | replace: ' / ', '' }}::before,
   {% endfor %}
-  #publication-tag-all:checked ~ .publication-filter-row .publication-tag-label#publication-label-all {
-    text-decoration: underline;
+  #publication-tag-all:checked ~ .publication-filter-row .publication-tag-label#publication-label-all::before {
+    transform: scaleX(1);
   }
 
   {% for type in category.types %}

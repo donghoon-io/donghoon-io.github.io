@@ -3,6 +3,22 @@
 .publication-category {
   font-size: .85rem !important;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+.publication-category::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.14rem;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.22s ease;
 }
 .publication-year {
   font-weight: 400;
@@ -45,8 +61,8 @@
   letter-spacing: 0.01em;
 }
 
-.publication-filter-row .publication-tag-label:hover {
-  font-weight: 400 !important;
+.publication-filter-row .publication-tag-label:hover::before {
+  transform: scaleX(1);
 }
 
 #publications {

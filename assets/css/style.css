@@ -73,8 +73,9 @@ p:last-child {
 
 a {
   text-decoration: none !important;
-  font-weight: 400;
+  font-weight: inherit;
   color: var(--element-secondary-color) !important;
+  transition: font-weight 0.18s ease, color 0.18s ease;
 }
 
 a:hover {
@@ -191,7 +192,7 @@ h4 {
 }
 
 .nav-link:hover {
-  font-weight: 500 !important;
+  font-weight: 350 !important;
 }
 
 .navbar-nav>li {
@@ -209,7 +210,7 @@ h4 {
 }
 
 .active {
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 /* footer */
