@@ -1,7 +1,7 @@
 list: # format date as dd/mm/yyyy
   - title: "One paper conditionally accepted to DIS 2026"
     date: "18/03/2026"
-    description: "One paper on leveraging academic insights to support UI design iteration has been conditionally accepted to <a href='https://dis.acm.org/2026/'>DIS 2026</a> and featured in <a href='https://www.hcde.washington.edu/news/article/2026-03-31/hcde-impact-closing-research-practice-gap'>UW HCDE website</a>"
+    description: "One paper on leveraging academic insights to support UI design iteration has been conditionally accepted to <a href='https://dis.acm.org/2026/'>DIS 2026</a> and featured on the <a href='https://www.hcde.washington.edu/news/article/2026-03-31/hcde-impact-closing-research-practice-gap'>UW HCDE website</a>"
   - title: "One paper accepted to CHI 2026"
     date: "14/01/2026"
     description: "One paper on AI-assisted science communication has been accepted to <a href='https://chi2026.acm.org/'>CHI 2026</a>"

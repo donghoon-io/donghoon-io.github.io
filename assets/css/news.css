@@ -13,6 +13,14 @@
   margin-bottom: 0 !important;
 }
 
+.news-description a {
+  font-weight: 400 !important;
+}
+
+.news-description a:hover {
+  font-weight: 500 !important;
+}
+
 .travel-title {
   font-weight: 300 !important;
   font-size: .75rem !important
