@@ -9,6 +9,26 @@ document.addEventListener('DOMContentLoaded', function () {
 function initNavigation() {
   var navToggle = document.querySelector('[data-nav-toggle]');
   var navTarget = navToggle ? document.querySelector(navToggle.getAttribute('data-nav-target')) : null;
+  var mobileBreakpoint = 768;
+
+  function closeMobileNav() {
+    if (!navTarget || window.innerWidth >= mobileBreakpoint) {
+      return;
+    }
+
+    navTarget.classList.remove('show');
+    if (navToggle) {
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    document.querySelectorAll('.dropdown.is-open').forEach(function (dropdown) {
+      dropdown.classList.remove('is-open');
+      var toggle = dropdown.querySelector('[data-dropdown-toggle]');
+      if (toggle) {
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
   if (navToggle && navTarget) {
     navToggle.addEventListener('click', function () {
@@ -20,7 +40,7 @@ function initNavigation() {
   var dropdownToggles = document.querySelectorAll('[data-dropdown-toggle]');
   dropdownToggles.forEach(function (toggle) {
     toggle.addEventListener('click', function (event) {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= mobileBreakpoint) {
         return;
       }
 
@@ -44,7 +64,7 @@ function initNavigation() {
   });
 
   window.addEventListener('resize', function () {
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= mobileBreakpoint) {
       document.querySelectorAll('.dropdown.is-open').forEach(function (dropdown) {
         dropdown.classList.remove('is-open');
         var toggle = dropdown.querySelector('[data-dropdown-toggle]');
@@ -63,11 +83,8 @@ function initNavigation() {
   if (navTarget) {
     navTarget.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
-        if (window.innerWidth < 768 && !link.hasAttribute('data-dropdown-toggle')) {
-          navTarget.classList.remove('show');
-          if (navToggle) {
-            navToggle.setAttribute('aria-expanded', 'false');
-          }
+        if (!link.hasAttribute('data-dropdown-toggle')) {
+          closeMobileNav();
         }
       });
     });
