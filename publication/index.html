@@ -52,12 +52,6 @@ description: Publication list of Donghoon Shin
         {% endfor %}
       </div>
 
-      <div class="publication-type-legend" aria-label="Publication type legend">
-        <span class="publication-type-legend-item"><span class="publication-type-dot publication-type-full-paper" aria-hidden="true"></span>Full paper</span>
-        <span class="publication-type-legend-item"><span class="publication-type-dot publication-type-preprint" aria-hidden="true"></span>Preprint</span>
-        <span class="publication-type-legend-item"><span class="publication-type-dot publication-type-poster-workshop" aria-hidden="true"></span>Poster / workshop</span>
-      </div>
-
       <div class="mt-4" id="publications">
         {% for pub in publications %}
         <div class="mb-3 w-full {% unless forloop.first %}mt-5{% endunless %}">
@@ -68,7 +62,6 @@ description: Publication list of Donghoon Shin
         {% assign publication_type = paper.publication_type | default: "full-paper" %}
         <div class="publication-item w-full {% for cat_each in paper.category %}publication-tag-{{ cat_each | replace: ' / ', '' }} {% endfor %}">
           <p class="mb-1 publication-title-row">
-            <span class="publication-type-dot publication-type-{{ publication_type }}" aria-hidden="true" title="{{ publication_type | replace: '-', ' ' }}"></span>
             <a class="publication-title" href="{{ paper.slug | prepend: '/publication/' | relative_url }}">{{ paper.title }}</a>
           </p>
           <p class="mb-1 publication-author-list">
