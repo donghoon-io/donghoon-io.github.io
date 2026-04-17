@@ -6,7 +6,10 @@
 .cv-oneline-entries .cv-dated-entry { margin-bottom: 0; }
 
 .cv h2 { font-size: .9rem; margin-bottom: 0.75rem; margin-left: 6rem; text-transform: uppercase; font-weight: 500 !important; }
-.cv h3 { border-bottom: 1px solid var(--element-primary-color); font-size: .8rem; margin: 1rem 0 .5rem 6rem; font-weight: 400; }
+.cv h3 { display: inline-block; font-size: .8rem; margin: .5rem 0 .25rem 6rem; font-weight: 400; }
+.cv-section-heading { display: flex; align-items: baseline; justify-content: flex-start; gap: 1rem; margin-left: 6rem; margin-right: 0; }
+.cv-section-heading h3 { margin: .5rem 0 .25rem 0; }
+.cv-section-heading-note { font-size: .65rem; font-style: italic; font-weight: 250; white-space: nowrap; }
 .cv p { margin-bottom: 0.5rem; }
 .cv section { margin-bottom: 3rem; }
 
