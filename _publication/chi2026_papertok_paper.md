@@ -24,6 +24,7 @@ coauthors:
 venue: CHI 2026
 venue_full: "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems"
 abstract: 'The dissemination of scholarly research is critical, yet researchers often lack the time and skills to create engaging content for popular media such as short-form videos. To address this gap, we explore the use of generative AI to help researchers transform their academic papers into accessible video content. Informed by a formative study with science communicators and content creators (N=8), we designed PaperTok, an end-to-end system that automates the initial creative labor by generating script options and corresponding audiovisual content from a source paper. Researchers can then refine based on their preferences with further prompting. A mixed-methods user study (N=18) and crowdsourced evaluation (N=100) demonstrate that PaperTok’s workflow can help researchers create engaging and informative short-form videos. We also identified the need for more fine-grained controls in the creation process. To this end, we offer implications for future generative tools that support science outreach.'
+demo: "https://papertok.com/"
 category:
   - "AI / NLP"
   - "Design"
