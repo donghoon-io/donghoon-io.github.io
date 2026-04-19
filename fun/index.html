@@ -12,6 +12,16 @@ description: Some fun stuffs of Donghoon Shin
         </div>
         <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <div id="flight-map" style="width: 100%; height: auto;"></div>
+            <div class="flight-timeline">
+                <div class="flight-slider-wrap">
+                    <span id="flight-timeline-start" class="flight-timeline-edge">Sep 2022</span>
+                    <div class="flight-slider-track">
+                        <div id="flight-slider-selected" class="flight-slider-selected">Dec 2025</div>
+                        <input id="flight-slider" class="flight-slider" type="range">
+                    </div>
+                    <span id="flight-timeline-end" class="flight-timeline-edge">Now</span>
+                </div>
+            </div>
             <p id="mileage" class="text-right">Loading..</p>
         </div>
     </div>
@@ -22,7 +32,7 @@ description: Some fun stuffs of Donghoon Shin
         <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <p>Research is a team sport, and I've been lucky to have an all-star team of friends and collaborators inspiring me along the way (some are now senior enough that "friend" feels too casual, but you get the idea).</p>
             <p>From SNU to UW, my work has been always built on their support, and I wanted to give a few special shout-outs:</p>
-            <ul>
+            <ul class="fun-list">
                 <li>
                     <p><a href="https://jaewook-lee.com/">Jaewook Lee</a> (PhD student @ UW)</p>
                 </li>
@@ -72,8 +82,8 @@ description: Some fun stuffs of Donghoon Shin
         <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <p>Some of you may have noticed that my entire website, and most of my design work, is in grayscale. This isn't just a coincidence; even my wardrobe is surprisingly monochrome. It's intentional.</p>
             <p>That's because, one lesson I learned early on as an amateur designer is -- unless you're a genius with color, it's often better not to use it at all. Then my question gets:</p>
-            <ul>
-                <li><p>Am I skilled enough to impress my audience solely with color? Probably not.</li>
+            <ul class="fun-list">
+                <li><p>Am I skilled enough to impress my audience solely with color? Probably not.</p></li>
                 <li><p>Am I skilled enough to ensure my design won't introduce any additional redundancies? Probably yes.</p></li>
             </ul>
             
@@ -96,67 +106,83 @@ description: Some fun stuffs of Donghoon Shin
 
 <script>
     const flights = [
-        { from: "ICN", to: "SFO" },
-        { from: "SFO", to: "MYR" },
-        { from: "MYR", to: "DFW" },
-        { from: "DFW", to: "ICN" },
-        { from: "ICN", to: "SEA" },
-        { from: "SEA", to: "FRA" },
-        { from: "HAM", to: "LIN" },
-        { from: "LIN", to: "FRA" },
-        { from: "FRA", to: "SEA" },
-        { from: "SEA", to: "ICN" },
-        { from: "ICN", to: "PUS" },
-        { from: "ICN", to: "KIX" },
-        { from: "KIX", to: "ICN" },
-        { from: "ICN", to: "SEA" },
-        { from: "SEA", to: "HND" },
-        { from: "NRT", to: "PUS" },
-        { from: "ICN", to: "NRT" },
-        { from: "HND", to: "SEA" },
-        { from: "SEA", to: "YVR" },
-        { from: "YVR", to: "SEA" },
-        { from: "SEA", to: "HNL" },
-        { from: "HNL", to: "NRT" },
-        { from: "NRT", to: "PUS" },
-        { from: "PUS", to: "GMP" },
-        { from: "ICN", to: "SFO" },
-        { from: "SFO", to: "SEA" },
-        { from: "SEA", to: "SJC" },
-        { from: "SJC", to: "SEA" },
-        { from: "SEA", to: "ICN" },
-        { from: "ICN", to: "SEA" },
-        { from: "SEA", to: "ICN" },
-        { from: "ICN", to: "SEA" },
-        { from: "SEA", to: "ICN" },
-        { from: "ICN", to: "HNL" },
-        { from: "HNL", to: "SEA" },
-        { from: "SEA", to: "SJC" },
-        { from: "SJC", to: "SEA" },
-        { from: "SEA", to: "NRT" },
-        { from: "HND", to: "GMP" },
-        { from: "GMP", to: "PUS" },
-        { from: "PUS", to: "NRT" },
-        { from: "NRT", to: "SEA" },
-        { from: "SEA", to: "JFK" },
-        { from: "EWR", to: "ORY" },
-        { from: "CDG", to: "FNC" },
-        { from: "FNC", to: "PDL" },
-        { from: "PDL", to: "YYZ" },
-        { from: "YYZ", to: "JFK" },
-        { from: "EWR", to: "ICN" },
-        { from: "ICN", to: "SEA" },
-        { from: "SEA", to: "HNL" },
-        { from: "HNL", to: "SEA" },
-        { from: "SEA", to: "EWR" },
-        { from: "EWR", to: "ICN" },
-        { from: "ICN", to: "SEA" },
-    ];
+        { from: "ICN", to: "SFO", date: "2022-09-08" },
+        { from: "SFO", to: "MYR", date: "2022-09-29" },
+        { from: "MYR", to: "DFW", date: "2022-10-20" },
+        { from: "DFW", to: "ICN", date: "2022-11-10" },
+        { from: "ICN", to: "SEA", date: "2022-12-01" },
+        { from: "SEA", to: "FRA", date: "2022-12-22" },
+        { from: "HAM", to: "LIN", date: "2023-01-12" },
+        { from: "LIN", to: "FRA", date: "2023-02-02" },
+        { from: "FRA", to: "SEA", date: "2023-02-23" },
+        { from: "SEA", to: "ICN", date: "2023-03-16" },
+        { from: "ICN", to: "PUS", date: "2023-04-06" },
+        { from: "ICN", to: "KIX", date: "2023-04-27" },
+        { from: "KIX", to: "ICN", date: "2023-05-18" },
+        { from: "ICN", to: "SEA", date: "2023-06-08" },
+        { from: "SEA", to: "HND", date: "2023-06-29" },
+        { from: "NRT", to: "PUS", date: "2023-07-20" },
+        { from: "ICN", to: "NRT", date: "2023-08-10" },
+        { from: "HND", to: "SEA", date: "2023-08-31" },
+        { from: "SEA", to: "YVR", date: "2023-09-21" },
+        { from: "YVR", to: "SEA", date: "2023-10-12" },
+        { from: "SEA", to: "HNL", date: "2023-11-02" },
+        { from: "HNL", to: "NRT", date: "2023-11-23" },
+        { from: "NRT", to: "PUS", date: "2023-12-14" },
+        { from: "PUS", to: "GMP", date: "2024-01-04" },
+        { from: "ICN", to: "SFO", date: "2024-01-25" },
+        { from: "SFO", to: "SEA", date: "2024-02-15" },
+        { from: "SEA", to: "SJC", date: "2024-03-07" },
+        { from: "SJC", to: "SEA", date: "2024-03-28" },
+        { from: "SEA", to: "ICN", date: "2024-04-18" },
+        { from: "ICN", to: "SEA", date: "2024-05-09" },
+        { from: "SEA", to: "ICN", date: "2024-05-30" },
+        { from: "ICN", to: "SEA", date: "2024-06-20" },
+        { from: "SEA", to: "ICN", date: "2024-07-11" },
+        { from: "ICN", to: "HNL", date: "2024-08-01" },
+        { from: "HNL", to: "SEA", date: "2024-08-22" },
+        { from: "SEA", to: "SJC", date: "2024-09-12" },
+        { from: "SJC", to: "SEA", date: "2024-10-03" },
+        { from: "SEA", to: "NRT", date: "2024-10-24" },
+        { from: "HND", to: "GMP", date: "2024-11-14" },
+        { from: "GMP", to: "PUS", date: "2024-12-05" },
+        { from: "PUS", to: "NRT", date: "2024-12-26" },
+        { from: "NRT", to: "SEA", date: "2025-01-16" },
+        { from: "SEA", to: "JFK", date: "2025-02-06" },
+        { from: "EWR", to: "ORY", date: "2025-02-27" },
+        { from: "CDG", to: "FNC", date: "2025-03-20" },
+        { from: "FNC", to: "PDL", date: "2025-04-10" },
+        { from: "PDL", to: "YYZ", date: "2025-05-01" },
+        { from: "YYZ", to: "JFK", date: "2025-05-22" },
+        { from: "EWR", to: "ICN", date: "2025-06-12" },
+        { from: "ICN", to: "SEA", date: "2025-07-03" },
+        { from: "SEA", to: "HNL", date: "2025-07-24" },
+        { from: "HNL", to: "SEA", date: "2025-08-14" },
+        { from: "SEA", to: "EWR", date: "2025-09-04" },
+        { from: "EWR", to: "ICN", date: "2025-09-25" },
+        { from: "ICN", to: "SEA", date: "2025-10-16" },
+        { from: "SEA", to: "EWR", date: "2025-11-06" },
+        { from: "EWR", to: "SEA", date: "2025-11-27" },
+    ].map(flight => ({
+        ...flight,
+        parsedDate: new Date(`${flight.date}T12:00:00`)
+    }));
 
     const csvURL = "https://raw.githubusercontent.com/lxndrblz/Airports/main/airports.csv";
     const container = d3.select("#flight-map");
+    const slider = d3.select("#flight-slider");
+    const sliderSelected = d3.select("#flight-slider-selected");
+    const timelineStartLabel = d3.select("#flight-timeline-start");
+    const timelineEnd = d3.select("#flight-timeline-end");
     const aspectRatio = 1.7;
-    let svg, projection, path;
+    const timelineStart = new Date("2022-09-01T12:00:00");
+    const timelineEndDate = new Date();
+    const millisPerDay = 24 * 60 * 60 * 1000;
+    const sliderMax = Math.max(0, Math.floor((timelineEndDate - timelineStart) / millisPerDay));
+    const routeAnimationMs = 800;
+    const sliderThumbSize = 20;
+    let svg, projection, path, coordLookup = {}, labelLayer, routeLayer;
+    let cachedWorld = null;
 
     function haversineDistance(coord1, coord2) {
         const toRad = d => d * Math.PI / 180;
@@ -172,7 +198,178 @@ description: Some fun stuffs of Donghoon Shin
         return R * c * 1.025;
     }
 
-    function renderMap(coordMap) {
+    function formatTimelineDate(date) {
+        return date.toLocaleDateString("en-US", {
+            month: "short",
+            year: "numeric"
+        });
+    }
+
+    function sliderValueToDate(value) {
+        return new Date(timelineStart.getTime() + Number(value) * millisPerDay);
+    }
+
+    function routeKey(from, to) {
+        return [from, to].sort().join("-");
+    }
+
+    function updateSelectedDateBubble(selectedDate) {
+        const min = Number(slider.attr("min")) || 0;
+        const max = Number(slider.attr("max")) || 1;
+        const value = Number(slider.property("value")) || 0;
+        const percent = max === min ? 0 : (value - min) / (max - min);
+        const sliderWidth = slider.node().offsetWidth || 0;
+        const leftPx = sliderWidth <= sliderThumbSize
+            ? sliderWidth / 2
+            : percent * (sliderWidth - sliderThumbSize) + sliderThumbSize / 2;
+
+        sliderSelected
+            .text(formatTimelineDate(selectedDate))
+            .style("left", `${leftPx}px`);
+
+        slider.style("--flight-slider-progress", `${(percent * 100).toFixed(3)}%`);
+    }
+
+    function buildArcPath(d) {
+        const from = projection(coordLookup[d.from]);
+        const to = projection(coordLookup[d.to]);
+
+        if (!from || !to) return null;
+
+        const dx = to[0] - from[0];
+        const dy = to[1] - from[1];
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        const curvature = Math.min(50, distance / 4);
+        const mid = [(from[0] + to[0]) / 2, (from[1] + to[1]) / 2 - curvature];
+
+        return d3.line().curve(d3.curveBasis)([from, mid, to]);
+    }
+
+    function updateRouteVisibility(selectedDate) {
+        if (!routeLayer || !labelLayer) return;
+
+        const visibleFlights = flights.filter(flight => flight.parsedDate <= selectedDate);
+        const routeCount = {};
+        let totalMiles = 0;
+
+        for (const flight of visibleFlights) {
+            const key = routeKey(flight.from, flight.to);
+            routeCount[key] = (routeCount[key] || 0) + 1;
+
+            if (coordLookup[flight.from] && coordLookup[flight.to]) {
+                totalMiles += haversineDistance(coordLookup[flight.from], coordLookup[flight.to]);
+            }
+        }
+
+        const routes = routeLayer
+            .selectAll("path")
+            .data(visibleFlights, flight => `${flight.from}-${flight.to}-${flight.date}`);
+
+        routes.exit()
+            .interrupt()
+            .transition()
+            .duration(250)
+            .style("opacity", 0)
+            .remove();
+
+        const enteringRoutes = routes.enter()
+            .append("path")
+            .attr("fill", "none")
+            .attr("stroke", "#999")
+            .attr("stroke-linecap", "round")
+            .style("opacity", 0);
+
+        enteringRoutes.merge(routes)
+            .attr("stroke-width", d => 0.5 * Math.sqrt(routeCount[routeKey(d.from, d.to)] || 1))
+            .attr("d", buildArcPath);
+
+        enteringRoutes.each(function () {
+            const length = this.getTotalLength();
+            d3.select(this)
+                .attr("stroke-dasharray", `${length} ${length}`)
+                .attr("stroke-dashoffset", length)
+                .style("opacity", 1)
+                .transition()
+                .duration(routeAnimationMs)
+                .ease(d3.easeCubicOut)
+                .attr("stroke-dashoffset", 0);
+        });
+
+        routes
+            .style("opacity", 1)
+            .attr("stroke-dasharray", null)
+            .attr("stroke-dashoffset", null);
+
+        d3.select("#mileage")
+            .html(`Flights by ${formatTimelineDate(selectedDate)}: ${visibleFlights.length}<br/>Total miles flown: ${Math.round(totalMiles).toLocaleString()} mi (${Math.round(totalMiles / 2389)}% of the 🌎 ↔ 🌕 distance)`);
+
+        const airports = [...new Set(visibleFlights.flatMap(f => [f.from, f.to]))];
+        const latestFlight = visibleFlights[visibleFlights.length - 1];
+        const latestAirportCode = latestFlight ? latestFlight.to : null;
+        const labels = airports
+            .filter(code => coordLookup[code])
+            .map(code => ({
+                code,
+                isLatest: code === latestAirportCode,
+                x: projection(coordLookup[code])[0],
+                y: projection(coordLookup[code])[1],
+            }));
+
+        for (let i = 0; i < labels.length; i++) {
+            for (let j = i + 1; j < labels.length; j++) {
+                const a = labels[i];
+                const b = labels[j];
+                const dx = b.x - a.x;
+                const dy = b.y - a.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 15) {
+                    const angle = Math.atan2(dy, dx);
+                    const shift = 7;
+                    a.x -= shift * Math.cos(angle);
+                    a.y -= shift * Math.sin(angle);
+                    b.x += shift * Math.cos(angle);
+                    b.y += shift * Math.sin(angle);
+                }
+            }
+        }
+
+        labelLayer
+            .selectAll("text")
+            .data(labels, d => d.code)
+            .join(
+                enter => enter.append("text")
+                    .attr("x", d => d.x)
+                    .attr("y", d => d.y)
+                    .attr("dy", "-0.35em")
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", d => d.isLatest ? 11 : 10)
+                    .attr("font-weight", d => d.isLatest ? 600 : 350)
+                    .attr("fill", d => d.isLatest ? "#111111" : "#666")
+                    .style("opacity", 0)
+                    .text(d => d.code)
+                    .transition()
+                    .duration(250)
+                    .style("opacity", 1),
+                update => update
+                    .transition()
+                    .duration(250)
+                    .attr("x", d => d.x)
+                    .attr("y", d => d.y)
+                    .attr("font-size", d => d.isLatest ? 11 : 10)
+                    .attr("font-weight", d => d.isLatest ? 600 : 350)
+                    .attr("fill", d => d.isLatest ? "#111111" : "#666")
+                    .style("opacity", 1),
+                exit => exit
+                    .transition()
+                    .duration(200)
+                    .style("opacity", 0)
+                    .remove()
+            );
+
+        updateSelectedDateBubble(selectedDate);
+    }
+
+    function renderMap() {
         container.selectAll("svg").remove();
 
         const width = container.node().clientWidth;
@@ -191,117 +388,52 @@ description: Some fun stuffs of Donghoon Shin
 
         path = d3.geoPath().projection(projection);
 
-        Promise.all([
-            d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json"),
-        ]).then(([world]) => {
-            const countries = topojson.feature(world, world.objects.countries);
-            countries.features = countries.features.filter(d => d.id !== "010");
+        const countries = topojson.feature(cachedWorld, cachedWorld.objects.countries);
+        countries.features = countries.features.filter(d => d.id !== "010");
 
-            svg.append("g")
-                .selectAll("path")
-                .data(countries.features)
-                .join("path")
-                .attr("fill", "#d1d1d1")
-                .attr("stroke", "#ffffff")
-                //.attr("stroke", window.matchMedia('(prefers-color-scheme: dark)').matches ? "#101218" : "#ffffff")
-                .attr("d", path);
+        svg.append("g")
+            .selectAll("path")
+            .data(countries.features)
+            .join("path")
+            .attr("fill", "#d1d1d1")
+            .attr("stroke", "#ffffff")
+            .attr("d", path);
 
-            const routeCount = {};
-            for (const f of flights) {
-                const key = [f.from, f.to].sort().join("-");
-                routeCount[key] = (routeCount[key] || 0) + 1;
-            }
+        routeLayer = svg.append("g");
+        labelLayer = svg.append("g");
 
-            let totalMiles = 0;
-
-            svg.append("g")
-                .selectAll("path")
-                .data(flights)
-                .join("path")
-                .attr("fill", "none")
-                .attr("stroke", "#999")
-                .attr("stroke-width", d => {
-                    const key = [d.from, d.to].sort().join("-");
-                    return 0.5 * Math.sqrt(routeCount[key]);
-                })
-                .attr("d", d => {
-                    const from = projection(coordMap[d.from]);
-                    const to = projection(coordMap[d.to]);
-                    const fromGeo = coordMap[d.from];
-                    const toGeo = coordMap[d.to];
-
-                    if (!from || !to) return null;
-                    if (fromGeo && toGeo) {
-                        totalMiles += haversineDistance(fromGeo, toGeo);
-                    }
-
-                    const dx = to[0] - from[0];
-                    const dy = to[1] - from[1];
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-                    const curvature = Math.min(50, distance / 4);
-                    const mid = [(from[0] + to[0]) / 2, (from[1] + to[1]) / 2 - curvature];
-
-                    return d3.line().curve(d3.curveBasis)([from, mid, to]);
-                });
-
-            // Update mileage text
-            d3.select("#mileage")
-              .html(`Total flights taken: ${flights.length}<br/>Total miles flown: ${Math.round(totalMiles).toLocaleString()} mi (${Math.round(totalMiles/2389)}% of the 🌎 ↔ 🌕 distance)`);
-
-            // Draw airport codes
-            const airports = [...new Set(flights.flatMap(f => [f.from, f.to]))];
-            const labels = airports.map(code => ({
-                code,
-                coord: coordMap[code],
-                x: projection(coordMap[code])[0],
-                y: projection(coordMap[code])[1],
-            }));
-
-            for (let i = 0; i < labels.length; i++) {
-                for (let j = i + 1; j < labels.length; j++) {
-                    const a = labels[i];
-                    const b = labels[j];
-                    const dx = b.x - a.x;
-                    const dy = b.y - a.y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 15) {
-                        const angle = Math.atan2(dy, dx);
-                        const shift = 7;
-                        a.x -= shift * Math.cos(angle);
-                        a.y -= shift * Math.sin(angle);
-                        b.x += shift * Math.cos(angle);
-                        b.y += shift * Math.sin(angle);
-                    }
-                }
-            }
-
-            svg.append("g")
-                .selectAll("text")
-                .data(labels)
-                .join("text")
-                .attr("x", d => d.x)
-                .attr("y", d => d.y)
-                .attr("dy", "-0.35em")
-                .attr("text-anchor", "middle")
-                .attr("font-size", 10)
-                .attr("fill", "#666")
-                .text(d => d.code);
-        });
+        updateRouteVisibility(sliderValueToDate(slider.property("value")));
     }
 
     d3.csv(csvURL).then(data => {
-        const coordMap = {};
         for (const row of data) {
             const code = row.code;
             const lat = parseFloat(row.latitude);
             const lon = parseFloat(row.longitude);
             if (code && !isNaN(lat) && !isNaN(lon)) {
-                coordMap[code] = [lon, lat];
+                coordLookup[code] = [lon, lat];
             }
         }
 
-        renderMap(coordMap);
-        window.addEventListener("resize", () => renderMap(coordMap));
+        slider
+            .attr("min", 0)
+            .attr("max", sliderMax)
+            .attr("step", 1)
+            .property("value", sliderMax);
+
+        timelineStartLabel.text(formatTimelineDate(timelineStart));
+        timelineEnd.text(formatTimelineDate(timelineEndDate));
+        updateSelectedDateBubble(timelineEndDate);
+
+        slider.on("input", function () {
+            updateRouteVisibility(sliderValueToDate(this.value));
+        });
+
+        d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json").then(world => {
+            cachedWorld = world;
+            renderMap();
+            window.addEventListener("resize", () => renderMap());
+        });
     });
 </script>
 
@@ -315,7 +447,125 @@ description: Some fun stuffs of Donghoon Shin
             width: 40%;
         }
     }
-    ul > li {
+    .fun-list {
+        list-style: disc;
+        padding-left: 1.25rem;
+        margin: 0;
+    }
+
+    .fun-list > li {
         margin-bottom: 5px;
+    }
+
+    .fun-list p {
+        margin-bottom: 0 !important;
+    }
+
+    .fun-list a {
+        font-weight: 400 !important;
+        color: var(--element-primary-color) !important;
+    }
+
+    .fun-list a:hover {
+        font-weight: 500 !important;
+    }
+
+    .flight-timeline {
+        margin-top: 0;
+        margin-bottom: 1.1rem;
+    }
+
+    .flight-slider-wrap {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: end;
+        column-gap: 0.9rem;
+    }
+
+    .flight-timeline-edge {
+        font-size: 0.72rem;
+        color: var(--element-secondary-color);
+        white-space: nowrap;
+        align-self: end;
+        padding-bottom: 0.15rem;
+    }
+
+    .flight-slider-track {
+        position: relative;
+        padding-top: 1.6rem;
+    }
+
+    .flight-slider-selected {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.72rem;
+        font-weight: 450;
+        color: var(--element-primary-color);
+        white-space: nowrap;
+        pointer-events: none;
+    }
+
+    .flight-slider {
+        width: 100%;
+        appearance: none;
+        -webkit-appearance: none;
+        height: 6px;
+        border-radius: 999px;
+        --flight-slider-progress: 100%;
+        background: linear-gradient(
+            to right,
+            #6e6e6e 0%,
+            #4d4d4d var(--flight-slider-progress),
+            #efefef var(--flight-slider-progress),
+            #efefef 100%
+        );
+        outline: none;
+        cursor: pointer;
+    }
+
+    .flight-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #111111;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 11px 11px;
+        border: 3px solid #ffffff;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.16), 0 4px 10px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        transition: transform 0.16s ease, box-shadow 0.16s ease;
+        transform: rotate(90deg);
+    }
+
+    .flight-slider::-moz-range-thumb {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #111111;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 11px 11px;
+        border: 3px solid #ffffff;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.16), 0 4px 10px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        transition: transform 0.16s ease, box-shadow 0.16s ease;
+        transform: rotate(90deg);
+    }
+
+    .flight-slider:hover::-webkit-slider-thumb {
+        transform: rotate(90deg) scale(1.12);
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.18), 0 6px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .flight-slider:hover::-moz-range-thumb {
+        transform: rotate(90deg) scale(1.12);
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.18), 0 6px 14px rgba(0, 0, 0, 0.2);
     }
 </style>
