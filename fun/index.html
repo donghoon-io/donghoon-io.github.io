@@ -301,7 +301,7 @@ description: Some fun stuffs of Donghoon Shin
             .attr("stroke-dashoffset", null);
 
         d3.select("#mileage")
-            .html(`Flights by ${formatTimelineDate(selectedDate)}: ${visibleFlights.length}<br/>Total miles flown: ${Math.round(totalMiles).toLocaleString()} mi (${Math.round(totalMiles / 2389)}% of the 🌎 ↔ 🌕 distance)`);
+            .html(`Flights by ${formatTimelineDate(selectedDate)}: ${visibleFlights.length}<br/>Total miles: ${Math.round(totalMiles).toLocaleString()} mi (${Math.round(totalMiles / 2389)}% of the 🌎 ↔ 🌕 distance)`);
 
         const airports = [...new Set(visibleFlights.flatMap(f => [f.from, f.to]))];
         const latestFlight = visibleFlights[visibleFlights.length - 1];
