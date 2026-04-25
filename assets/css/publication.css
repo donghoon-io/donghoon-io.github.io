@@ -19,7 +19,8 @@
 
 .publication-year-link {
   color: rgb(120 114 107);
-  font-weight: 350;
+  font-weight: 300;
+  font-size: .8rem !important;
 }
 
 .publication-year-link:hover {
@@ -28,7 +29,7 @@
 
 .publication-year-link.is-active {
   color: rgb(44 41 37);
-  font-weight: 650;
+  font-weight: 500;
 }
 
 .publication-list {
@@ -103,7 +104,8 @@
 
 .publication-title {
   font-weight: 400 !important;
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
+  line-height: 1.1 !important;
   font-family: 'Newsreader';
 }
 
@@ -140,6 +142,7 @@
 
 .publication-author-list {
   font-weight: 200 !important;
+  font-size: .8rem !important;
   margin-bottom: 0.3rem !important;
 }
 
@@ -166,12 +169,12 @@
 
 .publication-venue {
   font-weight: 400 !important;
-  font-size: .75rem !important;
+  font-size: .7rem !important;
   color: rgb(90 86 82) !important;
   letter-spacing: 0.05em;
 }
 .publication-metadata {
-  font-size: .85rem;
+  font-size: .75rem;
   font-weight: 200 !important;
   margin-top: 0.2rem !important;
 }
