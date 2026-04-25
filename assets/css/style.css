@@ -138,10 +138,13 @@ h4 {
   }
 
   footer {
+    padding: 2rem 0 3rem 0 !important;
+  }
+  .footer-container {
     max-width: 1200px !important;
-    padding: 2rem 0 5rem 0 !important;
     margin-left: auto;
     margin-right: auto;
+    
   }
 }
 

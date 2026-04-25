@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initNavigation();
   initModals();
   initProjectGridEffects();
+  initPublicationYearNav();
 });
 
 function initNavigation() {
@@ -198,4 +199,45 @@ function initProjectGridEffects() {
     }
     return 'xs';
   }
+}
+
+function initPublicationYearNav() {
+  var yearLinks = Array.prototype.slice.call(document.querySelectorAll('[data-year-link]'));
+  var yearSections = Array.prototype.slice.call(document.querySelectorAll('[data-publication-year]'));
+
+  if (!yearLinks.length || !yearSections.length) {
+    return;
+  }
+
+  function setActiveYear(year) {
+    yearLinks.forEach(function (link) {
+      var isActive = link.getAttribute('data-year-link') === year;
+      link.classList.toggle('is-active', isActive);
+      link.setAttribute('aria-current', isActive ? 'true' : 'false');
+    });
+  }
+
+  function updateActiveYear() {
+    var activeYear = yearSections[0].getAttribute('data-publication-year');
+    var threshold = window.innerHeight * 0.3;
+
+    yearSections.forEach(function (section) {
+      var rect = section.getBoundingClientRect();
+      if (rect.top <= threshold) {
+        activeYear = section.getAttribute('data-publication-year');
+      }
+    });
+
+    setActiveYear(activeYear);
+  }
+
+  yearLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      setActiveYear(link.getAttribute('data-year-link'));
+    });
+  });
+
+  updateActiveYear();
+  window.addEventListener('scroll', updateActiveYear, { passive: true });
+  window.addEventListener('resize', updateActiveYear);
 }

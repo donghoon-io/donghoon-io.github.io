@@ -38,7 +38,7 @@
 .project-item-container {
   border: 1px solid rgb(138 133 12 / 0.1) !important;
   cursor: pointer;
-  background-color: rgb(242 235 225);
+  background-color: rgb(239 234 224);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -193,12 +193,11 @@
 
 .modal-content {
   position: relative;
-  border-radius: 0.6rem !important;
   /*background-color: var(--background-secondary-color) !important;*/
-  background-color: white !important;
+  background-color: var(--background-primary-color) !important;
+  border: 1px solid #e5e7eb;
   overflow: hidden;
 }
-
 .modal-header > div {
   flex: 1 1 auto;
   min-width: 0;

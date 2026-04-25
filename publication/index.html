@@ -13,10 +13,12 @@ description: Publication list of Donghoon Shin
     display: none !important;
   }
   {% for type in category.types %}
-  #publication-tag-{{ type | replace: ' / ', '' }}:checked ~ .publication-filter-row .publication-tag-label#publication-label-{{ type | replace: ' / ', '' }}::before,
+  #publication-tag-{{ type | replace: ' / ', '' }}:checked ~ .publication-filter-row .publication-tag-label#publication-label-{{ type | replace: ' / ', '' }},
   {% endfor %}
-  #publication-tag-all:checked ~ .publication-filter-row .publication-tag-label#publication-label-all::before {
-    transform: scaleX(1);
+  #publication-tag-all:checked ~ .publication-filter-row .publication-tag-label#publication-label-all {
+    background-color: rgba(255, 255, 255, 0.96);
+    border-color: rgba(44, 41, 37, 0.18);
+    color: rgb(44, 41, 37);
   }
 
   {% for type in category.types %}
@@ -41,14 +43,14 @@ description: Publication list of Donghoon Shin
   </div>
   <div class="flex gap-16 mt-4 pb-12 flex-col md:flex-row">
     <aside class="w-32 shrink-0 relative hidden md:block">
-        <div class="sticky top-12 border-l border-ink-400/30 pl-5 flex flex-col gap-4">
-            <a href="#2026" class="text-ink-900 font-semibold text-sm transition-colors">2026</a>
-            <a href="#2025" class="text-ink-400 hover:text-ink-900 text-sm transition-colors">2025</a>
-            <a href="#2024" class="text-ink-400 hover:text-ink-900 text-sm transition-colors">2024</a>
-            <a href="#2023" class="text-ink-400 hover:text-ink-900 text-sm transition-colors">2023</a>
-            <a href="#2022" class="text-ink-400 hover:text-ink-900 text-sm transition-colors">2022</a>
-            <a href="#2021" class="text-ink-400 hover:text-ink-900 text-sm transition-colors">2021</a>
-            <a href="#2020" class="text-ink-400 hover:text-ink-900 text-sm transition-colors">2020</a>
+        <div class="publication-year-nav sticky top-12 border-l border-ink-400/30 pl-5 flex flex-col gap-4">
+            <a href="#2026" class="publication-year-link is-active text-sm transition-colors" data-year-link="2026">2026</a>
+            <a href="#2025" class="publication-year-link text-sm transition-colors" data-year-link="2025">2025</a>
+            <a href="#2024" class="publication-year-link text-sm transition-colors" data-year-link="2024">2024</a>
+            <a href="#2023" class="publication-year-link text-sm transition-colors" data-year-link="2023">2023</a>
+            <a href="#2022" class="publication-year-link text-sm transition-colors" data-year-link="2022">2022</a>
+            <a href="#2021" class="publication-year-link text-sm transition-colors" data-year-link="2021">2021</a>
+            <a href="#2020" class="publication-year-link text-sm transition-colors" data-year-link="2020">2020</a>
         </div>
     </aside>
     <div class="publication-list flex-1">
@@ -65,7 +67,7 @@ description: Publication list of Donghoon Shin
       </div>
       <div class="mt-4" id="publications">
         {% for pub in publications %}
-        <div class="mb-3 w-full {% unless forloop.first %}mt-5{% endunless %}">
+        <div class="mb-3 w-full publication-year-section {% unless forloop.first %}mt-5{% endunless %}" id="{{ pub.name }}" data-publication-year="{{ pub.name }}">
           <p class="publication-year">{{ pub.name }}</p>
         </div>
         {% assign pub_items_sorted = pub.items | sort: "month" | reverse %}
