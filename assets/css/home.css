@@ -117,6 +117,7 @@
 .home-project-title {
   margin: 0 !important;
   font-family: 'Newsreader';
+  color: rgb(72, 57, 33) !important;
   font-size: .9rem;
   line-height: 1.25;
   font-weight: 400;
@@ -140,7 +141,8 @@
 }
 
 .home-project-metadata a {
-  color: inherit;
+  color: rgb(72, 57, 33) !important;
+  font-weight: 400 !important;
   text-decoration: none;
   white-space: nowrap;
 }

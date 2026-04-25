@@ -182,6 +182,10 @@
   font-weight: 200 !important;
   margin-top: 0.2rem !important;
 }
+.publication-metadata > a {
+  color: rgb(72, 57, 33) !important;
+  font-weight: 400 !important;
+}
 
 .publication-item > p:has(.publication-venue) {
   margin-bottom: 0.5rem !important;
@@ -192,6 +196,8 @@
 .publication-detail-metadata>a, label {
   margin-right: 10px !important;
   font-size: .9rem;
+  color: rgb(72, 57, 33) !important;
+  font-weight: 400 !important;
 }
 
 .publication-detail-metadata > a > i,
