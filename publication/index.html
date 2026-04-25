@@ -74,7 +74,7 @@ description: Publication list of Donghoon Shin
         {% for paper in pub_items_sorted %}
         {% assign publication_type = paper.publication_type | default: "full-paper" %}
         <div class="publication-item w-full {% for cat_each in paper.category %}publication-tag-{{ cat_each | replace: ' / ', '' }} {% endfor %}">
-          <p class="pb-1"><span class="publication-venue">{{ paper.venue }}</span>.{% if paper.note %} <span class="publication-note">({{ paper.note }})</span>{% endif %}</p>
+          <p class="pb-1"><span class="publication-venue">{{ paper.venue }}</span>{% if paper.note %} <span class="publication-note">({{ paper.note }})</span>{% endif %}</p>
           <p class="pb-.5 publication-title-row">
             <a class="publication-title" href="{{ paper.slug | prepend: '/publication/' | relative_url }}">{{ paper.title }}</a>
           </p>

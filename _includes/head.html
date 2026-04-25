@@ -64,6 +64,13 @@
   <meta property="og:title" content="{% if page.url == '/' %}{{ page.title }}{% else %}{{ page.title }} | Donghoon Shin{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Paper overview of {{ page.authors.first | split: ' ' | last }} et al., {{ page.year }}{% endif %}">
 
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    window.addEventListener('load', () => {
+      lucide.createIcons();
+    });
+  </script>
+
   <!-- Google scholar -->
   {% if page.slug %}
   <meta name="citation_title" content="{{ page.title }}">

@@ -28,8 +28,8 @@ description: HCI researcher | Ph.D. student at the University of Washington
         </div>
     </div>
     <p class="mt-3">
-        <a href="#" class="cryptedmail" data-name="dhoon" data-domain="uw" data-tld="edu" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
-            <i class="fa-solid fa-envelope mr-1"></i>
+        <a href="#" class="cryptedmail flex items-center" data-name="dhoon" data-domain="uw" data-tld="edu" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+            <i data-lucide="mail" class="mr-2 h-[1.2em] w-[1.2em]"></i>
         </a>
     </p>
 </div>
@@ -38,28 +38,64 @@ description: HCI researcher | Ph.D. student at the University of Washington
 	<div class="home-project-scroller">
 		<div class="home-project-scroller-inner">
             {% for project in projects %}
-			<a href="{{ project.slug | prepend: 'publication/' | relative_url }}" class="home-project-link">
+            {% assign project_pub = site.publication | where: "slug", project.slug | first %}
                 <div class="home-project-container non-select">
-                    <div class="home-project-image-wrap">
-                        <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" class="home-project-image">
-                    </div>
-                    <div class="home-project-copy">
-                        <p class="home-project-title">{{ project.title }}</p>
-                        {% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}
+                    <div class="home-project-main">
+                        <div class="home-project-image-wrap">
+                            <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt="" class="home-project-image">
+                        </div>
+                        <div class="home-project-copy">
+                            <div class="home-project-header">
+                                <div class="home-project-title-row">
+                                    {% if project.icon %}<i data-lucide="{{ project.icon }}" class="home-project-icon" aria-hidden="true"></i>{% endif %}
+                                    <p class="home-project-title">{{ project.title }}</p>
+                                </div>
+                                {% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}
+                            </div>
+                            {% if project.description %}<p class="home-project-description">{{ project.description }}</p>{% endif %}
+                            {% if project_pub %}
+                            <p class="home-project-metadata">
+                                {% if project_pub.venue contains "arXiv" or project_pub.note contains "to appear" %}
+                                {% unless project_pub.pdf == false %}
+                                <a href="{{ '/assets/pdf/' | append: project.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;Preprint</a>
+                                {% endunless %}
+                                {% else %}
+                                <a href="{{ '/assets/pdf/' | append: project.slug | append: '.pdf' | relative_url }}"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;PDF</a>
+                                {% endif %}
+                                {% if project_pub.video %}
+                                {% if project_pub.video contains 'http' %}
+                                <a href="{{ project_pub.video }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>
+                                {% else %}
+                                <a href="{{ 'https://youtu.be/' | append: project_pub.video }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>
+                                {% endif %}
+                                {% endif %}
+                                {% if project_pub.slide %}
+                                <a href="{{ '/assets/pdf/' | append: project_pub.slide | relative_url }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>
+                                {% endif %}
+                                {% if project_pub.slides %}
+                                <a href="{{ '/assets/pdf/' | append: project_pub.slides | relative_url }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>
+                                {% endif %}
+                                {% if project_pub.poster %}
+                                <a href="{{ '/assets/pdf/' | append: project_pub.poster | relative_url }}"><i class="fa-solid fa-presentation-screen"></i>&nbsp;&nbsp;Poster</a>
+                                {% endif %}
+                                {% if project_pub.demo %}
+                                <a href="{{ project_pub.demo }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i>&nbsp;&nbsp;Demo</a>
+                                {% endif %}
+                            </p>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
-              </a>
             {% endfor %}
 		</div>
 	</div>
 </div>
+<!--
 <div class="mb-5 mt-8 px-3">
     <p class="section-title">System Demonstrations</p>
     <div>
-            
-            <!-- Paper2Card -->
-            <div class="mb-2 flex items-start">
-                <img src="{{ '/assets/images/logo/paper2card.jpg' | relative_url }}" style="height: 22px; width: 22px; flex-shrink: 0;" class="mr-2">
+            <div class="mb-2 flex items-center">
+                <i data-lucide="sticky-note" class="mr-2"></i>
                 <p style="margin-top: 1px">
                     <a href="https://paper2card.com" target="_blank" style="font-family: 'Newsreader';">Paper2Card</a> 
                     <span class="home-project-venue ml-1">CHI '24</span><span class="home-project-venue ml-1">DIS '25</span>
@@ -67,10 +103,8 @@ description: HCI researcher | Ph.D. student at the University of Washington
                     Transform HCI papers into design cards tailored to your design needs
                 </p>
             </div>
-            
-            <!-- ReFinE -->
-            <div class="mb-2 flex items-start">
-                <img src="{{ '/assets/images/logo/refine.jpg' | relative_url }}" style="height: 22px; width: 22px; flex-shrink: 0;" class="mr-2">
+            <div class="mb-2 flex items-center">
+                <i data-lucide="smartphone" class="mr-2"></i>
                 <p style="margin-top: 1px">
                     <a href="https://github.com/donghoon-io/refine" target="_blank" style="font-family: 'Newsreader';">ReFinE</a> 
                     <span class="home-project-venue ml-1">DIS '26</span>
@@ -78,10 +112,8 @@ description: HCI researcher | Ph.D. student at the University of Washington
                     Figma plugin that transforms research findings into UI design support
                 </p>
             </div>
-
-            <!-- PaperTok -->
-            <div class="mb-2 flex items-start">
-                <img src="{{ '/assets/images/logo/papertok.jpg' | relative_url }}" style="height: 22px; width: 22px; flex-shrink: 0;" class="mr-2">
+            <div class="mb-2 flex items-center">
+                <i data-lucide="file-play" class="mr-2"></i>
                 <p style="margin-top: 1px">
                     <a href="https://papertok.com" target="_blank" style="font-family: 'Newsreader';">PaperTok</a> 
                     <span class="home-project-venue ml-1">CHI '26</span>
@@ -89,10 +121,8 @@ description: HCI researcher | Ph.D. student at the University of Washington
                     Turn scholarly papers into engaging short-form videos
                 </p>
             </div>
-
-            <!-- AI-assisted CPD -->
-            <div class="mb-2 flex items-start">
-                <img src="{{ '/assets/images/logo/cpd.jpg' | relative_url }}" style="height: 22px; width: 22px; flex-shrink: 0;" class="mr-2">
+            <div class="mb-2 flex items-center">
+                <i data-lucide="workflow" class="mr-2"></i>
                 <p style="margin-top: 1px">
                     <a href="https://miro-cpd-project.vercel.app/" target="_blank" style="font-family: 'Newsreader';">AI-assisted CPD</a> 
                     <span class="home-project-venue ml-1">CHI '24</span>
@@ -100,10 +130,8 @@ description: HCI researcher | Ph.D. student at the University of Washington
                     Casually theorize your design right within the Figma workspace
                 </p>
             </div>
-
-            <!-- TalkingBoogie -->
-            <div class="mb-2 flex items-start">
-                <img src="{{ '/assets/images/logo/talkingboogie.jpg' | relative_url }}" style="height: 22px; width: 22px; flex-shrink: 0;" class="mr-2">
+            <div class="mb-2 flex items-center">
+                <i data-lucide="baby" class="mr-2"></i>
                 <p style="margin-top: 1px">
                     <a href="https://github.com/donghoon-io/TalkingBoogie" target="_blank" style="font-family: 'Newsreader';">TalkingBoogie</a> 
                     <span class="home-project-venue ml-1">CHI '20</span>
@@ -114,6 +142,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
 
     </div>
 </div>
+-->
 <div class="mb-20 mt-10 px-3 md:mt-14">
   <div class="grid grid-cols-1 items-stretch gap-y-4 gap-x-8 sm:grid-cols-12">
     <!-- News Column -->
@@ -135,7 +164,7 @@ description: HCI researcher | Ph.D. student at the University of Washington
         <div class="flex flex-1 flex-col">
             <p class="section-title">Travel & Talk</p>
             {% for travel in travels limit: 10 %}
-            <div>
+            <div class="mb-2">
             <p class="travel-title mb-0 flex items-center">
                 <!-- Assign a fixed width to the date span -->
                 <span class="travel-date mr-2" style="width: 55px;">
@@ -149,9 +178,6 @@ description: HCI researcher | Ph.D. student at the University of Washington
                 </span>
             </p>
             </div>
-            {% unless forloop.last %}
-            <hr style="margin: .4rem 0 !important">
-            {% endunless %}
             {% endfor %}
         </div>
         </div>

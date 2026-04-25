@@ -17,5 +17,4 @@ category:
   - "AI / NLP"
   - "Design"
 featured: true
-note: "to appear"
 ---
