@@ -87,7 +87,7 @@
   align-items: stretch;
   justify-content: center;
   gap: 0.55rem;
-  padding: 15px 12px;
+  padding: 15px 12px 12px 12px;
   text-align: left;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .home-project-description {
-  margin: 0;
+  margin-bottom: 5px !important;
   font-size: 0.78rem;
   line-height: 1.35;
   color: rgba(88, 72, 46, 0.78);
@@ -163,7 +163,7 @@
   padding: 1px 4px .5px 4px;
   border-radius: 4px;
   white-space: nowrap;
-  border: 1px solid #e5e7eb;
+  border: 1px solid rgb(138 133 12 / 0.1) !important;
   flex: 0 0 auto;
 }
 
