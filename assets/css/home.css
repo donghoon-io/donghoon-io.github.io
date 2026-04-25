@@ -109,7 +109,7 @@
 .home-project-icon {
   width: 0.95rem;
   height: 0.95rem;
-  margin-top: 0.1rem;
+  margin-top: -0.08rem;
   flex: 0 0 auto;
   color: rgba(88, 72, 46, 0.9);
 }
