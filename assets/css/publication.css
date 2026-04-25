@@ -179,12 +179,14 @@
 }
 .publication-metadata {
   font-size: .75rem;
-  font-weight: 200 !important;
   margin-top: 0.2rem !important;
 }
 .publication-metadata > a {
   color: rgb(72, 57, 33) !important;
-  font-weight: 400 !important;
+  font-weight: 350 !important;
+}
+.publication-metadata > a:hover {
+  font-weight: 500 !important;
 }
 
 .publication-item > p:has(.publication-venue) {
@@ -197,7 +199,12 @@
   margin-right: 10px !important;
   font-size: .9rem;
   color: rgb(72, 57, 33) !important;
-  font-weight: 400 !important;
+  font-weight: 350 !important;
+}
+
+.publication-detail-metadata a:hover, label:hover {
+  font-weight: 500 !important;
+  transition: all 0.2s ease;
 }
 
 .publication-detail-metadata > a > i,
@@ -205,13 +212,6 @@
   padding-right: 2px !important;
 }
 
-.publication-detail-metadata>label {
-  font-weight: 300 !important;
-}
-
-.publication-detail-metadata>label:hover {
-  font-weight: 400 !important;
-}
 
 .publication-detail-author-name {
   font-weight: 400;
