@@ -4,7 +4,7 @@ list: # format date as dd/mm/yyyy
     detail: "<a href='https://en.sejong.ac.kr/eng/index.do'>Sejong University</a>"
   - location: "Remote 🇺🇸"
     date: "09/11/2025"
-    detail: "<a href='https://www.microsoft.com/research/theme/fate/'>Microsoft Research - FATE</a>"
+    detail: "<a href='https://www.microsoft.com/research/theme/fate/'>Microsoft Research</a>"
   - location: "Busan, Korea 🇰🇷"
     date: "22/09/2025"
     detail: "<a href='https://uist.acm.org/2025/'>UIST 2025</a>"
