@@ -36,12 +36,10 @@
 }
 
 .project-item-container {
-  border: none !important;
+  border: 1px solid rgb(138 133 12 / 0.1) !important;
   cursor: pointer;
-  background: #ffffff;
-  border-radius: 0.6rem;
+  background-color: rgb(242 235 225);
   overflow: hidden;
-  box-shadow: 0 3px 9px rgba(15, 23, 42, 0.14);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -55,9 +53,10 @@
 }
 
 .project-item-title {
-  font-size: .85rem !important;
+  font-size: 1rem !important;
   font-weight: 400;
   line-height: 1.3;
+  font-family: 'Newsreader';
   margin: 1rem 0 0.45rem 0 !important;
 }
 
@@ -83,12 +82,13 @@
   position: relative;
   margin: 0 .1rem .1rem 0;
   padding: 0 .4rem;
-  border-radius: .65rem;
+  border-radius: .2rem;
   color: var(--element-secondary-color) !important;
   background-color: var(--background-secondary-color) !important;
+  border: 1px solid rgb(138 133 125 / 0.2) !important;
   font-size: .7rem;
   text-decoration: none;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;

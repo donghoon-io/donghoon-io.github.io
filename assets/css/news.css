@@ -1,16 +1,20 @@
 .news-title {
-  font-weight: 300 !important;
-  margin-bottom: 0 !important;
+  font-size: 1.1rem;
+  font-weight: 400 !important;
+  font-family: 'Newsreader' !important;
+  font-optical-sizing: auto !important;
+  margin: 0 0 5px 0 !important;
 }
 
 .news-date {
-  font-size: .8rem;
+  font-size: .7rem;
   font-weight: 200 !important;
-  margin-bottom: 0.35rem !important;
+  margin-bottom: 0 !important;
 }
 .news-description {
   font-weight: 200 !important;
   margin-bottom: 0 !important;
+  font-size: .85rem;
 }
 
 .news-description a {
@@ -21,12 +25,18 @@
   font-weight: 450 !important;
 }
 
-.travel-title {
-  font-weight: 300 !important;
-  font-size: .75rem !important
-}
-
 .travel-date {
   font-weight: 200 !important;
   font-size: .7rem !important;
+}
+
+.travel-detail {
+  font-family: 'Newsreader' !important;
+  font-weight: 100 !important;
+  font-size: .85rem !important;
+  margin-right: .75rem !important;
+  font-optical-sizing: auto !important;
+}
+.travel-location {
+  font-size: .75rem !important;
 }

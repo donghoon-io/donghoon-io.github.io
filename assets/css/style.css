@@ -4,10 +4,10 @@
   --font-family: 'Geist', 'Noto Sans TC', 'Noto Sans KR', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-mono: 'Fira Mono', monospace;
-  --element-primary-color: #000000;
+  --element-primary-color: rgb(44 42 41 / var(--tw-text-opacity, 1)) !important;
   --element-secondary-color: #444444;
-  --background-primary-color: #ffffff;
-  --background-secondary-color: #ebebeb;
+  --background-primary-color: rgb(249 246 240);
+  --background-secondary-color:rgb(255 255 255 / 0.6);
   --border-color: #999999;
   --separator-color: #d6d6d6;
   --column-width: 42rem;
@@ -109,22 +109,36 @@ h4 {
 }
 
 .section-title {
+  font-size: .8rem !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
+  color: rgb(138 133 125 / var(--tw-text-opacity, 1)) !important;
+  border-bottom-width: 1px;
+  border-color: rgb(138 133 125 / 0.3);
+  padding-bottom: 5px;
+  letter-spacing: .1em;
+
 }
 .subsection-title {
   font-weight: 350 !important;
 }
 
+.page-title {
+  font-family: 'Newsreader';
+  font-size: 2rem !important;
+  font-weight: 400;
+
+}
+
 @media screen and (min-width: 1601px) {
   main, header {
-    max-width: 1500px !important;
+    max-width: 1200px !important;
     margin-left: auto;
     margin-right: auto;
   }
 
   footer {
-    max-width: 1500px !important;
+    max-width: 1200px !important;
     padding: 2rem 0 5rem 0 !important;
     margin-left: auto;
     margin-right: auto;
@@ -214,6 +228,9 @@ h4 {
 }
 
 /* footer */
+footer {
+    background-color: rgb(239 234 224) !important;
+}
 
 .footer-text {
   font-size: .85rem !important;

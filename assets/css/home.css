@@ -56,6 +56,8 @@
 .home-project-link {
   text-decoration: none;
   color: inherit;
+  background-color: rgb(242 235 225);
+  border: 1px solid rgb(138 133 12 / 0.1) !important;
 }
 
 .home-project-link:hover .home-project-container {
@@ -123,6 +125,9 @@ a:hover .affiliation-logo {
 
 .home-title {
   padding: 0.2rem 0;
+  font-family: 'Newsreader';
+  font-size: 2rem !important;
+  font-weight: 400 !important;
 }
 
 .vertical-center p a,

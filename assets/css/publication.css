@@ -22,11 +22,13 @@
 }
 .publication-year {
   font-weight: 400;
+  font-size: 1.5rem;
+  opacity: .3;
+  font-family: 'Newspaper';
   margin: 1.75rem 0 0.9rem 0 !important;
 }
 
 .publication-list {
-	padding-top: .75rem;
 	display: block;
 	width: 100%;
 }
@@ -39,7 +41,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem 1rem;
+  gap: 0.25rem .5rem;
 }
 
 .publication-type-legend {
@@ -61,6 +63,13 @@
   letter-spacing: 0.01em;
 }
 
+.publication-tag-label {
+  padding: 2px 6px !important;
+  border: 1px solid rgb(90 86 82 / .3);
+  border-radius: 4px;
+  color: rgb(90 86 82);
+}
+
 .publication-filter-row .publication-tag-label:hover::before {
   transform: scaleX(1);
 }
@@ -76,10 +85,9 @@
 .publication-item {
   position: relative;
   padding-bottom: 0.8rem;
-}
-
-.publication-item > hr {
-  margin: 0.9rem 0 0 0 !important;
+  background-color: rgb(242 235 225);
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 .publication-title-row {
@@ -87,7 +95,9 @@
 }
 
 .publication-title {
-  font-weight: 350 !important;
+  font-weight: 400 !important;
+  font-size: 1.1rem !important;
+  font-family: 'Newsreader';
 }
 
 .publication-type-dot {
@@ -147,7 +157,8 @@
 }
 
 .publication-venue {
-  font-weight: 350 !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.05em;
 }
 .publication-metadata {
   font-size: .85rem;
