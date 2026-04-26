@@ -1,5 +1,5 @@
 .music-container {
-  background-color: #f6f6f9;
+  background-color: rgb(var(--surface) / 0.9);
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;

@@ -18,7 +18,7 @@
 }
 
 .publication-year-link {
-  color: rgb(120 114 107);
+  color: rgb(var(--ink) / 0.5);
   font-weight: 300;
   font-size: .8rem !important;
   display: inline-block;
@@ -26,13 +26,13 @@
 }
 
 .publication-year-link:hover {
-  color: rgb(44 41 37);
+  color: rgb(var(--ink));
   text-shadow: 0 0 0.01px currentColor, 0 0 0.01px currentColor;
   font-weight: 300 !important;
 }
 
 .publication-year-link.is-active {
-  color: rgb(44 41 37);
+  color: rgb(var(--ink));
   font-weight: 500;
 }
 
@@ -61,7 +61,7 @@
   margin-bottom: -1rem;
   font-size: 0.74rem;
   font-weight: 250;
-  color: rgba(30, 30, 30, 0.7);
+  color: rgb(30 30 30 / 0.7);
 }
 
 .publication-type-legend-item {
@@ -73,16 +73,16 @@
 
 .publication-tag-label {
   padding: 2px 6px !important;
-  border: 1px solid rgb(90 86 82 / .26);
+  border: 1px solid rgb(var(--ink) / 0.26);
   border-radius: 4px;
   font-size: .75rem !important;
-  color: rgb(90 86 82);
+  color: rgb(var(--ink) / 0.72);
   background-color: transparent;
 }
 
 .publication-filter-row .publication-tag-label:hover {
-  border-color: rgb(90 86 82 / .45);
-  color: rgb(44 41 37);
+  border-color: rgb(var(--ink) / 0.45);
+  color: rgb(var(--ink));
 }
 
 #publications {
@@ -96,9 +96,9 @@
 .publication-item {
   position: relative;
   padding-bottom: 0.8rem;
-  background-color: rgb(239 234 224);
+  background-color: rgb(var(--surface-alt));
   padding: .8rem 1rem;
-  border: 1px solid rgb(138 133 12 / 0.1) !important;
+  border: 1px solid rgb(var(--accent) / 0.1) !important;
   margin-top: 1rem;
 }
 
@@ -118,7 +118,7 @@
   height: 0.34rem;
   min-width: 0.34rem;
   border-radius: 999px;
-  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  border: 0.5px solid rgb(var(--black) / 0.05);
   box-sizing: border-box;
 }
 
@@ -129,15 +129,15 @@
 }
 
 .publication-type-full-paper {
-  background: #2b2b2b;
+  background: rgb(var(--ink) / 0.98);
 }
 
 .publication-type-poster-workshop {
-  background: #d9d9d9;
+  background: rgb(var(--ink) / 0.16);
 }
 
 .publication-type-preprint {
-  background: #9b9b9b;
+  background: rgb(var(--ink) / 0.4);
 }
 
 .publication-item > p:has(.publication-title) {
@@ -174,7 +174,7 @@
 .publication-venue {
   font-weight: 400 !important;
   font-size: .7rem !important;
-  color: rgb(90 86 82) !important;
+  color: rgb(var(--ink) / 0.72) !important;
   letter-spacing: 0.05em;
 }
 .publication-metadata {
@@ -184,7 +184,7 @@
   gap: 1rem;
 }
 .publication-metadata > a {
-  color: rgb(72, 57, 33) !important;
+  color: rgb(72 57 33) !important;
   font-weight: 350 !important;
   display: inline-flex;
   align-items: center;
@@ -202,7 +202,7 @@
 .publication-detail-metadata>a, label {
   margin-right: 10px !important;
   font-size: .9rem;
-  color: rgb(72, 57, 33) !important;
+  color: rgb(72 57 33) !important;
   font-weight: 350 !important;
   display: inline-flex;
   align-items: center;

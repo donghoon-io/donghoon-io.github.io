@@ -16,9 +16,9 @@ description: Publication list of Donghoon Shin
   #publication-tag-{{ type | replace: ' / ', '' }}:checked ~ .publication-filter-row .publication-tag-label#publication-label-{{ type | replace: ' / ', '' }},
   {% endfor %}
   #publication-tag-all:checked ~ .publication-filter-row .publication-tag-label#publication-label-all {
-    background-color: rgba(255, 255, 255, 0.96);
-    border-color: rgba(44, 41, 37, 0.18);
-    color: rgb(44, 41, 37);
+    background-color: rgb(var(--white) / 0.96);
+    border-color: rgb(var(--ink) / 0.18);
+    color: rgb(var(--ink));
   }
 
   {% for type in category.types %}

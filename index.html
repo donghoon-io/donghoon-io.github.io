@@ -34,7 +34,13 @@ description: HCI researcher | Ph.D. student at the University of Washington
     </p>
 </div>
 <div class="mt-10 px-3 md:mt-12">
-    <p class="section-title">Selected projects</p>
+    <div class="mb-4 flex items-center justify-between gap-4 border-b pb-[5px]" style="border-color: rgb(var(--ink) / 0.3);">
+        <p class="section-title !mb-0 !border-b-0 !pb-0">Selected publications</p>
+        <a href="{{ '/publication' | relative_url }}" class="home-view-all inline-flex items-center whitespace-nowrap" style="color: rgb(var(--ink) / 0.56) !important;">
+            View all
+            <span class="ml-1" style="color: inherit !important;">&gt;</span>
+        </a>
+    </div>
 	<div class="home-project-scroller">
 		<div class="home-project-scroller-inner">
             {% for project in projects %}

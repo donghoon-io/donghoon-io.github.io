@@ -66,14 +66,14 @@
 .home-project-main {
   transition: transform 0.25s ease-in-out;
   overflow: hidden;
-  border: 1px solid rgb(138 133 12 / 0.1) !important;
-  background: linear-gradient(180deg, rgba(248, 244, 236, 0.98), rgba(242, 235, 225, 0.96));
+  border: 1px solid rgb(var(--accent) / 0.1) !important;
+  background: linear-gradient(180deg, rgb(var(--surface) / 0.98), rgb(var(--surface-alt) / 0.96));
 }
 
 .home-project-image-wrap {
   overflow: hidden;
   background: var(--background-primary-color) !important;
-  border-bottom: 1px solid rgba(138, 133, 12, 0.08);
+  border-bottom: 1px solid rgb(var(--accent) / 0.08);
 }
 
 .home-project-image {
@@ -111,13 +111,13 @@
   height: 0.95rem;
   margin-top: -0.08rem;
   flex: 0 0 auto;
-  color: rgba(88, 72, 46, 0.9);
+  color: rgb(88 72 46 / 0.9);
 }
 
 .home-project-title {
   margin: 0 !important;
   font-family: 'Newsreader';
-  color: rgb(72, 57, 33) !important;
+  color: rgb(72 57 33) !important;
   font-size: .9rem;
   line-height: 1.25;
   font-weight: 400;
@@ -128,7 +128,7 @@
   margin-bottom: 5px !important;
   font-size: 0.78rem;
   line-height: 1.35;
-  color: rgba(88, 72, 46, 0.78);
+  color: rgb(88 72 46 / 0.78);
 }
 
 .home-project-metadata {
@@ -141,7 +141,7 @@
 }
 
 .home-project-metadata a {
-  color: rgb(72, 57, 33) !important;
+  color: rgb(72 57 33) !important;
   font-weight: 350 !important;
   display: inline-flex;
   align-items: center;
@@ -170,7 +170,7 @@
   padding: 1px 4px .5px 4px;
   border-radius: 4px;
   white-space: nowrap;
-  border: 1px solid rgb(138 133 12 / 0.1) !important;
+  border: 1px solid rgb(var(--accent) / 0.1) !important;
   flex: 0 0 auto;
 }
 
