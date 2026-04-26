@@ -143,6 +143,8 @@
 .home-project-metadata a {
   color: rgb(72, 57, 33) !important;
   font-weight: 350 !important;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   white-space: nowrap;
 }

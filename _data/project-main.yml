@@ -22,13 +22,13 @@ project:
     image: "paper2card.png"
     description: "Converts HCI papers into compact, useful cards for designers."
     venue: CHI '24
+    slug: chi2024_paper2card_paper
   - title: "What About My Design Context?"
     icon: "palette"
     image: "paper2customization.png"
     description: "Adapts design artifacts to fit designers' specific context"
     venue: DIS '25
     slug: dis2025_paper2customization_paper
-    slug: chi2024_paper2card_paper
   - title: "Theorizing design with AI"
     icon: "workflow"
     image: "cpd.jpg"

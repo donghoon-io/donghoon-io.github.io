@@ -5,7 +5,7 @@ year: 2023
 month: 5
 publication_type: full-paper
 video: uJbHsyujau4
-slides: chi2023_introbot_slide.pdf
+slide: chi2023_introbot_slide.pdf
 authors:
   - Donghoon Shin
   - Soomin Kim

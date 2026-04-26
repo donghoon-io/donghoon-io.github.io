@@ -180,10 +180,14 @@
 .publication-metadata {
   font-size: .75rem;
   margin-top: 0.2rem !important;
+  display: flex;
+  gap: 1rem;
 }
 .publication-metadata > a {
   color: rgb(72, 57, 33) !important;
   font-weight: 350 !important;
+  display: inline-flex;
+  align-items: center;
 }
 .publication-metadata > a:hover {
   font-weight: 500 !important;
@@ -200,6 +204,8 @@
   font-size: .9rem;
   color: rgb(72, 57, 33) !important;
   font-weight: 350 !important;
+  display: inline-flex;
+  align-items: center;
 }
 
 .publication-detail-metadata a:hover, label:hover {

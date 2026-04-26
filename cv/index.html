@@ -11,8 +11,10 @@ description: Curriculum vitae of Donghoon Shin
   <div>
     <div>
       <header>
-        <h1 style="font-family: 'Newsreader';">Donghoon Shin <a class="cv-pdf" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" rel="external"><i
-              class="fas fa-file-pdf"></i> PDF</a></h1>
+        <div class="inline-flex items-center">
+          <h1 style="font-family: 'Newsreader';">Donghoon Shin</h1>
+          <a class="cv-pdf inline-flex items-center" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" rel="external"><i data-lucide="file" class="mr-1.5"></i>PDF</a>
+        </div>
         <p><a href="#" class="cryptedmail" data-name="dhoon" data-domain="uw" data-tld="edu"
             onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a><br><a
             href="https://donghoon.io">donghoon.io</a><br></p>
@@ -101,7 +103,7 @@ description: Curriculum vitae of Donghoon Shin
             {% endfor %}{% if pub.coauthors %}<span class="cv-note ml-2">(* co-first authorship)</span>{% endif %}
             <br>
             {{ pub.venue }}.{% if pub.note %} <span class="cv-note">({{ pub.note}})</span>{% endif %}<br>
-            {% if pub.award %}<span class="cv-award"><i class="fas fa-trophy mr-1"></i>{{ pub.award }}</span><br>{%
+            {% if pub.award %}<span class="cv-award mt-1"><i data-lucide="award" class="mr-1.5 h-[1.1em] w-[1.1em]"></i>{{ pub.award }}</span><br>{%
             endif %}
           </div>
         </div>

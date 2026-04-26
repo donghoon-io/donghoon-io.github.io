@@ -240,6 +240,10 @@ footer {
   font-size: .85rem !important;
   font-weight: 200 !important;
 }
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+}
 
 .footer-weather-icon {
   width: auto;

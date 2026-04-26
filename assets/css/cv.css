@@ -46,5 +46,14 @@
 }
 .cv-award {
   color: black !important;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1; /* Strips out extra invisible text spacing */
+}
+
+/* Ensure the Lucide SVG inside the <i> tag doesn't add stray margins */
+.cv-award i {
+  display: flex;
+  align-items: center;
 }

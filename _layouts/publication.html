@@ -10,7 +10,7 @@ layout: default
     <p>Published in {{ page.venue }}.</p>
     {% endif %}
     {% if page.award %}
-    <p><i class="fa-solid fa-medal mr-2"></i>{{ page.award }}</p>
+    <p class="inline-flex items-center"><i data-lucide="trophy" class="mr-1.5"></i>{{ page.award }}</p>
     {% endif %}
   </div>
   {% if page.coauthors %}
@@ -70,14 +70,14 @@ layout: default
   <div>
     <p class="section-title">Materials</p>
     <div class="publication-detail-metadata">
-      {% if page.venue contains "arXiv" or page.note contains "to appear" %}{% unless page.pdf == false %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> Preprint</a> {% endunless %}{% else %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i class="fa-solid fa-file-pdf"></i> PDF</a> {% endif %}
-      {% if page.video %}<a href="{{ page.video | prepend: 'https://youtu.be/'}}" rel="external"><i class="fa-solid fa-play"></i> Video</a>{% endif %}
-      {% if page.slide %}<a href="{{ page.slide | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-file-powerpoint"></i> Slide</a> {% endif %}
-      {% if page.poster %}<a href="{{ page.poster | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i class="fa-solid fa-presentation-screen"></i> Poster</a> {% endif %}
-      {% if page.demo %}<a href="{{ page.demo }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i> Demo</a>{% endif %}
+      {% if page.venue contains "arXiv" or page.note contains "to appear" %}{% unless page.pdf == false %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i data-lucide="file" class="mr-1"></i>Preprint</a> {% endunless %}{% else %}<a href="{{ page.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" rel="external"><i data-lucide="file" class="mr-1"></i>PDF</a> {% endif %}
+      {% if page.video %}<a href="{{ page.video | prepend: 'https://youtu.be/'}}" rel="external"><i data-lucide="play" class="mr-1"></i>Video</a>{% endif %}
+      {% if page.slide %}<a href="{{ page.slide | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i data-lucide="presentation" class="mr-1"></i>Slides</a> {% endif %}
+      {% if page.poster %}<a href="{{ page.poster | prepend: '/assets/pdf/' | relative_url }}" rel="external"><i data-lucide="book-image" class="mr-1"></i>Poster</a> {% endif %}
+      {% if page.demo %}<a href="{{ page.demo }}" target="_blank" rel="noopener noreferrer"><i data-lucide="app-window-mac" class="mr-1"></i>Demo</a>{% endif %}
       <input type="checkbox" id="bibtex-toggle" style="display: none;" />
       <label for="bibtex-toggle" style="cursor: pointer;">
-        <i class="fa-solid fa-book"></i> BibTeX
+        <i data-lucide="book-text" class="mr-1"></i>BibTeX
       </label>
 
       <div id="bibtex-block">

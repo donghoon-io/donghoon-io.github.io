@@ -13,7 +13,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; DIS '26
+      - <i data-lucide="book-text" class="mr-1"></i>DIS '26
       - UI understanding
       - LLM
       - Translational science
@@ -36,7 +36,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Co-leading the project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '26
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '26
       - LLM
       - Video
       - Translational science
@@ -73,7 +73,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; UIST '25
+      - <i data-lucide="book-text" class="mr-1"></i>UIST '25
       - Internship
       - Agent
       - Design
@@ -96,7 +96,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; DIS '25
+      - <i data-lucide="book-text" class="mr-1"></i>DIS '25
       - LLM
       - Design
       - Translational science
@@ -119,7 +119,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CUI '25
+      - <i data-lucide="book-text" class="mr-1"></i>CUI '25
       - Internship
       - LLM
       - Healthcare
@@ -142,7 +142,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '24
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '24
       - LLM
       - Design
       - Translational science
@@ -163,7 +163,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Ideation, building a system, helping with the study</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '24
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '24
       - LLM
       - Design
       - Translational science
@@ -187,7 +187,7 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>System development, design
       ideation</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '24
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '24
       - LLM
       - Mental health
     image: diarymate.jpg
@@ -210,7 +210,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '23
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '23
       - Chatbot
       - NLP
     image: introbot.jpg
@@ -240,7 +240,7 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>Running interview sessions, taking
       part in thematic analysis, analyzing log data, writing</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '23
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '23
       - Log analysis
     image: kmooc.jpg
     title: How Older Adults Use Online Videos for Learning
@@ -273,8 +273,8 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>User study, open-coding responses,
       system development</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CSCW '23
-      - <i class='fas fa-book'></i>&nbsp; NeurIPS '21
+      - <i data-lucide="book-text" class="mr-1"></i>CSCW '23
+      - <i data-lucide="book-text" class="mr-1"></i>NeurIPS '21
       - Explainable AI
     image: satellite-explainability.jpg
     title: Explainable AI for Visual Detection Task
@@ -313,7 +313,7 @@ project:
       interview, storyboarding, writing, system development</p>
     paper: chi2022_omhc_poster.pdf
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '22
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '22
       - Mental health
       - NLP
     image: omhc.jpg
@@ -440,7 +440,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Writing, designing figures</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CSCW '21
+      - <i data-lucide="book-text" class="mr-1"></i>CSCW '21
       - Algorithmic experience
     image: trkic-g00gle.jpg
     title: Trkic G00gle
@@ -481,7 +481,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; HCIK '22
+      - <i data-lucide="book-text" class="mr-1"></i>HCIK '22
       - Web
       - Svelte
     image: amslertouch.jpg
@@ -520,7 +520,7 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running interview
       sessions, writing</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; JMIR '21
+      - <i data-lucide="book-text" class="mr-1"></i>JMIR '21
       - MacOS
     image: liquideye.jpg
     title: LiquidEye
@@ -562,7 +562,7 @@ project:
     title: BlahBlahBot
     image: blahblahbot.jpg
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '21
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '21
       - AI-MC
       - iOS
     description: >-
@@ -619,7 +619,7 @@ project:
       - Coursework
       - Serious game
       - iOS
-      - <i class='fa-brands fa-app-store-ios'></i>&nbsp; App Store
+      - App Store
     description: >-
       iOS-based serious game app submitted to Fall 2020 Interactive Storytelling
       course
@@ -683,10 +683,10 @@ project:
     title: TalkingBoogie
     image: talkingboogie.jpg
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '20
-      - <i class='fas fa-medal'></i>&nbsp; Honorable Mention
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '20
+      - <i data-lucide="award" class="mr-1"></i>Honorable Mention
       - iOS
-      - <i class='fa-brands fa-app-store-ios'></i>&nbsp; App Store
+      - App Store
     description: >-
       Collaborative mobile AAC system for non-verbal children with developmental
       disabilities and their caregivers
@@ -815,7 +815,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>Writing</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; MobileHCI '20
+      - <i data-lucide="book-text" class="mr-1"></i>MobileHCI '20
       - Chatbot
     image: prp.jpg
     title: PRP
@@ -844,7 +844,7 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running
       experiment, writing</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '20
+      - <i data-lucide="book-text" class="mr-1"></i>CHI '20
       - Chatbot
     image: personabot.jpg
     title: PersonaBot
@@ -902,7 +902,7 @@ project:
     tags:
       - Startup
       - iOS
-      - <i class='fa-brands fa-app-store-ios'></i>&nbsp; App Store
+      - App Store
     image: elecle.jpg
     title: elecle
     description: 'Elecle: Electric mobility-sharing startup (worked as an iOS developer)'
