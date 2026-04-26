@@ -1,33 +1,33 @@
 project:
   - title: "ReFinE"
     icon: "smartphone"
-    image: "refine.jpg"
+    image: "refine.png"
     description: "Turns research findings into actionable UI design support"
     venue: DIS '26
     slug: dis2026_refine_paper
   - title: "PaperTok"
     icon: "file-play"
-    image: "papertok.jpg"
+    image: "papertok.png"
     description: "Transforms scholarly papers into engaging short-form videos"
     venue: CHI '26
     slug: chi2026_papertok_paper
   - title: "PosterMate"
     icon: "presentation"
-    image: "postermate.jpg"
+    image: "postermate.png"
     description: "Multi-agent system to support simulated design collaboration"
     venue: UIST '25
     slug: uist2025_postermate_paper
+  - title: "Paper2Card"
+    icon: "sticky-note"
+    image: "paper2card.png"
+    description: "Converts HCI papers into compact, useful cards for designers."
+    venue: CHI '24
   - title: "What About My Design Context?"
     icon: "palette"
-    image: "customized-design-card.jpg"
+    image: "paper2customization.png"
     description: "Adapts design artifacts to fit designers' specific context"
     venue: DIS '25
     slug: dis2025_paper2customization_paper
-  - title: "Paper2Card"
-    icon: "sticky-note"
-    image: "design_card.jpg"
-    description: "Converts HCI papers into compact, useful cards for designers."
-    venue: CHI '24
     slug: chi2024_paper2card_paper
   - title: "Theorizing design with AI"
     icon: "workflow"
@@ -37,13 +37,13 @@ project:
     slug: chi2024_cpd-hcd_paper
   - title: "IntroBot"
     icon: "bot"
-    image: "chatbot.jpg"
+    image: "introbot.png"
     description: "Chatbot to support familiarization among ad hoc teammates"
     venue: CHI '23
     slug: chi2023_introbot_paper
   - title: "DiaryMate"
     icon: "book-heart"
-    image: "diary.jpg"
+    image: "diarymate.png"
     description: "LLM-infused system to support reflective writing"
     venue: CHI '24
     slug: chi2024_diarymate_paper
