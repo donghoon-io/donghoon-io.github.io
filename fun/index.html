@@ -8,7 +8,7 @@ description: Some fun stuffs of Donghoon Shin
     <p class="page-title">Fun</p>
     <div class="mt-10 grid grid-cols-1 gap-3 md:grid-cols-12 md:gap-6">
         <div class="mb-3 md:col-span-4 md:mb-0">
-            <p class="subsection-title">Flight log</p>
+            <p class="subsection-title">PhD Flight log</p>
         </div>
         <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <div id="flight-map" style="width: 100%; height: auto;"></div>
@@ -106,63 +106,68 @@ description: Some fun stuffs of Donghoon Shin
 
 <script>
     const flights = [
-        { from: "ICN", to: "SFO", date: "2022-09-08" },
-        { from: "SFO", to: "MYR", date: "2022-09-29" },
-        { from: "MYR", to: "DFW", date: "2022-10-20" },
-        { from: "DFW", to: "ICN", date: "2022-11-10" },
-        { from: "ICN", to: "SEA", date: "2022-12-01" },
-        { from: "SEA", to: "FRA", date: "2022-12-22" },
-        { from: "HAM", to: "LIN", date: "2023-01-12" },
-        { from: "LIN", to: "FRA", date: "2023-02-02" },
-        { from: "FRA", to: "SEA", date: "2023-02-23" },
-        { from: "SEA", to: "ICN", date: "2023-03-16" },
-        { from: "ICN", to: "PUS", date: "2023-04-06" },
-        { from: "ICN", to: "KIX", date: "2023-04-27" },
-        { from: "KIX", to: "ICN", date: "2023-05-18" },
-        { from: "ICN", to: "SEA", date: "2023-06-08" },
-        { from: "SEA", to: "HND", date: "2023-06-29" },
-        { from: "NRT", to: "PUS", date: "2023-07-20" },
-        { from: "ICN", to: "NRT", date: "2023-08-10" },
-        { from: "HND", to: "SEA", date: "2023-08-31" },
-        { from: "SEA", to: "YVR", date: "2023-09-21" },
-        { from: "YVR", to: "SEA", date: "2023-10-12" },
-        { from: "SEA", to: "HNL", date: "2023-11-02" },
-        { from: "HNL", to: "NRT", date: "2023-11-23" },
-        { from: "NRT", to: "PUS", date: "2023-12-14" },
-        { from: "PUS", to: "GMP", date: "2024-01-04" },
-        { from: "ICN", to: "SFO", date: "2024-01-25" },
-        { from: "SFO", to: "SEA", date: "2024-02-15" },
-        { from: "SEA", to: "SJC", date: "2024-03-07" },
-        { from: "SJC", to: "SEA", date: "2024-03-28" },
-        { from: "SEA", to: "ICN", date: "2024-04-18" },
-        { from: "ICN", to: "SEA", date: "2024-05-09" },
-        { from: "SEA", to: "ICN", date: "2024-05-30" },
-        { from: "ICN", to: "SEA", date: "2024-06-20" },
-        { from: "SEA", to: "ICN", date: "2024-07-11" },
-        { from: "ICN", to: "HNL", date: "2024-08-01" },
-        { from: "HNL", to: "SEA", date: "2024-08-22" },
-        { from: "SEA", to: "SJC", date: "2024-09-12" },
-        { from: "SJC", to: "SEA", date: "2024-10-03" },
-        { from: "SEA", to: "NRT", date: "2024-10-24" },
-        { from: "HND", to: "GMP", date: "2024-11-14" },
-        { from: "GMP", to: "PUS", date: "2024-12-05" },
-        { from: "PUS", to: "NRT", date: "2024-12-26" },
-        { from: "NRT", to: "SEA", date: "2025-01-16" },
-        { from: "SEA", to: "JFK", date: "2025-02-06" },
-        { from: "EWR", to: "ORY", date: "2025-02-27" },
-        { from: "CDG", to: "FNC", date: "2025-03-20" },
-        { from: "FNC", to: "PDL", date: "2025-04-10" },
-        { from: "PDL", to: "YYZ", date: "2025-05-01" },
-        { from: "YYZ", to: "JFK", date: "2025-05-22" },
-        { from: "EWR", to: "ICN", date: "2025-06-12" },
-        { from: "ICN", to: "SEA", date: "2025-07-03" },
-        { from: "SEA", to: "HNL", date: "2025-07-24" },
-        { from: "HNL", to: "SEA", date: "2025-08-14" },
-        { from: "SEA", to: "EWR", date: "2025-09-04" },
-        { from: "EWR", to: "ICN", date: "2025-09-25" },
-        { from: "ICN", to: "SEA", date: "2025-10-16" },
-        { from: "SEA", to: "EWR", date: "2025-11-06" },
-        { from: "EWR", to: "SEA", date: "2025-11-27" },
+        { "from": "ICN", "to": "SFO", "date": "2022-05-01", "flight_code": "UA806", "mileage": 6038 },
+        { "from": "SFO", "to": "MYR", "date": "2022-05-01", "flight_code": "UA2068", "mileage": 2433 },
+        { "from": "MSY", "to": "DFW", "date": "2022-05-07", "flight_code": "AA1077", "mileage": 448 },
+        { "from": "DFW", "to": "ICN", "date": "2022-05-07", "flight_code": "AA281", "mileage": 6842 },
+        { "from": "ICN", "to": "SEA", "date": "2022-09-12", "flight_code": "DL196", "mileage": 5705 },
+        { "from": "SEA", "to": "FRA", "date": "2023-04-22", "flight_code": "LH491", "mileage": 5337 },
+        { "from": "HAM", "to": "LIN", "date": "2023-04-27", "flight_code": "LH2735", "mileage": 319 },
+        { "from": "LIN", "to": "FRA", "date": "2023-04-29", "flight_code": "LH273", "mileage": 318 },
+        { "from": "FRA", "to": "SEA", "date": "2023-04-29", "flight_code": "LH490", "mileage": 5337 },
+        { "from": "SEA", "to": "ICN", "date": "2023-06-03", "flight_code": "DL197", "mileage": 5705 },
+        { "from": "ICN", "to": "PUS", "date": "2023-06-20", "flight_code": "KE1401", "mileage": 210 },
+        { "from": "ICN", "to": "KIX", "date": "2023-08-07", "flight_code": "OZ112", "mileage": 536 },
+        { "from": "KIX", "to": "ICN", "date": "2023-08-10", "flight_code": "OZ111", "mileage": 536 },
+        { "from": "ICN", "to": "SEA", "date": "2023-09-20", "flight_code": "KE41", "mileage": 5715 },
+        { "from": "SEA", "to": "HND", "date": "2023-12-06", "flight_code": "NH117", "mileage": 4980 },
+        { "from": "NRT", "to": "PUS", "date": "2023-12-09", "flight_code": "BX111", "mileage": 647 },
+        { "from": "ICN", "to": "NRT", "date": "2023-12-25", "flight_code": "KE703", "mileage": 783 },
+        { "from": "HND", "to": "SEA", "date": "2023-12-25", "flight_code": "NH118", "mileage": 4980 },
+        { "from": "SEA", "to": "YVR", "date": "2024-04-26", "flight_code": "AC8092", "mileage": 127 },
+        { "from": "YVR", "to": "SEA", "date": "2024-04-27", "flight_code": "AC8093", "mileage": 127 },
+        { "from": "SEA", "to": "HNL", "date": "2024-05-10", "flight_code": "AS831", "mileage": 2677 },
+        { "from": "HNL", "to": "NRT", "date": "2024-05-16", "flight_code": "NH183", "mileage": 3819 },
+        { "from": "NRT", "to": "PUS", "date": "2024-05-16", "flight_code": "BX111", "mileage": 647 },
+        { "from": "PUS", "to": "GMP", "date": "2024-09-14", "flight_code": "BX8804", "mileage": 210 },
+        { "from": "ICN", "to": "SFO", "date": "2024-09-14", "flight_code": "UA806", "mileage": 6038 },
+        { "from": "SFO", "to": "SEA", "date": "2024-09-14", "flight_code": "AS339", "mileage": 679 },
+        { "from": "SEA", "to": "SJC", "date": "2024-06-15", "flight_code": "AS522", "mileage": 697 },
+        { "from": "SJC", "to": "SEA", "date": "2024-07-30", "flight_code": "AS523", "mileage": 697 },
+        { "from": "SEA", "to": "SJC", "date": "2024-08-03", "flight_code": "AS522", "mileage": 697 },
+        { "from": "SJC", "to": "SEA", "date": "2024-09-04", "flight_code": "AS523", "mileage": 697 },
+        { "from": "SEA", "to": "ICN", "date": "2024-09-14", "flight_code": "KE42", "mileage": 5705 },
+        { "from": "ICN", "to": "SEA", "date": "2024-10-05", "flight_code": "DL196", "mileage": 5705 },
+        { "from": "SEA", "to": "ICN", "date": "2024-12-07", "flight_code": "OZ271", "mileage": 5705 },
+        { "from": "ICN", "to": "SEA", "date": "2024-12-15", "flight_code": "OZ272", "mileage": 5652 },
+        { "from": "SEA", "to": "ICN", "date": "2025-03-12", "flight_code": "DL197", "mileage": 5705 },
+        { "from": "ICN", "to": "HNL", "date": "2025-03-30", "flight_code": "KE53", "mileage": 4552 },
+        { "from": "HNL", "to": "SEA", "date": "2025-03-30", "flight_code": "DL378", "mileage": 2677 },
+        { "from": "SEA", "to": "SJC", "date": "2025-04-14", "flight_code": "AS522", "mileage": 697 },
+        { "from": "SJC", "to": "SEA", "date": "2025-04-17", "flight_code": "AS523", "mileage": 697 },
+        { "from": "SEA", "to": "NRT", "date": "2025-05-31", "flight_code": "JL67", "mileage": 4769 },
+        { "from": "HND", "to": "GMP", "date": "2025-06-02", "flight_code": "NH861", "mileage": 725 },
+        { "from": "GMP", "to": "PUS", "date": "2025-06-16", "flight_code": "BX8805", "mileage": 210 },
+        { "from": "PUS", "to": "NRT", "date": "2025-06-18", "flight_code": "BX112", "mileage": 647 },
+        { "from": "NRT", "to": "SEA", "date": "2025-06-18", "flight_code": "JL68", "mileage": 4769 },
+        { "from": "SEA", "to": "JFK", "date": "2025-06-21", "flight_code": "DL322", "mileage": 2422 },
+        { "from": "EWR", "to": "ORY", "date": "2025-07-04", "flight_code": "UA54", "mileage": 3649 },
+        { "from": "CDG", "to": "FNC", "date": "2025-07-05", "flight_code": "AF1630", "mileage": 1530 },
+        { "from": "FNC", "to": "PDL", "date": "2025-07-08", "flight_code": "S4161", "mileage": 609 },
+        { "from": "PDL", "to": "YYZ", "date": "2025-07-08", "flight_code": "S4335", "mileage": 2795 },
+        { "from": "YYZ", "to": "JFK", "date": "2025-07-10", "flight_code": "DL5238", "mileage": 366 },
+        { "from": "EWR", "to": "ICN", "date": "2025-09-22", "flight_code": "YP131", "mileage": 6870 },
+        { "from": "ICN", "to": "SEA", "date": "2025-10-05", "flight_code": "KE41", "mileage": 5715 },
+        { "from": "SEA", "to": "HNL", "date": "2025-12-05", "flight_code": "HA21", "mileage": 2677 },
+        { "from": "HNL", "to": "SEA", "date": "2025-12-09", "flight_code": "HA22", "mileage": 2677 },
+        { "from": "SEA", "to": "EWR", "date": "2026-01-30", "flight_code": "AS24", "mileage": 2402 },
+        { "from": "EWR", "to": "ICN", "date": "2026-02-03", "flight_code": "YP131", "mileage": 6870 },
+        { "from": "ICN", "to": "SEA", "date": "2026-04-03", "flight_code": "HA460", "mileage": 5705 },
+        { "from": "SEA", "to": "EWR", "date": "2026-04-29", "flight_code": "AS14", "mileage": 2402 },
+        { "from": "EWR", "to": "SEA", "date": "2026-05-04", "flight_code": "AS15", "mileage": 2402 },
+        { "from": "SEA", "to": "ICN", "date": "2026-05-25", "flight_code": "DL197", "mileage": 5705 },
+        { "from": "ICN", "to": "SIN", "date": "2026-07-15", "flight_code": "SQ601", "mileage": 2883 },
+        { "from": "SIN", "to": "ICN", "date": "2026-07-19", "flight_code": "SQ600", "mileage": 2883 }
     ].map(flight => ({
         ...flight,
         parsedDate: new Date(`${flight.date}T12:00:00`)
@@ -175,8 +180,8 @@ description: Some fun stuffs of Donghoon Shin
     const timelineStartLabel = d3.select("#flight-timeline-start");
     const timelineEnd = d3.select("#flight-timeline-end");
     const aspectRatio = 1.7;
-    const timelineStart = new Date("2022-09-01T12:00:00");
-    const timelineEndDate = new Date();
+    const timelineStart = new Date(Math.min(...flights.map(f => f.parsedDate)));
+    const timelineEndDate = new Date(Math.max(...flights.map(f => f.parsedDate)));
     const millisPerDay = 24 * 60 * 60 * 1000;
     const sliderMax = Math.max(0, Math.floor((timelineEndDate - timelineStart) / millisPerDay));
     const routeAnimationMs = 800;
@@ -256,8 +261,8 @@ description: Some fun stuffs of Donghoon Shin
             const key = routeKey(flight.from, flight.to);
             routeCount[key] = (routeCount[key] || 0) + 1;
 
-            if (coordLookup[flight.from] && coordLookup[flight.to]) {
-                totalMiles += haversineDistance(coordLookup[flight.from], coordLookup[flight.to]);
+            if (flight.mileage) {
+                totalMiles += flight.mileage;
             }
         }
 
@@ -396,7 +401,8 @@ description: Some fun stuffs of Donghoon Shin
             .data(countries.features)
             .join("path")
             .attr("fill", "#d1d1d1")
-            .attr("stroke", "#ffffff")
+            .attr("stroke", "rgb(249, 246, 240)")
+            .attr("stroke-width", .75)
             .attr("d", path);
 
         routeLayer = svg.append("g");
