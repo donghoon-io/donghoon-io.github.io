@@ -41,7 +41,7 @@
   padding-block: .5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .home-project-scroller .home-project-scroller-inner {
@@ -185,7 +185,9 @@
 .affiliation-logo {
   width: 15px;
   height: 15px;
-  margin: 0 4px 2px 2px;
+  margin: 0 4px 1px 4px;
+  display: inline-block;
+  vertical-align: text-bottom;
 }
 
 .home-flag {
@@ -225,4 +227,14 @@ a:hover .affiliation-logo {
 
 :lang(ko) {
   font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+.home-title-ko:lang(ko) {
+  margin-left: 0.3rem;
+  font-family: 'Nanum Myeongjo', serif !important;
+  font-size: 0.64em;
+  font-weight: 400;
+  color: rgb(var(--ink) / 0.62);
+  letter-spacing: 0;
+  white-space: nowrap;
 }
