@@ -1,11 +1,11 @@
 project:
   - title: ReFinE
-    image: refine.jpg
+    image: refine.png
     paper: dis2026_refine_paper.pdf
     detail: >
       <p>Working with <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a> and <a href='https://www.llwang.net/'>Lucy Lu Wang</a>, I built a Figma plugin that transforms academic insights from HCI papers into UI design iteration supports with generative AI. (DIS '26 paper, to appear)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/refine.jpg' class='modal-image-responsive' alt='pipeline of our system'>
+      <img src='site.baseurl/assets/images/project_detail/refine.png' class='modal-image-responsive' alt='pipeline of our system'>
 
       <p style='text-align: center; font-weight: 300;'>Pipeline of generating design insights using ReFinE</p>
 
@@ -22,13 +22,13 @@ project:
       Leveraging academic insights to support UI design iteration
     id: refine
   - title: PaperTok
-    image: papertok.jpg
+    image: papertok.png
     link: 'https://papertok.com'
     paper: chi2026_papertok_paper.pdf
     detail: >
       <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically transforms design implications from HCI papers into short-form videos with generative AI. (CHI '26 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/papertok.jpg' class='modal-image-responsive' alt='pipeline of our system'>
+      <img src='site.baseurl/assets/images/project_detail/papertok.png' class='modal-image-responsive' alt='pipeline of our system'>
 
       <p style='text-align: center; font-weight: 300;'>Pipeline of generating short-form videos using PaperTok</p>
 
@@ -58,12 +58,12 @@ project:
       Enhancing the Use of LLMs
     id: google
   - title: PosterMate
-    image: postermate.jpg
+    image: postermate.png
     paper: uist2025_postermate_paper.pdf
     detail: >
       <p>Working with <a href='https://gromitchan.com/'>Gromit Chan</a> at Adobe Research, I developed a system that assists with poster design by simulating real-time collaboration with persona-driven agents.</p>
       <p>This work was done during my internship at Adobe Research. (UIST '25 paper)</p>
-      <img src='site.baseurl/assets/images/project_detail/postermate.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
+      <img src='site.baseurl/assets/images/project_detail/postermate.png' class='modal-image-responsive' alt='keyscreen of our system'>
       <p style='text-align: center; font-weight: 300;'>Keyscreen of PosterMate</p>
       <p style='margin-top: 2rem;'>Later, my project was translated into an <a href="https://research.adobe.com/news/the-research-behind-project-get-savvy/">Adobe product</a></p>
       <div class="video-wrapper"> <iframe src="https://www.youtube.com/embed/74ltnOqck5c?si=DOrVs-ZNl0gGNFpf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe> </div><style>.video-wrapper { max-width: 500px; margin-left: auto; margin-right: auto; } .video-wrapper iframe { width: 100%; height: auto; aspect-ratio: 16 / 9; }</style>
@@ -82,13 +82,13 @@ project:
     link: https://research.adobe.com/news/the-research-behind-project-get-savvy/
     id: postermate
   - title: What About My Design Context?
-    image: customized-design-card.jpg
+    image: customized-design-card.png
     link: 'https://paper2card.com'
     paper: dis2025_paper2customization_paper.pdf
     detail: >
       <p>Working with <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (DIS '25 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/customized-design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
+      <img src='site.baseurl/assets/images/project_detail/customized-design-card.png' class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center; font-weight: 300;'>Pipeline for generating customized design cards using our system</p>
 
@@ -104,7 +104,7 @@ project:
       Generative Al tool that helps designers tailor translational artifacts
     id: customized_design_card
   - title: PlanFitting
-    image: exercise-planning-prompt.jpg
+    image: planfitting.png
     paper: cui2025_planfitting_paper.pdf
     detail: >
       <p>Working with <a href='http://younghokim.net/'>Young-Ho Kim</a> at Naver AI, I built an interface that helps users to generate evidence-baesd exercise plans using an LLM chatbot.</p>
@@ -134,7 +134,7 @@ project:
     detail: >
       <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically transforms design implications from HCI papers into design cards with generative AI. (CHI '24 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
+      <img src='site.baseurl/assets/images/project_detail/design-card.png' class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center; font-weight: 300;'>Pipeline of generating design cards using our system</p>
 
@@ -155,7 +155,7 @@ project:
     detail: >
       <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (CHI '24 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/cpd-example.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
+      <img src='site.baseurl/assets/images/project_detail/cpd-example.png' class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center; font-weight: 300;'>An example of causal pathway diagram (CPD)</p>
 
@@ -190,7 +190,7 @@ project:
       - <i data-lucide="book-text" class="mr-1"></i>CHI '24
       - LLM
       - Mental health
-    image: diarymate.jpg
+    image: diarymate.png
     title: DiaryMate
     paper: chi2024_diarymate_paper.pdf
     description: >-
@@ -201,7 +201,7 @@ project:
       Hsieh</a>, I built a chatbot that helps familiarization of ad hoc teammates. Plus, I revealed the efficacy of such
       familiarization in ad hoc team performance. (CHI '23 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/introbot.jpg'
+      <img src='site.baseurl/assets/images/project_detail/introbot.png'
       class='modal-image-responsive' alt='keyscreen of our system'>
 
       <p style='text-align: center; font-weight: 300;'>Overview of the IntroBot's system components</p>
@@ -213,7 +213,7 @@ project:
       - <i data-lucide="book-text" class="mr-1"></i>CHI '23
       - Chatbot
       - NLP
-    image: introbot.jpg
+    image: introbot.png
     title: "IntroBot"
     paper: chi2023_introbot_paper.pdf
     description: Conversational agent for supporting familiarization among ad hoc teammates
@@ -229,7 +229,7 @@ project:
       Kim</a>, this project was advised by <a href='https://juhokim.com/'>Juho
       Kim</a>. (CHI '23 paper)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/kmooc.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/kmooc.png' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='K-MOOC project image'>
 
       <p style='text-align: center; font-weight: 300;'>Example of the data
@@ -242,7 +242,7 @@ project:
     tags:
       - <i data-lucide="book-text" class="mr-1"></i>CHI '23
       - Log analysis
-    image: kmooc.jpg
+    image: kmooc.png
     title: How Older Adults Use Online Videos for Learning
     paper: chi2023_mooc_paper.pdf
     description: Understanding how older adults use online videos for learning
@@ -262,7 +262,7 @@ project:
       href='https://www.hadr.ai/'>NeurIPS '21 Workshop</a> (AI for Humanitarian
       Assistance and Disaster Response).</p>
 
-      <img src='site.baseurl/assets/images/project_detail/satellite-explainability.jpg'
+      <img src='site.baseurl/assets/images/project_detail/satellite-explainability.png'
       class='modal-image-responsive' alt='satellite imagery project image'>
 
       <p style='text-align: center; font-weight: 300;'>Examples of the
@@ -276,7 +276,7 @@ project:
       - <i data-lucide="book-text" class="mr-1"></i>CSCW '23
       - <i data-lucide="book-text" class="mr-1"></i>NeurIPS '21
       - Explainable AI
-    image: satellite-explainability.jpg
+    image: satellite-explainability.png
     title: Explainable AI for Visual Detection Task
     description: >-
       Guiding the design of AI explanation for assessing building damages from
@@ -301,7 +301,7 @@ project:
       href='https://cis.unimelb.edu.au/hci/emotion-workshop'>CHI 2022 Workshop</a>
       (Future of Emotion in HCI).</p>
 
-      <img src='site.baseurl/assets/images/project_detail/omhc.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/omhc.png' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='AI in OMHCs'>
 
       <p style='text-align: center; font-weight: 300;'>Keyscreens of our
@@ -316,7 +316,7 @@ project:
       - <i data-lucide="book-text" class="mr-1"></i>CHI '22
       - Mental health
       - NLP
-    image: omhc.jpg
+    image: omhc.png
     title: AI in Online Mental Health Communities
     description: >-
       AI tool that supports emotional support in online mental health communities (OMHCs)
@@ -367,7 +367,7 @@ project:
       <p>This work was submitted as a team project assignment to the Spring 2021
       Creative Research Practice course.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/spring2021crp-1.jpg'
+      <img src='site.baseurl/assets/images/project_detail/spring2021crp-1.png'
       class='modal-image-responsive' alt='Spring 2021 creative research practice project
       first image'>
 
@@ -405,7 +405,7 @@ project:
       <p>This work was submitted as a team project assignment to the Spring 2021
       HCI Theory and Practice course.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/spring2021hci.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/spring2021hci.png' class='modal-image-responsive'
       alt='Spring 2021 HCI theory and practice project image'>
 
       <p style='text-align: center; font-weight: 300;'>Keyscreens of
@@ -419,7 +419,7 @@ project:
       - Coursework
       - CMC
       - iOS
-    image: spring2021hci.jpg
+    image: spring2021hci.png
     title: PoliNewsBot
     description: Conversational agent for facilitating discussion on political issues
     id: spring2021hci
@@ -430,7 +430,7 @@ project:
       <p>This work was publised in <a href='https://cscw.acm.org/2021/'>CSCW
       2021</a>.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/trkic-g00gle.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/trkic-g00gle.png' class='modal-image-responsive'
       alt='Trick google project image'>
 
       <p style='text-align: center; font-weight: 300;'>Entities of reviewing
@@ -442,7 +442,7 @@ project:
     tags:
       - <i data-lucide="book-text" class="mr-1"></i>CSCW '21
       - Algorithmic experience
-    image: trkic-g00gle.jpg
+    image: trkic-g00gle.png
     title: Trkic G00gle
     description: Understanding why and how users game translation algorithms
     paper: cscw2021_trkic-g00gle_paper.pdf
@@ -549,7 +549,7 @@ project:
       results imply that an ML-infused conversational agent can be effective for
       augmenting a dyadic conversation. (CHI '21 Late-Breaking Work)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/blahblahbot.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/blahblahbot.png' class='modal-image-responsive'
       style='max-width: 650px !important;' alt='BlahBlahBot project image'>
 
       <p style='text-align: center; font-weight: 300;'>Framework of
@@ -560,7 +560,7 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running interview
       sessions, writing</p>
     title: BlahBlahBot
-    image: blahblahbot.jpg
+    image: blahblahbot.png
     tags:
       - <i data-lucide="book-text" class="mr-1"></i>CHI '21
       - AI-MC
@@ -598,7 +598,7 @@ project:
       following storieline, we, though indirectly, let them feel how stressed high
       school students would be in the midst of a choice.<br></p>
 
-      <img src='site.baseurl/assets/images/project_detail/fall2020instell.jpg'
+      <img src='site.baseurl/assets/images/project_detail/fall2020instell.png'
       class='modal-image-responsive' alt='Fall 2020 interactive storytelling project
       image'>
 
@@ -614,7 +614,7 @@ project:
 
       <p><span style="font-weight: 300">[My role in this project]</span><br>System development</p>
     title: Easier Said than Done
-    image: fall2020instell.jpg
+    image: fall2020instell.png
     tags:
       - Coursework
       - Serious game
@@ -633,7 +633,7 @@ project:
       
       <p>If you're interested in exploring our prototype, please check out the link above.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/fall2020ucd.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/fall2020ucd.png' class='modal-image-responsive'
       alt='Fall 2020 user centered design project image'>
 
       <p style='text-align: center; font-weight: 300;'>Prototype of
@@ -644,7 +644,7 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>User study, ideating design
       elements</p>
     title: 夜-planet
-    image: fall2020ucd.jpg
+    image: fall2020ucd.png
     tags:
       - Coursework
       - Design
@@ -655,7 +655,7 @@ project:
   - code: 'https://github.com/donghoon-io/TalkingBoogie'
     detail: >
       <p>At the end of my sophomore year, I came across a CHI paper by chance: <em>“Blocks4All: Overcoming Accessibility Barriers to Blocks Programming for Children with Visual Impairments”</em> by Milne and colleagues. The paper explored how to make block-based programming tools more accessible for children with visual impairments. I was fascinated by how HCI researchers deeply engaged with specific user groups and translated design implications into tangible systems.<br></p> <p>Around that same time, my supervisor asked if I’d be interested in leading a project to develop an AAC (Augmentative and Alternative Communication) application. I immediately said yes; at that point, I was eager to get involved in research, but opportunities were scarce for undergraduates without prior experience. From then on, I spent countless nights developing an iOS app, conducting user studies, reading papers, and designing interfaces. Everything was new to me—from receiving research funding to navigating the IRB process for our study. As luck would have it, we wrapped up the project just in time for the CHI 2020 deadline. We submitted our work, and it was accepted with an Honorable Mention Award.<br></p> <p>In our paper, we emphasized that AAC stakeholders shouldn’t be limited to just the child, but must include caregivers as essential partners in communication. With that in mind, we developed <em>Talkingboogie</em>, a mobile AAC system designed to support children with developmental disabilities and their caregivers in collaboratively shaping effective communication strategies.</p>
-      <img src='site.baseurl/assets/images/project_detail/talkingboogie-1.jpg'
+      <img src='site.baseurl/assets/images/project_detail/talkingboogie-1.png'
       class='modal-image-responsive' alt='Flow of TalkingBoogie system'>
 
       <p style='text-align: center; font-weight: 300;'>Usage flow of
@@ -664,13 +664,13 @@ project:
       <p>TalkingBoogie system consists of two mobile apps:
       TalkingBoogie-AAC for caregiver-child communication, and
           TalkingBoogie-Coach supporting caregiver collaboration.</p>
-      <img src='site.baseurl/assets/images/project_detail/talkingboogie-2.jpg'
+      <img src='site.baseurl/assets/images/project_detail/talkingboogie-2.png'
       class='modal-image-responsive' alt='Keyscreen of TalkingBoogie AAC app'>
 
       <p style='text-align: center; font-weight: 300;'>Keyscreens of
       TalkingBoogie-AAC</p>
 
-      <img src='site.baseurl/assets/images/project_detail/talkingboogie-3.jpg'
+      <img src='site.baseurl/assets/images/project_detail/talkingboogie-3.png'
       class='modal-image-responsive' alt='Keyscreen of TalkingBoogie Coach app'>
 
       <p style='text-align: center; font-weight: 300;'>Keyscreens of
@@ -681,7 +681,7 @@ project:
       <p><span style="font-weight: 300">[My role in this project]</span><br>System development, writing, user
       study, running interview sessions, data analysis</p>
     title: TalkingBoogie
-    image: talkingboogie.jpg
+    image: talkingboogie.png
     tags:
       - <i data-lucide="book-text" class="mr-1"></i>CHI '20
       - <i data-lucide="award" class="mr-1"></i>Honorable Mention
@@ -720,7 +720,7 @@ project:
       - Coursework
       - InfoVis
       - D3.js
-    image: dt4c_p3.jpg
+    image: dt4c_p3.png
     title: Music Knows.
     description: What my favorite sets of music tell about my emotion
     id: dt4c_p3
@@ -747,7 +747,7 @@ project:
       - Coursework
       - Small multiple
       - Illustrator
-    image: dt4c_p1.jpg
+    image: dt4c_p1.png
     title: Tech Champion's League
     description: What if well-known tech companies run their football team?
     id: dt4c_p1
@@ -785,7 +785,7 @@ project:
       
       <p>I conducted observational and interview studies with six college students. Although the scope was limited due to the pandemic, the experience gave me valuable insight into how HCI researchers apply qualitative methods to study real-world user behavior.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/spring2020digiethno.jpg'
+      <img src='site.baseurl/assets/images/project_detail/spring2020digiethno.png'
       class='modal-image-responsive' alt='Spring 2020 digital ethnography project image'>
 
       <hr>
@@ -794,7 +794,7 @@ project:
     tags:
       - Coursework
       - Micro-mobility
-    image: spring2020digiethno.jpg
+    image: spring2020digiethno.png
     title: Digital Ethnography
     description: >-
       Term paper on needfinding of Korean micro-mobility users submitted to Spring
@@ -808,7 +808,7 @@ project:
       conducted a series of studies identifying several important linguistic features that make users
       perceive a chatbot as a real person. (MobileHCI '20 Late-Breaking Result)</p>
 
-      <img src='site.baseurl/assets/images/project_detail/prp.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/prp.png' class='modal-image-responsive'
       alt='MobileHCI project image'>
 
       <hr>
@@ -817,7 +817,7 @@ project:
     tags:
       - <i data-lucide="book-text" class="mr-1"></i>MobileHCI '20
       - Chatbot
-    image: prp.jpg
+    image: prp.png
     title: PRP
     description: >-
       Understanding which linguistic features contribute to forming a persona of a
@@ -825,7 +825,7 @@ project:
     paper: mobilehci2020_prp_poster.pdf
     id: prp
   - detail: >
-      <p>Although text-based conversational agents (chatbots) hold significant potential for diet journaling and health management, they often face low user acceptance. To address this challenge, we propose incorporating the personas of real-world caregivers into the chatbot design.<br></p>
+      <p>Although text-based conversational agents hold significant potential for diet journaling and health management, they often face low user acceptance. To address this challenge, we propose incorporating the personas of real-world caregivers into the chatbot design.<br></p>
 
       <p>Led by <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we conducted a series of studies comparing user perceptions of a chatbot across different personas: a doctor, a family member, and no persona. Although the study was carried out using a Wizard-of-Oz methodology, we believe the findings can be extended to automated chatbot systems powered by NLP.<br></p>
 
@@ -833,7 +833,7 @@ project:
       href='https://dl.acm.org/doi/10.1145/3334480.3375154'>CHI 2020 Workshop</a>
       (Conversational Agents for Health and Wellbeing).</p>
 
-      <img src='site.baseurl/assets/images/project_detail/personabot.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/personabot.png' class='modal-image-responsive'
       alt='Personabot project image'>
 
       <p style='text-align: center; font-weight: 300;'>Three personas applied to
@@ -846,7 +846,7 @@ project:
     tags:
       - <i data-lucide="book-text" class="mr-1"></i>CHI '20
       - Chatbot
-    image: personabot.jpg
+    image: personabot.png
     title: PersonaBot
     description: Applying the persona of user's caregivers to health-managing chatbots
     paper: chi2020_personabot_workshop.pdf
@@ -856,7 +856,7 @@ project:
     detail: >
       <p>Juvis, a Korean company specializing in diet management, needed a way to deliver key information and assist users with reservations. To address this, we designed a chatbot that guided users through the process. This experience deepened my understanding of chatbot design and later inspired a follow-up project on <a href='site.baseurl/assets/pdf/chi2020_personabot_workshop.pdf'>integrating personas into chatbot interactions</a>.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/juvis.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/juvis.png' class='modal-image-responsive'
       alt='Juvis project image'>
 
       <p style='text-align: center; font-weight: 300;'>Keyscreens of Juvis
@@ -868,7 +868,7 @@ project:
     tags:
       - Industry
       - Chatbot
-    image: juvis.jpg
+    image: juvis.png
     title: Juvis J Bot
     description: >-
       A chatbot agent for delivering health information and encouraging user enrollment in Juvis, a Korean diet management company
@@ -889,7 +889,7 @@ project:
       <p style='text-align: center; font-weight: 300;'>Me with an Elecle bike
       XD</p>
 
-      <img src='site.baseurl/assets/images/project_detail/elecle.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/elecle.png' class='modal-image-responsive'
       alt='Elecle image'>
 
       <p style='text-align: center; font-weight: 300;'>Keyscreens of Elecle iOS
@@ -917,7 +917,7 @@ project:
 
       <p>However, some users mentioned that manually entering courses into the system was a bit time-consuming. Based on their feedback, I added a crawling function to streamline the process: by simply entering their SNU credentials, the system automatically retrieves the relevant course data.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/ecegrad.jpg' class='modal-image-responsive'
+      <img src='site.baseurl/assets/images/project_detail/ecegrad.png' class='modal-image-responsive'
       alt='ECE grad project image'>
 
       <p style='text-align: center; font-weight: 300;'>Keyscreens of ECE
@@ -929,7 +929,7 @@ project:
     tags:
       - Personal
       - iOS
-    image: ecegrad.jpg
+    image: ecegrad.png
     title: ECE Grad
     description: Graduation managing app for SNU ECE undergrads
     appstore: 'https://apps.apple.com/app/id1450808330'

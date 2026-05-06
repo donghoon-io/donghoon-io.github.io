@@ -65,6 +65,7 @@
   width: 100%;
   height: auto;
   display: block;
+  background-color: var(--background-primary-color) !important;
 }
 
 .project-item-description {
@@ -244,4 +245,5 @@ body.modal-open {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0 !important;
+  background-color: var(--background-primary-color) !important;
 }
