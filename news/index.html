@@ -9,12 +9,17 @@ description: Recent news of Donghoon Shin
 
 <div class="px-3 py-4">
     <p class="section-title">News</p>
-    <div class="mt-4 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
+    <div class="mt-4 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2" itemprop="mainEntity" itemscope itemtype="https://schema.org/ItemList">
+        <meta itemprop="name" content="News about Donghoon Shin">
         {% for new in news %}
-        <div>
-            <p class="news-title mb-0">{{ new.title }}</p>
+        <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="{{ forloop.index }}">
+            <div itemprop="item" itemscope itemtype="https://schema.org/CreativeWork">
+            <p class="news-title mb-0" itemprop="name">{{ new.title }}</p>
             <p class="news-date mb-1">{{ new.date | date: "%b %-d, %Y" }}</p>
-            <p class="news-description">{{ new.description }}</p>
+            <p class="news-description" itemprop="description">{{ new.description }}</p>
+            <meta itemprop="datePublished" content="{{ new.date | date_to_xmlschema }}">
+            </div>
             <hr>
         </div>
         {% endfor %}

@@ -3,17 +3,59 @@
 
   {%- include head.html -%}
 
+  {%- assign page_title = page.title | default: site.title -%}
+  {%- if page.url != "/" -%}
+    {%- assign page_title = page_title | append: " | " | append: site.title -%}
+  {%- endif -%}
+  {%- assign page_description = page.description | default: site.description | strip_html | normalize_whitespace -%}
+  {%- assign page_url = page.url | absolute_url -%}
+  {%- assign person_id = site.url | append: "/#donghoon-shin" -%}
+  {%- assign page_schema_type = "https://schema.org/WebPage" -%}
+  {%- if page.url == "/" or page.url == "/cv" or page.url == "/cv/" -%}
+    {%- assign page_schema_type = "https://schema.org/ProfilePage" -%}
+  {%- elsif page.url == "/publication" or page.url == "/publication/" or page.url == "/news" or page.url == "/news/" or page.url == "/project" or page.url == "/project/" or page.url == "/music" or page.url == "/music/" -%}
+    {%- assign page_schema_type = "https://schema.org/CollectionPage" -%}
+  {%- endif -%}
+
   <body>
-
-    {%- include header.html -%}
-
-    <main aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <div itemscope itemtype="{{ page_schema_type }}" itemid="{{ page_url }}">
+      <meta itemprop="name" content="{{ page_title }}">
+      <meta itemprop="url" content="{{ page_url }}">
+      <meta itemprop="description" content="{{ page_description }}">
+      <div itemprop="isPartOf" itemscope itemtype="https://schema.org/WebSite" itemid="{{ site.url }}/#website" hidden>
+        <meta itemprop="name" content="{{ site.title }}">
+        <meta itemprop="url" content="{{ site.url }}">
+        <meta itemprop="description" content="{{ site.description | strip_html | normalize_whitespace }}">
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Person" itemid="{{ person_id }}">
+          <meta itemprop="name" content="{{ site.author.name }}">
+          <meta itemprop="email" content="mailto:{{ site.author.email }}">
+          <meta itemprop="url" content="{{ site.url }}">
+          <meta itemprop="image" content="{{ '/assets/images/donghoon.png' | absolute_url }}">
+          <meta itemprop="sameAs" content="https://scholar.google.com/citations?user=753zIgUAAAAJ">
+          <meta itemprop="sameAs" content="https://linkedin.com/in/donghoon-io">
+          <meta itemprop="sameAs" content="https://www.instagram.com/donghoon.io">
+          <meta itemprop="sameAs" content="https://twitter.com/donghoon_io">
+        </div>
       </div>
-    </main>
+      <div itemprop="about" itemscope itemtype="https://schema.org/Person" itemid="{{ person_id }}" hidden>
+        <meta itemprop="name" content="{{ site.author.name }}">
+        <meta itemprop="email" content="mailto:{{ site.author.email }}">
+        <meta itemprop="url" content="{{ site.url }}">
+        <meta itemprop="image" content="{{ '/assets/images/donghoon.png' | absolute_url }}">
+        <meta itemprop="jobTitle" content="HCI researcher">
+        <meta itemprop="affiliation" content="University of Washington">
+      </div>
 
-    {%- include footer.html -%}
+      {%- include header.html -%}
+
+      <main aria-label="Content" itemprop="mainContentOfPage">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+
+      {%- include footer.html -%}
+    </div>
 
   </body>
 

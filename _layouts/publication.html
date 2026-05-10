@@ -1,13 +1,35 @@
 ---
 layout: default
 ---
-<div class="px-3 py-4">
+<article class="px-3 py-4" itemprop="mainEntity" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="{{ page.url | absolute_url }}">
+  <meta itemprop="mainEntityOfPage" content="{{ page.url | absolute_url }}">
+  <meta itemprop="url" content="{{ page.url | absolute_url }}">
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="headline" content="{{ page.title }}">
+  <meta itemprop="datePublished" content="{{ page.year }}">
+  <meta itemprop="description" content="{{ page.abstract | strip_html | normalize_whitespace }}">
+  <meta itemprop="image" content="{{ page.slug | prepend: '/assets/images/publication/' | append: '.png' | absolute_url }}">
+  {% for cat in page.category %}
+  <meta itemprop="keywords" content="{{ cat }}">
+  {% endfor %}
   <div class="pb-3">
-    <p class="publication-detail-title">{{ page.title }}</p>
+    <h1 class="publication-detail-title" itemprop="headline">{{ page.title }}</h1>
+    <p class="publication-author-list">
+      {% for author in page.authors %}
+      {% assign author_data = site.data.people.people | where:"name", author | first %}
+      {% if author_data and author_data.website %}
+      <a href="{{ author_data.website }}">{{ author }}</a>
+      {% else %}
+      {{ author }}
+      {% endif %}
+      {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+      {% if page.coauthors %} <span class="publication-cofirst ml-2">(* co-first authorship)</span>{% endif %}
+    </p>
     {% if page.note %}
-    <p><span>{{ page.venue }}.</span> ({{ page.note }})</p>
+    <p><span itemprop="isPartOf">{{ page.venue_full | default: page.venue }}</span>, {{ page.year }}. ({{ page.note }})</p>
     {% else %}
-    <p>Published in {{ page.venue }}.</p>
+    <p><span itemprop="isPartOf">{{ page.venue_full | default: page.venue }}</span>, {{ page.year }}.</p>
     {% endif %}
     {% if page.award %}
     <p class="inline-flex items-center"><i data-lucide="trophy" class="mr-1.5"></i>{{ page.award }}</p>
@@ -19,8 +41,17 @@ layout: default
   <div class="publication-detail-authors mb-8">
     {% for author in page.authors %}
     {% assign author_data = site.data.people.people | where:"name", author | first %}
-    {% if author_data %}
-    <div class="publication-detail-author-card">
+    <div class="publication-detail-author-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <meta itemprop="name" content="{{ author }}">
+      {% if author_data and author_data.website %}
+      <meta itemprop="url" content="{{ author_data.website }}">
+      {% endif %}
+      {% if author_data and author_data.affiliation %}
+      <div itemprop="affiliation" itemscope itemtype="https://schema.org/Organization" hidden>
+        <meta itemprop="name" content="{{ author_data.affiliation | strip_html | normalize_whitespace }}">
+      </div>
+      {% endif %}
+      {% if author_data %}
       <div>
         {% if author_data.website %}
         {% if author_data.image %}
@@ -39,33 +70,31 @@ layout: default
       <div class="mt-2">
         {% if author_data.website %}
         <a href="{{ author_data.website }}">
-          <p class="publication-detail-author-name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
+          <p class="publication-detail-author-name" itemprop="name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
           <p class="publication-detail-affiliation-name">{{ author_data.affiliation }}</p>
         </a>
         {% else %}
-        <p class="publication-detail-author-name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
+        <p class="publication-detail-author-name" itemprop="name">{{ author_data.name }} {% for co in page.coauthors %}{% if co == author_data.name %}*{% endif %}{% endfor %}</p>
         <p class="publication-detail-affiliation-name">{{ author_data.affiliation }}</p>
         {% endif %}
       </div>
-    </div>
-    {% else %}
-    <div class="publication-detail-author-card">
+      {% else %}
       <div>
         <div class="publication-detail-author-image" style="{{ '/assets/images/author/default.jpg' | relative_url | prepend: 'background-image: url(' | append: ')' }}"></div>
       </div>
       <div class="mt-2">
-        <p class="publication-detail-author-name">{{ author }}</p>
+        <p class="publication-detail-author-name" itemprop="name">{{ author }}</p>
       </div>
+      {% endif %}
     </div>
-    {% endif %}
     {% endfor %}
   </div>
   <div class="mb-8">
-    <img class="publication-detail-image" alt="Landscape" src="{{ page.slug | prepend: '/assets/images/publication/' | append: '.png' | relative_url }}"/>
+    <img class="publication-detail-image" alt="Publication preview for {{ page.title }}" src="{{ page.slug | prepend: '/assets/images/publication/' | append: '.png' | relative_url }}" itemprop="image"/>
   </div>
   <div class="mb-8">
     <p class="section-title">Abstract</p>
-    <p>{{ page.abstract }}</p>
+    <p itemprop="abstract">{{ page.abstract }}</p>
   </div>
   <div>
     <p class="section-title">Materials</p>
@@ -85,4 +114,4 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</article>

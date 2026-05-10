@@ -7,17 +7,22 @@ description: Curriculum vitae of Donghoon Shin
 
 {% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
 
-<div class="cv px-3 py-4">
+<div class="cv px-3 py-4" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person" itemid="{{ site.url }}/#donghoon-shin">
+  <meta itemprop="name" content="Donghoon Shin">
+  <meta itemprop="url" content="{{ site.url }}">
+  <meta itemprop="email" content="mailto:{{ site.author.email }}">
+  <meta itemprop="jobTitle" content="HCI researcher">
+  <meta itemprop="image" content="{{ '/assets/images/donghoon.png' | absolute_url }}">
   <div>
     <div>
       <header>
         <div class="inline-flex items-center">
-          <h1>Donghoon Shin</h1>
+          <h1 itemprop="name">Donghoon Shin</h1>
           <a class="cv-pdf inline-flex items-center" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" rel="external"><i data-lucide="file" class="mr-1.5"></i>PDF</a>
         </div>
         <p><a href="#" class="cryptedmail" data-name="dhoon" data-domain="uw" data-tld="edu"
             onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a><br><a
-            href="https://donghoon.io">donghoon.io</a><br></p>
+            href="https://donghoon.io" itemprop="url">donghoon.io</a><br></p>
       </header>
       <section>
         <h2>Education</h2>

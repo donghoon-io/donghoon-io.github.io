@@ -8,17 +8,23 @@ description: Some musics of Donghoon Shin
 
 <div class="px-3 py-4">
     <p class="page-title">Music</p>
+    <div itemprop="mainEntity" itemscope itemtype="https://schema.org/ItemList">
+        <meta itemprop="name" content="Music by Donghoon Shin">
     {% for music in musics %}
-    <div class="mt-10 grid grid-cols-1 gap-3 md:grid-cols-12 md:gap-6">
+    <div class="mt-10 grid grid-cols-1 gap-3 md:grid-cols-12 md:gap-6" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="{{ forloop.index }}">
+        <div itemprop="item" itemscope itemtype="https://schema.org/MusicRecording">
+        <meta itemprop="name" content="{{ music.title }}">
+        <meta itemprop="byArtist" content="{{ music.artist }}">
         <div class="mb-3 md:col-span-4 md:mb-0">
-            <p class="subsection-title">{{ music.artist }} - {{ music.title }}</p>
+            <p class="subsection-title"><span itemprop="byArtist">{{ music.artist }}</span> - <span itemprop="name">{{ music.title }}</span></p>
         </div>
         <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <div class="music-container">
                 <iframe loading="lazy" src="https://www.youtube.com/embed/{{ music.link }}&autoplay=1" height="400" style="border:none; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/{{ music.link }}?autoplay=1><img src=https://img.youtube.com/vi/{{ music.link }}/hqdefault.jpg alt='Donghoon's video'><span>▶</span></a>"></iframe>
             </div>
             <iframe loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" frameborder="0" height="152" style="display:block;width:100%;overflow:hidden;background:transparent;border-radius:12px;" src="{{ music.spotify }}"></iframe>
-            <p class="flex items-center justify-end pt-3 text-right font-light">
+            <p class="flex items-center justify-end pt-3 text-right font-light" itemprop="description">
                 {% if music.type contains 'GarageBand cover' %}
                 <i data-lucide="file-music" class="mr-1.5"></i>
                 {% elsif music.type contains 'Band cover' %}
@@ -29,6 +35,8 @@ description: Some musics of Donghoon Shin
                 {{ music.type }}
             </p>
         </div>
+        </div>
     </div>
     {% endfor %}
+    </div>
 </div>
