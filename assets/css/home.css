@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'ZEN SERIF';
+  src: url('/assets/font/zen-serif.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 .lucide {
   display: inline-block;
   width: 1.1em;
@@ -231,7 +239,7 @@ a:hover .affiliation-logo {
 
 .home-title-ko:lang(ko) {
   margin-left: 0.3rem;
-  font-family: 'Nanum Myeongjo', serif !important;
+  font-family: 'ZEN SERIF', 'Nanum Myeongjo', serif !important;
   font-size: 0.64em;
   font-weight: 400;
   color: rgb(var(--ink) / 0.62);
