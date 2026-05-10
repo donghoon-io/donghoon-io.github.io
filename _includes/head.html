@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta name="robots" content="index,follow">
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace }}{% else %}{{ site.description | strip_html | normalize_whitespace }}{% endif %}">
   
   <title>{% if page.url == "/" %}{{ page.title }}{% else %}{{ page.title }} | Donghoon Shin{% endif %}</title>
 
