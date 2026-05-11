@@ -211,15 +211,6 @@ description: HCI researcher | Ph.D. student at the University of Washington
 		const previousButton = shell?.querySelector(".home-project-scroll-button-left");
 		const nextButton = shell?.querySelector(".home-project-scroll-button-right");
 		const stepRatio = Number(scroller.dataset.scrollStep || 0.82);
-		const dragThreshold = 6;
-		let isPointerDown = false;
-		let isDragging = false;
-		let dragStartX = 0;
-		let dragStartScrollLeft = 0;
-		let dragLastX = 0;
-		let dragLastTime = 0;
-		let dragVelocity = 0;
-		let momentumFrame = null;
 
 		function getStep() {
 			return Math.max(220, Math.round(scroller.clientWidth * stepRatio));
@@ -244,86 +235,8 @@ description: HCI researcher | Ph.D. student at the University of Washington
 			});
 		}
 
-		function stopMomentum() {
-			if (momentumFrame) {
-				cancelAnimationFrame(momentumFrame);
-				momentumFrame = null;
-			}
-		}
-
-		function startMomentum() {
-			stopMomentum();
-			let velocity = dragVelocity;
-
-			function step() {
-				velocity *= 0.94;
-				if (Math.abs(velocity) < 0.12) {
-					momentumFrame = null;
-					return;
-				}
-
-				const previousScrollLeft = scroller.scrollLeft;
-				scroller.scrollLeft -= velocity * 16;
-				if (Math.abs(scroller.scrollLeft - previousScrollLeft) < 0.1) {
-					momentumFrame = null;
-					return;
-				}
-
-				momentumFrame = requestAnimationFrame(step);
-			}
-
-			momentumFrame = requestAnimationFrame(step);
-		}
-
 		previousButton?.addEventListener("click", () => scrollByStep(-1));
 		nextButton?.addEventListener("click", () => scrollByStep(1));
-
-		scroller.addEventListener("pointerdown", (event) => {
-			if (event.pointerType !== "mouse" || event.button !== 0) return;
-			if (event.target.closest("a, button")) return;
-			stopMomentum();
-			isPointerDown = true;
-			isDragging = false;
-			dragStartX = event.clientX;
-			dragStartScrollLeft = scroller.scrollLeft;
-			dragLastX = event.clientX;
-			dragLastTime = performance.now();
-			dragVelocity = 0;
-			scroller.setPointerCapture?.(event.pointerId);
-		});
-
-		scroller.addEventListener("pointermove", (event) => {
-			if (!isPointerDown) return;
-			const now = performance.now();
-			const deltaX = event.clientX - dragStartX;
-			if (!isDragging && Math.abs(deltaX) < dragThreshold) return;
-			if (!isDragging) {
-				isDragging = true;
-				scroller.classList.add("is-dragging");
-			}
-			const deltaTime = Math.max(now - dragLastTime, 1);
-			dragVelocity = (event.clientX - dragLastX) / deltaTime;
-			dragLastX = event.clientX;
-			dragLastTime = now;
-			scroller.scrollLeft = dragStartScrollLeft - deltaX;
-		});
-
-		function stopDragging(event) {
-			if (!isPointerDown) return;
-			isPointerDown = false;
-			const shouldStartMomentum = isDragging && Math.abs(dragVelocity) > 0.05;
-			isDragging = false;
-			scroller.classList.remove("is-dragging");
-			if (event?.pointerId !== undefined && scroller.hasPointerCapture?.(event.pointerId)) {
-				scroller.releasePointerCapture(event.pointerId);
-			}
-			if (shouldStartMomentum) {
-				startMomentum();
-			}
-		}
-
-		scroller.addEventListener("pointerup", stopDragging);
-		scroller.addEventListener("pointercancel", stopDragging);
 		scroller.addEventListener("scroll", updateButtons, { passive: true });
 		window.addEventListener("resize", updateButtons);
 		updateButtons();

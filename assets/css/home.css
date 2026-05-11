@@ -49,7 +49,6 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  cursor: grab;
   -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
   mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
   touch-action: pan-y;
@@ -72,12 +71,6 @@
 
 .home-project-scroller::-webkit-scrollbar {
   display: none;
-}
-
-.home-project-scroller.is-dragging {
-  scroll-behavior: auto;
-  cursor: grabbing;
-  user-select: none;
 }
 
 .home-project-scroller-inner {
