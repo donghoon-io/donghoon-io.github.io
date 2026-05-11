@@ -104,6 +104,7 @@
 
 .publication-title-row {
   display: block;
+  margin-bottom: 0 !important;
 }
 
 .publication-title {

@@ -85,8 +85,8 @@ description: Publication list of Donghoon Shin
           {% for cat_each in paper.category %}
           <meta itemprop="keywords" content="{{ cat_each }}">
           {% endfor %}
-          <p class="pb-.5"><span class="publication-venue">{{ paper.venue }}</span>{% if paper.note %} <span class="publication-note">({{ paper.note }})</span>{% endif %}</p>
-          <p class="pb-1 publication-title-row">
+          <p class="!mb-2"><span class="publication-venue">{{ paper.venue }}</span>{% if paper.note %} <span class="publication-note">({{ paper.note }})</span>{% endif %}</p>
+          <p class="pb-2 publication-title-row">
             <a class="publication-title" href="{{ paper.slug | prepend: '/publication/' | relative_url }}" itemprop="url"><span itemprop="name">{{ paper.title }}</span></a>
           </p>
           <p class="pb-1.5 publication-author-list">
