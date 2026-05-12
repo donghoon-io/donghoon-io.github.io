@@ -151,11 +151,11 @@
   margin-bottom: 0.3rem !important;
 }
 
-.publication-author-list > a {
-  font-weight: 400
+.publication-featured-author {
+  font-weight: 400 !important;
 }
 
-.publication-author-list > a:hover {
+.publication-featured-author:hover {
   font-weight: 450 !important;
 }
 
