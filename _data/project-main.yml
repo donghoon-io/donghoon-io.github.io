@@ -2,7 +2,7 @@ project:
   - title: "Paper2Card"
     icon: "sticky-note"
     image: "paper2card.png"
-    description: "Converts HCI papers into compact, useful cards for designers."
+    description: "Transforms HCI papers into design cards"
     venue: CHI '24
     slug: chi2024_paper2card_paper
   - title: "PosterMate"
@@ -33,7 +33,7 @@ project:
   - title: "Theorizing design with AI"
     icon: "workflow"
     image: "cpd.png"
-    description: "Supports casual theorizing directly within the design workflow."
+    description: "Supports casual theorizing directly within the design workflow"
     venue: CHI '24
     slug: chi2024_cpd-hcd_paper
   - title: "IntroBot"

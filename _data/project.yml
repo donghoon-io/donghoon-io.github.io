@@ -153,6 +153,7 @@ project:
   - title: Theorizing Design with AI
     image: cpd.jpg
     paper: chi2024_cpd-hcd_paper.pdf
+    code: 'https://github.com/prosociallab/chi2024_miro-cpd-plugin'
     detail: >
       <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (CHI '24 paper)</p>
 
@@ -276,8 +277,8 @@ project:
     tags:
       - <i data-lucide="book-text" class="mr-1"></i>CSCW '23
       - <i data-lucide="book-text" class="mr-1"></i>NeurIPS '21
-      - Explainable AI
-    image: satellite-explainability.png
+      - XAI
+    image: satellite-explainability.jpg
     title: Explainable AI for Visual Detection Task
     description: >-
       Guiding the design of AI explanation for assessing building damages from
