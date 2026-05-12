@@ -17,6 +17,7 @@ project:
     description: "Turns research findings into actionable UI design support"
     venue: DIS '26
     slug: dis2026_refine_paper
+    code: "https://github.com/donghoon-io/refine"
   - title: "What About My Design Context?"
     icon: "palette"
     image: "paper2customization.png"

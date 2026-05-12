@@ -76,10 +76,10 @@ description: HCI researcher | Ph.D. student at the University of Washington
                             <p class="home-project-metadata">
                                 {% if project_pub.venue contains "arXiv" or project_pub.note contains "to appear" %}
                                 {% unless project_pub.pdf == false %}
-                                <a href="{{ '/assets/pdf/' | append: project.slug | append: '.pdf' | relative_url }}"><i data-lucide="file" class="mr-1"></i>Preprint</a>
+                                <a href="{{ '/assets/pdf/' | append: project.slug | append: '.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i data-lucide="file" class="mr-1"></i>Preprint</a>
                                 {% endunless %}
                                 {% else %}
-                                <a href="{{ '/assets/pdf/' | append: project.slug | append: '.pdf' | relative_url }}"><i data-lucide="file" class="mr-1"></i>PDF</a>
+                                <a href="{{ '/assets/pdf/' | append: project.slug | append: '.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i data-lucide="file" class="mr-1"></i>PDF</a>
                                 {% endif %}
                                 {% if project_pub.video %}
                                 {% if project_pub.video contains 'http' %}
@@ -89,13 +89,16 @@ description: HCI researcher | Ph.D. student at the University of Washington
                                 {% endif %}
                                 {% endif %}
                                 {% if project_pub.slide %}
-                                <a href="{{ '/assets/pdf/' | append: project_pub.slide | relative_url }}"><i data-lucide="presentation" class="mr-1"></i>Slides</a>
+                                <a href="{{ '/assets/pdf/' | append: project_pub.slide | relative_url }}" target="_blank" rel="noopener noreferrer"><i data-lucide="presentation" class="mr-1"></i>Slides</a>
                                 {% endif %}
                                 {% if project_pub.poster %}
-                                <a href="{{ '/assets/pdf/' | append: project_pub.poster | relative_url }}"><i data-lucide="book-image" class="mr-1"></i>Poster</a>
+                                <a href="{{ '/assets/pdf/' | append: project_pub.poster | relative_url }}" target="_blank" rel="noopener noreferrer"><i data-lucide="book-image" class="mr-1"></i>Poster</a>
                                 {% endif %}
                                 {% if project_pub.demo %}
                                 <a href="{{ project_pub.demo }}" target="_blank" rel="noopener noreferrer"><i data-lucide="app-window-mac" class="mr-1"></i>Demo</a>
+                                {% endif %}
+                                {% if project_pub.code or project.code %}
+                                <a href="{{ project_pub.code | default: project.code }}" target="_blank" rel="noopener noreferrer"><i data-lucide="code-xml" class="mr-1"></i>Code</a>
                                 {% endif %}
                             </p>
                             {% endif %}

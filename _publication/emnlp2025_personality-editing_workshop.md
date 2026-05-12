@@ -18,4 +18,5 @@ category:
   - "AI / NLP"
   - "Agent"
 featured: true
+code: "https://github.com/swiftie1230/PALETTE"
 ---
