@@ -13,11 +13,13 @@ description: Some musics of Donghoon Shin
     {% for music in musics %}
     <div class="mt-10 grid grid-cols-1 gap-3 md:grid-cols-12 md:gap-6" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <meta itemprop="position" content="{{ forloop.index }}">
-        <div itemprop="item" itemscope itemtype="https://schema.org/MusicRecording">
-        <meta itemprop="name" content="{{ music.title }}">
-        <meta itemprop="byArtist" content="{{ music.artist }}">
+        <meta itemprop="item" content="#music-{{ forloop.index }}">
         <div class="mb-3 md:col-span-4 md:mb-0">
-            <p class="subsection-title"><span itemprop="byArtist">{{ music.artist }}</span> - <span itemprop="name">{{ music.title }}</span></p>
+            <div id="music-{{ forloop.index }}" itemprop="item" itemscope itemtype="https://schema.org/MusicRecording">
+                <meta itemprop="name" content="{{ music.title }}">
+                <meta itemprop="byArtist" content="{{ music.artist }}">
+                <p class="subsection-title"><span itemprop="byArtist">{{ music.artist }}</span> - <span itemprop="name">{{ music.title }}</span></p>
+            </div>
         </div>
         <div class="mb-3 self-center md:col-span-8 md:mb-0">
             <div class="music-container">
@@ -34,7 +36,6 @@ description: Some musics of Donghoon Shin
                 {% endif %}
                 {{ music.type }}
             </p>
-        </div>
         </div>
     </div>
     {% endfor %}
