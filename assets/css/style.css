@@ -6,7 +6,7 @@
   --ink: 17 17 17;
   --ink-warm: 59 59 67;
   --surface: 255 255 255;
-  --surface-alt: 250 250 250;
+  --surface-alt: 247 247 248;
   --white: 255 255 255;
   --black: 0 0 0;
   --accent: 17 17 17;
@@ -14,9 +14,9 @@
   --element-primary-color: rgb(var(--ink) / var(--tw-text-opacity, 1)) !important;
   --element-secondary-color: #3f3f46;
   --background-primary-color: rgb(var(--surface));
-  --background-secondary-color: #f4f4f5;
-  --border-color: #e4e4e7;
-  --separator-color: #eeeeee;
+  --background-secondary-color: #f1f1f3;
+  --border-color: #e1e1e5;
+  --separator-color: #ebebee;
   --column-width: 42rem;
   --column-margin-top: 4rem;
 }

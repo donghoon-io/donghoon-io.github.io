@@ -10,10 +10,9 @@
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 .publication-year {
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 1rem;
   opacity: .3;
-  font-family: 'Newspaper';
   margin: 1.75rem 0 0.9rem 0 !important;
 }
 
@@ -148,7 +147,7 @@
 .publication-author-list {
   font-weight: 200 !important;
   font-size: .8rem !important;
-  margin-bottom: 0.05rem !important;
+  margin-bottom: 0 !important;
 }
 
 .publication-featured-author {
@@ -175,7 +174,6 @@
 .publication-venue {
   font-weight: 400 !important;
   font-size: .8rem !important;
-  letter-spacing: 0.05em;
 }
 
 .publication-venue-row {
