@@ -36,7 +36,7 @@
 }
 
 .project-item-container {
-  border: 1px solid rgb(var(--accent) / 0.1) !important;
+  border: 1px solid rgb(var(--ink) / 0.08) !important;
   cursor: pointer;
   background-color: rgb(var(--surface-alt));
   overflow: hidden;
@@ -53,11 +53,11 @@
 }
 
 .project-item-title {
-  font-size: 1rem !important;
+  font-size: .8rem !important;
   font-weight: 400;
   line-height: 1.3;
-  color: rgb(72 57 33) !important;
-  font-family: 'Newsreader';
+  color: rgb(var(--ink)) !important;
+  font-family: var(--font-family);
   margin: 1rem 0 0.45rem 0 !important;
 }
 
@@ -92,8 +92,8 @@
   
   border-radius: .2rem;
   color: var(--element-secondary-color) !important;
-  background-color: var(--background-secondary-color) !important;
-  border: 1px solid rgb(var(--accent) / 0.1) !important;
+  background-color: #fff !important;
+  border: 1px solid rgb(var(--ink) / 0.08) !important;
   font-size: .7rem;
   text-decoration: none;
   font-weight: 300 !important;

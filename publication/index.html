@@ -85,12 +85,12 @@ description: Publication list of Donghoon Shin
           {% for cat_each in paper.category %}
           <meta itemprop="keywords" content="{{ cat_each }}">
           {% endfor %}
-          <p class="!mb-2"><span class="publication-venue">{{ paper.venue }}</span>{% if paper.note %} <span class="publication-note">({{ paper.note }})</span>{% endif %}</p>
-          <p class="pb-2 publication-title-row">
+          <p class="publication-title-row">
             <a class="publication-title" href="{{ paper.slug | prepend: '/publication/' | relative_url }}" itemprop="url"><span itemprop="name">{{ paper.title }}</span></a>
           </p>
-          <p class="pb-1.5 publication-author-list">
+          <p class="pb-1 publication-author-list">
             {% for author in paper.authors %}{% assign author_data = site.data.people.people | where:"name", author | first %}<span itemprop="author" itemscope itemtype="https://schema.org/Person">{% if author_data.website %}<meta itemprop="url" content="{{ author_data.website }}">{% endif %}<span itemprop="name">{% if author == "Donghoon Shin" %}<a href="https://donghoon.io" class="publication-featured-author">Donghoon Shin</a>{% if paper.coauthors contains author %}*{% endif %}{% else %}{% if paper.coauthors contains author %}{% if author_data.website %}<a href="{{ author_data.website }}" class="publication-featured-author">{{ author }}</a>*{% else %}<span class="publication-featured-author">{{ author }}</span>*{% endif %}{% else %}{% if author_data.website %}<a href="{{ author_data.website }}" class="publication-coauthor">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}{% endif %}</span></span>{% unless forloop.last %}, {% endunless %}{% endfor %}{% if paper.coauthors %} <span class="publication-cofirst ml-2">(* co-first authorship)</span>{% endif %}</p>
+          <p class="publication-venue-row"><span class="publication-venue">{{ paper.venue }}</span>{% if paper.note %} <span class="publication-note">({{ paper.note }})</span>{% endif %}</p>
           {% if paper.award %}
           <p class="mb-2 inline-flex items-center font-light"><i data-lucide="trophy" class="mr-1.5"></i>{{ paper.award }}</p>
           {% endif %}

@@ -1,7 +1,7 @@
 .news-title {
-  font-size: .95rem;
+  font-size: .85rem;
   font-weight: 400 !important;
-  font-family: 'Newsreader' !important;
+  font-family: var(--font-family) !important;
   font-optical-sizing: auto !important;
   margin: 0 0 5px 0 !important;
 }
@@ -31,7 +31,7 @@
 }
 
 .travel-detail {
-  font-family: 'Newsreader' !important;
+  font-family: var(--font-family) !important;
   font-weight: 100 !important;
   font-size: .8rem !important;
   margin-right: .75rem !important;

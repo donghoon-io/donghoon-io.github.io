@@ -97,21 +97,21 @@
   position: relative;
   padding-bottom: 0.8rem;
   background-color: rgb(var(--surface-alt));
-  padding: .8rem 1rem;
-  border: 1px solid rgb(var(--accent) / 0.1) !important;
+  padding: .9rem 1rem;
+  border: 1px solid rgb(var(--ink) / 0.08) !important;
   margin-top: 1rem;
 }
 
 .publication-title-row {
   display: block;
-  margin-bottom: 0 !important;
+  margin-bottom: 0.25rem !important;
 }
 
 .publication-title {
   font-weight: 400 !important;
-  font-size: 1rem !important;
+  font-size: .84rem !important;
   line-height: 1.1 !important;
-  font-family: 'Newsreader';
+  font-family: var(--font-family);
 }
 
 .publication-type-dot {
@@ -142,13 +142,13 @@
 }
 
 .publication-item > p:has(.publication-title) {
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
 .publication-author-list {
   font-weight: 200 !important;
   font-size: .8rem !important;
-  margin-bottom: 0.3rem !important;
+  margin-bottom: 0.05rem !important;
 }
 
 .publication-featured-author {
@@ -174,9 +174,12 @@
 
 .publication-venue {
   font-weight: 400 !important;
-  font-size: .7rem !important;
-  color: rgb(var(--ink) / 0.72) !important;
+  font-size: .8rem !important;
   letter-spacing: 0.05em;
+}
+
+.publication-venue-row {
+  margin-bottom: 0.5rem !important;
 }
 .publication-metadata {
   font-size: .75rem;
@@ -185,7 +188,7 @@
   gap: 1rem;
 }
 .publication-metadata > a {
-  color: rgb(72 57 33) !important;
+  color: rgb(var(--ink)) !important;
   font-weight: 350 !important;
   display: inline-flex;
   align-items: center;
@@ -203,7 +206,7 @@
 .publication-detail-metadata>a, label {
   margin-right: 10px !important;
   font-size: .9rem;
-  color: rgb(72 57 33) !important;
+  color: rgb(var(--ink)) !important;
   font-weight: 350 !important;
   display: inline-flex;
   align-items: center;
@@ -255,7 +258,7 @@
 .publication-detail-title {
   font-weight: 400 !important;
   font-size: 1.1rem !important;
-  font-family: 'Newsreader';
+  font-family: var(--font-family);
 }
 
 .publication-detail-authors {
