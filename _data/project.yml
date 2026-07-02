@@ -4,7 +4,7 @@ project:
     paper: dis2026_refine_paper.pdf
     code: 'https://github.com/donghoon-io/refine'
     detail: >
-      <p>Working with <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a> and <a href='https://www.llwang.net/'>Lucy Lu Wang</a>, I built a Figma plugin that transforms academic insights from HCI papers into UI design iteration supports with generative AI. (DIS '26 paper, to appear)</p>
+      <p>Working with <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a> and <a href='https://www.llwang.net/'>Lucy Lu Wang</a>, I built a Figma plugin that transforms academic insights from HCI papers into UI design iteration supports with generative AI. (DIS '26 paper)</p>
 
       <img src='site.baseurl/assets/images/project_detail/refine.png' class='modal-image-responsive' alt='pipeline of our system'>
 
