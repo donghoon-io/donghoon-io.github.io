@@ -33,7 +33,7 @@ description: Curriculum vitae of Donghoon Shin
             M.S., <a class="pr-1" href="https://hcde.uw.edu">Human Centered Design and Engineering</a>
             <!--<small class="text-nowrap">(concurrent with Ph.D.)</small>!--><br>
             <!--<small>Advisor: <a href="https://faculty.washington.edu/garyhs/">Gary Hsieh</a> & <a href="https://www.llwang.net/">Lucy Lu Wang</a></small><br>!-->
-            <small>Honors: Korean Government Scholar for Overseas Studies, ACM Future Leader of AI</small><br>
+            <small>Honors: Korean Government Scholar for Overseas Studies, ACM AI Future Leader of AI</small><br>
           </div>
         </div>
         <div class="cv-dated-entry">
@@ -107,7 +107,7 @@ description: Curriculum vitae of Donghoon Shin
             endif %}{% endif %}{% endif %}{% unless forloop.last%}, {% endunless %}
             {% endfor %}{% if pub.coauthors %}<span class="cv-note ml-2">(* co-first authorship)</span>{% endif %}
             <br>
-            {{ pub.venue }}.{% if pub.note %} <span class="cv-note">({{ pub.note}})</span>{% endif %}<br>
+            {{ pub.venue }}{% if pub.note %} <span class="cv-note">({{ pub.note}})</span>{% endif %}<br>
             {% if pub.award %}<span class="cv-award mt-1"><i data-lucide="award" class="mr-1.5 h-[1.1em] w-[1.1em]"></i>{{ pub.award }}</span><br>{%
             endif %}
           </div>
@@ -118,94 +118,108 @@ description: Curriculum vitae of Donghoon Shin
       <section>
         <h2>Patent</h2>
         <div class="cv-dated-entry">
+          <div class="cv-dated-date">2026</div>
+          <div class="cv-dated-content">
+            <b>Multi-Agent Design System</b><br>
+            <span class="cv-coauthor">Gromit Yeuk-Yin Chan</span>, <a
+              href="https://donghoon.io">Donghoon Shin</a>, <span class="cv-coauthor">Doga Dogan</span><br>
+            U.S. patent filed <span class="ml-1" style="font-weight: 200 !important">(19/662,166)</span>
+          </div>
+        </div>
+        <div class="cv-dated-entry">
           <div class="cv-dated-date">2021</div>
           <div class="cv-dated-content">
             <b>Method and Apparatus for Mimicking Conversational Style</b><br>
             <span class="cv-coauthor">Youjin Hwang</span>, <span class="cv-coauthor">Joonhwan Lee</span>, <a
               href="https://donghoon.io">Donghoon Shin</a><br>
-            Republic of Korea Patent <span class="ml-1" style="font-weight: 200 !important">(10-2021-0032858)</span>
+            Republic of Korea patent <span class="ml-1" style="font-weight: 200 !important">(10-2021-0032858)</span>
           </div>
         </div>
       </section>
       <section>
-        <h2>Honors and Awards</h2>
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2022, 2026</div>
+        <h2>Awards and Honors</h2>
+
+        <div class="cv-dated-entry cv-oneline-entries">
+          <div class="cv-dated-date">2026</div>
           <div class="cv-dated-content">
-            <b>Special Recognition for Outstanding Reviews</b>, ACM CHI 2022 & 2026, IUI 2026<br>
-            Recognition for the paper review
+            <b>Future Leader of AI</b>, ACM AI Leadership Summit
           </div>
         </div>
-        <div class="cv-dated-entry">
+
+        <div class="cv-dated-entry cv-oneline-entries">
           <div class="cv-dated-date">2023, 2025</div>
           <div class="cv-dated-content">
-            <b>Graduate School Conference Presentation Award</b>, University of Washington<br>
-            Conference presentation award for presenting a paper at CHI
+            <b>Graduate School Conference Presentation Award</b>, University of Washington ($500)
           </div>
         </div>
-        <div class="cv-dated-entry">
+
+        <div class="cv-dated-entry cv-oneline-entries">
+          <div class="cv-dated-date">2022, 2026</div>
+          <div class="cv-dated-content">
+            <b>Special Recognition for Outstanding Reviews</b>
+          </div>
+        </div>
+
+        <div class="cv-dated-entry cv-oneline-entries">
+          <div class="cv-dated-date">2022–2024</div>
+          <div class="cv-dated-content">
+            <b>Korean Government Scholar for Overseas Studies</b>, Republic of Korea ($80,000)
+          </div>
+        </div>
+
+        <div class="cv-dated-entry cv-oneline-entries">
           <div class="cv-dated-date">2022</div>
           <div class="cv-dated-content">
-            <b>Government Scholarship for Overseas Study</b>, Korea<br>
-            Merit-based scholarship for graduate studies funded by the Korean government (~ 50 recipients selected
-            annually)
+            <b>Graduate School Fellowship</b>, University of Washington ($1,400)
           </div>
         </div>
-        <div class="cv-dated-entry">
+
+        <div class="cv-dated-entry cv-oneline-entries">
           <div class="cv-dated-date">2022</div>
           <div class="cv-dated-content">
-            <b>Graduate School Fellowship</b>, University of Washington<br>
-            Selected by the department
+            <b>Gary Marsden Travel Award</b>, ACM SIGCHI ($2,730)
           </div>
         </div>
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2022</div>
-          <div class="cv-dated-content">
-            <b>Gary Marsden Travel Award</b>, ACM SIGCHI<br>
-            Travel grant for attending CHI 2022
-          </div>
-        </div>
-        <div class="cv-dated-entry">
+
+        <div class="cv-dated-entry cv-oneline-entries">
           <div class="cv-dated-date">2020</div>
           <div class="cv-dated-content">
-            <b>Honorable Mention Award</b>, ACM CHI 2020<br>
-            Selected among the top 5% of paper submissions
+            <b>Honorable Mention Award</b> (top 5%), ACM CHI 2020
           </div>
         </div>
-        <div class="cv-dated-entry">
+
+        <div class="cv-dated-entry cv-oneline-entries">
+          <div class="cv-dated-date">2020–2021</div>
+          <div class="cv-dated-content">
+            <b>Presidential Science Scholarship</b>, Republic of Korea ($15,000)
+          </div>
+        </div>
+
+        <div class="cv-dated-entry cv-oneline-entries">
           <div class="cv-dated-date">2020</div>
           <div class="cv-dated-content">
-            <b>Presidential Science Scholarship</b>, Korea<br>
-            Merit-based scholarship for undergraduate studies funded by the Korean government (~ 150 recipients selected
-            annually)
+            <b>Conference and Travel Scholarship</b>, Google ($2,000)
           </div>
         </div>
-        <div class="cv-dated-entry">
+
+        <div class="cv-dated-entry cv-oneline-entries">
           <div class="cv-dated-date">2020</div>
           <div class="cv-dated-content">
-            <b>Conference and Travel Scholarship</b>, Google<br>
-            Travel grant for attending CHI 2020 (travel canceled due to COVID-19)
+            <b>Best Undergraduate Research Award</b> (1st), Seoul National University
           </div>
         </div>
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2020</div>
-          <div class="cv-dated-content">
-            <b>Best Undergraduate Research Award</b>, Seoul National University<br>
-            Selected 1st among all the undergraduate research projects in 2019
-          </div>
-        </div>
-        <div class="cv-dated-entry">
+
+        <div class="cv-dated-entry cv-oneline-entries">
           <div class="cv-dated-date">2019, 2021</div>
           <div class="cv-dated-content">
-            <b>Undergraduate Research Grant</b>, Seoul National University<br>
-            ~$10,000 research grant for two undergraduate research projects
+            <b>Undergraduate Research Grant</b>, Seoul National University ($5,000)
           </div>
         </div>
-        <div class="cv-dated-entry">
+
+        <div class="cv-dated-entry cv-oneline-entries">
           <div class="cv-dated-date">2016, 2017</div>
           <div class="cv-dated-content">
-            <b>Merit-based Scholarship</b>, Seoul National University<br>
-            Undergraduate merit-based scholarship
+            <b>Merit-based Scholarship</b>, Seoul National University
           </div>
         </div>
       </section>
@@ -249,15 +263,26 @@ description: Curriculum vitae of Donghoon Shin
       </section>
       <section>
         <h2>Services</h2>
-        <h3>Program Committee</h3>
+        <div class="cv-section-heading">
+          <h3>Program Committee</h3>
+        </div>
         <div class="cv-oneline-entries">
           <div class="cv-dated-entry">
             <div class="cv-dated-date">2024 - 2025</div>
             <div class="cv-dated-content">ACM CHI</div>
           </div>
           <div class="cv-dated-entry">
-            <div class="cv-dated-date">2025 - 2026</div>
+            <div class="cv-dated-date">2025 - 2027</div>
             <div class="cv-dated-content">ACM IUI</div>
+          </div>
+        </div>
+        <div class="cv-section-heading">
+          <h3>Session Chair</h3>
+        </div>
+        <div class="cv-oneline-entries">
+          <div class="cv-dated-entry">
+            <div class="cv-dated-date">2026</div>
+            <div class="cv-dated-content">ACM DIS</div>
           </div>
         </div>
         <div class="cv-section-heading">
@@ -265,6 +290,11 @@ description: Curriculum vitae of Donghoon Shin
           <div class="cv-section-heading-note">* 6 Special Recognitions for Outstanding Reviews</div>
         </div>
         <div class="cv-oneline-entries">
+
+          <div class="cv-dated-entry">
+            <div class="cv-dated-date">2025 –</div>
+            <div class="cv-dated-content">ACM UIST</div>
+          </div>
 
           <div class="cv-dated-entry">
             <div class="cv-dated-date">2020 –</div>
@@ -298,11 +328,6 @@ description: Curriculum vitae of Donghoon Shin
 
           <div class="cv-dated-entry">
             <div class="cv-dated-date">2025</div>
-            <div class="cv-dated-content">ACM UIST</div>
-          </div>
-
-          <div class="cv-dated-entry">
-            <div class="cv-dated-date">2025</div>
             <div class="cv-dated-content">IJHCS</div>
           </div>
 
@@ -323,14 +348,18 @@ description: Curriculum vitae of Donghoon Shin
 
         </div>
 
-        <h3>Admission Committee</h3>
+        <div class="cv-section-heading">
+          <h3>Admission Committee</h3>
+        </div>
         <div class="cv-oneline-entries">
           <div class="cv-dated-entry">
             <div class="cv-dated-date">2023</div>
             <div class="cv-dated-content">Student reviewer for UW HCDE Ph.D. admission</div>
           </div>
         </div>
+        <div class="cv-section-heading">
         <h3>Student Volunteer</h3>
+        </div>
         <div class="cv-oneline-entries">
           <div class="cv-dated-entry">
             <div class="cv-dated-date">2020</div>
