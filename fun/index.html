@@ -168,9 +168,14 @@ description: Some fun stuffs of Donghoon Shin
         { "from": "SEA", "to": "ICN", "date": "2026-05-25", "flight_code": "DL197" },
         { "from": "ICN", "to": "SIN", "date": "2026-06-13", "flight_code": "TW161" },
         { "from": "SIN", "to": "ICN", "date": "2026-06-19", "flight_code": "TW162" },
-        { "from": "ICN", "to": "ATL", "date": "2026-08-30", "flight_code": "TW162" },
-        { "from": "ATL", "to": "ICN", "date": "2026-09-04", "flight_code": "TW162" },
-        { "from": "ICN", "to": "SEA", "date": "2026-09-25", "flight_code": "TW162" }
+        { "from": "PUS", "to": "GMP", "date": "2026-07-03", "flight_code": "TW162" },
+        { "from": "GMP", "to": "PUS", "date": "2026-07-03", "flight_code": "TW162" },
+        { "from": "PUS", "to": "GMP", "date": "2026-07-29", "flight_code": "TW162" },
+        { "from": "GMP", "to": "PUS", "date": "2026-07-30", "flight_code": "TW162" },
+        { "from": "ICN", "to": "SEA", "date": "2026-08-27", "flight_code": "TW162" },
+        { "from": "SEA", "to": "ATL", "date": "2026-08-27", "flight_code": "TW162" },
+        { "from": "ATL", "to": "EWR", "date": "2026-09-03", "flight_code": "TW162" },
+        { "from": "EWR", "to": "SEA", "date": "2026-09-03", "flight_code": "TW162" },
     ].map(flight => ({
         ...flight,
         parsedDate: new Date(`${flight.date}T12:00:00`)
