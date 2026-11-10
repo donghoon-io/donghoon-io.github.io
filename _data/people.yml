@@ -236,3 +236,21 @@ people:
   - name: Heng Ji
     affiliation: UIUC
     website: "https://blender.cs.illinois.edu/hengji.html"
+  - name: Judith Amores
+    affiliation: Microsoft Research
+    website: "https://www.microsoft.com/en-us/research/people/judithamores/"
+    image: judith.jpg
+  - name: Bo-Eun Choi
+    affiliation: University of Washington
+    website: "https://boeunchoi.github.io/"
+    image: boeun.jpg
+  - name: Jason Kim
+    affiliation: University of Washington
+  - name: Davin Win Kyi
+    affiliation: University of Washington
+  - name: Seok-Young Kim
+    affiliation: KAIST
+  - name: Andrew D. Wilson
+    affiliation: Microsoft Research
+    website: "https://www.microsoft.com/en-us/research/people/awilson/"
+    image: andy.jpg
