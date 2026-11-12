@@ -74,6 +74,8 @@ const flights = [
     { "from": "EWR", "to": "SEA", "date": "2026-09-02", "flight_code": "TW162" },
     { "from": "SEA", "to": "LAX", "date": "2026-09-30", "flight_code": "TW162" },
     { "from": "LAX", "to": "SEA", "date": "2026-10-01", "flight_code": "TW162" },
+    { "from": "SEA", "to": "ICN", "date": "2026-11-26", "flight_code": "TW162" },
+    { "from": "ICN", "to": "SEA", "date": "2026-11-29", "flight_code": "TW162" },
 ].map(flight => ({
     ...flight,
     parsedDate: new Date(`${flight.date}T12:00:00`)
