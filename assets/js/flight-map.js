@@ -3,7 +3,7 @@ const { d3, topojson } = window;
 
 const flights = [
     { "from": "ICN", "to": "SFO", "date": "2022-05-01", "flight_code": "UA806" },
-    { "from": "SFO", "to": "MYR", "date": "2022-05-01", "flight_code": "UA2068" },
+    { "from": "SFO", "to": "MSY", "date": "2022-05-01", "flight_code": "UA2068" },
     { "from": "MSY", "to": "DFW", "date": "2022-05-07", "flight_code": "AA1077" },
     { "from": "DFW", "to": "ICN", "date": "2022-05-07", "flight_code": "AA281" },
     { "from": "ICN", "to": "SEA", "date": "2022-09-12", "flight_code": "DL196" },
